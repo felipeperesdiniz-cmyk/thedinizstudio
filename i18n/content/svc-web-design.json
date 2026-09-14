@@ -1,0 +1,217 @@
+{
+  "og.type": "website",
+  "og.image": "https://dinizstudio.com/assets/og.jpg",
+  "og.image.w": "1200",
+  "og.image.h": "630",
+
+  "meta.title": {
+    "en": "Web Design &amp; Development in Miami | Diniz Studio",
+    "pt": "Criação de Sites e Desenvolvimento Web em Miami | Diniz Studio",
+    "es": "Diseño y Desarrollo Web en Miami | Diniz Studio"
+  },
+  "meta.desc": {
+    "en": "Hand-coded websites for Miami businesses. Design, build, copy, structured data and speed, from one pair of hands. No builders, no themes, no plugin tax.",
+    "pt": "Sites feitos à mão, linha por linha, para negócios de Miami. Design, código, texto, dados estruturados e velocidade, tudo das mesmas mãos. Sem construtores, sem temas, sem imposto de plugin.",
+    "es": "Sitios web escritos a mano para negocios de Miami. Diseño, código, textos, datos estructurados y velocidad, de un solo par de manos. Sin constructores, sin plantillas, sin impuesto de plugins."
+  },
+  "og.title": {
+    "en": "Web Design &amp; Development in Miami | Diniz Studio",
+    "pt": "Criação de Sites e Desenvolvimento Web em Miami | Diniz Studio",
+    "es": "Diseño y Desarrollo Web en Miami | Diniz Studio"
+  },
+  "og.desc": {
+    "en": "Hand-coded websites for Miami businesses. Design, build, copy, structured data and speed, from one pair of hands. No builders, no themes, no plugin tax.",
+    "pt": "Sites feitos à mão, linha por linha, para negócios de Miami. Design, código, texto, dados estruturados e velocidade, tudo das mesmas mãos.",
+    "es": "Sitios web escritos a mano para negocios de Miami. Diseño, código, textos, datos estructurados y velocidad, de un solo par de manos."
+  },
+  "og.imagealt": {
+    "en": "Diniz Studio: web design and development, Miami",
+    "pt": "Diniz Studio: criação de sites e desenvolvimento web, Miami",
+    "es": "Diniz Studio: diseño y desarrollo web, Miami"
+  },
+
+  "crumb.self": {
+    "en": "Web design",
+    "pt": "Criação de sites",
+    "es": "Diseño web"
+  },
+  "kicker": {
+    "en": "Capability / Web design and build",
+    "pt": "Serviço / Criação e desenvolvimento de sites",
+    "es": "Servicio / Diseño y desarrollo web"
+  },
+  "h1": {
+    "en": "Web design and development in Miami",
+    "pt": "Criação de sites e desenvolvimento web em Miami",
+    "es": "Diseño y desarrollo web en Miami"
+  },
+  "lede": {
+    "en": "Every site the studio ships is written by hand in HTML, CSS and JavaScript. No page builder, no purchased theme, no plugin stack to maintain. That is not nostalgia. It is the only way to control what the page weighs, how fast it paints and what a search engine can read.",
+    "pt": "Todo site que o estúdio entrega é escrito à mão, em HTML, CSS e JavaScript. Sem construtor de páginas, sem tema comprado, sem pilha de plugins para manter. Isso não é nostalgia. É o único jeito de controlar quanto a página pesa, com que velocidade ela aparece e o que um buscador consegue ler.",
+    "es": "Cada sitio que el estudio entrega está escrito a mano, en HTML, CSS y JavaScript. Sin constructor de páginas, sin plantilla comprada, sin una pila de plugins que mantener. No es nostalgia. Es la única forma de controlar cuánto pesa la página, con qué rapidez se dibuja y qué puede leer un buscador."
+  },
+
+  "b1.h": {
+    "en": "What hand-coded actually buys you",
+    "pt": "O que o código escrito à mão realmente compra",
+    "es": "Qué compra de verdad el código escrito a mano"
+  },
+  "b1.lbl": {
+    "en": "Against builders and themes",
+    "pt": "Contra construtores e temas",
+    "es": "Frente a constructores y plantillas"
+  },
+  "b1.p1": {
+    "en": "A Wix or Squarespace page ships a framework, a theme, and the code paths for every feature you are not using. A WordPress build adds a plugin for each thing the theme forgot, and each plugin adds its own stylesheet, its own script and its own update risk. You pay for that in load time on every visit, and in maintenance every month.",
+    "pt": "Uma página de Wix ou Squarespace entrega um framework, um tema e o código de todos os recursos que você não usa. Um site em WordPress acrescenta um plugin para cada coisa que o tema esqueceu, e cada plugin traz a própria folha de estilo, o próprio script e o próprio risco de atualização. Você paga por isso em tempo de carregamento a cada visita, e em manutenção todo mês.",
+    "es": "Una página de Wix o Squarespace envía un framework, una plantilla y el código de todas las funciones que usted no usa. Un sitio en WordPress añade un plugin por cada cosa que la plantilla olvidó, y cada plugin trae su propia hoja de estilos, su propio script y su propio riesgo de actualización. Eso se paga en tiempo de carga en cada visita, y en mantenimiento cada mes."
+  },
+  "b1.p2": {
+    "en": "A hand-written page ships only what is on it. The home page of this site is around 250KB before images, and every byte of it is doing something. That margin is what buys you the video hero, the photography at full quality, and the motion, without the page feeling slow.",
+    "pt": "Uma página escrita à mão entrega só o que está nela. A página inicial deste site tem cerca de 250KB antes das imagens, e cada byte está fazendo alguma coisa. É essa margem que paga o vídeo de abertura, a fotografia em qualidade plena e o movimento, sem que a página pareça lenta.",
+    "es": "Una página escrita a mano envía solo lo que hay en ella. La página de inicio de este sitio pesa unos 250KB antes de las imágenes, y cada byte está haciendo algo. Ese margen es lo que paga el vídeo de portada, la fotografía a calidad plena y el movimiento, sin que la página se sienta lenta."
+  },
+  "b1.p3": {
+    "en": "The other half is control. Structured data, heading order, image formats and crawl paths are decisions here, not settings buried in a theme you do not own.",
+    "pt": "A outra metade é controle. Dados estruturados, hierarquia de títulos, formatos de imagem e caminhos de rastreamento aqui são decisões, não opções enterradas num tema que não é seu.",
+    "es": "La otra mitad es control. Los datos estructurados, el orden de los encabezados, los formatos de imagen y las rutas de rastreo aquí son decisiones, no ajustes enterrados en una plantilla que no es suya."
+  },
+
+  "b2.h": {
+    "en": "What a build includes",
+    "pt": "O que um projeto inclui",
+    "es": "Qué incluye un proyecto"
+  },
+  "b2.lbl": {
+    "en": "Six parts, one pair of hands",
+    "pt": "Seis partes, um par de mãos",
+    "es": "Seis partes, un par de manos"
+  },
+  "b2.p1": {
+    "en": "The studio does not hand off between a designer, a developer and a copywriter, which is where most agency projects lose their shape. The same person draws it, writes it and builds it.",
+    "pt": "O estúdio não passa o projeto de um designer para um desenvolvedor e daí para um redator, que é exatamente onde a maioria dos trabalhos de agência perde a forma. A mesma pessoa desenha, escreve e constrói.",
+    "es": "El estudio no pasa el proyecto de un diseñador a un desarrollador y de ahí a un redactor, que es justo donde la mayoría de los trabajos de agencia pierde la forma. La misma persona lo dibuja, lo escribe y lo construye."
+  },
+  "b2.n1": { "en": "Art direction", "pt": "Direção de arte", "es": "Dirección de arte" },
+  "b2.d1": {
+    "en": "What the site looks like and why, decided before a line of it is built.",
+    "pt": "Como o site se parece e por quê, decidido antes de uma linha ser construída.",
+    "es": "Qué aspecto tiene el sitio y por qué, decidido antes de construir una sola línea."
+  },
+  "b2.n2": { "en": "Design", "pt": "Design", "es": "Diseño" },
+  "b2.d2": {
+    "en": "Type, colour, spacing and motion, drawn against real content rather than placeholder text.",
+    "pt": "Tipografia, cor, espaçamento e movimento, desenhados sobre conteúdo real e não sobre texto de preenchimento.",
+    "es": "Tipografía, color, espaciado y movimiento, dibujados sobre contenido real y no sobre texto de relleno."
+  },
+  "b2.n3": { "en": "Copy", "pt": "Texto", "es": "Textos" },
+  "b2.d3": {
+    "en": "The words on the page, written to be read and to be found.",
+    "pt": "As palavras da página, escritas para serem lidas e para serem encontradas.",
+    "es": "Las palabras de la página, escritas para ser leídas y para ser encontradas."
+  },
+  "b2.n4": { "en": "Front-end build", "pt": "Desenvolvimento front-end", "es": "Desarrollo front-end" },
+  "b2.d4": {
+    "en": "Hand-written HTML, CSS and JavaScript. Responsive, accessible, tested on real devices.",
+    "pt": "HTML, CSS e JavaScript escritos à mão. Responsivo, acessível, testado em aparelhos de verdade.",
+    "es": "HTML, CSS y JavaScript escritos a mano. Adaptable, accesible, probado en dispositivos reales."
+  },
+  "b2.n5": { "en": "Search groundwork", "pt": "Base para busca", "es": "Base para búsqueda" },
+  "b2.d5": {
+    "en": "Semantic markup, structured data, metadata, sitemap, and compressed media.",
+    "pt": "Marcação semântica, dados estruturados, metadados, sitemap e mídia comprimida.",
+    "es": "Marcado semántico, datos estructurados, metadatos, sitemap y medios comprimidos."
+  },
+  "b2.n6": { "en": "Launch and handover", "pt": "Lançamento e entrega", "es": "Lanzamiento y entrega" },
+  "b2.d6": {
+    "en": "Deployment, analytics, and a walkthrough so you can run it.",
+    "pt": "Publicação, análise de dados e uma passagem completa para que você consiga tocar o site sozinho.",
+    "es": "Publicación, analítica y un recorrido completo para que usted pueda manejarlo solo."
+  },
+
+  "b3.h": {
+    "en": "Built for how people actually arrive",
+    "pt": "Feito para como as pessoas realmente chegam",
+    "es": "Hecho para cómo llega la gente de verdad"
+  },
+  "b3.lbl": {
+    "en": "Mobile, multilingual, bookable",
+    "pt": "Celular, multilíngue, com agendamento",
+    "es": "Móvil, multilingüe, con reservas"
+  },
+  "b3.p1": {
+    "en": "Most local traffic is a phone, held one-handed, on a connection that is worse than yours. Everything here is designed at that size first and widened afterwards, not the other way round.",
+    "pt": "A maior parte do tráfego local é um celular, segurado com uma mão só, numa conexão pior que a sua. Tudo aqui é desenhado primeiro nesse tamanho e alargado depois, nunca o contrário.",
+    "es": "La mayor parte del tráfico local es un teléfono, sostenido con una sola mano, en una conexión peor que la suya. Todo aquí se diseña primero a ese tamaño y se ensancha después, nunca al revés."
+  },
+  "b3.p2": {
+    "en": "Where an audience is not monolingual, the site is built in more than one language from the same source and declared to Google with hreflang, so a search in Portuguese or Spanish lands on a page written in it. Blend Hair Boutique runs in English, Portuguese and Spanish that way. So does this one.",
+    "pt": "Quando o público não é monolíngue, o site é construído em mais de um idioma a partir da mesma fonte e declarado ao Google com hreflang, para que uma busca em português ou espanhol caia numa página escrita naquele idioma. A Blend Hair Boutique funciona assim, em inglês, português e espanhol. Este site também.",
+    "es": "Cuando el público no es monolingüe, el sitio se construye en más de un idioma desde la misma fuente y se declara a Google con hreflang, para que una búsqueda en portugués o español aterrice en una página escrita en ese idioma. Blend Hair Boutique funciona así, en inglés, portugués y español. Este sitio también."
+  },
+  "b3.p3": {
+    "en": "And where the business takes appointments or orders, the booking system is wired in rather than linked to as an afterthought, because a site that ends in a phone number loses the people who will not call.",
+    "pt": "E quando o negócio recebe agendamentos ou pedidos, o sistema de reservas é integrado, não pendurado num link de última hora, porque um site que termina num número de telefone perde quem não vai ligar.",
+    "es": "Y cuando el negocio recibe citas o pedidos, el sistema de reservas va integrado, no colgado de un enlace de último momento, porque un sitio que termina en un número de teléfono pierde a quien no va a llamar."
+  },
+
+  "b4.h": { "en": "Proof", "pt": "Provas", "es": "Pruebas" },
+  "b4.lbl": {
+    "en": "Four builds, four different problems",
+    "pt": "Quatro projetos, quatro problemas diferentes",
+    "es": "Cuatro proyectos, cuatro problemas distintos"
+  },
+  "b4.p1": {
+    "en": "The case studies are the argument. Each one names what existed before, what was built, and what it was built to do.",
+    "pt": "Os projetos são o argumento. Cada um diz o que existia antes, o que foi construído e para que foi construído.",
+    "es": "Los proyectos son el argumento. Cada uno dice qué había antes, qué se construyó y para qué se construyó."
+  },
+  "b4.k1": { "en": "Trilingual build", "pt": "Site trilíngue", "es": "Sitio trilingüe" },
+  "b4.d1": {
+    "en": "Eight service pages in three languages, all ending at the same booking screen.",
+    "pt": "Oito páginas de serviço em três idiomas, todas terminando na mesma tela de agendamento.",
+    "es": "Ocho páginas de servicio en tres idiomas, todas terminando en la misma pantalla de reserva."
+  },
+  "b4.k2": { "en": "Local search", "pt": "Busca local", "es": "Búsqueda local" },
+  "b4.d2": {
+    "en": "A site, an e-book sold from it, and a Google profile carrying 27 five-star reviews.",
+    "pt": "Um site, um e-book vendido nele e um perfil no Google com 27 avaliações cinco estrelas.",
+    "es": "Un sitio, un e-book vendido desde él y un perfil de Google con 27 reseñas de cinco estrellas."
+  },
+  "b4.k3": { "en": "Identity and web", "pt": "Identidade e site", "es": "Identidad y sitio" },
+  "b4.d3": {
+    "en": "A logo drawn as stitchwork and a Portuguese site in three chapters.",
+    "pt": "Um logotipo desenhado como bordado e um site em português em três capítulos.",
+    "es": "Un logotipo dibujado como bordado y un sitio en portugués en tres capítulos."
+  },
+  "b4.k4": { "en": "Portfolio build", "pt": "Site de portfólio", "es": "Sitio de portafolio" },
+  "b4.d4": {
+    "en": "A photographer’s site where the work loads before anything else does.",
+    "pt": "O site de um fotógrafo onde o trabalho carrega antes de qualquer outra coisa.",
+    "es": "El sitio de un fotógrafo donde la obra carga antes que cualquier otra cosa."
+  },
+
+  "b5.h": { "en": "Who this is for", "pt": "Para quem isso é", "es": "Para quién es esto" },
+  "b5.lbl": { "en": "And who it is not", "pt": "E para quem não é", "es": "Y para quién no" },
+  "b5.p1": {
+    "en": "It suits a business that sells something specific to a definable audience and has been let down by a template: a salon, a studio, a practice, a maker, a local service that competes on craft rather than price.",
+    "pt": "Serve para um negócio que vende algo específico a um público definível e que já foi mal servido por um template: um salão, um ateliê, um consultório, um artesão, um serviço local que compete por qualidade e não por preço.",
+    "es": "Sirve para un negocio que vende algo específico a un público definible y al que una plantilla ya le ha quedado corta: un salón, un taller, una consulta, un artesano, un servicio local que compite por oficio y no por precio."
+  },
+  "b5.p2": {
+    "en": "It does not suit a project that needs fifty pages next month, a marketplace, or a team that wants to edit the layout weekly. The studio takes one project at a time, which is the reason the work looks the way it does and also the reason it is not the right answer for everyone.",
+    "pt": "Não serve para um projeto que precisa de cinquenta páginas no mês que vem, para um marketplace, nem para uma equipe que quer mexer no layout toda semana. O estúdio pega um projeto de cada vez, que é a razão de o trabalho ser o que é e também a razão de não ser a resposta certa para todo mundo.",
+    "es": "No sirve para un proyecto que necesita cincuenta páginas el mes que viene, para un marketplace, ni para un equipo que quiere retocar el diseño cada semana. El estudio toma un proyecto a la vez, que es la razón por la que el trabajo se ve como se ve y también la razón por la que no es la respuesta correcta para todos."
+  },
+
+  "ld.name": {
+    "en": "Web design and development",
+    "pt": "Criação de sites e desenvolvimento web",
+    "es": "Diseño y desarrollo web"
+  },
+  "ld.type": {
+    "en": "Web design, front-end development, website build",
+    "pt": "Criação de sites, desenvolvimento front-end, desenvolvimento web",
+    "es": "Diseño web, desarrollo front-end, desarrollo de sitios web"
+  }
+}

@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="{{$lang}}">
+<head>
+{{>head}}
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300..600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600&text=thedinizstuo&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/site.css?v=30">
+</head>
+<body>
+<a class="skip" href="#main">{{skip}}</a>
+
+{{>header-home}}
+
+<main id="main">
+  <section class="hero" id="hero">
+    <div class="hero-stage">
+      <div class="device">
+        <span class="glow" aria-hidden="true"></span>
+
+        <div class="device-screen">
+          <div class="site-hero">
+            <div class="wrap hero-top-row lbl">
+              <span>{{hero.where}}</span>
+              <a class="swap" href="#contact">
+                <span class="swap-a">{{hero.booking}}</span>
+                <span class="swap-b" aria-hidden="true">{{cta.start}} &#8599;</span>
+              </a>
+            </div>
+
+            <div class="wrap hero-mid">
+              <div class="hero-say">
+                <h1>
+                  <span class="ln ln--set">{{hero.h1a}}</span>
+                  <span class="ln ln--set">{{hero.h1b}}</span>
+                  <span class="ln ln--say">{{hero.h1c}}</span>
+                </h1>
+                <p class="hero-lede">{{hero.lede}}</p>
+              </div>
+            </div>
+
+            <div class="wrap hero-bottom">
+              <ul class="disciplines lbl">
+                <li><a href="#capabilities">{{disc1}}</a></li>
+                <li><a href="#capabilities">{{disc2}}</a></li>
+                <li><a href="#capabilities">{{disc3}}</a></li>
+                <li><a href="#capabilities">{{disc4}}</a></li>
+                <li><a href="#capabilities">{{disc5}}</a></li>
+              </ul>
+              <div class="site-foot-row lbl">
+                <span>{{hero.count}}</span>
+                <span class="rule"></span>
+                <span class="cue">{{hero.scroll}} <span aria-hidden="true">&#8595;</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rig-chrome" aria-hidden="true">
+          <span class="notch"></span>
+          <span class="island"></span>
+          <span class="side side--vol"></span>
+          <span class="side side--pwr"></span>
+          <span class="home"></span>
+          <span class="mount">
+            <span class="floor"></span>
+            <span class="stand"></span>
+            <span class="base"></span>
+          </span>
+        </div>
+      </div>
+
+      <p class="hint lbl" aria-hidden="true">{{hero.hint}} <i></i></p>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap"><div class="sec-head"><h2 class="ser">{{work.h2}}</h2><span class="lbl">{{work.count}}</span></div></div>
+    <nav class="work-index" aria-label="{{work.h2}}">
+      <a class="bp bp--rafa" data-r href="{{@work-rafa}}">
+        <span class="idx">01</span>
+        <span class="art">
+          <img src="/assets/brand/mark-rafa.webp" alt="" class="inv" width="340" height="286" loading="lazy" decoding="async"
+               onload="this.nextElementSibling&amp;&amp;this.nextElementSibling.remove()" onerror="this.remove()">
+          <span class="wm"><b>Rafa Diniz</b><i></i><em>Photography &amp; Film</em></span>
+        </span>
+        <span class="who">
+          <b>Rafa Diniz</b>
+          <span><em>{{work.tag1}}</em><span class="dots"><i style="background:#0a0a0b"></i><i style="background:#f3f0ea"></i><i style="background:#e2542c"></i></span></span>
+        </span>
+      </a>
+      <a class="bp bp--mari" data-r href="{{@work-mari}}">
+        <span class="idx">02</span>
+        <span class="art"><img src="/assets/brand/mark-mari.webp" alt="" width="340" height="286" loading="lazy" decoding="async"></span>
+        <span class="who">
+          <b>Bordados com Amor</b>
+          <span><em>{{work.tag2}}</em><span class="dots"><i style="background:#454b3a"></i><i style="background:#b08a52"></i><i style="background:#3a2618"></i></span></span>
+        </span>
+      </a>
+      <a class="bp bp--renata" data-r href="{{@work-renata}}">
+        <span class="idx">03</span>
+        <span class="art"><span class="wm"><b>Renata Estrella</b><i style="background:#c9a96e"></i><em>Pâtisserie</em></span></span>
+        <span class="who">
+          <b>Renata Estrella</b>
+          <span><em>{{work.tag3}}</em><span class="dots"><i style="background:#c9a96e"></i><i style="background:#f5efe0"></i><i style="background:#a0824f"></i></span></span>
+        </span>
+      </a>
+      <a class="bp bp--blend" data-r href="{{@work-blend}}">
+        <span class="idx">04</span>
+        <span class="art"><img src="/assets/brand/mark-blend.webp" alt="" width="680" height="463" loading="lazy" decoding="async"></span>
+        <span class="who">
+          <b>Blend Hair Boutique</b>
+          <span><em>{{work.tag4}}</em><span class="dots"><i style="background:#c9a875"></i><i style="background:#b08562"></i><i style="background:#191510"></i></span></span>
+        </span>
+      </a>
+    </nav>
+    <div class="wrap work-notes">
+      <article data-r>
+        <h3><a href="{{@work-rafa}}">Rafa Diniz</a></h3>
+        <p>{{work.p1}}</p>
+        <a class="more lbl" href="{{@work-rafa}}">{{work.more}}
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg></a>
+      </article>
+      <article data-r>
+        <h3><a href="{{@work-mari}}">Bordados com Amor</a></h3>
+        <p>{{work.p2}}</p>
+        <a class="more lbl" href="{{@work-mari}}">{{work.more}}
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg></a>
+      </article>
+      <article data-r>
+        <h3><a href="{{@work-renata}}">Renata Estrella</a></h3>
+        <p>{{work.p3}}</p>
+        <a class="more lbl" href="{{@work-renata}}">{{work.more}}
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg></a>
+      </article>
+      <article data-r>
+        <h3><a href="{{@work-blend}}">Blend Hair Boutique</a></h3>
+        <p>{{work.p4}}</p>
+        <a class="more lbl" href="{{@work-blend}}">{{work.more}}
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg></a>
+      </article>
+    </div>
+
+
+
+
+  </section>
+
+  <!-- The proof was buried inside the case pages. Numbers are the one
+       thing a buyer reads before they read anything, so they sit
+       directly under the work that produced them. Each line says what
+       the studio did rather than claiming the client's whole result. -->
+  <section class="wrap results-sec" aria-labelledby="results-h">
+    <div class="sec-head">
+      <h2 class="ser" id="results-h">{{res.h2}}</h2>
+      <span class="lbl">{{res.sub}}</span>
+    </div>
+    <ul class="results">
+      <li data-r>
+        <b class="ser">{{res.n1}}<i>+</i></b>
+        <span class="lbl">{{res.l1}}</span>
+        <p>{{res.p1}}</p>
+      </li>
+      <li data-r>
+        <b class="ser">{{res.n2}}<i>+</i></b>
+        <span class="lbl">{{res.l2}}</span>
+        <p>{{res.p2}}</p>
+      </li>
+      <li data-r>
+        <b class="ser">200<i>%</i></b>
+        <span class="lbl">{{res.l3}}</span>
+        <p>{{res.p3}}</p>
+      </li>
+      <li data-r>
+        <b class="ser">25<i>%</i></b>
+        <span class="lbl">{{res.l4}}</span>
+        <p>{{res.p4}}</p>
+      </li>
+    </ul>
+    <!-- the convinced buyer should not have to scroll six more screens
+         to act on it -->
+    <div class="results-cta" data-r>
+      <p>{{res.cta}}</p>
+      <a class="btn" href="#contact">{{cta.start}}
+        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg></a>
+    </div>
+  </section>
+
+  <section class="wrap facts-sec">
+    <div class="facts" data-r>
+      <div><span class="lbl">{{fact.k1}}</span><b>{{fact.v1}}</b></div>
+      <div><span class="lbl">{{fact.k2}}</span><b>{{fact.v2}}</b></div>
+      <div><span class="lbl">{{fact.k3}}</span><b>{{fact.v3}}</b></div>
+      <div><span class="lbl">{{fact.k4}}</span><b>{{fact.v4}}</b></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="capabilities" style="padding-block:clamp(70px,12vh,150px)">
+    <div class="sec-head"><h2 class="ser">{{cap.h2}}</h2><span class="lbl">{{cap.sub}}</span></div>
+    <ul class="caps">
+      <li data-r><span class="lbl">01</span><h3 class="ser"><a href="{{@svc-brand}}">{{cap.n1}}</a></h3><p>{{cap.d1}}</p></li>
+      <li data-r><span class="lbl">02</span><h3 class="ser">{{cap.n2}}</h3><p>{{cap.d2}}</p></li>
+      <li data-r><span class="lbl">03</span><h3 class="ser">{{cap.n3}}</h3><p>{{cap.d3}}</p></li>
+      <li data-r><span class="lbl">04</span><h3 class="ser">{{cap.n4}}</h3><p>{{cap.d4}}</p></li>
+      <li data-r><span class="lbl">05</span><h3 class="ser"><a href="{{@svc-web}}">{{cap.n5}}</a></h3><p>{{cap.d5}}</p></li>
+      <li data-r><span class="lbl">06</span><h3 class="ser"><a href="{{@svc-seo}}">{{cap.n6}}</a></h3><p>{{cap.d6}}</p></li>
+    </ul>
+  </section>
+
+  <section class="outro" id="outro" aria-label="Diniz Studio">
+    <div class="outro-stage">
+      <div class="wall" aria-hidden="true"></div>
+      <span class="wall-light" aria-hidden="true"></span>
+
+      <div class="sign-cam" aria-hidden="true">
+        <div class="sign">
+          <span class="wd" data-wd="the">the</span>
+          <span class="wd" data-wd="diniz">diniz</span>
+          <span class="wd" data-wd="studio">studio</span>
+        </div>
+      </div>
+
+      <div class="gloom" aria-hidden="true"></div>
+      <p class="outro-cue lbl" aria-hidden="true">{{outro.cue}} <i></i></p>
+      <div class="blackout" aria-hidden="true"></div>
+
+      <div class="signoff">
+        <p class="lbl so-kicker">The Diniz Studio</p>
+        <p class="so-line ser" id="outro-h">{{outro.line}}</p>
+        <div class="so-char-slot">
+          <span class="so-char-shadow" aria-hidden="true"></span>
+          <svg class="so-char" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 943.0 1000.0"><path fill="currentColor" fill-rule="evenodd" d="M353.4 0.0 L381.2 0.3 L417.0 8.5 L444.8 25.2 L463.5 49.0 L474.1 105.9 L474.6 131.1 L466.7 164.2 L439.2 242.4 L435.9 262.2 L447.6 296.7 L493.8 374.9 L540.1 415.4 L680.5 557.9 L732.5 601.3 L785.2 657.1 L794.4 658.1 L801.4 651.6 L807.2 614.5 L813.0 600.5 L831.5 582.1 L847.4 573.7 L883.2 568.4 L911.0 574.3 L929.5 588.7 L941.4 611.9 L943.0 641.0 L940.1 676.7 L923.3 781.4 L903.4 842.3 L884.5 864.8 L868.6 872.9 L839.5 876.1 L809.7 866.1 L771.9 821.0 L725.6 779.6 L672.3 724.4 L648.7 705.3 L635.5 701.9 L644.8 736.3 L646.7 758.9 L629.7 883.3 L607.4 965.5 L585.8 989.3 L568.0 997.0 L536.2 1000.0 L519.0 997.5 L507.0 990.8 L489.1 970.8 L479.2 946.3 L427.1 848.9 L416.9 819.8 L400.5 797.3 L375.8 731.0 L341.5 665.7 L314.5 601.3 L278.3 540.3 L225.8 410.6 L186.5 347.5 L176.0 337.2 L113.7 300.5 L47.2 268.8 L24.0 242.4 L2.2 193.4 L0.0 161.6 L6.1 135.1 L25.0 96.5 L59.4 65.1 L109.7 47.6 L165.4 50.2 L181.4 42.4 L199.8 28.1 L217.0 22.5 L238.2 21.5 L267.3 29.9 L279.3 29.7 L323.0 6.6 L353.4 0.0ZM710.3 27.8 L714.5 29.1 L728.9 50.3 L724.9 58.3 L713.6 64.1 L709.1 62.2 L705.5 51.6 L705.9 35.8 L710.3 27.8ZM341.5 82.0 L319.0 88.9 L307.6 104.6 L305.7 135.1 L300.6 157.6 L309.4 168.2 L333.5 169.7 L352.1 165.9 L369.3 153.6 L378.5 139.1 L381.5 117.9 L374.4 94.0 L362.7 85.0 L341.5 82.0ZM759.3 87.4 L767.9 88.7 L766.6 96.7 L758.7 96.0 L759.3 87.4ZM148.1 120.3 L134.9 125.5 L123.1 136.4 L113.7 152.3 L112.5 165.5 L120.9 181.4 L134.9 194.7 L148.1 199.2 L168.0 197.8 L183.7 188.1 L185.3 173.5 L166.7 127.5 L157.4 120.4 L148.1 120.3ZM417.0 474.0 L409.6 478.1 L404.6 486.0 L402.9 499.3 L405.7 513.9 L426.6 565.5 L479.2 653.6 L488.7 679.4 L516.3 733.5 L524.3 737.1 L533.5 733.9 L550.7 703.4 L573.3 690.4 L594.4 689.2 L631.5 696.6 L627.6 686.0 L596.3 645.0 L582.5 621.0 L532.5 584.0 L439.5 483.1 L428.9 475.4 L417.0 474.0Z"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap contact" id="contact" style="padding-block:clamp(70px,12vh,150px)">
+    <!-- The lead is taller than its contents so the heading can pin.
+         The mark fills its berth while the frame is held, which is the
+         only way that beat can take its time: unpinned, the berth is
+         climbing out of the top of the screen while it grows. -->
+    <div class="contact-lead">
+      <div class="contact-say">
+        <div class="contact-words">
+          <p class="lbl" data-r>{{cta.start}}</p>
+          <h2 class="ser" data-r>{{contact.h2a}} <em>{{contact.h2b}}</em></h2>
+        </div>
+        <!-- where the mark comes to rest and then grows into: an empty
+             box, so the berth is placed by the layout rather than by a
+             number in the script -->
+        <span class="char-berth" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <form class="brief card" id="brief" data-r novalidate
+            data-endpoint=""
+            data-fallback="felipeperesdiniz@gmail.com">
+        <!-- data-endpoint: paste the POST URL from whichever form backend
+             you sign up for (Formspree, Web3Forms, Basin, or your own
+             /api route on Vercel). It is posted JSON. While it is empty
+             the form still works: it validates, then composes the mail
+             locally, which is what it did before. -->
+        <div class="brief-fields">
+        <span class="lbl">{{form.step1}}</span>
+        <div class="row">
+          <label><span class="lbl">{{form.need}}</span>
+            <select name="need" required>
+              <option value="">{{form.choose}}</option>
+              <option>{{form.need1}}</option>
+              <option>{{form.need2}}</option>
+              <option>{{form.need3}}</option>
+              <option>{{form.need4}}</option>
+              <option>{{form.need5}}</option>
+              <option>{{form.need6}}</option>
+            </select>
+          </label>
+          <label><span class="lbl">{{form.budget}}</span>
+            <select name="budget" required>
+              <option value="">{{form.choose}}</option>
+              <option>{{form.bud1}}</option>
+              <option>{{form.bud2}}</option>
+              <option>{{form.bud3}}</option>
+              <option>{{form.bud4}}</option>
+              <option>{{form.bud5}}</option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <label><span class="lbl">{{form.when}}</span>
+            <select name="when" required>
+              <option value="">{{form.choose}}</option>
+              <option>{{form.when1}}</option>
+              <option>{{form.when2}}</option>
+              <option>{{form.when3}}</option>
+              <option>{{form.when4}}</option>
+            </select>
+          </label>
+          <label><span class="lbl">{{form.who}}</span>
+            <input name="who" type="text" placeholder="{{form.who.ph}}" required>
+          </label>
+        </div>
+        <label><span class="lbl">{{form.about}}</span>
+          <textarea name="about" rows="4" placeholder="{{form.about.ph}}" required></textarea>
+        </label>
+        <label><span class="lbl">{{form.email}}</span>
+          <input name="email" type="email" placeholder="{{form.email.ph}}" required>
+        </label>
+        <div class="hp" aria-hidden="true">
+          <label>{{form.hp}}
+            <input name="company" type="text" tabindex="-1" autocomplete="off">
+          </label>
+        </div>
+        <button class="btn send" type="submit">{{form.send}} <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg></button>
+        <p class="fine" id="brief-note" role="status" aria-live="polite">{{form.fine}}</p>
+        </div>
+
+        <div class="brief-done" hidden>
+          <span class="lbl">{{form.done.lbl}}</span>
+          <h3>{{form.done.h}}</h3>
+          <p>{{form.done.p}}</p>
+          <a class="btn" href="https://calendly.com/dinizstudio/new-meeting" target="_blank" rel="noopener">{{call.btn}}
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg></a>
+        </div>
+      </form>
+      <div class="card call" data-r>
+        <span class="lbl">{{call.step2}}</span>
+        <h3>{{call.h}}</h3>
+        <p class="why">{{call.why}}</p>
+        <a class="btn" href="https://calendly.com/dinizstudio/new-meeting" target="_blank" rel="noopener">
+          {{call.btn}} <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg>
+        </a>
+        <ul>
+          <li><i>01</i><span>{{call.l1}}</span></li>
+          <li><i>02</i><span>{{call.l2}}</span></li>
+          <li><i>03</i><span>{{call.l3}}</span></li>
+          <li><i>04</i><span>{{call.l4}}</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{>footer}}
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://dinizstudio.com/#studio","name":"Diniz Studio","alternateName":"The Diniz Studio","description":"{{ld.studio.desc|json}}","url":"https://dinizstudio.com/","email":"felipeperesdiniz@gmail.com","image":"https://dinizstudio.com/assets/og.jpg","logo":"https://dinizstudio.com/assets/brand/diniz-mark.png","founder":{"@type":"Person","@id":"https://dinizstudio.com/#felipe","name":"Felipe Peres Diniz","jobTitle":"{{ld.felipe.job|json}}","worksFor":{"@id":"https://dinizstudio.com/#studio"}},"address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"areaServed":[{"@type":"Place","name":"Miami"},{"@type":"Place","name":"Miami Beach"},{"@type":"Place","name":"Coral Gables"},{"@type":"Place","name":"Brickell"},{"@type":"Place","name":"Doral"},{"@type":"Place","name":"Hialeah"},{"@type":"Place","name":"Aventura"},{"@type":"Place","name":"Plantation"},{"@type":"Place","name":"Sunrise"},{"@type":"Place","name":"Weston"},{"@type":"Place","name":"Davie"},{"@type":"Place","name":"Fort Lauderdale"},{"@type":"Place","name":"Miami-Dade County"},{"@type":"Place","name":"Broward County"},{"@type":"Place","name":"Florida"}],"knowsLanguage":["en","pt","es"],"availableLanguage":[{"@type":"Language","name":"English","alternateName":"en"},{"@type":"Language","name":"Portuguese","alternateName":"pt"},{"@type":"Language","name":"Spanish","alternateName":"es"}],"currenciesAccepted":"USD","serviceType":{{ld.services|array}},"hasOfferCatalog":{"@type":"OfferCatalog","name":"{{ld.catalog|json}}","itemListElement":{{$offers}}},"knowsAbout":{{ld.knowsabout|array}}},{"@type":"WebSite","@id":"https://dinizstudio.com/#website","url":"https://dinizstudio.com/","name":"Diniz Studio","inLanguage":["en","pt-BR","es"],"publisher":{"@id":"https://dinizstudio.com/#studio"}},{"@type":"WebPage","@id":"{{$canonical}}#webpage","url":"{{$canonical}}","name":"{{meta.title|json}}","description":"{{meta.desc|json}}","isPartOf":{"@id":"https://dinizstudio.com/#website"},"about":{"@id":"https://dinizstudio.com/#studio"},"primaryImageOfPage":"https://dinizstudio.com/assets/og.jpg","inLanguage":"{{$jsonld_lang}}","datePublished":"2026-09-08","dateModified":"2026-09-14"},{"@type":"Bakery","@id":"https://renataestrellapatisserie.com/#business","name":"Renata Estrella Pâtisserie","url":"https://renataestrellapatisserie.com/","sameAs":["https://www.instagram.com/renataestrella.patisserie"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","bestRating":"5","reviewCount":"27"}},{"@type":"Organization","@id":"https://bordadoscomamorbymari.com/#business","name":"Bordados com Amor by Mari","url":"https://bordadoscomamorbymari.com/","sameAs":["https://www.instagram.com/bordadoscomamorbymari"]},{"@type":"Person","@id":"https://www.byrafadiniz.com/#person","name":"Rafa Diniz","jobTitle":"{{ld.rafa.job|json}}","url":"https://www.byrafadiniz.com/"},{"@type":"HairSalon","@id":"https://www.blendhairboutique.com/#business","name":"Blend Hair Boutique","url":"https://www.blendhairboutique.com/","telephone":"+1-754-206-3501","address":{"@type":"PostalAddress","streetAddress":"10035 Cleary Blvd","addressLocality":"Plantation","addressRegion":"FL","postalCode":"33324","addressCountry":"US"},"sameAs":["https://www.instagram.com/blendhairboutique","https://www.facebook.com/blendhairboutique"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","bestRating":"5","reviewCount":"1230"}},{"@type":"ItemList","@id":"https://dinizstudio.com/#work","name":"{{work.h2|json}}","itemListOrder":"https://schema.org/ItemListOrderAscending","numberOfItems":4,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"CreativeWork","@id":"{{=work-rafa}}","name":"{{ld.case1|json}}","url":"{{=work-rafa}}","creator":{"@id":"https://dinizstudio.com/#studio"},"about":{"@id":"https://www.byrafadiniz.com/#person"},"inLanguage":"{{$jsonld_lang}}","dateCreated":"2025","keywords":"{{ld.kw1|json}}"}},{"@type":"ListItem","position":2,"item":{"@type":"CreativeWork","@id":"{{=work-mari}}","name":"Bordados com Amor by Mari","url":"{{=work-mari}}","creator":{"@id":"https://dinizstudio.com/#studio"},"about":{"@id":"https://bordadoscomamorbymari.com/#business"},"inLanguage":"{{$jsonld_lang}}","dateCreated":"2025","keywords":"{{ld.kw2|json}}"}},{"@type":"ListItem","position":3,"item":{"@type":"CreativeWork","@id":"{{=work-renata}}","name":"Renata Estrella Pâtisserie","url":"{{=work-renata}}","creator":{"@id":"https://dinizstudio.com/#studio"},"about":{"@id":"https://renataestrellapatisserie.com/#business"},"inLanguage":"{{$jsonld_lang}}","dateCreated":"2025","keywords":"{{ld.kw3|json}}"}},{"@type":"ListItem","position":4,"item":{"@type":"CreativeWork","@id":"{{=work-blend}}","name":"Blend Hair Boutique","url":"{{=work-blend}}","creator":{"@id":"https://dinizstudio.com/#studio"},"about":{"@id":"https://www.blendhairboutique.com/#business"},"inLanguage":"{{$jsonld_lang}}","dateCreated":"2026","keywords":"{{ld.kw4|json}}"}}]}]}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+<script src="/assets/site.js?v=30" defer></script>
+</body>
+</html>

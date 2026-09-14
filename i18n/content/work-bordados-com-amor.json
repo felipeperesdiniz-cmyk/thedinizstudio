@@ -1,0 +1,169 @@
+{
+  "og.type": "article",
+  "og.image": "https://dinizstudio.com/assets/work/mari-1.jpg",
+  "og.image.w": "1440",
+  "og.image.h": "900",
+  "case.name": "Bordados com Amor",
+
+  "meta.title": {
+    "en": "Bordados com Amor: Embroidery Brand Identity &amp; Site | Diniz Studio",
+    "pt": "Bordados com Amor: Identidade Visual e Site de Bordado | Diniz Studio",
+    "es": "Bordados com Amor: Identidad de Marca y Sitio de Bordado | Diniz Studio"
+  },
+  "meta.desc": {
+    "en": "Logo design, brand identity, Instagram management and a Portuguese website for hand-embroidery studio Bordados com Amor by Mari. A mark stitched, not drawn.",
+    "pt": "Criação de logotipo, identidade visual, gestão de Instagram e um site em português para o ateliê de bordado à mão Bordados com Amor by Mari. Uma marca bordada, não desenhada.",
+    "es": "Diseño de logotipo, identidad de marca, gestión de Instagram y un sitio en portugués para el taller de bordado a mano Bordados com Amor by Mari. Una marca bordada, no dibujada."
+  },
+  "og.title": {
+    "en": "Bordados com Amor: Embroidery Brand Identity &amp; Site | Diniz Studio",
+    "pt": "Bordados com Amor: Identidade Visual e Site de Bordado | Diniz Studio",
+    "es": "Bordados com Amor: Identidad de Marca y Sitio de Bordado | Diniz Studio"
+  },
+  "og.desc": {
+    "en": "Logo design, brand identity, Instagram management and a Portuguese website for hand-embroidery studio Bordados com Amor by Mari. A mark stitched, not drawn.",
+    "pt": "Criação de logotipo, identidade visual, gestão de Instagram e um site em português para o ateliê de bordado à mão Bordados com Amor by Mari.",
+    "es": "Diseño de logotipo, identidad de marca, gestión de Instagram y un sitio en portugués para el taller de bordado a mano Bordados com Amor by Mari."
+  },
+  "og.imagealt": {
+    "en": "The Bordados com Amor homepage with the embroidered wordmark",
+    "pt": "A página inicial de Bordados com Amor com o logotipo bordado",
+    "es": "La página de inicio de Bordados com Amor con el logotipo bordado"
+  },
+
+  "crumb.self": "Bordados com Amor",
+  "kicker": {
+    "en": "02 / Hand embroidery",
+    "pt": "02 / Bordado à mão",
+    "es": "02 / Bordado a mano"
+  },
+  "lede": {
+    "en": "A mark made the way the product is made, an account grown from a standing start, and a three-chapter site in Portuguese.",
+    "pt": "Uma marca feita do mesmo jeito que o produto é feito, um perfil crescido do zero e um site em português em três capítulos.",
+    "es": "Una marca hecha del mismo modo en que se hace el producto, una cuenta crecida desde cero y un sitio en portugués en tres capítulos."
+  },
+
+  "d1": { "en": "Logo design", "pt": "Criação de logotipo", "es": "Diseño de logotipo" },
+  "d2": { "en": "Brand identity", "pt": "Identidade visual", "es": "Identidad de marca" },
+  "d3": { "en": "Social media management", "pt": "Gestão de redes sociais", "es": "Gestión de redes sociales" },
+  "d4": { "en": "Marketing", "pt": "Marketing", "es": "Marketing" },
+  "d5": { "en": "Art direction", "pt": "Direção de arte", "es": "Dirección de arte" },
+  "d6": { "en": "Web design", "pt": "Design de site", "es": "Diseño web" },
+  "d7": { "en": "Front-end build", "pt": "Desenvolvimento front-end", "es": "Desarrollo front-end" },
+
+  "b1.h": { "en": "Identity", "pt": "Identidade", "es": "Identidad" },
+  "b1.lbl": { "en": "Embroidered mark", "pt": "Marca bordada", "es": "Marca bordada" },
+  "b1.p1": {
+    "en": "The mark is drawn the way the product is made. Every letter is rendered as stitchwork, so the logo is a sample of the craft rather than a picture of it. Olive thread for the name, terracotta for the accents, over a floral-and-heart crest.",
+    "pt": "A marca é desenhada do mesmo jeito que o produto é feito. Cada letra é executada em ponto de bordado, então o logotipo é uma amostra do ofício e não uma imagem dele. Linha oliva para o nome, terracota para os acentos, sobre um brasão de flores e coração.",
+    "es": "La marca está dibujada del mismo modo en que se hace el producto. Cada letra está ejecutada en puntada, así que el logotipo es una muestra del oficio y no una imagen de él. Hilo oliva para el nombre, terracota para los acentos, sobre un escudo de flores y corazón."
+  },
+  "b1.alt": {
+    "en": "Bordados com Amor logo: the name rendered as olive and terracotta embroidery stitching beneath a floral and heart crest",
+    "pt": "Logotipo Bordados com Amor: o nome executado em bordado oliva e terracota sob um brasão de flores e coração",
+    "es": "Logotipo Bordados com Amor: el nombre ejecutado en bordado oliva y terracota bajo un escudo de flores y corazón"
+  },
+
+  "sw.olive": { "en": "Olive", "pt": "Oliva", "es": "Oliva" },
+  "sw.brass": { "en": "Brass", "pt": "Latão", "es": "Latón" },
+  "sw.paper": { "en": "Paper", "pt": "Papel", "es": "Papel" },
+  "sw.brown": { "en": "Brown", "pt": "Marrom", "es": "Marrón" },
+  "sw.ivory": { "en": "Ivory", "pt": "Marfim", "es": "Marfil" },
+  "ty.display": { "en": "Display", "pt": "Display", "es": "Display" },
+  "ty.ui": { "en": "Interface", "pt": "Interface", "es": "Interfaz" },
+
+  "b2.h": { "en": "Social", "pt": "Redes sociais", "es": "Redes sociales" },
+  "b2.lbl": {
+    "en": "Account managed by the studio",
+    "pt": "Perfil administrado pelo estúdio",
+    "es": "Cuenta administrada por el estudio"
+  },
+  "b2.p1": {
+    "en": "The studio runs the account end to end: art direction, shooting, writing and scheduling, building the audience from a standing start.",
+    "pt": "O estúdio toca o perfil de ponta a ponta: direção de arte, fotografia, texto e agendamento, construindo o público do zero.",
+    "es": "El estudio lleva la cuenta de punta a punta: dirección de arte, fotografía, textos y programación, construyendo la audiencia desde cero."
+  },
+  "b2.k1": { "en": "Instagram / managed", "pt": "Instagram / administrado", "es": "Instagram / administrado" },
+  "b2.d1": {
+    "en": "Full account management: content, captions and posting cadence.",
+    "pt": "Gestão completa do perfil: conteúdo, legendas e ritmo de publicação.",
+    "es": "Gestión completa de la cuenta: contenido, textos y ritmo de publicación."
+  },
+  "b2.k2": { "en": "Audience growth", "pt": "Crescimento de público", "es": "Crecimiento de audiencia" },
+  "b2.n2": { "en": "+170 followers", "pt": "+170 seguidores", "es": "+170 seguidores" },
+  "b2.d2": {
+    "en": "Grown from launch, entirely organic, with no paid promotion.",
+    "pt": "Crescimento desde o lançamento, inteiramente orgânico, sem impulsionamento pago.",
+    "es": "Crecimiento desde el lanzamiento, enteramente orgánico, sin promoción pagada."
+  },
+
+  "b3.h": { "en": "Marketing", "pt": "Marketing", "es": "Marketing" },
+  "b3.lbl": { "en": "Case-study carousel", "pt": "Carrossel do projeto", "es": "Carrusel del proyecto" },
+  "b3.p1": {
+    "en": "A seven-slide carousel written, designed and laid out for the studio's own feed. The launch campaign for this project, showing the responsive build and the editorial detail behind it.",
+    "pt": "Um carrossel de sete telas escrito, desenhado e diagramado para o feed do próprio estúdio. A campanha de lançamento deste projeto, mostrando a construção responsiva e o cuidado editorial por trás dela.",
+    "es": "Un carrusel de siete láminas escrito, diseñado y maquetado para el feed del propio estudio. La campaña de lanzamiento de este proyecto, que muestra la construcción adaptable y el cuidado editorial detrás de ella."
+  },
+  "b3.alt1": {
+    "en": "Carousel slide one: the Bordados com Amor project introduction",
+    "pt": "Primeira tela do carrossel: apresentação do projeto Bordados com Amor",
+    "es": "Primera lámina del carrusel: presentación del proyecto Bordados com Amor"
+  },
+  "b3.alt2": {
+    "en": "Carousel slide: the responsive build shown on phone and desktop",
+    "pt": "Tela do carrossel: a construção responsiva vista no celular e no desktop",
+    "es": "Lámina del carrusel: la construcción adaptable vista en teléfono y escritorio"
+  },
+  "b3.alt3": {
+    "en": "Carousel slide: editorial layout detail from the embroidery site",
+    "pt": "Tela do carrossel: detalhe da diagramação editorial do site de bordado",
+    "es": "Lámina del carrusel: detalle de la maquetación editorial del sitio de bordado"
+  },
+  "b3.alt4": {
+    "en": "Carousel slide: technical SEO and performance notes",
+    "pt": "Tela do carrossel: notas de SEO técnico e performance",
+    "es": "Lámina del carrusel: notas de SEO técnico y rendimiento"
+  },
+  "b3.alt5": {
+    "en": "Carousel slide: closing call to action for the studio",
+    "pt": "Tela do carrossel: chamada final para o estúdio",
+    "es": "Lámina del carrusel: llamada final del estudio"
+  },
+
+  "b4.h": { "en": "The site", "pt": "O site", "es": "El sitio" },
+  "b4.lbl": {
+    "en": "Portuguese, three chapters",
+    "pt": "Em português, três capítulos",
+    "es": "En portugués, tres capítulos"
+  },
+  "b4.alt1": {
+    "en": "Bordados com Amor homepage with the embroidered wordmark over hand-stitched work",
+    "pt": "Página inicial de Bordados com Amor com o logotipo bordado sobre peças feitas à mão",
+    "es": "Página de inicio de Bordados com Amor con el logotipo bordado sobre piezas hechas a mano"
+  },
+  "b4.cap1": { "en": "Home", "pt": "Início", "es": "Inicio" },
+  "b4.alt2": {
+    "en": "Artist chapter introducing Mariana Peres Diniz",
+    "pt": "Capítulo da artista, apresentando Mariana Peres Diniz",
+    "es": "Capítulo de la artista, presentando a Mariana Peres Diniz"
+  },
+  "b4.cap2": { "en": "The artist", "pt": "A artista", "es": "La artista" },
+  "b4.alt3": {
+    "en": "Process chapter: inspiration, creation and attention",
+    "pt": "Capítulo do processo: inspiração, criação e cuidado",
+    "es": "Capítulo del proceso: inspiración, creación y cuidado"
+  },
+  "b4.cap3": { "en": "Process", "pt": "Processo", "es": "Proceso" },
+  "b4.alt4": {
+    "en": "Archive of finished embroidery commissions",
+    "pt": "Arquivo de bordados encomendados e finalizados",
+    "es": "Archivo de bordados encargados y terminados"
+  },
+  "b4.cap4": { "en": "Archive", "pt": "Arquivo", "es": "Archivo" },
+
+  "quote.text": {
+    "en": "I&rsquo;m obsessed with how it turned out!! I wanted something clean but still handmade and personal, and he somehow got exactly what I meant. Even the little details feel like they belong to the brand. It finally feels like my website.",
+    "pt": "Estou obcecada com o resultado!! Eu queria algo limpo, mas ainda assim artesanal e pessoal, e ele de algum jeito entendeu exatamente o que eu queria dizer. Até os detalhezinhos parecem pertencer à marca. Finalmente parece o meu site.",
+    "es": "¡¡Estoy obsesionada con cómo quedó!! Quería algo limpio pero que siguiera siendo artesanal y personal, y de algún modo él entendió exactamente lo que yo quería decir. Hasta los detalles pequeños parecen pertenecer a la marca. Por fin se siente como mi sitio."
+  }
+}

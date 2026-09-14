@@ -1,11 +1,364 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://dinizstudio.com/</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://dinizstudio.com/work/rafa-diniz/</loc><lastmod>2026-09-09</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dinizstudio.com/work/bordados-com-amor/</loc><lastmod>2026-09-09</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dinizstudio.com/work/renata-estrella/</loc><lastmod>2026-09-09</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dinizstudio.com/work/blend-hair-boutique/</loc><lastmod>2026-09-13</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dinizstudio.com/services/web-design/</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://dinizstudio.com/services/brand-identity/</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://dinizstudio.com/services/local-seo/</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://dinizstudio.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/services/web-design/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/services/web-design/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/services/web-design/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/servicos/criacao-de-sites/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/servicos/criacao-de-sites/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/servicos/criacao-de-sites/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/servicios/diseno-web/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/servicios/diseno-web/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/servicios/diseno-web/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/services/web-design/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/pt/servicos/criacao-de-sites/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/services/web-design/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/services/web-design/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/servicos/criacao-de-sites/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/servicos/criacao-de-sites/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/servicos/criacao-de-sites/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/servicios/diseno-web/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/servicios/diseno-web/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/servicios/diseno-web/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/services/web-design/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/es/servicios/diseno-web/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/services/web-design/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/services/web-design/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/servicos/criacao-de-sites/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/servicos/criacao-de-sites/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/servicos/criacao-de-sites/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/servicios/diseno-web/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/servicios/diseno-web/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/servicios/diseno-web/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/services/web-design/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/services/brand-identity/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/services/brand-identity/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/services/brand-identity/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/servicos/identidade-visual/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/servicos/identidade-visual/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/servicos/identidade-visual/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/servicios/identidad-de-marca/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/servicios/identidad-de-marca/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/servicios/identidad-de-marca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/services/brand-identity/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/pt/servicos/identidade-visual/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/services/brand-identity/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/services/brand-identity/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/servicos/identidade-visual/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/servicos/identidade-visual/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/servicos/identidade-visual/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/servicios/identidad-de-marca/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/servicios/identidad-de-marca/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/servicios/identidad-de-marca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/services/brand-identity/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/es/servicios/identidad-de-marca/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/services/brand-identity/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/services/brand-identity/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/servicos/identidade-visual/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/servicos/identidade-visual/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/servicos/identidade-visual/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/servicios/identidad-de-marca/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/servicios/identidad-de-marca/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/servicios/identidad-de-marca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/services/brand-identity/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/services/local-seo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/services/local-seo/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/services/local-seo/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/servicos/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/servicos/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/servicos/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/servicios/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/servicios/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/servicios/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/services/local-seo/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/pt/servicos/seo-local/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/services/local-seo/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/services/local-seo/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/servicos/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/servicos/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/servicos/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/servicios/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/servicios/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/servicios/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/services/local-seo/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/es/servicios/seo-local/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/services/local-seo/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/services/local-seo/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/servicos/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/servicos/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/servicos/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/servicios/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/servicios/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/servicios/seo-local/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/services/local-seo/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/work/rafa-diniz/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/rafa-diniz/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/pt/projetos/rafa-diniz/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/rafa-diniz/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/es/proyectos/rafa-diniz/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/rafa-diniz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/rafa-diniz/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/work/bordados-com-amor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/bordados-com-amor/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/pt/projetos/bordados-com-amor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/bordados-com-amor/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/es/proyectos/bordados-com-amor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/bordados-com-amor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/bordados-com-amor/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/work/renata-estrella/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/renata-estrella/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/pt/projetos/renata-estrella/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/renata-estrella/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/es/proyectos/renata-estrella/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/renata-estrella/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/renata-estrella/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/work/blend-hair-boutique/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/blend-hair-boutique/"/>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/pt/projetos/blend-hair-boutique/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/blend-hair-boutique/"/>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinizstudio.com/es/proyectos/blend-hair-boutique/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinizstudio.com/work/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://dinizstudio.com/work/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://dinizstudio.com/pt/projetos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dinizstudio.com/pt/projetos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dinizstudio.com/pt/projetos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinizstudio.com/es/proyectos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://dinizstudio.com/es/proyectos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://dinizstudio.com/es/proyectos/blend-hair-boutique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinizstudio.com/work/blend-hair-boutique/"/>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -1,0 +1,134 @@
+{
+  "og.type": "article",
+  "og.image": "https://dinizstudio.com/assets/work/rafa-1.jpg",
+  "og.image.w": "1440",
+  "og.image.h": "900",
+  "case.name": "Rafa Diniz",
+
+  "meta.title": {
+    "en": "Rafa Diniz: Photographer Brand Identity &amp; Website | Diniz Studio",
+    "pt": "Rafa Diniz: Identidade Visual e Site de Fotógrafo | Diniz Studio",
+    "es": "Rafa Diniz: Identidad de Marca y Sitio de Fotógrafo | Diniz Studio"
+  },
+  "meta.desc": {
+    "en": "Logo design, art direction, colour grading and a hand-coded website for Miami photographer and filmmaker Rafa Diniz. A signature mark and an ember accent.",
+    "pt": "Criação de logotipo, direção de arte, correção de cor e um site feito à mão para o fotógrafo e cineasta Rafa Diniz, de Miami. Uma marca em assinatura e um acento brasa.",
+    "es": "Diseño de logotipo, dirección de arte, etalonaje y un sitio escrito a mano para el fotógrafo y cineasta de Miami Rafa Diniz. Una marca hecha firma y un acento brasa."
+  },
+  "og.title": {
+    "en": "Rafa Diniz: Photographer Brand Identity &amp; Website | Diniz Studio",
+    "pt": "Rafa Diniz: Identidade Visual e Site de Fotógrafo | Diniz Studio",
+    "es": "Rafa Diniz: Identidad de Marca y Sitio de Fotógrafo | Diniz Studio"
+  },
+  "og.desc": {
+    "en": "Logo design, art direction, colour grading and a hand-coded website for Miami photographer and filmmaker Rafa Diniz. A signature mark and an ember accent.",
+    "pt": "Criação de logotipo, direção de arte, correção de cor e um site feito à mão para o fotógrafo e cineasta Rafa Diniz, de Miami.",
+    "es": "Diseño de logotipo, dirección de arte, etalonaje y un sitio escrito a mano para el fotógrafo y cineasta de Miami Rafa Diniz."
+  },
+  "og.imagealt": {
+    "en": "The Rafa Diniz homepage, a full-bleed film still behind the wordmark",
+    "pt": "A página inicial de Rafa Diniz, um frame de filme em sangria atrás do logotipo",
+    "es": "La página de inicio de Rafa Diniz, un fotograma a sangre detrás del logotipo"
+  },
+
+  "crumb.self": "Rafa Diniz",
+  "kicker": {
+    "en": "01 / Photography &amp; film",
+    "pt": "01 / Fotografia e cinema",
+    "es": "01 / Fotografía y cine"
+  },
+  "lede": {
+    "en": "A signature drawn by hand, an ember accent that never competes with the work, and a static site built to put photography and film first.",
+    "pt": "Uma assinatura desenhada à mão, um acento cor de brasa que nunca disputa com o trabalho, e um site estático construído para pôr fotografia e cinema em primeiro lugar.",
+    "es": "Una firma dibujada a mano, un acento color brasa que nunca compite con la obra, y un sitio estático construido para poner la fotografía y el cine por delante."
+  },
+
+  "d1": { "en": "Logo design", "pt": "Criação de logotipo", "es": "Diseño de logotipo" },
+  "d2": { "en": "Art direction", "pt": "Direção de arte", "es": "Dirección de arte" },
+  "d3": { "en": "Colour grading", "pt": "Correção de cor", "es": "Etalonaje" },
+  "d4": { "en": "Web design", "pt": "Design de site", "es": "Diseño web" },
+  "d5": { "en": "Front-end build", "pt": "Desenvolvimento front-end", "es": "Desarrollo front-end" },
+  "d6": { "en": "Motion design", "pt": "Motion design", "es": "Motion design" },
+
+  "b1.h": { "en": "Identity", "pt": "Identidade", "es": "Identidad" },
+  "b1.lbl": { "en": "Signature mark", "pt": "Marca em assinatura", "es": "Marca hecha firma" },
+  "b1.p1": {
+    "en": "A photographer signs their work, so the mark is his signature, drawn by hand and set against wide-tracked caps reading Photography + Film. One ember accent carries through the interface as the only colour that isn't the work itself.",
+    "pt": "Um fotógrafo assina o próprio trabalho, então a marca é a assinatura dele, desenhada à mão e apoiada em caixa-alta de entrelinha larga lendo Photography + Film. Um único acento cor de brasa atravessa a interface como a única cor que não vem das próprias imagens.",
+    "es": "Un fotógrafo firma su obra, así que la marca es su firma, dibujada a mano y apoyada en mayúsculas de amplio interletraje que dicen Photography + Film. Un único acento color brasa recorre la interfaz como el único color que no viene de las propias imágenes."
+  },
+  "b1.alt": {
+    "en": "Rafa Diniz signature logo above the words Photography plus Film",
+    "pt": "Logotipo em assinatura de Rafa Diniz sobre as palavras Photography plus Film",
+    "es": "Logotipo en firma de Rafa Diniz sobre las palabras Photography plus Film"
+  },
+
+  "sw.ink": { "en": "Ink", "pt": "Tinta", "es": "Tinta" },
+  "sw.paper": { "en": "Paper", "pt": "Papel", "es": "Papel" },
+  "sw.ember": { "en": "Ember", "pt": "Brasa", "es": "Brasa" },
+  "sw.mute": { "en": "Mute", "pt": "Neutro", "es": "Neutro" },
+  "ty.ui": { "en": "Interface", "pt": "Interface", "es": "Interfaz" },
+  "ty.display": { "en": "Display", "pt": "Display", "es": "Display" },
+  "ty.data": { "en": "Data &amp; credits", "pt": "Dados e créditos", "es": "Datos y créditos" },
+
+  "b2.h": { "en": "Direction &amp; film", "pt": "Direção e cinema", "es": "Dirección y cine" },
+  "b2.lbl": { "en": "Two shorts", "pt": "Dois curtas", "es": "Dos cortos" },
+  "b2.alt1": {
+    "en": "Still from Paixão Calejada, a short documentary directed, shot and edited by Rafa Diniz",
+    "pt": "Frame de Paixão Calejada, curta-documentário dirigido, filmado e montado por Rafa Diniz",
+    "es": "Fotograma de Paixão Calejada, cortometraje documental dirigido, filmado y montado por Rafa Diniz"
+  },
+  "b2.alt2": {
+    "en": "Still from the B2B Ranch brand film",
+    "pt": "Frame do filme institucional da B2B Ranch",
+    "es": "Fotograma de la película de marca de B2B Ranch"
+  },
+
+  "b3.h": { "en": "The site", "pt": "O site", "es": "El sitio" },
+  "b3.lbl": {
+    "en": "Static, hand-coded",
+    "pt": "Estático, escrito à mão",
+    "es": "Estático, escrito a mano"
+  },
+  "b3.alt1": {
+    "en": "Rafa Diniz homepage with full-bleed underwater film still behind the wordmark",
+    "pt": "Página inicial de Rafa Diniz com frame subaquático em sangria atrás do logotipo",
+    "es": "Página de inicio de Rafa Diniz con un fotograma submarino a sangre detrás del logotipo"
+  },
+  "b3.cap1": { "en": "Home", "pt": "Início", "es": "Inicio" },
+  "b3.alt2": {
+    "en": "Films section listing two directed short documentaries with credits",
+    "pt": "Seção de filmes listando dois curtas-documentários dirigidos, com créditos",
+    "es": "Sección de películas con dos cortometrajes documentales dirigidos y sus créditos"
+  },
+  "b3.cap2": { "en": "Films", "pt": "Filmes", "es": "Películas" },
+  "b3.alt3": {
+    "en": "Photography archive filtered by architecture, landscape, wildlife and sport",
+    "pt": "Arquivo de fotografia filtrado por arquitetura, paisagem, vida selvagem e esporte",
+    "es": "Archivo de fotografía filtrado por arquitectura, paisaje, fauna y deporte"
+  },
+  "b3.cap3": { "en": "Archive", "pt": "Arquivo", "es": "Archivo" },
+  "b3.alt4": {
+    "en": "About section covering live sports and film set experience",
+    "pt": "Seção sobre, cobrindo experiência em esportes ao vivo e set de filmagem",
+    "es": "Sección sobre, que cubre experiencia en deportes en vivo y en rodaje"
+  },
+  "b3.cap4": { "en": "About", "pt": "Sobre", "es": "Sobre" },
+
+  "quote.text": {
+    "en": "Honestly, I came in with a bunch of references and half-finished ideas. Not exactly an organized brief. The creativity is what amazed me. There were things in the final design I never would&rsquo;ve thought to ask for, but now I can&rsquo;t imagine the site without them.",
+    "pt": "Sinceramente, cheguei com um monte de referências e ideias pela metade. Não era exatamente um briefing organizado. A criatividade foi o que me impressionou. Tinha coisa no design final que eu jamais teria pensado em pedir, e hoje não consigo imaginar o site sem elas.",
+    "es": "Sinceramente, llegué con un montón de referencias e ideas a medio hacer. No era precisamente un briefing ordenado. La creatividad fue lo que me impresionó. Había cosas en el diseño final que jamás se me habría ocurrido pedir, y ahora no puedo imaginarme el sitio sin ellas."
+  },
+  "quote.role": {
+    "en": "Photographer &amp; filmmaker",
+    "pt": "Fotógrafo e cineasta",
+    "es": "Fotógrafo y cineasta"
+  },
+
+  "ld.job": {
+    "en": "Photographer and filmmaker",
+    "pt": "Fotógrafo e cineasta",
+    "es": "Fotógrafo y cineasta"
+  }
+}

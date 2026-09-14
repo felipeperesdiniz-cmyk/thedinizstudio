@@ -1,0 +1,166 @@
+{
+  "og.type": "article",
+  "og.image": "https://dinizstudio.com/assets/work/renata-1.jpg",
+  "og.image.w": "1440",
+  "og.image.h": "900",
+  "case.name": "Renata Estrella",
+
+  "meta.title": {
+    "en": "Renata Estrella Patisserie: Identity, Local SEO &amp; Web | Diniz Studio",
+    "pt": "Renata Estrella Patisserie: Identidade, SEO Local e Site | Diniz Studio",
+    "es": "Renata Estrella Patisserie: Identidad, SEO Local y Sitio | Diniz Studio"
+  },
+  "meta.desc": {
+    "en": "Logo, brand identity, e-book design, Google Business Profile and local SEO for Renata Estrella Patisserie. The profile the studio built holds 27 five-star reviews.",
+    "pt": "Logotipo, identidade visual, design de e-book, Perfil da Empresa no Google e SEO local para a Renata Estrella Patisserie. O perfil que o estúdio criou tem 27 avaliações cinco estrelas.",
+    "es": "Logotipo, identidad de marca, diseño de e-book, Perfil de Empresa en Google y SEO local para Renata Estrella Patisserie. El perfil que creó el estudio tiene 27 reseñas de cinco estrellas."
+  },
+  "og.title": {
+    "en": "Renata Estrella Patisserie: Identity, Local SEO &amp; Web | Diniz Studio",
+    "pt": "Renata Estrella Patisserie: Identidade, SEO Local e Site | Diniz Studio",
+    "es": "Renata Estrella Patisserie: Identidad, SEO Local y Sitio | Diniz Studio"
+  },
+  "og.desc": {
+    "en": "Logo, brand identity, e-book design, Google Business Profile and local SEO for Renata Estrella Patisserie. The profile the studio built holds 27 five-star reviews.",
+    "pt": "Logotipo, identidade visual, design de e-book, Perfil da Empresa no Google e SEO local para a Renata Estrella Patisserie.",
+    "es": "Logotipo, identidad de marca, diseño de e-book, Perfil de Empresa en Google y SEO local para Renata Estrella Patisserie."
+  },
+  "og.imagealt": {
+    "en": "The Renata Estrella homepage with a full-screen video of the pastry chef at work",
+    "pt": "A página inicial de Renata Estrella com vídeo em tela cheia da confeiteira trabalhando",
+    "es": "La página de inicio de Renata Estrella con vídeo a pantalla completa de la pastelera trabajando"
+  },
+
+  "crumb.self": "Renata Estrella",
+  "kicker": {
+    "en": "03 / Pâtisserie",
+    "pt": "03 / Confeitaria francesa",
+    "es": "03 / Pastelería francesa"
+  },
+  "lede": {
+    "en": "Everything drawn from nothing: monogram, palette, type system, e-book, and the Google Business Profile that now carries 27 five-star reviews.",
+    "pt": "Tudo desenhado do zero: monograma, paleta, sistema tipográfico, e-book e o Perfil da Empresa no Google que hoje carrega 27 avaliações cinco estrelas.",
+    "es": "Todo dibujado desde cero: monograma, paleta, sistema tipográfico, e-book y el Perfil de Empresa en Google que hoy lleva 27 reseñas de cinco estrellas."
+  },
+
+  "d1": { "en": "Logo design", "pt": "Criação de logotipo", "es": "Diseño de logotipo" },
+  "d2": { "en": "Brand identity", "pt": "Identidade visual", "es": "Identidad de marca" },
+  "d3": { "en": "Google Business Profile", "pt": "Perfil da Empresa no Google", "es": "Perfil de Empresa en Google" },
+  "d4": { "en": "Local SEO", "pt": "SEO local", "es": "SEO local" },
+  "d5": { "en": "E-book design", "pt": "Design de e-book", "es": "Diseño de e-book" },
+  "d6": { "en": "Colour &amp; type system", "pt": "Sistema de cor e tipografia", "es": "Sistema de color y tipografía" },
+  "d7": { "en": "Art direction", "pt": "Direção de arte", "es": "Dirección de arte" },
+  "d8": { "en": "Web design", "pt": "Design de site", "es": "Diseño web" },
+  "d9": { "en": "Front-end build", "pt": "Desenvolvimento front-end", "es": "Desarrollo front-end" },
+
+  "b1.h": {
+    "en": "Identity, colour and type",
+    "pt": "Identidade, cor e tipografia",
+    "es": "Identidad, color y tipografía"
+  },
+  "b1.lbl": { "en": "Built from nothing", "pt": "Construída do zero", "es": "Construida desde cero" },
+  "b1.p1": {
+    "en": "Everything here was drawn for her: the monogram, the palette and the type system. A near-black ground so the gold reads as metal rather than yellow, three weights of that gold for depth, and a serif-and-grotesk pairing that carries from the site into the e-book and the Google listing.",
+    "pt": "Tudo aqui foi desenhado para ela: o monograma, a paleta e o sistema tipográfico. Um fundo quase preto para que o dourado leia como metal e não como amarelo, três intensidades desse dourado para dar profundidade, e um par de serifada com grotesca que atravessa do site para o e-book e para a ficha do Google.",
+    "es": "Todo aquí se dibujó para ella: el monograma, la paleta y el sistema tipográfico. Un fondo casi negro para que el dorado se lea como metal y no como amarillo, tres intensidades de ese dorado para dar profundidad, y un par de serif con grotesca que atraviesa del sitio al e-book y a la ficha de Google."
+  },
+
+  "sw.gold": { "en": "Gold", "pt": "Dourado", "es": "Dorado" },
+  "sw.goldlt": { "en": "Gold lt", "pt": "Dourado cl.", "es": "Dorado cl." },
+  "sw.golddk": { "en": "Gold dk", "pt": "Dourado esc.", "es": "Dorado osc." },
+  "sw.ivory": { "en": "Ivory", "pt": "Marfim", "es": "Marfil" },
+  "sw.ground": { "en": "Ground", "pt": "Fundo", "es": "Fondo" },
+  "ty.display": { "en": "Display", "pt": "Display", "es": "Display" },
+  "ty.ui": { "en": "Interface", "pt": "Interface", "es": "Interfaz" },
+
+  "b2.h": { "en": "Search &amp; social", "pt": "Busca e redes sociais", "es": "Búsqueda y redes sociales" },
+  "b2.lbl": {
+    "en": "Set up and run by the studio",
+    "pt": "Criados e administrados pelo estúdio",
+    "es": "Creados y administrados por el estudio"
+  },
+  "b2.p1": {
+    "en": "Being found matters more than being admired for a business that sells to its own city. The studio created the Google Business Profile and still runs it: categories, service areas, photography, posts and review replies, alongside the site's structured data.",
+    "pt": "Para um negócio que vende para a própria cidade, ser encontrado importa mais do que ser admirado. O estúdio criou o Perfil da Empresa no Google e ainda o administra: categorias, áreas de atendimento, fotografia, publicações e respostas às avaliações, ao lado dos dados estruturados do site.",
+    "es": "Para un negocio que vende a su propia ciudad, ser encontrado importa más que ser admirado. El estudio creó el Perfil de Empresa en Google y sigue gestionándolo: categorías, zonas de servicio, fotografía, publicaciones y respuestas a reseñas, junto con los datos estructurados del sitio."
+  },
+  "b2.k1": { "en": "Google Business Profile", "pt": "Perfil da Empresa no Google", "es": "Perfil de Empresa en Google" },
+  "b2.n1": { "en": "Created &amp; managed", "pt": "Criado e administrado", "es": "Creado y administrado" },
+  "b2.d1": {
+    "en": "Local search presence: listing, categories, imagery and ongoing posts.",
+    "pt": "Presença em busca local: ficha, categorias, imagens e publicações contínuas.",
+    "es": "Presencia en búsqueda local: ficha, categorías, imágenes y publicaciones continuas."
+  },
+  "b2.k2": { "en": "Reviews", "pt": "Avaliações", "es": "Reseñas" },
+  "b2.n2": { "en": "27 five-star", "pt": "27 cinco estrelas", "es": "27 de cinco estrellas" },
+  "b2.d2": {
+    "en": "Every review on the profile the studio created and still runs.",
+    "pt": "Todas as avaliações do perfil que o estúdio criou e ainda administra.",
+    "es": "Todas las reseñas del perfil que el estudio creó y sigue administrando."
+  },
+  "b2.d3": {
+    "en": "Feed art direction, aligned to the site's colour and type system.",
+    "pt": "Direção de arte do feed, alinhada ao sistema de cor e tipografia do site.",
+    "es": "Dirección de arte del feed, alineada al sistema de color y tipografía del sitio."
+  },
+
+  "b3.h": { "en": "E-book", "pt": "E-book", "es": "E-book" },
+  "b3.p1": {
+    "en": "A nine-recipe e-book designed as a lead magnet, photographed, laid out and typeset in the brand system, then sold and delivered from the site itself.",
+    "pt": "Um e-book de nove receitas pensado como isca digital, fotografado, diagramado e composto dentro do sistema da marca, depois vendido e entregue pelo próprio site.",
+    "es": "Un e-book de nueve recetas pensado como imán de clientes, fotografiado, maquetado y compuesto dentro del sistema de la marca, y luego vendido y entregado desde el propio sitio."
+  },
+  "b3.alt1": {
+    "en": "Cover of the Sopas e Cremes e-book by Renata Estrella",
+    "pt": "Capa do e-book Sopas e Cremes, de Renata Estrella",
+    "es": "Portada del e-book Sopas e Cremes, de Renata Estrella"
+  },
+  "b3.alt2": {
+    "en": "E-book spread for vichyssoise",
+    "pt": "Página dupla do e-book com a receita de vichyssoise",
+    "es": "Doble página del e-book con la receta de vichyssoise"
+  },
+  "b3.alt3": {
+    "en": "E-book spread for onion soup",
+    "pt": "Página dupla do e-book com a receita de sopa de cebola",
+    "es": "Doble página del e-book con la receta de sopa de cebolla"
+  },
+  "b3.alt4": {
+    "en": "E-book spread for hot chocolate",
+    "pt": "Página dupla do e-book com a receita de chocolate quente",
+    "es": "Doble página del e-book con la receta de chocolate caliente"
+  },
+
+  "b4.h": { "en": "The site", "pt": "O site", "es": "El sitio" },
+  "b4.lbl": { "en": "Video hero, WebM", "pt": "Abertura em vídeo, WebM", "es": "Portada en vídeo, WebM" },
+  "b4.alt1": {
+    "en": "Renata Estrella homepage with full-screen video of the pastry chef at work",
+    "pt": "Página inicial de Renata Estrella com vídeo em tela cheia da confeiteira trabalhando",
+    "es": "Página de inicio de Renata Estrella con vídeo a pantalla completa de la pastelera trabajando"
+  },
+  "b4.cap1": { "en": "Home", "pt": "Início", "es": "Inicio" },
+  "b4.alt2": {
+    "en": "Creations gallery of plated desserts and celebration cakes",
+    "pt": "Galeria de criações com sobremesas de prato e bolos de festa",
+    "es": "Galería de creaciones con postres emplatados y tartas de celebración"
+  },
+  "b4.cap2": { "en": "Creations", "pt": "Criações", "es": "Creaciones" },
+  "b4.alt3": {
+    "en": "Founder chapter about training in Paris",
+    "pt": "Capítulo da fundadora sobre a formação em Paris",
+    "es": "Capítulo de la fundadora sobre su formación en París"
+  },
+  "b4.cap3": { "en": "Origins", "pt": "Origens", "es": "Orígenes" },
+  "b4.alt4": {
+    "en": "Creations gallery continued",
+    "pt": "Continuação da galeria de criações",
+    "es": "Continuación de la galería de creaciones"
+  },
+  "b4.cap4": { "en": "Gallery", "pt": "Galeria", "es": "Galería" },
+
+  "quote.text": {
+    "en": "Food is visual, so I was pretty particular about how everything needed to be presented. I didn&rsquo;t want a site packed with text or unnecessary design elements competing with the dishes. Felipe understood that immediately. He gave the photography room to breathe and built everything else around it. Beautiful work.",
+    "pt": "Comida é visual, então eu era bem exigente sobre como tudo precisava ser apresentado. Eu não queria um site cheio de texto ou de elementos de design desnecessários competindo com os pratos. O Felipe entendeu isso na hora. Ele deu espaço para a fotografia respirar e construiu todo o resto em volta dela. Trabalho lindo.",
+    "es": "La comida es visual, así que yo era bastante exigente con cómo debía presentarse todo. No quería un sitio lleno de texto ni de elementos de diseño innecesarios compitiendo con los platos. Felipe lo entendió de inmediato. Le dio espacio a la fotografía para respirar y construyó todo lo demás alrededor. Un trabajo precioso."
+  }
+}

@@ -1,0 +1,672 @@
+{
+  "og.type": "website",
+  "og.image": "https://dinizstudio.com/assets/og.jpg",
+  "og.image.w": "1200",
+  "og.image.h": "630",
+  "meta.title": {
+    "en": "Miami Brand Identity &amp; Web Design Studio | Diniz Studio",
+    "pt": "Estúdio de Identidade Visual e Criação de Sites em Miami | Diniz Studio",
+    "es": "Estudio de Identidad de Marca y Diseño Web en Miami | Diniz Studio"
+  },
+  "meta.desc": {
+    "en": "Independent Miami studio building brand identity, photography, film and hand-coded websites as one system. Logo design, art direction and local SEO.",
+    "pt": "Estúdio independente em Miami que constrói identidade visual, fotografia, cinema e sites feitos à mão como um só sistema. Criação de logotipo, direção de arte e SEO local.",
+    "es": "Estudio independiente en Miami que construye identidad de marca, fotografía, cine y sitios web escritos a mano como un solo sistema. Diseño de logotipo, dirección de arte y SEO local."
+  },
+  "og.title": {
+    "en": "Miami Brand Identity &amp; Web Design Studio | Diniz Studio",
+    "pt": "Estúdio de Identidade Visual e Criação de Sites em Miami | Diniz Studio",
+    "es": "Estudio de Identidad de Marca y Diseño Web en Miami | Diniz Studio"
+  },
+  "og.desc": {
+    "en": "Logo design, brand identity, art direction, photography, film and hand-coded websites. The whole identity, built by one pair of hands in Miami.",
+    "pt": "Criação de logotipo, identidade visual, direção de arte, fotografia, cinema e sites feitos à mão. A identidade inteira, construída por um só par de mãos em Miami.",
+    "es": "Diseño de logotipo, identidad de marca, dirección de arte, fotografía, cine y sitios web escritos a mano. La identidad entera, construida por un solo par de manos en Miami."
+  },
+  "og.imagealt": {
+    "en": "Diniz Studio: brand identity and web design, Miami",
+    "pt": "Diniz Studio: identidade visual e criação de sites, Miami",
+    "es": "Diniz Studio: identidad de marca y diseño web, Miami"
+  },
+  "hero.where": {
+    "en": "Independent creative studio / Miami, Florida",
+    "pt": "Estúdio criativo independente / Miami, Flórida",
+    "es": "Estudio creativo independiente / Miami, Florida"
+  },
+  "hero.booking": {
+    "en": "Booking Q4 2026",
+    "pt": "Agenda para out–dez 2026",
+    "es": "Agenda para oct–dic 2026"
+  },
+  "hero.h1a": {
+    "en": "The mark, the palette,",
+    "pt": "A marca, a paleta,",
+    "es": "La marca, la paleta,"
+  },
+  "hero.h1b": {
+    "en": "the words and the site.",
+    "pt": "as palavras e o site.",
+    "es": "las palabras y el sitio."
+  },
+  "hero.h1c": {
+    "en": "All made by the same hands.",
+    "pt": "Tudo feito pelas mesmas mãos.",
+    "es": "Todo hecho por las mismas manos."
+  },
+  "hero.lede": {
+    "en": "Independent creative studio in Miami building brand identities, the websites they live on and the search presence behind them, as one system.",
+    "pt": "Estúdio criativo independente em Miami que constrói identidades de marca, os sites onde elas vivem e a presença em busca por trás deles, como um só sistema.",
+    "es": "Estudio creativo independiente en Miami que construye identidades de marca, los sitios donde viven y la presencia en buscadores detrás de ellos, como un solo sistema."
+  },
+  "hero.count": {
+    "en": "04 Selected projects",
+    "pt": "04 Projetos selecionados",
+    "es": "04 Proyectos seleccionados"
+  },
+  "hero.scroll": {
+    "en": "Scroll",
+    "pt": "Role",
+    "es": "Desplácese"
+  },
+  "hero.hint": {
+    "en": "Scroll to come closer",
+    "pt": "Role para chegar mais perto",
+    "es": "Desplácese para acercarse"
+  },
+  "disc1": {
+    "en": "Identity",
+    "pt": "Identidade",
+    "es": "Identidad"
+  },
+  "disc2": {
+    "en": "Art direction",
+    "pt": "Direção de arte",
+    "es": "Dirección de arte"
+  },
+  "disc3": {
+    "en": "Web design",
+    "pt": "Criação de sites",
+    "es": "Diseño web"
+  },
+  "disc4": {
+    "en": "Local search",
+    "pt": "Busca local",
+    "es": "Búsqueda local"
+  },
+  "disc5": {
+    "en": "Marketing",
+    "pt": "Marketing",
+    "es": "Marketing"
+  },
+  "work.h2": {
+    "en": "Case studies",
+    "pt": "Projetos",
+    "es": "Proyectos"
+  },
+  "work.count": {
+    "en": "Four of four",
+    "pt": "Quatro de quatro",
+    "es": "Cuatro de cuatro"
+  },
+  "work.more": {
+    "en": "Read the case study",
+    "pt": "Ler o projeto completo",
+    "es": "Leer el proyecto completo"
+  },
+  "work.tag1": {
+    "en": "Art direction",
+    "pt": "Direção de arte",
+    "es": "Dirección de arte"
+  },
+  "work.tag2": {
+    "en": "Logo &amp; identity",
+    "pt": "Logotipo e identidade",
+    "es": "Logotipo e identidad"
+  },
+  "work.tag3": {
+    "en": "Local SEO &amp; web",
+    "pt": "SEO local e site",
+    "es": "SEO local y sitio"
+  },
+  "work.tag4": {
+    "en": "Trilingual web &amp; SEO",
+    "pt": "Site trilíngue e SEO",
+    "es": "Sitio trilingüe y SEO"
+  },
+  "work.p1": {
+    "en": "Identity, art direction and colour grading for a photographer and filmmaker, plus a hand-coded site where the work loads before anything else does.",
+    "pt": "Identidade, direção de arte e correção de cor para um fotógrafo e cineasta, mais um site feito à mão onde o trabalho carrega antes de qualquer outra coisa.",
+    "es": "Identidad, dirección de arte y etalonaje para un fotógrafo y cineasta, más un sitio escrito a mano donde la obra carga antes que cualquier otra cosa."
+  },
+  "work.p2": {
+    "en": "A logo rendered as stitchwork, an Instagram account run end to end, and a Portuguese site in three chapters for a hand embroidery studio.",
+    "pt": "Um logotipo executado em ponto de bordado, um Instagram tocado de ponta a ponta e um site em português em três capítulos para um ateliê de bordado à mão.",
+    "es": "Un logotipo ejecutado en puntada, una cuenta de Instagram llevada de punta a punta y un sitio en portugués en tres capítulos para un taller de bordado a mano."
+  },
+  "work.p3": {
+    "en": "The whole identity drawn from nothing, an e-book sold from the site, and a Google Business Profile that now carries 27 five-star reviews.",
+    "pt": "A identidade inteira desenhada do zero, um e-book vendido pelo site e um Perfil da Empresa no Google que hoje carrega 27 avaliações cinco estrelas.",
+    "es": "La identidad entera dibujada desde cero, un e-book vendido desde el sitio y un Perfil de Empresa en Google que hoy lleva 27 reseñas de cinco estrellas."
+  },
+  "work.p4": {
+    "en": "A luxury salon in Plantation, Florida, built in English, Portuguese and Spanish, with eight service pages that all end at the same booking screen.",
+    "pt": "Um salão de luxo em Plantation, Flórida, construído em inglês, português e espanhol, com oito páginas de serviço que terminam todas na mesma tela de agendamento.",
+    "es": "Un salón de lujo en Plantation, Florida, construido en inglés, portugués y español, con ocho páginas de servicio que terminan todas en la misma pantalla de reserva."
+  },
+  "res.h2": {
+    "en": "What it has added up to",
+    "pt": "No que isso tudo deu",
+    "es": "En qué ha acabado sumando"
+  },
+  "res.sub": {
+    "en": "Across four clients",
+    "pt": "Entre quatro clientes",
+    "es": "Entre cuatro clientes"
+  },
+  "res.n1": {
+    "en": "1,500",
+    "pt": "1.500",
+    "es": "1.500"
+  },
+  "res.l1": {
+    "en": "Client reviews live",
+    "pt": "Avaliações de clientes no ar",
+    "es": "Reseñas de clientes en línea"
+  },
+  "res.p1": {
+    "en": "Sitting on the profiles and sites the studio built, where buyers actually look.",
+    "pt": "Nos perfis e sites que o estúdio construiu, que é onde o comprador realmente olha.",
+    "es": "En los perfiles y sitios que el estudio construyó, que es donde el comprador realmente mira."
+  },
+  "res.n2": {
+    "en": "10k",
+    "pt": "10 mil",
+    "es": "10 mil"
+  },
+  "res.l2": {
+    "en": "Followers reached",
+    "pt": "Seguidores alcançados",
+    "es": "Seguidores alcanzados"
+  },
+  "res.p2": {
+    "en": "Across the accounts the studio art directs, and in two cases runs end to end.",
+    "pt": "Nas contas que o estúdio dirige em arte e, em dois casos, toca de ponta a ponta.",
+    "es": "En las cuentas que el estudio dirige artísticamente y, en dos casos, lleva de punta a punta."
+  },
+  "res.l3": {
+    "en": "Following grown",
+    "pt": "Crescimento de seguidores",
+    "es": "Crecimiento de seguidores"
+  },
+  "res.p3": {
+    "en": "What one account gained once its feed came off the same system as the site.",
+    "pt": "O que uma conta ganhou quando o feed passou a sair do mesmo sistema do site.",
+    "es": "Lo que ganó una cuenta cuando su feed pasó a salir del mismo sistema que el sitio."
+  },
+  "res.l4": {
+    "en": "More five star reviews",
+    "pt": "Mais avaliações cinco estrelas",
+    "es": "Más reseñas de cinco estrellas"
+  },
+  "res.p4": {
+    "en": "The lift on a client's Google profile after the listing and the site went live.",
+    "pt": "O ganho no perfil do Google de um cliente depois que a ficha e o site entraram no ar.",
+    "es": "La subida en el perfil de Google de un cliente después de que la ficha y el sitio salieron en línea."
+  },
+  "res.cta": {
+    "en": "Booking one project at a time. If yours is next, the brief takes a few minutes.",
+    "pt": "Um projeto de cada vez na agenda. Se o próximo for o seu, o briefing leva poucos minutos.",
+    "es": "Un proyecto a la vez en la agenda. Si el próximo es el suyo, el briefing lleva pocos minutos."
+  },
+  "fact.k1": {
+    "en": "Practice",
+    "pt": "Atuação",
+    "es": "Práctica"
+  },
+  "fact.v1": {
+    "en": "Identity, web, motion, film",
+    "pt": "Identidade, web, motion, cinema",
+    "es": "Identidad, web, motion, cine"
+  },
+  "fact.k2": {
+    "en": "Based",
+    "pt": "Sede",
+    "es": "Sede"
+  },
+  "fact.v2": {
+    "en": "Miami, Florida",
+    "pt": "Miami, Flórida",
+    "es": "Miami, Florida"
+  },
+  "fact.k3": {
+    "en": "Languages",
+    "pt": "Idiomas",
+    "es": "Idiomas"
+  },
+  "fact.v3": {
+    "en": "English, Portuguese, Spanish",
+    "pt": "Inglês, português, espanhol",
+    "es": "Inglés, portugués, español"
+  },
+  "fact.k4": {
+    "en": "Availability",
+    "pt": "Disponibilidade",
+    "es": "Disponibilidad"
+  },
+  "fact.v4": {
+    "en": "Booking Q4 2026",
+    "pt": "Agenda para out–dez 2026",
+    "es": "Agenda para oct–dic 2026"
+  },
+  "cap.h2": {
+    "en": "Identity, imagery and web design",
+    "pt": "Identidade, imagem e criação de sites",
+    "es": "Identidad, imagen y diseño web"
+  },
+  "cap.sub": {
+    "en": "Six disciplines, three with a page",
+    "pt": "Seis disciplinas, três com página própria",
+    "es": "Seis disciplinas, tres con página propia"
+  },
+  "cap.n1": {
+    "en": "Logo &amp; identity",
+    "pt": "Logotipo e identidade",
+    "es": "Logotipo e identidad"
+  },
+  "cap.d1": {
+    "en": "The mark, its variants, the palette and the type system, documented so it survives contact with the real world.",
+    "pt": "A marca, suas variantes, a paleta e o sistema tipográfico, documentados para que sobrevivam ao contato com o mundo real.",
+    "es": "La marca, sus variantes, la paleta y el sistema tipográfico, documentados para que sobrevivan al contacto con el mundo real."
+  },
+  "cap.n2": {
+    "en": "Art direction",
+    "pt": "Direção de arte",
+    "es": "Dirección de arte"
+  },
+  "cap.d2": {
+    "en": "Deciding what the brand looks like before anything is built, so the site has a point of view rather than a layout.",
+    "pt": "Decidir a cara da marca antes de qualquer coisa ser construída, para que o site tenha um ponto de vista e não apenas um layout.",
+    "es": "Decidir cómo se ve la marca antes de construir nada, para que el sitio tenga un punto de vista y no solo una maqueta."
+  },
+  "cap.n3": {
+    "en": "Photography &amp; film",
+    "pt": "Fotografia e cinema",
+    "es": "Fotografía y cine"
+  },
+  "cap.d3": {
+    "en": "Shooting, editing and colour grading in-house, so the imagery is made for the layout instead of fitted to it.",
+    "pt": "Captação, montagem e correção de cor feitas na casa, para que a imagem seja feita para o layout em vez de encaixada nele.",
+    "es": "Rodaje, montaje y etalonaje hechos en casa, para que la imagen se haga para la maqueta en lugar de encajarse en ella."
+  },
+  "cap.n4": {
+    "en": "Marketing &amp; social",
+    "pt": "Marketing e redes sociais",
+    "es": "Marketing y redes sociales"
+  },
+  "cap.d4": {
+    "en": "Carousels, e-books and campaign assets drawn from the same system and, where it helps, running the account itself.",
+    "pt": "Carrosséis, e-books e peças de campanha tirados do mesmo sistema e, quando faz sentido, a gestão da própria conta.",
+    "es": "Carruseles, e-books y piezas de campaña sacados del mismo sistema y, cuando conviene, la gestión de la propia cuenta."
+  },
+  "cap.n5": {
+    "en": "Web design &amp; build",
+    "pt": "Criação e desenvolvimento de sites",
+    "es": "Diseño y desarrollo web"
+  },
+  "cap.d5": {
+    "en": "Hand-written HTML, CSS and JavaScript. Fast by construction. No builder bloat, no theme to override.",
+    "pt": "HTML, CSS e JavaScript escritos à mão. Rápido por construção. Sem o peso de um construtor, sem tema para sobrescrever.",
+    "es": "HTML, CSS y JavaScript escritos a mano. Rápido por construcción. Sin el peso de un constructor, sin plantilla que sobrescribir."
+  },
+  "cap.n6": {
+    "en": "Search &amp; performance",
+    "pt": "Busca e performance",
+    "es": "Búsqueda y rendimiento"
+  },
+  "cap.d6": {
+    "en": "Compressed media, semantic markup and structured data, plus Google Business Profile and local search for businesses that sell to their own city.",
+    "pt": "Mídia comprimida, marcação semântica e dados estruturados, mais Perfil da Empresa no Google e busca local para negócios que vendem para a própria cidade.",
+    "es": "Medios comprimidos, marcado semántico y datos estructurados, más Perfil de Empresa en Google y búsqueda local para negocios que venden a su propia ciudad."
+  },
+  "outro.cue": {
+    "en": "Keep scrolling",
+    "pt": "Continue rolando",
+    "es": "Siga desplazándose"
+  },
+  "outro.line": {
+    "en": "One project at a time, anywhere in the world.",
+    "pt": "Um projeto de cada vez, em qualquer lugar do mundo.",
+    "es": "Un proyecto a la vez, en cualquier parte del mundo."
+  },
+  "contact.h2a": {
+    "en": "Tell me what you're building.",
+    "pt": "Me conte o que você está construindo.",
+    "es": "Cuénteme qué está construyendo."
+  },
+  "contact.h2b": {
+    "en": "I'll tell you if I'm the right studio for it.",
+    "pt": "Eu digo se sou o estúdio certo para isso.",
+    "es": "Yo le digo si soy el estudio adecuado para ello."
+  },
+  "form.step1": {
+    "en": "First / The brief",
+    "pt": "Primeiro / O briefing",
+    "es": "Primero / El briefing"
+  },
+  "form.choose": {
+    "en": "Choose one",
+    "pt": "Escolha uma opção",
+    "es": "Elija una opción"
+  },
+  "form.need": {
+    "en": "What you need",
+    "pt": "O que você precisa",
+    "es": "Qué necesita"
+  },
+  "form.need1": {
+    "en": "Logo and brand identity",
+    "pt": "Logotipo e identidade visual",
+    "es": "Logotipo e identidad de marca"
+  },
+  "form.need2": {
+    "en": "Website design and build",
+    "pt": "Criação e desenvolvimento de site",
+    "es": "Diseño y desarrollo de sitio web"
+  },
+  "form.need3": {
+    "en": "The whole identity, brand and site together",
+    "pt": "A identidade inteira, marca e site juntos",
+    "es": "La identidad entera, marca y sitio juntos"
+  },
+  "form.need4": {
+    "en": "Photography or film",
+    "pt": "Fotografia ou vídeo",
+    "es": "Fotografía o vídeo"
+  },
+  "form.need5": {
+    "en": "Marketing, social or local search",
+    "pt": "Marketing, redes sociais ou busca local",
+    "es": "Marketing, redes sociales o búsqueda local"
+  },
+  "form.need6": {
+    "en": "Still working it out",
+    "pt": "Ainda estou definindo",
+    "es": "Todavía lo estoy definiendo"
+  },
+  "form.budget": {
+    "en": "Budget",
+    "pt": "Orçamento",
+    "es": "Presupuesto"
+  },
+  "form.bud1": {
+    "en": "Under $2,000",
+    "pt": "Até US$ 2.000",
+    "es": "Hasta US$ 2.000"
+  },
+  "form.bud2": {
+    "en": "$2,000 to $5,000",
+    "pt": "De US$ 2.000 a US$ 5.000",
+    "es": "De US$ 2.000 a US$ 5.000"
+  },
+  "form.bud3": {
+    "en": "$5,000 to $10,000",
+    "pt": "De US$ 5.000 a US$ 10.000",
+    "es": "De US$ 5.000 a US$ 10.000"
+  },
+  "form.bud4": {
+    "en": "Over $10,000",
+    "pt": "Acima de US$ 10.000",
+    "es": "Más de US$ 10.000"
+  },
+  "form.bud5": {
+    "en": "Not set yet",
+    "pt": "Ainda não definido",
+    "es": "Todavía sin definir"
+  },
+  "form.when": {
+    "en": "Live by",
+    "pt": "No ar até",
+    "es": "En línea para"
+  },
+  "form.when1": {
+    "en": "Within a month",
+    "pt": "Dentro de um mês",
+    "es": "Dentro de un mes"
+  },
+  "form.when2": {
+    "en": "One to three months",
+    "pt": "De um a três meses",
+    "es": "De uno a tres meses"
+  },
+  "form.when3": {
+    "en": "Later this year",
+    "pt": "Ainda este ano",
+    "es": "Más adelante este año"
+  },
+  "form.when4": {
+    "en": "No fixed date",
+    "pt": "Sem data definida",
+    "es": "Sin fecha definida"
+  },
+  "form.who": {
+    "en": "Business or project",
+    "pt": "Negócio ou projeto",
+    "es": "Negocio o proyecto"
+  },
+  "form.who.ph": {
+    "en": "Name and website, if there is one",
+    "pt": "Nome e site, se já houver",
+    "es": "Nombre y sitio web, si ya existe"
+  },
+  "form.about": {
+    "en": "What you are building",
+    "pt": "O que você está construindo",
+    "es": "Qué está construyendo"
+  },
+  "form.about.ph": {
+    "en": "A few sentences. What it is, who it is for, and what is not working right now.",
+    "pt": "Algumas frases. O que é, para quem é e o que não está funcionando hoje.",
+    "es": "Unas frases. Qué es, para quién es y qué no está funcionando ahora."
+  },
+  "form.email": {
+    "en": "Your email",
+    "pt": "Seu e-mail",
+    "es": "Su correo"
+  },
+  "form.email.ph": {
+    "en": "you@yourbusiness.com",
+    "pt": "voce@seunegocio.com",
+    "es": "usted@sunegocio.com"
+  },
+  "form.hp": {
+    "en": "Leave this field empty",
+    "pt": "Deixe este campo vazio",
+    "es": "Deje este campo vacío"
+  },
+  "form.send": {
+    "en": "Send the brief",
+    "pt": "Enviar o briefing",
+    "es": "Enviar el briefing"
+  },
+  "form.fine": {
+    "en": "Six answers is all it takes. Nothing is stored anywhere but my inbox.",
+    "pt": "Seis respostas e pronto. Nada fica guardado em lugar nenhum além da minha caixa de entrada.",
+    "es": "Seis respuestas y ya está. Nada queda guardado en ningún sitio salvo mi bandeja de entrada."
+  },
+  "form.done.lbl": {
+    "en": "Brief received",
+    "pt": "Briefing recebido",
+    "es": "Briefing recibido"
+  },
+  "form.done.h": {
+    "en": "Thank you. I read every one of these myself.",
+    "pt": "Obrigado. Eu mesmo leio cada um desses.",
+    "es": "Gracias. Yo mismo leo cada uno de estos."
+  },
+  "form.done.p": {
+    "en": "You will have a reply within two working days, either a way forward or a straight reason it is not a fit. If you would rather talk it through sooner, the call is the next step.",
+    "pt": "Você terá uma resposta em até dois dias úteis: ou um caminho adiante, ou uma razão direta de por que não é um encaixe. Se preferir conversar antes disso, a próxima etapa é a chamada.",
+    "es": "Tendrá una respuesta en un máximo de dos días hábiles: o un camino a seguir, o una razón directa de por qué no encaja. Si prefiere hablarlo antes, el siguiente paso es la llamada."
+  },
+  "call.step2": {
+    "en": "Then / The call",
+    "pt": "Depois / A chamada",
+    "es": "Después / La llamada"
+  },
+  "call.h": {
+    "en": "Pick a thirty minute call",
+    "pt": "Marque uma chamada de trinta minutos",
+    "es": "Reserve una llamada de treinta minutos"
+  },
+  "call.why": {
+    "en": "Thirty minutes, free, on a video call, once the brief is in. Enough time to work the whole thing out before either of us spends a week on a proposal.",
+    "pt": "Trinta minutos, sem custo, em vídeo, assim que o briefing chegar. Tempo suficiente para resolver a coisa toda antes que qualquer um de nós gaste uma semana numa proposta.",
+    "es": "Treinta minutos, sin coste, por videollamada, en cuanto llegue el briefing. Tiempo suficiente para resolverlo todo antes de que ninguno de los dos gaste una semana en una propuesta."
+  },
+  "call.btn": {
+    "en": "Pick a time",
+    "pt": "Escolher um horário",
+    "es": "Elegir un horario"
+  },
+  "call.l1": {
+    "en": "Your brief read back to you, and where it needs pushing.",
+    "pt": "Seu briefing lido de volta para você, e onde ele precisa ser esticado.",
+    "es": "Su briefing leído de vuelta, y dónde hay que empujarlo."
+  },
+  "call.l2": {
+    "en": "What the work actually involves, and in what order.",
+    "pt": "O que o trabalho de fato envolve, e em que ordem.",
+    "es": "Qué implica de verdad el trabajo, y en qué orden."
+  },
+  "call.l3": {
+    "en": "A date and a number, or a straight reason there is not one yet.",
+    "pt": "Uma data e um valor, ou uma razão direta de por que ainda não há.",
+    "es": "Una fecha y una cifra, o una razón directa de por qué todavía no la hay."
+  },
+  "call.l4": {
+    "en": "Whether the studio is right for the job. Sometimes the answer is no.",
+    "pt": "Se o estúdio é certo para o trabalho. Às vezes a resposta é não.",
+    "es": "Si el estudio es el adecuado para el trabajo. A veces la respuesta es no."
+  },
+  "ld.studio.desc": {
+    "en": "Independent brand and web studio in Miami, Florida. Logo design, brand identity, art direction, photography, film, marketing collateral and hand-coded websites, all made by one pair of hands. Working in English, Portuguese and Spanish.",
+    "pt": "Estúdio independente de marca e web em Miami, Flórida. Criação de logotipo, identidade visual, direção de arte, fotografia, cinema, peças de marketing e sites feitos à mão, tudo por um só par de mãos. Atende em inglês, português e espanhol.",
+    "es": "Estudio independiente de marca y web en Miami, Florida. Diseño de logotipo, identidad de marca, dirección de arte, fotografía, cine, piezas de marketing y sitios web escritos a mano, todo por un solo par de manos. Atiende en inglés, portugués y español."
+  },
+  "ld.felipe.job": {
+    "en": "Designer and developer",
+    "pt": "Designer e desenvolvedor",
+    "es": "Diseñador y desarrollador"
+  },
+  "ld.rafa.job": {
+    "en": "Photographer and filmmaker",
+    "pt": "Fotógrafo e cineasta",
+    "es": "Fotógrafo y cineasta"
+  },
+  "ld.case1": {
+    "en": "Rafa Diniz, photographer and filmmaker",
+    "pt": "Rafa Diniz, fotógrafo e cineasta",
+    "es": "Rafa Diniz, fotógrafo y cineasta"
+  },
+  "ld.kw1": {
+    "en": "logo design, art direction, colour grading, web design, front-end build, motion design",
+    "pt": "criação de logotipo, direção de arte, correção de cor, design de site, desenvolvimento front-end, motion design",
+    "es": "diseño de logotipo, dirección de arte, etalonaje, diseño web, desarrollo front-end, motion design"
+  },
+  "ld.kw2": {
+    "en": "logo design, brand identity, social media management, marketing, art direction, web design, front-end build",
+    "pt": "criação de logotipo, identidade visual, gestão de redes sociais, marketing, direção de arte, design de site, desenvolvimento front-end",
+    "es": "diseño de logotipo, identidad de marca, gestión de redes sociales, marketing, dirección de arte, diseño web, desarrollo front-end"
+  },
+  "ld.kw3": {
+    "en": "logo design, brand identity, colour and type system, e-book design, Google Business Profile, local SEO, web design",
+    "pt": "criação de logotipo, identidade visual, sistema de cor e tipografia, design de e-book, Perfil da Empresa no Google, SEO local, design de site",
+    "es": "diseño de logotipo, identidad de marca, sistema de color y tipografía, diseño de e-book, Perfil de Empresa en Google, SEO local, diseño web"
+  },
+  "ld.kw4": {
+    "en": "web design, front-end build, art direction, trilingual website, booking integration, local SEO, structured data",
+    "pt": "design de site, desenvolvimento front-end, direção de arte, site trilíngue, integração de agendamento, SEO local, dados estruturados",
+    "es": "diseño web, desarrollo front-end, dirección de arte, sitio trilingüe, integración de reservas, SEO local, datos estructurados"
+  },
+  "ld.catalog": {
+    "en": "Studio services",
+    "pt": "Serviços do estúdio",
+    "es": "Servicios del estudio"
+  },
+  "ld.services": {
+    "en": [
+      "Logo design",
+      "Brand identity",
+      "Art direction",
+      "Photography",
+      "Film production",
+      "Marketing design",
+      "Social media management",
+      "Web design",
+      "Web development",
+      "Local SEO"
+    ],
+    "pt": [
+      "Criação de logotipo",
+      "Identidade visual",
+      "Direção de arte",
+      "Fotografia",
+      "Produção de vídeo",
+      "Design de marketing",
+      "Gestão de redes sociais",
+      "Criação de sites",
+      "Desenvolvimento web",
+      "SEO local"
+    ],
+    "es": [
+      "Diseño de logotipo",
+      "Identidad de marca",
+      "Dirección de arte",
+      "Fotografía",
+      "Producción audiovisual",
+      "Diseño de marketing",
+      "Gestión de redes sociales",
+      "Diseño web",
+      "Desarrollo web",
+      "SEO local"
+    ]
+  },
+  "ld.knowsabout": {
+    "en": [
+      "Brand identity design",
+      "Logo design",
+      "Art direction",
+      "Editorial photography",
+      "Short-form film",
+      "Front-end development",
+      "Technical SEO",
+      "Google Business Profile optimisation",
+      "Multilingual websites",
+      "hreflang implementation"
+    ],
+    "pt": [
+      "Design de identidade visual",
+      "Criação de logotipo",
+      "Direção de arte",
+      "Fotografia editorial",
+      "Vídeo de formato curto",
+      "Desenvolvimento front-end",
+      "SEO técnico",
+      "Otimização do Perfil da Empresa no Google",
+      "Sites multilíngues",
+      "Implementação de hreflang"
+    ],
+    "es": [
+      "Diseño de identidad de marca",
+      "Diseño de logotipo",
+      "Dirección de arte",
+      "Fotografía editorial",
+      "Vídeo de formato corto",
+      "Desarrollo front-end",
+      "SEO técnico",
+      "Optimización del Perfil de Empresa en Google",
+      "Sitios web multilingües",
+      "Implementación de hreflang"
+    ]
+  }
+}

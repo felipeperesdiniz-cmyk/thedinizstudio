@@ -1,0 +1,348 @@
+{
+  "og.type": "article",
+  "og.image": "https://dinizstudio.com/assets/work/blend-1.jpg",
+  "og.image.w": "1440",
+  "og.image.h": "900",
+  "case.name": "Blend Hair Boutique",
+  "meta.title": {
+    "en": "Blend Hair Boutique: Trilingual Salon Website &amp; Local SEO | Diniz Studio",
+    "pt": "Blend Hair Boutique: Site Trilíngue de Salão e SEO Local | Diniz Studio",
+    "es": "Blend Hair Boutique: Sitio Trilingüe de Salón y SEO Local | Diniz Studio"
+  },
+  "meta.desc": {
+    "en": "Trilingual website, eight service pages, booking and local SEO for Blend Hair Boutique, a luxury salon in Plantation, Florida rated 4.9 stars.",
+    "pt": "Site trilíngue, oito páginas de serviço, agendamento e SEO local para a Blend Hair Boutique, um salão de luxo em Plantation, Flórida, com nota 4,9.",
+    "es": "Sitio trilingüe, ocho páginas de servicio, reservas y SEO local para Blend Hair Boutique, un salón de lujo en Plantation, Florida, valorado con 4,9 estrellas."
+  },
+  "og.title": {
+    "en": "Blend Hair Boutique: Trilingual Salon Website &amp; Local SEO | Diniz Studio",
+    "pt": "Blend Hair Boutique: Site Trilíngue de Salão e SEO Local | Diniz Studio",
+    "es": "Blend Hair Boutique: Sitio Trilingüe de Salón y SEO Local | Diniz Studio"
+  },
+  "og.desc": {
+    "en": "Trilingual website, eight service pages, booking and local SEO for Blend Hair Boutique, a luxury salon in Plantation, Florida rated 4.9 stars.",
+    "pt": "Site trilíngue, oito páginas de serviço, agendamento e SEO local para a Blend Hair Boutique, um salão de luxo em Plantation, Flórida.",
+    "es": "Sitio trilingüe, ocho páginas de servicio, reservas y SEO local para Blend Hair Boutique, un salón de lujo en Plantation, Florida."
+  },
+  "og.imagealt": {
+    "en": "The Blend Hair Boutique homepage with a full-screen video hero behind the script wordmark",
+    "pt": "A página inicial da Blend Hair Boutique com abertura em vídeo atrás do logotipo manuscrito",
+    "es": "La página de inicio de Blend Hair Boutique con portada en vídeo detrás del logotipo manuscrito"
+  },
+  "crumb.self": "Blend Hair Boutique",
+  "kicker": {
+    "en": "04 / Luxury hair salon",
+    "pt": "04 / Salão de cabelo de luxo",
+    "es": "04 / Salón de peluquería de lujo"
+  },
+  "lede": {
+    "en": "The largest build the studio has shipped. A trilingual site for a Brazilian owned salon in Plantation, Florida, where every page ends at the same place: a booking made without anyone picking up the phone.",
+    "pt": "O maior projeto que o estúdio já entregou. Um site trilíngue para um salão de donas brasileiras em Plantation, Flórida, onde toda página termina no mesmo lugar: um agendamento feito sem ninguém precisar pegar o telefone.",
+    "es": "El proyecto más grande que el estudio ha entregado. Un sitio trilingüe para un salón de dueñas brasileñas en Plantation, Florida, donde cada página termina en el mismo lugar: una reserva hecha sin que nadie tenga que levantar el teléfono."
+  },
+  "d1": {
+    "en": "Art direction",
+    "pt": "Direção de arte",
+    "es": "Dirección de arte"
+  },
+  "d2": {
+    "en": "Web design",
+    "pt": "Design de site",
+    "es": "Diseño web"
+  },
+  "d3": {
+    "en": "Front-end build",
+    "pt": "Desenvolvimento front-end",
+    "es": "Desarrollo front-end"
+  },
+  "d4": {
+    "en": "Local SEO",
+    "pt": "SEO local",
+    "es": "SEO local"
+  },
+  "d5": {
+    "en": "Trilingual build",
+    "pt": "Construção trilíngue",
+    "es": "Construcción trilingüe"
+  },
+  "d6": {
+    "en": "Booking integration",
+    "pt": "Integração de agendamento",
+    "es": "Integración de reservas"
+  },
+  "d7": {
+    "en": "Copywriting",
+    "pt": "Redação",
+    "es": "Redacción"
+  },
+  "d8": {
+    "en": "Colour &amp; type system",
+    "pt": "Sistema de cor e tipografia",
+    "es": "Sistema de color y tipografía"
+  },
+  "d9": {
+    "en": "Structured data",
+    "pt": "Dados estruturados",
+    "es": "Datos estructurados"
+  },
+  "d10": {
+    "en": "Performance",
+    "pt": "Performance",
+    "es": "Rendimiento"
+  },
+  "b1.h": {
+    "en": "Colour and type",
+    "pt": "Cor e tipografia",
+    "es": "Color y tipografía"
+  },
+  "b1.lbl": {
+    "en": "Drawn around an existing mark",
+    "pt": "Desenhados em volta de uma marca já existente",
+    "es": "Dibujados alrededor de una marca ya existente"
+  },
+  "b1.p1": {
+    "en": "The script mark was already theirs; everything around it was not. The site's system was drawn to sit under that mark without competing with it: a warm white ground, parchment for the quiet sections, a single gold used as metal rather than as decoration, and a high-contrast garalde for display against a neutral grotesque for everything you actually have to read.",
+    "pt": "A marca manuscrita já era delas; tudo em volta não era. O sistema do site foi desenhado para ficar sob essa marca sem disputar com ela: um fundo branco quente, pergaminho nas seções mais silenciosas, um único dourado usado como metal e não como enfeite, e uma garalda de alto contraste no display contra uma grotesca neutra em tudo que realmente precisa ser lido.",
+    "es": "La marca manuscrita ya era suya; todo lo que la rodeaba no lo era. El sistema del sitio se dibujó para quedar bajo esa marca sin competir con ella: un fondo blanco cálido, pergamino en las secciones más tranquilas, un único dorado usado como metal y no como adorno, y una garalda de alto contraste en el display frente a una grotesca neutra en todo lo que de verdad hay que leer."
+  },
+  "b1.alt": {
+    "en": "Blend Hair Boutique wordmark",
+    "pt": "Logotipo da Blend Hair Boutique",
+    "es": "Logotipo de Blend Hair Boutique"
+  },
+  "sw.gold": {
+    "en": "Gold",
+    "pt": "Dourado",
+    "es": "Dorado"
+  },
+  "sw.caramel": {
+    "en": "Caramel",
+    "pt": "Caramelo",
+    "es": "Caramelo"
+  },
+  "sw.parchment": {
+    "en": "Parchment",
+    "pt": "Pergaminho",
+    "es": "Pergamino"
+  },
+  "sw.warmwhite": {
+    "en": "Warm wh.",
+    "pt": "Branco q.",
+    "es": "Blanco cál."
+  },
+  "sw.charcoal": {
+    "en": "Charcoal",
+    "pt": "Carvão",
+    "es": "Carbón"
+  },
+  "ty.display": {
+    "en": "Display",
+    "pt": "Display",
+    "es": "Display"
+  },
+  "ty.ui": {
+    "en": "Interface",
+    "pt": "Interface",
+    "es": "Interfaz"
+  },
+  "b2.h": {
+    "en": "Three languages, one site",
+    "pt": "Três idiomas, um site",
+    "es": "Tres idiomas, un sitio"
+  },
+  "b2.lbl": {
+    "en": "English, Portuguese, Spanish",
+    "pt": "Inglês, português, espanhol",
+    "es": "Inglés, portugués, español"
+  },
+  "b2.p1": {
+    "en": "The owners are Brazilian, most of the team speaks more than one language, and so does Plantation. The site is built in English, Portuguese and Spanish from the same source, each language served at its own path and declared to Google with <code>hreflang</code>, so a search in any of the three lands on a page written in it rather than on a machine translation of the wrong one.",
+    "pt": "As donas são brasileiras, a maior parte da equipe fala mais de um idioma, e Plantation também. O site é construído em inglês, português e espanhol a partir da mesma fonte, cada idioma servido no próprio caminho e declarado ao Google com <code>hreflang</code>, para que uma busca em qualquer um dos três caia numa página escrita naquele idioma e não na tradução automática do idioma errado.",
+    "es": "Las dueñas son brasileñas, la mayor parte del equipo habla más de un idioma, y Plantation también. El sitio está construido en inglés, portugués y español desde la misma fuente, cada idioma servido en su propia ruta y declarado a Google con <code>hreflang</code>, para que una búsqueda en cualquiera de los tres aterrice en una página escrita en ese idioma y no en la traducción automática del idioma equivocado."
+  },
+  "b2.d1": {
+    "en": "The default, and the <code>x-default</code> for everything outside the other two.",
+    "pt": "O idioma padrão, e o <code>x-default</code> para tudo que estiver fora dos outros dois.",
+    "es": "El idioma por defecto, y el <code>x-default</code> para todo lo que quede fuera de los otros dos."
+  },
+  "b2.d2": {
+    "en": "Written for the Brazilian community the salon was built around, not translated at it.",
+    "pt": "Escrito para a comunidade brasileira em torno da qual o salão foi construído, não traduzido em cima dela.",
+    "es": "Escrito para la comunidad brasileña alrededor de la cual se construyó el salón, no traducido encima de ella."
+  },
+  "b2.d3": {
+    "en": "The third language of the county, and of a good share of the chairs.",
+    "pt": "O terceiro idioma do condado, e de boa parte das cadeiras.",
+    "es": "El tercer idioma del condado, y de buena parte de los sillones."
+  },
+  "b3.h": {
+    "en": "Every page ends in a booking",
+    "pt": "Toda página termina num agendamento",
+    "es": "Cada página termina en una reserva"
+  },
+  "b3.lbl": {
+    "en": "Fresha, WhatsApp, phone",
+    "pt": "Fresha, WhatsApp, telefone",
+    "es": "Fresha, WhatsApp, teléfono"
+  },
+  "b3.p1": {
+    "en": "A salon site has one job. There are eight service pages, covering haircuts, colour, balayage and highlights, styling, smoothing, hair care, nails and bridal. Each one explains a single treatment and hands straight off to the booking system, with WhatsApp and the phone kept one tap away for anyone who would rather ask first.",
+    "pt": "O site de um salão tem uma única função. São oito páginas de serviço, cobrindo corte, coloração, balayage e luzes, finalização, alisamento, tratamento capilar, unhas e noivas. Cada uma explica um único procedimento e entrega direto ao sistema de agendamento, com WhatsApp e telefone a um toque de distância para quem preferir perguntar antes.",
+    "es": "El sitio de un salón tiene una sola función. Hay ocho páginas de servicio, que cubren corte, color, balayage y mechas, peinado, alisado, tratamiento capilar, uñas y novias. Cada una explica un solo tratamiento y entrega directo al sistema de reservas, con WhatsApp y el teléfono a un toque de distancia para quien prefiera preguntar antes."
+  },
+  "b3.k1": {
+    "en": "Booking",
+    "pt": "Agendamento",
+    "es": "Reservas"
+  },
+  "b3.d1": {
+    "en": "Live availability and instant confirmation, reached from the header, every service page and the close of the home page.",
+    "pt": "Disponibilidade em tempo real e confirmação imediata, alcançável pelo cabeçalho, por toda página de serviço e pelo fim da página inicial.",
+    "es": "Disponibilidad en tiempo real y confirmación inmediata, accesible desde la cabecera, desde cada página de servicio y desde el final de la página de inicio."
+  },
+  "b3.k2": {
+    "en": "Direct",
+    "pt": "Direto",
+    "es": "Directo"
+  },
+  "b3.n2": {
+    "en": "WhatsApp &amp; phone",
+    "pt": "WhatsApp e telefone",
+    "es": "WhatsApp y teléfono"
+  },
+  "b3.d2": {
+    "en": "The two channels this clientele actually uses, on the contact section and the sticky bar.",
+    "pt": "Os dois canais que essa clientela realmente usa, na seção de contato e na barra fixa.",
+    "es": "Los dos canales que esta clientela realmente usa, en la sección de contacto y en la barra fija."
+  },
+  "b3.k3": {
+    "en": "Also built",
+    "pt": "Também construídas",
+    "es": "También construidas"
+  },
+  "b3.n3": {
+    "en": "Gift cards, blog, FAQ",
+    "pt": "Vale-presente, blog, perguntas frequentes",
+    "es": "Tarjetas regalo, blog, preguntas frecuentes"
+  },
+  "b3.d3": {
+    "en": "The pages that catch the searches the service pages do not.",
+    "pt": "As páginas que capturam as buscas que as páginas de serviço não capturam.",
+    "es": "Las páginas que capturan las búsquedas que las páginas de servicio no capturan."
+  },
+  "b4.h": {
+    "en": "Local search",
+    "pt": "Busca local",
+    "es": "Búsqueda local"
+  },
+  "b4.lbl": {
+    "en": "Plantation, Florida",
+    "pt": "Plantation, Flórida",
+    "es": "Plantation, Florida"
+  },
+  "b4.p1": {
+    "en": "Blend had already earned the reviews. The site's job was to make them legible to a search engine: <code>HairSalon</code>, <code>BeautySalon</code> and <code>LocalBusiness</code> structured data carrying the address, hours, service list and aggregate rating, a service page per treatment to answer the searches people actually type, and a reviews page that shows the rating rather than claiming it.",
+    "pt": "A Blend já tinha conquistado as avaliações. O trabalho do site era torná-las legíveis para um buscador: dados estruturados de <code>HairSalon</code>, <code>BeautySalon</code> e <code>LocalBusiness</code> carregando endereço, horários, lista de serviços e nota agregada, uma página de serviço por procedimento para responder às buscas que as pessoas realmente digitam, e uma página de avaliações que mostra a nota em vez de afirmá-la.",
+    "es": "Blend ya se había ganado las reseñas. El trabajo del sitio era volverlas legibles para un buscador: datos estructurados de <code>HairSalon</code>, <code>BeautySalon</code> y <code>LocalBusiness</code> con la dirección, los horarios, la lista de servicios y la valoración agregada, una página de servicio por tratamiento para responder a las búsquedas que la gente realmente escribe, y una página de reseñas que muestra la valoración en lugar de afirmarla."
+  },
+  "b4.k1": {
+    "en": "Rating",
+    "pt": "Nota",
+    "es": "Valoración"
+  },
+  "b4.n1": {
+    "en": "4.9 &#9733; &middot; 1,230+",
+    "pt": "4,9 &#9733; &middot; 1.230+",
+    "es": "4,9 &#9733; &middot; 1.230+"
+  },
+  "b4.d1": {
+    "en": "Google reviews, surfaced on the page and declared in the structured data.",
+    "pt": "Avaliações do Google, exibidas na página e declaradas nos dados estruturados.",
+    "es": "Reseñas de Google, mostradas en la página y declaradas en los datos estructurados."
+  },
+  "b4.k2": {
+    "en": "Service pages",
+    "pt": "Páginas de serviço",
+    "es": "Páginas de servicio"
+  },
+  "b4.n2": {
+    "en": "Eight",
+    "pt": "Oito",
+    "es": "Ocho"
+  },
+  "b4.d2": {
+    "en": "One per treatment, each its own indexable answer to a different query.",
+    "pt": "Uma por procedimento, cada uma sendo sua própria resposta indexável a uma busca diferente.",
+    "es": "Una por tratamiento, cada una su propia respuesta indexable a una búsqueda distinta."
+  },
+  "b4.k3": {
+    "en": "Open since",
+    "pt": "Aberto desde",
+    "es": "Abierto desde"
+  },
+  "b4.d3": {
+    "en": "K&eacute;rastase salon, Brazilian smoothing specialists, eight master stylists.",
+    "pt": "Salão K&eacute;rastase, especialistas em escova progressiva brasileira, oito cabeleireiras master.",
+    "es": "Salón K&eacute;rastase, especialistas en alisado brasileño, ocho estilistas master."
+  },
+  "b5.h": {
+    "en": "The site",
+    "pt": "O site",
+    "es": "El sitio"
+  },
+  "b5.lbl": {
+    "en": "Video hero, WebP throughout",
+    "pt": "Abertura em vídeo, WebP em tudo",
+    "es": "Portada en vídeo, WebP en todo"
+  },
+  "b5.alt1": {
+    "en": "Blend Hair Boutique homepage with a full-screen video hero behind the script wordmark",
+    "pt": "Página inicial da Blend Hair Boutique com abertura em vídeo em tela cheia atrás do logotipo manuscrito",
+    "es": "Página de inicio de Blend Hair Boutique con portada en vídeo a pantalla completa detrás del logotipo manuscrito"
+  },
+  "b5.cap1": {
+    "en": "Home",
+    "pt": "Início",
+    "es": "Inicio"
+  },
+  "b5.alt2": {
+    "en": "Services section pairing a haircut photograph with the treatment description",
+    "pt": "Seção de serviços emparelhando uma foto de corte com a descrição do procedimento",
+    "es": "Sección de servicios que empareja una foto de corte con la descripción del tratamiento"
+  },
+  "b5.cap2": {
+    "en": "Services",
+    "pt": "Serviços",
+    "es": "Servicios"
+  },
+  "b5.alt3": {
+    "en": "Transformations gallery of colour, balayage and bridal work",
+    "pt": "Galeria de transformações com trabalhos de coloração, balayage e noivas",
+    "es": "Galería de transformaciones con trabajos de color, balayage y novias"
+  },
+  "b5.cap3": {
+    "en": "Transformations",
+    "pt": "Transformações",
+    "es": "Transformaciones"
+  },
+  "b5.alt4": {
+    "en": "Owners Juliana and Fernanda introduced above the stylist team grid",
+    "pt": "As donas Juliana e Fernanda apresentadas acima da grade da equipe de cabeleireiras",
+    "es": "Las dueñas Juliana y Fernanda presentadas sobre la cuadrícula del equipo de estilistas"
+  },
+  "b5.cap4": {
+    "en": "The artists",
+    "pt": "As profissionais",
+    "es": "Las profesionales"
+  },
+  "quote.text": {
+    "en": "Such an upgrade from what we had before. It looks professional, works great on mobile, and clients can actually find everything without having to message us first. We&rsquo;ve had a lot of positive feedback since launching.",
+    "pt": "Um salto enorme em relação ao que a gente tinha antes. Parece profissional, funciona muito bem no celular, e as clientes conseguem encontrar tudo sem precisar mandar mensagem antes. Recebemos muito retorno positivo desde o lançamento.",
+    "es": "Un salto enorme respecto a lo que teníamos antes. Se ve profesional, funciona muy bien en el móvil, y las clientas pueden encontrar todo sin tener que escribirnos primero. Hemos recibido muchos comentarios positivos desde el lanzamiento."
+  },
+  "quote.role": {
+    "en": "Co-owner, Blend Hair Boutique",
+    "pt": "Cossócia, Blend Hair Boutique",
+    "es": "Copropietaria, Blend Hair Boutique"
+  }
+}

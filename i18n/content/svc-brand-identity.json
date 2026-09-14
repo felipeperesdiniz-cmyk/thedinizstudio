@@ -1,0 +1,183 @@
+{
+  "og.type": "website",
+  "og.image": "https://dinizstudio.com/assets/og.jpg",
+  "og.image.w": "1200",
+  "og.image.h": "630",
+
+  "meta.title": {
+    "en": "Brand Identity &amp; Logo Design in Miami | Diniz Studio",
+    "pt": "Identidade Visual e Criação de Logotipo em Miami | Diniz Studio",
+    "es": "Identidad de Marca y Diseño de Logotipo en Miami | Diniz Studio"
+  },
+  "meta.desc": {
+    "en": "Logo design, brand identity and art direction for Miami businesses. The mark, the palette, the type system and the rules that keep it intact.",
+    "pt": "Criação de logotipo, identidade visual e direção de arte para negócios de Miami. A marca, a paleta, o sistema tipográfico e as regras que mantêm tudo de pé.",
+    "es": "Diseño de logotipo, identidad de marca y dirección de arte para negocios de Miami. La marca, la paleta, el sistema tipográfico y las reglas que lo mantienen en pie."
+  },
+  "og.title": {
+    "en": "Brand Identity &amp; Logo Design in Miami | Diniz Studio",
+    "pt": "Identidade Visual e Criação de Logotipo em Miami | Diniz Studio",
+    "es": "Identidad de Marca y Diseño de Logotipo en Miami | Diniz Studio"
+  },
+  "og.desc": {
+    "en": "Logo design, brand identity and art direction for Miami businesses. The mark, the palette, the type system and the rules that keep it intact.",
+    "pt": "Criação de logotipo, identidade visual e direção de arte para negócios de Miami. A marca, a paleta, o sistema tipográfico e as regras que mantêm tudo de pé.",
+    "es": "Diseño de logotipo, identidad de marca y dirección de arte para negocios de Miami. La marca, la paleta, el sistema tipográfico y las reglas que lo mantienen en pie."
+  },
+  "og.imagealt": {
+    "en": "Diniz Studio: brand identity and logo design, Miami",
+    "pt": "Diniz Studio: identidade visual e criação de logotipo, Miami",
+    "es": "Diniz Studio: identidad de marca y diseño de logotipo, Miami"
+  },
+
+  "crumb.self": {
+    "en": "Brand identity",
+    "pt": "Identidade visual",
+    "es": "Identidad de marca"
+  },
+  "kicker": {
+    "en": "Capability / Logo and identity",
+    "pt": "Serviço / Logotipo e identidade",
+    "es": "Servicio / Logotipo e identidad"
+  },
+  "h1": {
+    "en": "Brand identity and logo design in Miami",
+    "pt": "Identidade visual e criação de logotipo em Miami",
+    "es": "Identidad de marca y diseño de logotipo en Miami"
+  },
+  "lede": {
+    "en": "A logo on its own is not an identity. An identity is the mark, its variants, the palette, the type system and the rules for using them, drawn together so the brand still looks like itself on a shopfront, a phone screen and a Google listing.",
+    "pt": "Um logotipo sozinho não é uma identidade. Identidade é a marca, suas variantes, a paleta, o sistema tipográfico e as regras de uso, desenhados juntos para que a marca continue parecendo ela mesma numa fachada, numa tela de celular e numa ficha do Google.",
+    "es": "Un logotipo por sí solo no es una identidad. Una identidad es la marca, sus variantes, la paleta, el sistema tipográfico y las reglas de uso, dibujados juntos para que la marca siga pareciéndose a sí misma en una fachada, en la pantalla de un teléfono y en una ficha de Google."
+  },
+
+  "b1.h": {
+    "en": "What you actually receive",
+    "pt": "O que você realmente recebe",
+    "es": "Qué recibe usted realmente"
+  },
+  "b1.lbl": {
+    "en": "The mark, and everything around it",
+    "pt": "A marca, e tudo que existe em volta dela",
+    "es": "La marca, y todo lo que la rodea"
+  },
+  "b1.p1": {
+    "en": "Most logo work ends at a file. That is where the problems start: the mark that looked right in the presentation falls apart at 24 pixels, has no version for a dark background, and sits next to a typeface nobody chose.",
+    "pt": "A maioria dos trabalhos de logotipo termina num arquivo. É aí que os problemas começam: a marca que parecia certa na apresentação se desfaz a 24 pixels, não tem versão para fundo escuro e acaba ao lado de uma tipografia que ninguém escolheu.",
+    "es": "La mayoría de los trabajos de logotipo terminan en un archivo. Ahí es donde empiezan los problemas: la marca que se veía bien en la presentación se deshace a 24 píxeles, no tiene versión para fondo oscuro y acaba junto a una tipografía que nadie eligió."
+  },
+  "b1.n1": { "en": "The mark", "pt": "A marca", "es": "La marca" },
+  "b1.d1": {
+    "en": "Primary lockup, plus the variants a real business needs: stacked, horizontal, mark alone, one colour, reversed.",
+    "pt": "Assinatura principal, mais as variantes que um negócio de verdade precisa: empilhada, horizontal, símbolo isolado, uma cor só, invertida.",
+    "es": "Lockup principal, más las variantes que un negocio real necesita: apilada, horizontal, símbolo solo, a un color, invertida."
+  },
+  "b1.n2": { "en": "Palette", "pt": "Paleta", "es": "Paleta" },
+  "b1.d2": {
+    "en": "A working palette with the ratios that make it hold together, not a row of swatches.",
+    "pt": "Uma paleta de trabalho com as proporções que a fazem se sustentar, não uma fileira de amostras.",
+    "es": "Una paleta de trabajo con las proporciones que la sostienen, no una fila de muestras."
+  },
+  "b1.n3": { "en": "Type system", "pt": "Sistema tipográfico", "es": "Sistema tipográfico" },
+  "b1.d3": {
+    "en": "A display face and a text face, with the sizes and weights each one is for.",
+    "pt": "Uma fonte de display e uma de texto, com os tamanhos e pesos a que cada uma serve.",
+    "es": "Una tipografía de display y una de texto, con los tamaños y pesos a los que sirve cada una."
+  },
+  "b1.n4": { "en": "Art direction", "pt": "Direção de arte", "es": "Dirección de arte" },
+  "b1.d4": {
+    "en": "How photography, layout and spacing should behave, so the next thing you make still fits.",
+    "pt": "Como fotografia, layout e espaçamento devem se comportar, para que a próxima peça que você fizer ainda encaixe.",
+    "es": "Cómo deben comportarse la fotografía, la composición y el espaciado, para que la próxima pieza que haga siga encajando."
+  },
+  "b1.n5": { "en": "Files", "pt": "Arquivos", "es": "Archivos" },
+  "b1.d5": {
+    "en": "Vector and raster, in the formats a printer, a sign maker and a social platform each ask for.",
+    "pt": "Vetor e raster, nos formatos que a gráfica, o fabricante de letreiro e a rede social pedem, cada um o seu.",
+    "es": "Vector y mapa de bits, en los formatos que piden la imprenta, el rotulista y cada red social."
+  },
+  "b1.n6": { "en": "Guidelines", "pt": "Manual de uso", "es": "Manual de uso" },
+  "b1.d6": {
+    "en": "Short and usable. The rules that matter, not forty pages nobody opens.",
+    "pt": "Curto e utilizável. As regras que importam, não quarenta páginas que ninguém abre.",
+    "es": "Corto y utilizable. Las reglas que importan, no cuarenta páginas que nadie abre."
+  },
+
+  "b2.h": {
+    "en": "Drawn against where it will live",
+    "pt": "Desenhada contra o lugar onde vai viver",
+    "es": "Dibujada contra el lugar donde va a vivir"
+  },
+  "b2.lbl": {
+    "en": "Not on a white square",
+    "pt": "Não num quadrado branco",
+    "es": "No sobre un cuadrado blanco"
+  },
+  "b2.p1": {
+    "en": "An identity is tested by the worst place it appears, not the best. A mark is drawn here against the awning, the Instagram avatar, the invoice and the favicon in the same pass, because those are the sizes and grounds where a weak one gives out.",
+    "pt": "Uma identidade é testada pelo pior lugar em que aparece, não pelo melhor. Aqui a marca é desenhada contra o toldo, o avatar do Instagram, a nota fiscal e o favicon na mesma passada, porque são esses os tamanhos e fundos em que uma marca fraca cede.",
+    "es": "Una identidad se pone a prueba en el peor lugar donde aparece, no en el mejor. Aquí la marca se dibuja contra el toldo, el avatar de Instagram, la factura y el favicon en la misma pasada, porque esos son los tamaños y fondos donde una marca débil se viene abajo."
+  },
+  "b2.p2": {
+    "en": "Renata Estrella is the clearest example. The monogram, the palette and the type system were drawn from nothing, on a near-black ground chosen so the gold reads as metal rather than as yellow, and the same system carries into the e-book and the Google listing without being redrawn.",
+    "pt": "Renata Estrella é o exemplo mais claro. O monograma, a paleta e o sistema tipográfico foram desenhados do zero, sobre um fundo quase preto escolhido para que o dourado leia como metal e não como amarelo, e o mesmo sistema atravessa o e-book e a ficha do Google sem precisar ser redesenhado.",
+    "es": "Renata Estrella es el ejemplo más claro. El monograma, la paleta y el sistema tipográfico se dibujaron desde cero, sobre un fondo casi negro elegido para que el dorado se lea como metal y no como amarillo, y el mismo sistema atraviesa el e-book y la ficha de Google sin tener que redibujarse."
+  },
+
+  "b3.h": {
+    "en": "When the mark already exists",
+    "pt": "Quando a marca já existe",
+    "es": "Cuando la marca ya existe"
+  },
+  "b3.lbl": {
+    "en": "Art direction without a redraw",
+    "pt": "Direção de arte sem redesenhar",
+    "es": "Dirección de arte sin redibujar"
+  },
+  "b3.p1": {
+    "en": "Not every project needs a new logo. Sometimes the mark is fine and everything around it is missing, which is a cheaper and faster problem to solve.",
+    "pt": "Nem todo projeto precisa de um logotipo novo. Às vezes a marca está boa e o que falta é tudo em volta dela, que é um problema mais barato e mais rápido de resolver.",
+    "es": "No todo proyecto necesita un logotipo nuevo. A veces la marca está bien y lo que falta es todo lo que la rodea, que es un problema más barato y más rápido de resolver."
+  },
+  "b3.p2": {
+    "en": "Blend Hair Boutique came with their own script wordmark. What did not exist was the system underneath it: the ground, the palette, the type pairing and the rules for how photography behaves. That work is art direction, and it is quoted separately from identity design for exactly that reason.",
+    "pt": "A Blend Hair Boutique chegou com o próprio logotipo em manuscrito. O que não existia era o sistema embaixo dele: o fundo, a paleta, o par tipográfico e as regras de como a fotografia se comporta. Esse trabalho é direção de arte, e é orçado separadamente do design de identidade exatamente por isso.",
+    "es": "Blend Hair Boutique llegó con su propio logotipo manuscrito. Lo que no existía era el sistema debajo de él: el fondo, la paleta, el par tipográfico y las reglas de cómo se comporta la fotografía. Ese trabajo es dirección de arte, y se cotiza aparte del diseño de identidad justamente por eso."
+  },
+
+  "b4.h": { "en": "Proof", "pt": "Provas", "es": "Pruebas" },
+  "b4.lbl": {
+    "en": "Two identities drawn from nothing, two directed",
+    "pt": "Duas identidades desenhadas do zero, duas dirigidas",
+    "es": "Dos identidades dibujadas desde cero, dos dirigidas"
+  },
+  "b4.k1": { "en": "Drawn from nothing", "pt": "Desenhada do zero", "es": "Dibujada desde cero" },
+  "b4.d1": {
+    "en": "Monogram, palette, type system, e-book and the Google profile.",
+    "pt": "Monograma, paleta, sistema tipográfico, e-book e o perfil no Google.",
+    "es": "Monograma, paleta, sistema tipográfico, e-book y el perfil de Google."
+  },
+  "b4.k2": { "en": "Drawn from nothing", "pt": "Desenhada do zero", "es": "Dibujada desde cero" },
+  "b4.d2": {
+    "en": "A logo rendered as stitchwork for a hand-embroidery studio.",
+    "pt": "Um logotipo executado como bordado para um ateliê de bordado à mão.",
+    "es": "Un logotipo ejecutado como bordado para un taller de bordado a mano."
+  },
+  "b4.k3": { "en": "Directed", "pt": "Dirigida", "es": "Dirigida" },
+  "b4.d3": {
+    "en": "Identity, art direction and colour grading for a photographer and filmmaker.",
+    "pt": "Identidade, direção de arte e correção de cor para um fotógrafo e cineasta.",
+    "es": "Identidad, dirección de arte y etalonaje para un fotógrafo y cineasta."
+  },
+
+  "ld.name": {
+    "en": "Brand identity and logo design",
+    "pt": "Identidade visual e criação de logotipo",
+    "es": "Identidad de marca y diseño de logotipo"
+  },
+  "ld.type": {
+    "en": "Logo design, brand identity, art direction",
+    "pt": "Criação de logotipo, identidade visual, direção de arte",
+    "es": "Diseño de logotipo, identidad de marca, dirección de arte"
+  }
+}

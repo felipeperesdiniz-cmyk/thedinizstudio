@@ -1,0 +1,138 @@
+{
+  "_note": "Strings that appear on every page: header, footer, language switcher and breadcrumb roots. Keys are shared; each value carries all three languages. The brief's validation messages are NOT here: site.js owns those, in its own table, so there is one source for them rather than two.",
+  "skip": {
+    "en": "Skip to content",
+    "pt": "Ir para o conteúdo",
+    "es": "Ir al contenido"
+  },
+  "home.aria": {
+    "en": "Diniz Studio home",
+    "pt": "Diniz Studio, página inicial",
+    "es": "Diniz Studio, página de inicio"
+  },
+  "nav.aria": {
+    "en": "Primary",
+    "pt": "Principal",
+    "es": "Principal"
+  },
+  "nav.work": {
+    "en": "Work",
+    "pt": "Projetos",
+    "es": "Proyectos"
+  },
+  "nav.caps": {
+    "en": "Capabilities",
+    "pt": "Serviços",
+    "es": "Servicios"
+  },
+  "nav.contact": {
+    "en": "Contact",
+    "pt": "Contato",
+    "es": "Contacto"
+  },
+  "nav.menu": {
+    "en": "Menu",
+    "pt": "Menu",
+    "es": "Menú"
+  },
+  "nav.close": {
+    "en": "Close",
+    "pt": "Fechar",
+    "es": "Cerrar"
+  },
+  "cta.start": {
+    "en": "Start a project",
+    "pt": "Começar um projeto",
+    "es": "Empezar un proyecto"
+  },
+  "lang.aria": {
+    "en": "Language",
+    "pt": "Idioma",
+    "es": "Idioma"
+  },
+  "lang.switch.en": {
+    "en": "Read this page in English",
+    "pt": "Ler esta página em inglês",
+    "es": "Leer esta página en inglés"
+  },
+  "lang.switch.pt": {
+    "en": "Read this page in Portuguese",
+    "pt": "Ler esta página em português",
+    "es": "Leer esta página en portugués"
+  },
+  "lang.switch.es": {
+    "en": "Read this page in Spanish",
+    "pt": "Ler esta página em espanhol",
+    "es": "Leer esta página en español"
+  },
+  "crumb.aria": {
+    "en": "Breadcrumb",
+    "pt": "Trilha de navegação",
+    "es": "Ruta de navegación"
+  },
+  "crumb.work": {
+    "en": "Work",
+    "pt": "Projetos",
+    "es": "Proyectos"
+  },
+  "crumb.caps": {
+    "en": "Capabilities",
+    "pt": "Serviços",
+    "es": "Servicios"
+  },
+  "foot.aria": {
+    "en": "Services",
+    "pt": "Serviços",
+    "es": "Servicios"
+  },
+  "foot.web": {
+    "en": "Web design",
+    "pt": "Criação de sites",
+    "es": "Diseño web"
+  },
+  "foot.brand": {
+    "en": "Brand identity",
+    "pt": "Identidade visual",
+    "es": "Identidad de marca"
+  },
+  "foot.seo": {
+    "en": "Local SEO",
+    "pt": "SEO local",
+    "es": "SEO local"
+  },
+  "foot.city": {
+    "en": "Miami, Florida",
+    "pt": "Miami, Flórida",
+    "es": "Miami, Florida"
+  },
+  "case.next.label": {
+    "en": "Next case study",
+    "pt": "Próximo projeto",
+    "es": "Siguiente proyecto"
+  },
+  "case.next.aria": {
+    "en": "More case studies",
+    "pt": "Mais projetos",
+    "es": "Más proyectos"
+  },
+  "case.cta.kicker": {
+    "en": "One project at a time",
+    "pt": "Um projeto de cada vez",
+    "es": "Un proyecto a la vez"
+  },
+  "case.cta.head": {
+    "en": "Want the same thing done for yours?",
+    "pt": "Quer o mesmo feito para o seu?",
+    "es": "¿Quiere lo mismo para el suyo?"
+  },
+  "svc.cta.head": {
+    "en": "Start with the brief.",
+    "pt": "Comece pelo briefing.",
+    "es": "Empiece por el briefing."
+  },
+  "svc.cta.btn": {
+    "en": "Send the brief",
+    "pt": "Enviar o briefing",
+    "es": "Enviar el briefing"
+  }
+}

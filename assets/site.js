@@ -32,6 +32,19 @@
     });
   }
 
+  // The header is fixed, so the first thing on an inner page has to
+  // clear it by hand. Its height stopped being a constant once the
+  // language switcher joined the row: it wraps to two lines on a
+  // narrow phone, and where it wraps moves with the language, because
+  // "Empezar un proyecto" is not the width of "Start a project".
+  // Measure it rather than guess, and let CSS do the arithmetic.
+  function headHeight() {
+    if (head) root.style.setProperty('--head-h', head.offsetHeight + 'px');
+  }
+  headHeight();
+  addEventListener('resize', headHeight, { passive: true });
+  addEventListener('load', headHeight);
+
   // how far through the page you are, on the hairline under the header
   var rail = document.querySelector('.scroll-rail i');
   function readout() {
@@ -131,6 +144,60 @@
     addEventListener('load', lightUp);   // belt and braces if the frame is deferred
   }
 
+  // ── the brief's own strings ─────────────────────────────
+  // The only strings the script owns. Everything else on the page is
+  // written into the HTML by the build, so this table exists purely so
+  // a validation message never comes back in a language the reader did
+  // not choose. Keyed off <html lang>, which the build always sets.
+  var T = (function () {
+    var L = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase();
+    var S = {
+      en: {
+        pick: 'Pick one of these.',
+        required: 'This one is needed.',
+        email: 'That address looks incomplete.',
+        about: 'A sentence or two more, so the reply is worth reading.',
+        one: 'One answer still needs filling in.',
+        many: '{n} answers still need filling in.',
+        mail: 'Opening your mail app with the brief filled in.',
+        sending: 'Sending the brief.',
+        failed: 'That would not send. Opening your mail app instead.',
+        subject: 'Project brief: ',
+        fNeed: 'What they need: ', fBudget: 'Budget: ', fWhen: 'Live by: ',
+        fWho: 'Business: ', fEmail: 'Email: '
+      },
+      pt: {
+        pick: 'Escolha uma das opções.',
+        required: 'Este campo é necessário.',
+        email: 'Esse endereço parece incompleto.',
+        about: 'Mais uma ou duas frases, para que a resposta valha a leitura.',
+        one: 'Ainda falta preencher uma resposta.',
+        many: 'Ainda faltam {n} respostas por preencher.',
+        mail: 'Abrindo seu aplicativo de e-mail com o briefing preenchido.',
+        sending: 'Enviando o briefing.',
+        failed: 'Não foi possível enviar. Abrindo seu aplicativo de e-mail.',
+        subject: 'Briefing de projeto: ',
+        fNeed: 'O que precisam: ', fBudget: 'Orçamento: ', fWhen: 'No ar até: ',
+        fWho: 'Negócio: ', fEmail: 'E-mail: '
+      },
+      es: {
+        pick: 'Elija una de estas opciones.',
+        required: 'Este campo es necesario.',
+        email: 'Esa dirección parece incompleta.',
+        about: 'Una o dos frases más, para que la respuesta valga la pena.',
+        one: 'Todavía falta una respuesta por completar.',
+        many: 'Todavía faltan {n} respuestas por completar.',
+        mail: 'Abriendo su aplicación de correo con el briefing completado.',
+        sending: 'Enviando el briefing.',
+        failed: 'No se pudo enviar. Abriendo su aplicación de correo.',
+        subject: 'Briefing de proyecto: ',
+        fNeed: 'Qué necesitan: ', fBudget: 'Presupuesto: ', fWhen: 'En línea para: ',
+        fWho: 'Negocio: ', fEmail: 'Correo: '
+      }
+    };
+    return S[L] || S.en;
+  })();
+
   // ── the brief ────────────────────────────────────────────
   // Validated here rather than by the browser, so the messages read
   // like the rest of the site and the first bad field gets focus. It
@@ -168,9 +235,9 @@
 
     function check(el) {
       var v = (el.value || '').trim();
-      if (!v) return mark(el, el.tagName === 'SELECT' ? 'Pick one of these.' : 'This one is needed.');
-      if (el.name === 'email' && !EMAIL.test(v)) return mark(el, 'That address looks incomplete.');
-      if (el.name === 'about' && v.length < 20) return mark(el, 'A sentence or two more, so the reply is worth reading.');
+      if (!v) return mark(el, el.tagName === 'SELECT' ? T.pick : T.required);
+      if (el.name === 'email' && !EMAIL.test(v)) return mark(el, T.email);
+      if (el.name === 'about' && v.length < 20) return mark(el, T.about);
       return mark(el, '');
     }
 
@@ -189,18 +256,18 @@
     function payload() {
       var d = {};
       FIELDS.forEach(function (n) { d[n] = brief.elements[n].value.trim(); });
-      d.subject = 'Project brief: ' + d.who;
+      d.subject = T.subject + d.who;
       d.page = location.href;
       return d;
     }
 
     function compose(d) {
       var body = [
-        'What they need: ' + d.need,
-        'Budget: ' + d.budget,
-        'Live by: ' + d.when,
-        'Business: ' + d.who,
-        'Email: ' + d.email,
+        T.fNeed + d.need,
+        T.fBudget + d.budget,
+        T.fWhen + d.when,
+        T.fWho + d.who,
+        T.fEmail + d.email,
         '',
         d.about
       ].join('\n');
@@ -226,9 +293,7 @@
         if (!check(el)) { n++; if (!bad) bad = el; }
       });
       if (bad) {
-        note.textContent = n === 1
-          ? 'One answer still needs filling in.'
-          : n + ' answers still need filling in.';
+        note.textContent = n === 1 ? T.one : T.many.replace('{n}', n);
         bad.focus();
         return;
       }
@@ -237,14 +302,14 @@
       var endpoint = brief.dataset.endpoint;
 
       if (!endpoint) {
-        note.textContent = 'Opening your mail app with the brief filled in.';
+        note.textContent = T.mail;
         compose(d);
         setTimeout(finish, 900);
         return;
       }
 
       btn.disabled = true;
-      note.textContent = 'Sending the brief.';
+      note.textContent = T.sending;
       fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
@@ -256,7 +321,7 @@
         // the brief is worth more than the transport: fall back rather
         // than losing what they typed
         btn.disabled = false;
-        note.textContent = 'That would not send. Opening your mail app instead.';
+        note.textContent = T.failed;
         compose(d);
       });
     });

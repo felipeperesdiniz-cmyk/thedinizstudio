@@ -1,0 +1,158 @@
+{
+  "og.type": "website",
+  "og.image": "https://dinizstudio.com/assets/og.jpg",
+  "og.image.w": "1200",
+  "og.image.h": "630",
+
+  "meta.title": {
+    "en": "Local SEO &amp; Google Business Profile in Miami | Diniz Studio",
+    "pt": "SEO Local e Perfil da Empresa no Google em Miami | Diniz Studio",
+    "es": "SEO Local y Perfil de Empresa en Google en Miami | Diniz Studio"
+  },
+  "meta.desc": {
+    "en": "Local SEO for Miami businesses. Google Business Profile setup and management, structured data and service pages, built into the site rather than bolted on.",
+    "pt": "SEO local para negócios de Miami. Criação e gestão do Perfil da Empresa no Google, dados estruturados e páginas de serviço, construídos dentro do site e não pendurados nele.",
+    "es": "SEO local para negocios de Miami. Creación y gestión del Perfil de Empresa en Google, datos estructurados y páginas de servicio, construidos dentro del sitio y no colgados de él."
+  },
+  "og.title": {
+    "en": "Local SEO &amp; Google Business Profile in Miami | Diniz Studio",
+    "pt": "SEO Local e Perfil da Empresa no Google em Miami | Diniz Studio",
+    "es": "SEO Local y Perfil de Empresa en Google en Miami | Diniz Studio"
+  },
+  "og.desc": {
+    "en": "Local SEO for Miami businesses. Google Business Profile setup and management, structured data and service pages, built into the site rather than bolted on.",
+    "pt": "SEO local para negócios de Miami. Criação e gestão do Perfil da Empresa no Google, dados estruturados e páginas de serviço, construídos dentro do site.",
+    "es": "SEO local para negocios de Miami. Creación y gestión del Perfil de Empresa en Google, datos estructurados y páginas de servicio, construidos dentro del sitio."
+  },
+  "og.imagealt": {
+    "en": "Diniz Studio: local SEO and Google Business Profile, Miami",
+    "pt": "Diniz Studio: SEO local e Perfil da Empresa no Google, Miami",
+    "es": "Diniz Studio: SEO local y Perfil de Empresa en Google, Miami"
+  },
+
+  "crumb.self": { "en": "Local SEO", "pt": "SEO local", "es": "SEO local" },
+  "kicker": {
+    "en": "Capability / Search and performance",
+    "pt": "Serviço / Busca e performance",
+    "es": "Servicio / Búsqueda y rendimiento"
+  },
+  "h1": {
+    "en": "Local SEO and Google Business Profile in Miami",
+    "pt": "SEO local e Perfil da Empresa no Google em Miami",
+    "es": "SEO local y Perfil de Empresa en Google en Miami"
+  },
+  "lede": {
+    "en": "For a business that sells to its own city, being found matters more than being admired. Local search is not a monthly retainer bolted onto a finished site here. It is decided while the site is being built, because most of it is structural.",
+    "pt": "Para um negócio que vende para a própria cidade, ser encontrado importa mais do que ser admirado. Aqui, busca local não é uma mensalidade pendurada num site já pronto. É decidida enquanto o site está sendo construído, porque a maior parte dela é estrutural.",
+    "es": "Para un negocio que vende a su propia ciudad, ser encontrado importa más que ser admirado. Aquí la búsqueda local no es una cuota mensual colgada de un sitio ya terminado. Se decide mientras el sitio se construye, porque la mayor parte es estructural."
+  },
+
+  "b1.h": {
+    "en": "Where local rankings actually come from",
+    "pt": "De onde vem, de fato, o ranqueamento local",
+    "es": "De dónde salen realmente los rankings locales"
+  },
+  "b1.lbl": {
+    "en": "Three things, in order",
+    "pt": "Três coisas, nesta ordem",
+    "es": "Tres cosas, en este orden"
+  },
+  "b1.n1": { "en": "The profile", "pt": "O perfil", "es": "El perfil" },
+  "b1.d1": {
+    "en": "Your Google Business Profile is the listing that appears in the map pack. Categories, service areas, hours, photography, posts and review replies all move it, and all of it needs maintaining rather than setting once.",
+    "pt": "Seu Perfil da Empresa no Google é a ficha que aparece no bloco do mapa. Categorias, áreas de atendimento, horários, fotografia, publicações e respostas às avaliações movem essa posição, e tudo isso precisa de manutenção, não de uma configuração única.",
+    "es": "Su Perfil de Empresa en Google es la ficha que aparece en el bloque del mapa. Categorías, zonas de servicio, horarios, fotografía, publicaciones y respuestas a reseñas mueven esa posición, y todo eso necesita mantenimiento, no una configuración de una sola vez."
+  },
+  "b1.n2": { "en": "The site", "pt": "O site", "es": "El sitio" },
+  "b1.d2": {
+    "en": "Structured data telling Google what kind of business this is, where it is, what it sells and how it is rated. A page per service, so each query has somewhere specific to land. Speed, because a slow page loses the click before it loads.",
+    "pt": "Dados estruturados dizendo ao Google que tipo de negócio é esse, onde fica, o que vende e qual é a nota. Uma página por serviço, para que cada busca tenha onde aterrissar. Velocidade, porque uma página lenta perde o clique antes de carregar.",
+    "es": "Datos estructurados que le dicen a Google qué tipo de negocio es, dónde está, qué vende y cómo está valorado. Una página por servicio, para que cada búsqueda tenga dónde aterrizar. Velocidad, porque una página lenta pierde el clic antes de cargar."
+  },
+  "b1.n3": { "en": "The reviews", "pt": "As avaliações", "es": "Las reseñas" },
+  "b1.d3": {
+    "en": "The one signal you cannot buy and cannot fake. What a studio can do is make asking easy, make replying consistent, and make the reviews visible everywhere a buyer looks.",
+    "pt": "O único sinal que não se compra nem se falsifica. O que um estúdio pode fazer é tornar o pedido fácil, a resposta constante e as avaliações visíveis em todo lugar onde o cliente olha.",
+    "es": "La única señal que no se compra ni se falsifica. Lo que un estudio puede hacer es volver fácil el pedirlas, constante el responderlas y visibles las reseñas en todos los lugares donde mira un comprador."
+  },
+
+  "b2.h": {
+    "en": "What the studio does",
+    "pt": "O que o estúdio faz",
+    "es": "Qué hace el estudio"
+  },
+  "b2.lbl": {
+    "en": "Set up, wired in, and run",
+    "pt": "Criado, integrado e tocado",
+    "es": "Creado, integrado y gestionado"
+  },
+  "b2.p1": {
+    "en": "Profiles are created and then managed: categories and service areas chosen deliberately, photography shot or directed rather than pulled from a phone, posts kept current, and every review answered.",
+    "pt": "Os perfis são criados e depois geridos: categorias e áreas de atendimento escolhidas com critério, fotografia feita ou dirigida em vez de puxada do celular, publicações sempre atuais e toda avaliação respondida.",
+    "es": "Los perfiles se crean y luego se gestionan: categorías y zonas de servicio elegidas con criterio, fotografía tomada o dirigida en lugar de sacada del teléfono, publicaciones siempre al día y cada reseña respondida."
+  },
+  "b2.p2": {
+    "en": "On the site, that means HairSalon, Bakery, LocalBusiness or ProfessionalService structured data carrying the address, the hours, the service list and the aggregate rating, so the listing and the site agree with each other. Where the audience is multilingual the pages are declared with hreflang, because a Spanish-language search should not land on an English page.",
+    "pt": "No site, isso significa dados estruturados de HairSalon, Bakery, LocalBusiness ou ProfessionalService carregando o endereço, os horários, a lista de serviços e a nota agregada, para que a ficha e o site concordem entre si. Quando o público é multilíngue, as páginas são declaradas com hreflang, porque uma busca em espanhol não deveria cair numa página em inglês.",
+    "es": "En el sitio, eso significa datos estructurados de HairSalon, Bakery, LocalBusiness o ProfessionalService que llevan la dirección, los horarios, la lista de servicios y la valoración agregada, para que la ficha y el sitio coincidan. Cuando el público es multilingüe, las páginas se declaran con hreflang, porque una búsqueda en español no debería aterrizar en una página en inglés."
+  },
+  "b2.p3": {
+    "en": "And a service page per treatment or offer, because \"balayage in Plantation\" and \"keratin in Plantation\" are different searches and a single services page answers neither of them well.",
+    "pt": "E uma página de serviço por procedimento ou oferta, porque “balayage em Plantation” e “queratina em Plantation” são buscas diferentes, e uma única página de serviços não responde bem a nenhuma das duas.",
+    "es": "Y una página de servicio por tratamiento u oferta, porque «balayage en Plantation» y «keratina en Plantation» son búsquedas distintas, y una sola página de servicios no responde bien a ninguna de las dos."
+  },
+
+  "b3.h": {
+    "en": "What it has produced",
+    "pt": "O que isso produziu",
+    "es": "Qué ha producido"
+  },
+  "b3.lbl": {
+    "en": "On profiles the studio built and runs",
+    "pt": "Em perfis que o estúdio criou e administra",
+    "es": "En perfiles que el estudio creó y administra"
+  },
+  "b3.n1": { "en": "27 five-star", "pt": "27 cinco estrelas", "es": "27 de cinco estrellas" },
+  "b3.d1": {
+    "en": "Every review on the Google profile the studio created and still manages.",
+    "pt": "Todas as avaliações do perfil no Google que o estúdio criou e ainda administra.",
+    "es": "Todas las reseñas del perfil de Google que el estudio creó y sigue administrando."
+  },
+  "b3.n2": { "en": "4.9 across 1,230+", "pt": "4,9 em mais de 1.230", "es": "4,9 sobre más de 1.230" },
+  "b3.d2": {
+    "en": "Surfaced on the site and declared in its structured data, across eight service pages in three languages.",
+    "pt": "Exibidas no site e declaradas nos seus dados estruturados, ao longo de oito páginas de serviço em três idiomas.",
+    "es": "Mostradas en el sitio y declaradas en sus datos estructurados, a lo largo de ocho páginas de servicio en tres idiomas."
+  },
+  "b3.k3": { "en": "One client", "pt": "Um cliente", "es": "Un cliente" },
+  "b3.n3": { "en": "+25% five-star", "pt": "+25% cinco estrelas", "es": "+25% de cinco estrellas" },
+  "b3.d3": {
+    "en": "The lift on a Google profile after the listing and the site went live.",
+    "pt": "O ganho num perfil do Google depois que a ficha e o site entraram no ar.",
+    "es": "La subida en un perfil de Google después de que la ficha y el sitio salieron en línea."
+  },
+
+  "b4.h": { "en": "What this is not", "pt": "O que isso não é", "es": "Qué no es esto" },
+  "b4.lbl": { "en": "Said plainly", "pt": "Dito com todas as letras", "es": "Dicho sin rodeos" },
+  "b4.p1": {
+    "en": "It is not a link-building programme, a directory blast, or a promise about rankings on a date. Nobody who tells you they can guarantee position one is describing something they control.",
+    "pt": "Não é um programa de link building, nem um disparo em diretórios, nem uma promessa de posição numa data. Ninguém que diga garantir o primeiro lugar está descrevendo algo que controla.",
+    "es": "No es un programa de link building, ni un envío masivo a directorios, ni una promesa de posición para una fecha. Nadie que diga garantizar el primer puesto está describiendo algo que controla."
+  },
+  "b4.p2": {
+    "en": "What is controllable is the part most local businesses are losing on anyway: a profile that is filled in properly and kept current, a site a crawler can actually read, a page for each thing you sell, and reviews that are visible instead of buried.",
+    "pt": "O que é controlável é justamente a parte em que a maioria dos negócios locais já está perdendo: um perfil preenchido direito e mantido em dia, um site que um rastreador consiga de fato ler, uma página para cada coisa que você vende e avaliações visíveis em vez de enterradas.",
+    "es": "Lo que sí es controlable es justo la parte en la que la mayoría de los negocios locales ya está perdiendo: un perfil bien completado y mantenido al día, un sitio que un rastreador pueda leer de verdad, una página por cada cosa que vende y reseñas visibles en lugar de enterradas."
+  },
+
+  "ld.name": {
+    "en": "Local SEO and Google Business Profile",
+    "pt": "SEO local e Perfil da Empresa no Google",
+    "es": "SEO local y Perfil de Empresa en Google"
+  },
+  "ld.type": {
+    "en": "Local SEO, Google Business Profile management, structured data",
+    "pt": "SEO local, gestão do Perfil da Empresa no Google, dados estruturados",
+    "es": "SEO local, gestión del Perfil de Empresa en Google, datos estructurados"
+  }
+}

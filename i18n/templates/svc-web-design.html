@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="{{$lang}}">
+<head>
+{{>head}}
+{{>fonts}}
+</head>
+<body>
+<a class="skip" href="#main">{{skip}}</a>
+
+{{>header}}
+
+<main id="main">
+{{>crumbs-caps}}
+
+  <article class="svc">
+    <div class="wrap">
+      <div class="case-head" data-r>
+        <div>
+          <span class="lbl">{{kicker}}</span>
+          <h1 class="ser">{{h1}}</h1>
+        </div>
+      </div>
+      <p class="case-lede">{{lede}}</p>
+      <div class="blk" data-r>
+        <div class="blk-h"><h2>{{b1.h}}</h2><span class="rule"></span><span class="lbl">{{b1.lbl}}</span></div>
+        <p class="note">{{b1.p1}}</p>
+        <p class="note">{{b1.p2}}</p>
+        <p class="note">{{b1.p3}}</p>
+      </div>
+      <div class="blk" data-r>
+        <div class="blk-h"><h2>{{b2.h}}</h2><span class="rule"></span><span class="lbl">{{b2.lbl}}</span></div>
+        <p class="note">{{b2.p1}}</p>
+        <div class="chan">
+          <div>
+            <span class="k">01</span>
+            <span class="n">{{b2.n1}}</span>
+            <span class="d">{{b2.d1}}</span>
+          </div>
+          <div>
+            <span class="k">02</span>
+            <span class="n">{{b2.n2}}</span>
+            <span class="d">{{b2.d2}}</span>
+          </div>
+          <div>
+            <span class="k">03</span>
+            <span class="n">{{b2.n3}}</span>
+            <span class="d">{{b2.d3}}</span>
+          </div>
+          <div>
+            <span class="k">04</span>
+            <span class="n">{{b2.n4}}</span>
+            <span class="d">{{b2.d4}}</span>
+          </div>
+          <div>
+            <span class="k">05</span>
+            <span class="n">{{b2.n5}}</span>
+            <span class="d">{{b2.d5}}</span>
+          </div>
+          <div>
+            <span class="k">06</span>
+            <span class="n">{{b2.n6}}</span>
+            <span class="d">{{b2.d6}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="blk" data-r>
+        <div class="blk-h"><h2>{{b3.h}}</h2><span class="rule"></span><span class="lbl">{{b3.lbl}}</span></div>
+        <p class="note">{{b3.p1}}</p>
+        <p class="note">{{b3.p2}}</p>
+        <p class="note">{{b3.p3}}</p>
+      </div>
+      <div class="blk" data-r>
+        <div class="blk-h"><h2>{{b4.h}}</h2><span class="rule"></span><span class="lbl">{{b4.lbl}}</span></div>
+        <p class="note">{{b4.p1}}</p>
+        <div class="chan">
+          <a href="{{@work-blend}}">
+            <span class="k">{{b4.k1}}</span>
+            <span class="n">Blend Hair Boutique</span>
+            <span class="d">{{b4.d1}}</span>
+          </a>
+          <a href="{{@work-renata}}">
+            <span class="k">{{b4.k2}}</span>
+            <span class="n">Renata Estrella</span>
+            <span class="d">{{b4.d2}}</span>
+          </a>
+          <a href="{{@work-mari}}">
+            <span class="k">{{b4.k3}}</span>
+            <span class="n">Bordados com Amor</span>
+            <span class="d">{{b4.d3}}</span>
+          </a>
+          <a href="{{@work-rafa}}">
+            <span class="k">{{b4.k4}}</span>
+            <span class="n">Rafa Diniz</span>
+            <span class="d">{{b4.d4}}</span>
+          </a>
+        </div>
+      </div>
+      <div class="blk" data-r>
+        <div class="blk-h"><h2>{{b5.h}}</h2><span class="rule"></span><span class="lbl">{{b5.lbl}}</span></div>
+        <p class="note">{{b5.p1}}</p>
+        <p class="note">{{b5.p2}}</p>
+      </div>
+    </div>
+  </article>
+
+{{>svc-cta}}
+</main>
+
+{{>footer}}
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Diniz Studio","item":"{{=home}}"},{"@type":"ListItem","position":2,"name":"{{crumb.caps|json}}","item":"{{=home}}#capabilities"},{"@type":"ListItem","position":3,"name":"{{ld.name|json}}"}]},{"@type":"Service","@id":"{{$canonical}}#service","name":"{{ld.name|json}}","description":"{{meta.desc|json}}","serviceType":"{{ld.type|json}}","inLanguage":"{{$jsonld_lang}}","availableLanguage":["en","pt","es"],"provider":{"@id":"https://dinizstudio.com/#studio"},"areaServed":{{>ld-areas}},"url":"{{$canonical}}"},{{>ld-studio}},{"@type":"WebPage","@id":"{{$canonical}}#webpage","url":"{{$canonical}}","name":"{{meta.title|json}}","description":"{{meta.desc|json}}","inLanguage":"{{$jsonld_lang}}","isPartOf":{"@id":"https://dinizstudio.com/#website"}}]}
+</script>
+<script src="/assets/site.js?v=30" defer></script>
+</body>
+</html>

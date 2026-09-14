@@ -1,0 +1,15 @@
+<header class="site-head" id="head">
+  <div class="wrap">
+    <a href="{{@home}}" aria-label="{{home.aria}}"><img src="/assets/brand/diniz-mark-light.webp" alt="Diniz Studio" width="420" height="56"></a>
+    <nav class="site-nav lbl" id="site-nav" aria-label="{{nav.aria}}">
+      <a href="#work">{{nav.work}}</a><a href="#capabilities">{{nav.caps}}</a><a href="#contact">{{nav.contact}}</a>
+    </nav>
+    {{$switcher}}
+    <a class="head-cta lbl" href="#contact">{{cta.start}}</a>
+    <button class="nav-toggle lbl" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-open">{{nav.menu}}</span><span class="nav-toggle-shut">{{nav.close}}</span>
+    </button>
+
+  </div>
+  <span class="scroll-rail" aria-hidden="true"><i></i></span>
+</header>
