@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "diniz", "runtimeExecutable": "python3", "runtimeArgs": ["/Users/felipediniz/Desktop/dinizstudio/server.py"], "port": 5173 }
+  ]
+}

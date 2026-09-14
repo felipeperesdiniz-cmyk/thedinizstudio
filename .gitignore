@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Retina PNG source captures. 46MB, and capture.py regenerates them
+# from the live client sites, so they do not belong in history. The
+# optimised WebP under assets/work/ is what the site actually ships.
+captures/
+
+# Python
+__pycache__/
+*.pyc
