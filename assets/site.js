@@ -614,7 +614,9 @@
     // an in-page jump leaves the panel covering what it jumped to
     nav.addEventListener('click', function (e) { if (e.target.closest('a')) shut(); });
     addEventListener('keydown', function (e) { if (e.key === 'Escape') shut(); });
-    addEventListener('resize', function () { if (innerWidth > 720) shut(); }, { passive: true });
+    // must match the breakpoint the panel folds at in the stylesheet,
+    // or the panel stays open and stuck in the gap between the two
+    addEventListener('resize', function () { if (innerWidth > 880) shut(); }, { passive: true });
   }
 
   // The header only floats free over the home page's hero. Every other

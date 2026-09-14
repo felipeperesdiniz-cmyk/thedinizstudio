@@ -75,32 +75,42 @@ a{color:inherit;text-decoration:none}
 .nav-toggle[aria-expanded="true"] .nav-toggle-shut{display:inline}
 
 /* ── language ────────────────────────────────────────────
-   Three codes in one bordered group, the current one lit. It is a
-   list of three links rather than a dropdown so the other two
-   languages are crawlable from every page, which is half of what
-   makes the hreflang cluster work. It appears in the header and
-   again in the footer: a reader who landed in the wrong language is
-   the one least likely to go hunting for the control. */
+   Three codes, hairline-separated, the current one lit. It is a list
+   of three links rather than a dropdown so the other two languages
+   are crawlable from every page, which is half of what makes the
+   hreflang cluster work. It appears in the header and again in the
+   footer: a reader who landed in the wrong language is the one least
+   likely to go hunting for the control.
+
+   Typographic rather than boxed: a bordered pill next to the CTA read
+   as a second button of equal weight, and there is only one action in
+   this header. The current language is marked the way the breadcrumb
+   marks the current page, --fg against --dim, so it borrows an idiom
+   the site already has instead of inventing one. */
 .lang{flex:none}
-.lang ul{
-  display:flex;list-style:none;margin:0;padding:0;
-  border:1px solid var(--rule);border-radius:2px;overflow:hidden
-}
+.lang ul{display:flex;list-style:none;margin:0;padding:0}
 .lang li+li{border-left:1px solid var(--rule)}
 .lang a{
-  display:block;padding:9px 10px;line-height:1;color:var(--dim);
-  transition:color .35s var(--e),background .35s var(--e)
+  display:block;padding:8px 9px;line-height:1;color:var(--dim);
+  transition:color .35s var(--e)
 }
 .lang a:hover,.lang a:focus-visible{color:var(--fg)}
-.lang a[aria-current="page"]{background:var(--fg);color:var(--bg)}
+.lang a[aria-current="page"]{color:var(--fg)}
+/* stacked in the footer, the group sits under the services list, so
+   the first code hangs flush with it rather than inset by its padding */
+.foot-grid .lang li:first-child a{padding-left:0}
 
-/* Under 720px the three links no longer fit beside the wordmark and the
-   CTA, so they become a panel rather than quietly disappearing, which
-   is what they used to do. */
-@media(max-width:720px){
+/* The links become a panel rather than quietly disappearing, which is
+   what they used to do. This folded at 720px when the bar carried three
+   groups; with the language switcher it carries four, and at 740px the
+   row was already packed edge to edge with the wordmark touching the
+   first link. 880px is where the four still have room to breathe. */
+@media(max-width:880px){
   .site-head .wrap{flex-wrap:wrap;gap:12px}
   .site-head img{width:124px}
-  .lang{order:1;margin-left:auto}
+  /* scoped: the footer carries a .lang too, and it must not be
+     reordered or pushed right by the header's folding rules */
+  .site-head .lang{order:1;margin-left:auto}
   .nav-toggle{display:block;order:2}
   .head-cta{order:3}
   .site-nav{
@@ -114,7 +124,7 @@ a{color:inherit;text-decoration:none}
 @media(max-width:420px){
   .head-cta{padding:9px 11px;font-size:11px}
   .nav-toggle{padding:9px 11px;font-size:11px}
-  .lang a{padding:9px 7px;font-size:11px}
+  .site-head .lang a{padding:8px 7px;font-size:11px}
 }
 
 /* ── hero: a screen across a room ────────────────────────
@@ -628,7 +638,11 @@ html:not(.js) .hero-stage, html.rm .hero-stage{position:static;height:auto;overf
 .foot-nav a{transition:color .3s var(--e)}
 .foot-nav a:hover{color:var(--fg)}
 .foot-meta{display:flex;flex-wrap:wrap;gap:clamp(14px,2vw,28px)}
-@media(max-width:720px){.foot-grid{flex-direction:column;align-items:flex-start;gap:18px}}
+/* Three groups in a space-between row need about 1000px in Portuguese
+   before the third stops orphaning onto a line of its own. Below that
+   the footer stacks, which is a deliberate shape rather than a row
+   that ran out of space. */
+@media(max-width:1000px){.foot-grid{flex-direction:column;align-items:flex-start;gap:18px}}
 
 /* ── service pages ───────────────────────────────────────── */
 .svc{background:var(--bg);color:var(--fg);padding-block:clamp(30px,5vh,60px) clamp(56px,9vh,110px)}
