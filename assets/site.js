@@ -651,7 +651,15 @@
       var box = outro.getBoundingClientRect();
       // the journey carries on well past this section, so the window
       // stays open until the mark has finished filling its berth
-      if (box.bottom < -innerHeight * 2.6 || box.top > innerHeight + 40) return;
+      if (box.bottom < -innerHeight * 2.6 || box.top > innerHeight + 40) {
+        // Scrolling back up out of the window used to leave this class
+        // behind, and it hides the header: the sign-off had taken the
+        // frame and nothing above it ever gave the frame back. The
+        // opacity channel recovers on its own because the hero writes
+        // it every frame; the class has to be let go of by hand.
+        root.classList.remove('outro-on');
+        return;
+      }
       if (!geo) measure();
 
       var span = outro.offsetHeight - innerHeight;
@@ -706,10 +714,20 @@
       var cut = ramp(p, 0.56, CUT);
       st.setProperty('--cut', (cut * cut).toFixed(3));   // holds clear, then slams
 
-      // the header hands the frame over on the same channel the hero
-      // uses to bring it back, so the two never argue about opacity
-      root.style.setProperty('--chrome',
-        Math.max(1 - ramp(p, 0, 0.05), ramp(leave, 0.08, 0.4)).toFixed(3));
+      // The header hands the frame over on the same channel the hero
+      // uses to bring it back, so the two never argue about opacity.
+      //
+      // It has to hand it over during the approach, not after it. The
+      // sign is fully up the instant the section pins, but p does not
+      // start moving until then — so for the whole climb into view the
+      // header sat there with the wordmark in it while the same
+      // wordmark rose into the middle of the frame. The studio's name,
+      // twice, in one picture. Keyed to the climb instead, the header
+      // is gone before the sign is big enough to read.
+      var coming = clamp01((innerHeight * 0.92 - box.top) / (innerHeight * 0.74));
+      var chrome = Math.max(1 - Math.max(coming, ramp(p, 0, 0.05)),
+                            ramp(leave, 0.08, 0.4));
+      root.style.setProperty('--chrome', chrome.toFixed(3));
 
       var out = ramp(p, 0.74, 0.84);
       st.setProperty('--out', out.toFixed(3));
@@ -722,7 +740,9 @@
         onWall = lit;
         st.setProperty('--wall', lit ? '1' : '0');
       }
-      root.classList.toggle('outro-on', p > 0.06 && leave < 0.06);
+      // invisible links do not belong in the tab order, and the one
+      // thing that knows whether they are invisible is the opacity
+      root.classList.toggle('outro-on', chrome < 0.02 && leave < 0.06);
 
       // the character arrives last, and it arrives on its own clock:
       // a fall wants weight, not a scrub
