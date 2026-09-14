@@ -145,14 +145,15 @@ a{color:inherit;text-decoration:none}
    frame with air under it for the choices. Same house, two
    different photographs.
    ═════════════════════════════════════════════════════════ */
-/* touch-action and overscroll: a phone will try to pan and rubber-band
-   before a touchmove handler gets a word in, and behind the door there
-   is nothing to pan to */
-.gate{position:fixed;inset:0;z-index:70;background:#e4d7bd;overflow:hidden;touch-action:none}
-.gate-stage{position:absolute;inset:0;display:grid;place-items:center;isolation:isolate}
-/* while the door is shut the page underneath does not move: there is
-   no scroll to jack, because there is no scroll */
-.gate-on,.gate-on body{overflow:hidden;overscroll-behavior:none}
+.gate{position:relative;background:#e4d7bd}
+/* One screen of travel drives the whole composition, and then the
+   page carries on. It is a tall first section rather than a layer
+   over the page, which is the difference between a hero and an
+   interstitial — and the difference matters to a crawler arriving at
+   the home page from a search for the studio. */
+.js .gate{height:206svh}
+@media(max-width:760px){.js .gate{height:188svh}}
+.gate-stage{position:sticky;top:0;height:100svh;overflow:hidden;display:grid;place-items:center;isolation:isolate}
 
 /* the wall, in the morning: warm plaster, a pool of light where the
    window is, and the ground darkening toward a floor just out of
@@ -387,11 +388,14 @@ a{color:inherit;text-decoration:none}
 @keyframes dazzle{0%{opacity:0}22%{opacity:1}55%{opacity:1}100%{opacity:0}}
 .gate-off .gate{display:none}
 
-/* no script: the welcome is not there at all and the page cannot be
-   locked, so the header's own switcher is the language control, as it
-   was. Reduced motion keeps the door — it is the way in, not an
-   effect — with everything already at rest behind it. */
+/* no script: the welcome is not there at all, and the header's own
+   crawlable switcher is the language control, as it was. Reduced
+   motion keeps the welcome but not the travel: with nothing to drive
+   there is no reason for the section to be two screens tall, so it
+   becomes one screen with the composition already at rest. */
 html:not(.js) .gate{display:none}
+html.rm .gate{height:auto}
+html.rm .gate-stage{position:static;height:auto;min-height:92svh}
 html.rm .gate-sign{--dep:.13}
 html.rm .gate-cue{display:none}
 

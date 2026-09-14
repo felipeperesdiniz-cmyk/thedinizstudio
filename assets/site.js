@@ -146,18 +146,22 @@
   }
 
   // ── the welcome ──────────────────────────────────────────
-  // The door. The visitor arrives in the room with the sign rather
-  // than the room with the screen, because the first thing the site
-  // needs from them is a language — and until it has one, the page
-  // behind this does not move. The overlay is fixed and the document
-  // is locked, so there is no scroll to jack and nothing further to
-  // reach: the scroll goes into the composition instead. The letters
-  // seat themselves into the plaster a letter at a time, the mark is
-  // stamped on last, and then the three choices rise in front of the
-  // sign while the camera takes a step in. Resting on a choice
-  // previews it. Picking one blows the wall light out, unlocks the
-  // page and leaves the visitor at the first frame of the walk toward
-  // the screen, in the language they chose.
+  // The visitor arrives in the room with the sign rather than the room
+  // with the screen, because the first thing the site needs from them
+  // is a language. Scrolling seats the letters into the plaster a
+  // letter at a time, stamps the mark on last, and then brings the
+  // three choices up in front of the sign while the camera takes a
+  // step in. Resting on a choice previews it. Picking one blows the
+  // wall light out, takes the welcome out of the page and leaves the
+  // visitor at the first frame of the walk toward the screen, in the
+  // language they chose.
+  //
+  // It asks rather than insists. Blocking the page until the question
+  // is answered is an interstitial by any definition Google uses, and
+  // this is the studio's home page: a visitor who keeps scrolling
+  // carries on in the language the URL already names, and the header's
+  // own switcher is there the whole way down. The welcome is the first
+  // thing the studio says, not a toll on the way in.
   var gate = document.getElementById('gate');
   if (gate && !root.classList.contains('gate-off')) (function () {
     var here   = (root.lang || 'en').slice(0, 2).toLowerCase();
@@ -166,8 +170,6 @@
     var kicks  = [].slice.call(gate.querySelectorAll('.gate-kicker span'));
     var pills  = [].slice.call(gate.querySelectorAll('.gate-pill'));
     var picks  = gate.querySelector('.gate-pick ul');
-    var skip   = document.querySelector('.skip');
-    var main   = document.getElementById('main');
 
     // one <i> per letter, so each can arrive on its own clock and
     // carry its own depth — the same construction the sign-off uses
@@ -183,22 +185,6 @@
     });
     var glyphs = [].slice.call(gate.querySelectorAll('.gate-sign i'));
     var lis = pills.map(function (a) { return a.parentNode; });
-
-    // ── the lock ──
-    // The page is not scrolled away from; it is not scrollable. That
-    // is the whole mechanism, and it costs one class. Everything
-    // behind the overlay is made inert while it is up, so a keyboard
-    // and a screen reader are held at the door too rather than
-    // tabbing into a page nobody can see.
-    function shut(on) {
-      root.classList.toggle('gate-on', on);
-      [main, head, skip].forEach(function (el) {
-        if (!el) return;
-        if (on) el.setAttribute('inert', '');
-        else el.removeAttribute('inert');
-      });
-    }
-    shut(true);
 
     function greet(lang) {
       kicks.forEach(function (s) {
@@ -224,21 +210,9 @@
         return;
       }
       setTimeout(function () {
-        shut(false);                               // the page can move again
-        root.classList.add('gate-off');            // and the door is gone
-        // Nothing scrolled the document while the door was shut, so the
-        // hero is already at the first frame of its walk. This puts the
-        // smooth scroller back to work and guards against a scroll
-        // position the browser restored on load.
-        scrollTo(0, 0);
-        if (smooth) {
-          try {
-            smooth.start();
-            smooth.resize();
-            smooth.scrollTo(0, { immediate: true, force: true, onComplete: function () {} });
-          } catch (e) { scrollTo(0, 0); }
-        }
-        runTasks();
+        root.classList.add('gate-off');            // out of the page
+        toTop();
+        runTasks();                                // place the room before it shows
         // the curtain clears itself, so all this has to do is stop
         // standing on the class that started it
         setTimeout(function () { root.classList.remove('gate-shut'); }, 2100);
@@ -341,87 +315,55 @@
       return;
     }
 
-    // ── the scroll, with nowhere to put it ──
-    // The document is locked, so wheel and touch are read as intent and
-    // spent on the composition. One screen of scrolling builds the
-    // whole thing, damped toward its target so a trackpad's hundred
-    // small deltas read as one move.
-    var want = 0, at = 0, running = false, idle = null;
-
-    function frame() {
-      at += (want - at) * 0.13;
-      if (Math.abs(want - at) < 0.0008) at = want;
-      paint(at);
-      if (at !== want) requestAnimationFrame(frame);
-      else running = false;
-    }
-    function run() {
-      if (running) return;
-      running = true;
-      requestAnimationFrame(frame);
-    }
-    function feed(dv) {
-      want = clamp01(want + dv);
-      if (idle) { clearTimeout(idle); idle = null; }
-      run();
+    // ── the scroll ──
+    // Scroll position drives the composition, so the section's own
+    // height is the timeline and the browser does the easing. One
+    // screen of travel builds the whole thing.
+    function gateRender() {
+      if (root.classList.contains('gate-off')) return;
+      var box = gate.getBoundingClientRect();
+      if (box.bottom < -40) return;              // done with, and left up there
+      var span = gate.offsetHeight - innerHeight;
+      paint(clamp01(span > 0 ? -box.top / span : 0));
     }
 
-    function onWheel(ev) {
-      ev.preventDefault();                         // nothing behind this moves
-      feed(ev.deltaY / (innerHeight * 1.5));
+    // Put the page at an exact offset and make it stay there. The
+    // smooth-scroll library keeps its own idea of where the page is and
+    // wins the next frame unless it is told too — and is allowed to
+    // throw while being told, because a stranded curtain is worse than
+    // a missed animation.
+    function jumpTo(y) {
+      scrollTo(0, y);
+      if (!smooth) return;
+      try { smooth.scrollTo(y, { immediate: true, force: true, onComplete: function () {} }); }
+      catch (e) { scrollTo(0, y); }
     }
-    var ty = null;
-    function onTouchStart(ev) { ty = ev.touches[0].clientY; }
-    function onTouchMove(ev) {
-      ev.preventDefault();
-      if (ty === null) return;
-      var y = ev.touches[0].clientY;
-      feed((ty - y) / (innerHeight * 0.8));
-      ty = y;
-    }
-    var STEPS = { ArrowDown: 0.3, PageDown: 0.55, ' ': 0.45, ArrowUp: -0.3, PageUp: -0.55, End: 1, Home: -1 };
+    // the hero is the top of the document once the welcome is out of
+    // it, and its walk has to start from its own first frame rather
+    // than from wherever the welcome's scroll left us
+    function toTop() { jumpTo(0); }
+
+    // A keyboard has no wheel to build the sign with, and a half-risen
+    // link has no business in the tab ring: tabbing off the skip link
+    // finishes the composition and hands over the choices. It is the
+    // Tab after the skip link rather than the first one, because the
+    // skip link is the other thing a keyboard wants here and it keeps
+    // its place at the front of the ring.
     function onKey(ev) {
-      if (ev.key === 'Tab') {
-        // A keyboard has no wheel, and a half-risen link has no
-        // business in the tab ring: the first Tab finishes the
-        // composition and hands over the choices.
-        if (gate.classList.contains('ready')) return;
-        ev.preventDefault();
-        want = 1; at = 1; paint(1);
-        if (pills[0]) pills[0].focus();
-        return;
-      }
-      if (!(ev.key in STEPS)) return;
+      if (ev.key !== 'Tab' || ev.shiftKey) return;
+      if (root.classList.contains('gate-off') || gate.classList.contains('ready')) return;
+      var from = document.activeElement;
+      if (!from || !from.classList.contains('skip')) return;
       ev.preventDefault();
-      feed(STEPS[ev.key]);
+      jumpTo(gate.offsetTop + gate.offsetHeight - innerHeight);
+      runTasks();
+      requestAnimationFrame(function () { if (pills[0]) pills[0].focus(); });
     }
-    // a click anywhere on the wall is intent too, and it is the one
-    // gesture a visitor who has not understood the cue will try
-    function onClick(ev) {
-      if (ev.target.closest('.gate-pill')) return;
-      feed(0.42);
-    }
-    function release() {
-      removeEventListener('wheel', onWheel, { passive: false });
-      removeEventListener('touchstart', onTouchStart, { passive: false });
-      removeEventListener('touchmove', onTouchMove, { passive: false });
-      removeEventListener('keydown', onKey);
-      gate.removeEventListener('click', onClick);
-      if (idle) { clearTimeout(idle); idle = null; }
-    }
-    addEventListener('wheel', onWheel, { passive: false });
-    addEventListener('touchstart', onTouchStart, { passive: false });
-    addEventListener('touchmove', onTouchMove, { passive: false });
+    function release() { removeEventListener('keydown', onKey); }
     addEventListener('keydown', onKey);
-    gate.addEventListener('click', onClick);
 
-    // Nobody is trapped in front of a sign. If the cue has not been
-    // taken after a few seconds the composition presents itself, so
-    // the choices are always reachable however the visitor reads the
-    // room — or fails to.
-    idle = setTimeout(function () { idle = null; want = 1; run(); }, 6500);
-
-    paint(0);                                    // build the room before first paint
+    frameTasks.push(gateRender);
+        gateRender();                                // build the room before first paint
   })();
 
   // ── the brief's own strings ─────────────────────────────
@@ -917,11 +859,5 @@
     if (!window.Lenis) return;
     smooth = new Lenis({ lerp: 0.1, wheelMultiplier: 0.95 });
     (function raf(t) { smooth.raf(t); requestAnimationFrame(raf); })(0);
-    // overflow:hidden stops a visitor scrolling, not a script: this
-    // library sets scrollTop itself and would walk the page along
-    // behind the welcome while the welcome is still up. It is created
-    // on load, which can be either side of the door opening, so the
-    // check belongs here rather than in the gate.
-    if (root.classList.contains('gate-on')) smooth.stop();
   });
 })();
