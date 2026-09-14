@@ -100,6 +100,49 @@ def switcher(page, lang):
             % (CHROME["lang.aria"][lang], "".join(rows)))
 
 
+LANGNAME = {"en": "English", "pt": "Português", "es": "Español"}
+
+
+def greetings(lang, strings):
+    """The welcome line, once per language.
+
+    The gate asks a question the reader has not answered yet, so all
+    three greetings ship on every page and the pointer decides which
+    one is showing. The page's own language is the one marked `on`,
+    which is also the state the gate rests in with no script.
+    """
+    return "".join(
+        '<span data-g="%s"%s>%s</span>'
+        % (other, ' class="on"' if other == lang else "",
+           strings["gate.hi." + other])
+        for other in ORDER
+    )
+
+
+def gate_picker(page, lang, strings):
+    """The three choices on the welcome.
+
+    Each is a plain link to that language's home page, labelled in the
+    language it leads to: before a reader has chosen, the name of their
+    own language is the only string on the screen they are certain to
+    read. Ordinary links, so the gate is a language switcher even with
+    the script gone and a crawler sees three hrefs rather than a wall.
+    """
+    rows = []
+    for i, other in enumerate(ORDER):
+        rows.append(
+            '<li style="--i:%d"><a class="gate-pill" href="%s" data-lang="%s"'
+            ' hreflang="%s" lang="%s" aria-label="%s"%s>%s</a></li>'
+            % (i, path_for(page, other), other,
+               LANGS[other]["html"], LANGS[other]["html"],
+               strings["gate.enter." + other],
+               ' aria-current="page"' if other == lang else "",
+               LANGNAME[other])
+        )
+    return ('<nav class="gate-pick" aria-label="%s">\n        <ul>%s</ul>\n      </nav>'
+            % (CHROME["lang.aria"][lang], "".join(rows)))
+
+
 def json_escape(s):
     # Strings are authored for HTML, so they carry entities (&amp;, &rsquo;).
     # JSON-LD is not HTML: a crawler reading "Web Design &amp; Development"
@@ -136,6 +179,12 @@ def render(page, lang, strings, seen=None):
         "jsonld_lang": LANGS[lang]["html"],
         "prefix": "/" + LANGS[lang]["prefix"],
     }
+    # The welcome only exists on the home page, so its two computed
+    # blocks are built only where its strings are.
+    if "gate.hi.en" in strings:
+        computed["greetings"] = greetings(lang, strings)
+        computed["gate"] = gate_picker(page, lang, strings)
+
     # The offer catalogue is the service list again, one Offer per name,
     # so the two can never disagree: derive it rather than retype it.
     if "ld.services" in strings:

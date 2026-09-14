@@ -11,6 +11,7 @@
   var stage = document.querySelector('.site-hero');
   var head  = document.getElementById('head');
   var root  = document.documentElement;
+  var smooth = null;                 // the Lenis instance, once it exists
 
   if (reduce) root.classList.add('rm');
 
@@ -143,6 +144,214 @@
     requestAnimationFrame(lightUp);
     addEventListener('load', lightUp);   // belt and braces if the frame is deferred
   }
+
+  // ── the welcome ──────────────────────────────────────────
+  // The visitor arrives in the room with the sign, not the room with
+  // the screen, because the first thing the site needs from them is a
+  // language. Scrolling builds the sign out of the wall a letter at a
+  // time; once it is whole the three choices rise in front of it and
+  // the camera takes a step in. Resting on a choice previews it — the
+  // greeting changes language under the pointer and the sign hands
+  // over the frame. Picking one blows the wall light out, takes the
+  // gate out of the page and drops you at the first frame of the walk
+  // toward the screen, in the language you chose.
+  var gate = document.getElementById('gate');
+  if (gate && !root.classList.contains('gate-off')) (function () {
+    var here   = (root.lang || 'en').slice(0, 2).toLowerCase();
+    var sign   = gate.querySelector('.gate-sign');
+    var char   = gate.querySelector('.gate-char');
+    var kicks  = [].slice.call(gate.querySelectorAll('.gate-kicker span'));
+    var pills  = [].slice.call(gate.querySelectorAll('.gate-pill'));
+    var picks  = gate.querySelector('.gate-pick ul');
+
+    // one <i> per letter, so each can arrive on its own clock and
+    // carry its own depth — the same construction the sign-off uses
+    [].slice.call(gate.querySelectorAll('.gate-sign .wd')).forEach(function (w) {
+      var frag = document.createDocumentFragment();
+      w.textContent.split('').forEach(function (ch) {
+        var i = document.createElement('i');
+        i.textContent = ch;
+        frag.appendChild(i);
+      });
+      w.textContent = '';
+      w.appendChild(frag);
+    });
+    var glyphs = [].slice.call(gate.querySelectorAll('.gate-sign i'));
+
+    // ── choosing ──
+    function greet(lang) {
+      kicks.forEach(function (s) {
+        s.classList.toggle('on', s.getAttribute('data-g') === lang);
+      });
+    }
+
+    function leave(a) {
+      var lang = a.getAttribute('data-lang');
+      // Remembered for the visit, not for ever: the welcome is a door,
+      // and a door you have already walked through should not be in
+      // the way on the way back. It is also what tells the next page
+      // to open past the gate, which is how a language that lives at
+      // another URL still lands on the walk rather than on the sign.
+      try { sessionStorage.setItem('ds-lang', lang); } catch (e) {}
+      gate.classList.add('chosen');
+      root.classList.add('gate-shut');
+
+      if (lang !== here) {
+        // the wall light covers the load, so the two pages are one move
+        setTimeout(function () { location.href = a.getAttribute('href'); }, 430);
+        return;
+      }
+      setTimeout(function () {
+        root.classList.add('gate-off');            // out of the page
+        toTop();
+        runTasks();                                // place the room before it shows
+        // the curtain clears itself, so all this has to do is stop
+        // standing on the class that started it
+        setTimeout(function () { root.classList.remove('gate-shut'); }, 2100);
+      }, 470);
+    }
+
+    // Put the page at an exact offset and make it stay there. The
+    // smooth-scroll library keeps its own idea of where the page is
+    // and wins the next frame unless it is told too — and is allowed
+    // to throw while being told, because a stranded curtain is worse
+    // than a missed animation.
+    function jumpTo(y) {
+      scrollTo(0, y);
+      if (!smooth) return;
+      try { smooth.scrollTo(y, { immediate: true, force: true, onComplete: function () {} }); }
+      catch (e) { scrollTo(0, y); }
+    }
+    // The hero is the top of the document once the gate is out of it,
+    // and its walk has to start from its own first frame rather than
+    // from wherever the gate's scroll left us.
+    function toTop() { jumpTo(0); }
+
+    pills.forEach(function (a) {
+      var li = a.parentNode;
+      function on() {
+        greet(a.getAttribute('data-lang'));
+        picks.classList.add('hot'); li.classList.add('hot'); gate.classList.add('hot');
+      }
+      function off() {
+        greet(here);
+        picks.classList.remove('hot'); li.classList.remove('hot'); gate.classList.remove('hot');
+      }
+      a.addEventListener('pointerenter', on);
+      a.addEventListener('pointerleave', off);
+      a.addEventListener('focus', on);
+      a.addEventListener('blur', off);
+      a.addEventListener('click', function (ev) {
+        // a modified click is a request for a second tab, and a second
+        // tab should get the page, not this page's transition
+        if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button) return;
+        ev.preventDefault();
+        leave(a);
+      });
+    });
+
+    if (reduce) {
+      // no journey: the sign is simply up, with its relief, and the
+      // three choices are simply there
+      sign.style.setProperty('--dep', '0.13');
+      return;
+    }
+
+    // A keyboard has no wheel to build the sign with, and until the
+    // choices are up there is nothing on the page to focus: the header
+    // is out of the frame until the hero arrives, and a half-risen
+    // link has no business in the tab ring. So tabbing off the skip
+    // link finishes the welcome and hands over the choices, rather
+    // than dropping a keyboard into an empty tab ring. It is the Tab
+    // after the skip link rather than the first one, because the skip
+    // link is the other thing a keyboard wants here and it must keep
+    // its place at the front of the ring.
+    addEventListener('keydown', function (ev) {
+      if (ev.key !== 'Tab' || ev.shiftKey) return;
+      if (root.classList.contains('gate-off') || gate.classList.contains('ready')) return;
+      var from = document.activeElement;
+      if (!from || !from.classList.contains('skip')) return;
+      ev.preventDefault();
+      jumpTo(gate.offsetTop + gate.offsetHeight - innerHeight);
+      runTasks();
+      requestAnimationFrame(function () { if (pills[0]) pills[0].focus(); });
+    });
+
+    var LET_A = 0.00, LET_B = 0.44;   // the letters seat themselves
+    var PICK_A = 0.50, PICK_B = 0.86; // the choices rise
+    // How far the letters stand off the plaster, in the sign-off's
+    // units: the extrusion is 44 stacked copies a step of
+    // .0105em * dep apart, so this is about eight pixels of acrylic at
+    // the sign's full size. Cut letters on a wall, not a title card.
+    var DEEP = 0.13;
+
+    // Each letter runs its own clock: the starts are spread across the
+    // first three fifths of the phase and each arrival takes the last
+    // two, so the sign fills in left to right with the letters
+    // overlapping rather than queueing.
+    var n = glyphs.length;
+    var g0 = [], g1 = [];
+    glyphs.forEach(function (g, i) {
+      var s = LET_A + (LET_B - LET_A) * 0.6 * (n > 1 ? i / (n - 1) : 0);
+      g0.push(s);
+      g1.push(s + (LET_B - LET_A) * 0.4);
+    });
+    var lis = pills.map(function (a) { return a.parentNode; });
+
+    function clamp01(v) { return v < 0 ? 0 : v > 1 ? 1 : v; }
+    function ramp(v, a, b) { return clamp01((v - a) / (b - a)); }
+    function ease(v) { return v * v * (3 - 2 * v); }
+
+    var held = null, set = null;
+
+    function gateRender() {
+      if (root.classList.contains('gate-off')) return;
+      var box = gate.getBoundingClientRect();
+      if (box.bottom < -40) return;              // done with, and left up there
+
+      var span = gate.offsetHeight - innerHeight;
+      var p = clamp01(span > 0 ? -box.top / span : 0);
+
+      glyphs.forEach(function (g, i) {
+        var t = ease(ramp(p, g0[i], g1[i]));
+        g.style.setProperty('--li', t.toFixed(3));
+        // The extrusion is a stack of forty-odd copies of the glyph, so
+        // every distinct depth is a re-rasterisation. Quantising it to
+        // twelve steps across the arrival buys the whole relief for a
+        // dozen repaints per letter instead of one per frame.
+        g.style.setProperty('--dep', (Math.round(t * 12) / 12 * DEEP).toFixed(4));
+      });
+
+      // the mark lands last, the way a registration mark is stamped on
+      // after the name is set
+      var c = ease(ramp(p, 0.34, 0.50));
+      char.style.setProperty('--ci', c.toFixed(3));
+      char.style.setProperty('--dep', (Math.round(c * 8) / 8 * DEEP).toFixed(4));
+
+      // the choices come forward and the camera takes a step with them,
+      // which is what makes the sign let go of the frame
+      var pick = ease(ramp(p, PICK_A, PICK_B));
+      gate.style.setProperty('--wallz', (1 + 0.055 * pick).toFixed(4));
+      gate.style.setProperty('--signz', (1 - 0.06 * pick).toFixed(4));
+      gate.style.setProperty('--gcue', (1 - ramp(p, PICK_A, PICK_A + 0.12)).toFixed(3));
+
+      lis.forEach(function (li, i) {
+        var t = ease(ramp(p, PICK_A + i * 0.06, PICK_A + i * 0.06 + 0.24));
+        li.style.setProperty('--p', t.toFixed(3));
+        // invisible links do not belong in the tab order, and half-risen
+        // ones are not a tap target yet
+        li.style.visibility = t > 0.04 ? 'visible' : 'hidden';
+      });
+
+      var shut = pick < 0.5;
+      if (shut !== held) { held = shut; gate.classList.toggle('hold', shut); }
+      var done = p > 0.80;
+      if (done !== set) { set = done; gate.classList.toggle('ready', done); }
+    }
+
+    frameTasks.push(gateRender);
+    gateRender();                                // build the room before first paint
+  })();
 
   // ── the brief's own strings ─────────────────────────────
   // The only strings the script owns. Everything else on the page is
@@ -631,7 +840,7 @@
   if (reduce) return;
   addEventListener('load', function () {
     if (!window.Lenis) return;
-    var l = new Lenis({ lerp: 0.1, wheelMultiplier: 0.95 });
-    (function raf(t) { l.raf(t); requestAnimationFrame(raf); })(0);
+    smooth = new Lenis({ lerp: 0.1, wheelMultiplier: 0.95 });
+    (function raf(t) { smooth.raf(t); requestAnimationFrame(raf); })(0);
   });
 })();

@@ -28,6 +28,22 @@
     "pt": "Diniz Studio: identidade visual e criação de sites, Miami",
     "es": "Diniz Studio: identidad de marca y diseño web, Miami"
   },
+  "gate.aria": {
+    "en": "Welcome to Diniz Studio",
+    "pt": "Bem-vindo ao Diniz Studio",
+    "es": "Bienvenido al Diniz Studio"
+  },
+  "gate.pick": {
+    "en": "Choose a language",
+    "pt": "Escolha um idioma",
+    "es": "Elija un idioma"
+  },
+  "gate.hi.en": "Welcome to",
+  "gate.hi.pt": "Bem-vindo ao",
+  "gate.hi.es": "Bienvenido al",
+  "gate.enter.en": "Continue in English",
+  "gate.enter.pt": "Continuar em português",
+  "gate.enter.es": "Continuar en español",
   "hero.where": {
     "en": "Independent creative studio / Miami, Florida",
     "pt": "Estúdio criativo independente / Miami, Flórida",

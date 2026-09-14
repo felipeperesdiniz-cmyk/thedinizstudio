@@ -127,6 +127,184 @@ a{color:inherit;text-decoration:none}
   .site-head .lang a{padding:8px 7px;font-size:11px}
 }
 
+/* ═══ THE WELCOME ═══════════════════════════════════════════
+   Before the room with the screen there is the room with the
+   sign, and a visitor who has not said which language they
+   read. Three beats on one scroll: the letters seat themselves
+   into the plaster, the sign holds long enough to be a sign,
+   then the three choices rise in front of it while the camera
+   steps in. Picking one is the cut — the wall light blows out,
+   the gate is taken out of the page, and the walk toward the
+   screen starts from its own first frame with the language
+   already chosen. The wall, the sign and the extrusion are the
+   sign-off's, reused: one room, seen twice.
+   ═════════════════════════════════════════════════════════ */
+.gate{position:relative;background:#e2d4bd}
+.js .gate{height:236svh}
+@media(max-width:760px){.js .gate{height:206svh}}
+.gate-stage{position:sticky;top:0;height:100svh;overflow:hidden;isolation:isolate;display:grid;place-items:center}
+
+.gate-mid{
+  position:relative;z-index:2;
+  display:flex;flex-direction:column;align-items:center;
+  gap:clamp(14px,2.6vh,34px);
+  padding:clamp(60px,9vh,110px) var(--gut) clamp(58px,9vh,104px);
+}
+
+/* the greeting, in whichever language the pointer is resting on.
+   All three are stacked in the same slot so the swap is a crossfade
+   in place rather than a line of text changing width. */
+.gate-kicker{
+  position:relative;height:1.3em;min-width:12ch;
+  color:#463d31;letter-spacing:.34em;text-align:center;
+  font-size:clamp(11px,1.05vw,14px);
+}
+.gate-kicker span{
+  position:absolute;left:50%;top:0;translate:-50% 0;white-space:nowrap;
+  opacity:0;transform:translateY(5px);
+  transition:opacity .4s var(--e2),transform .5s var(--e2);
+}
+.gate-kicker span.on{opacity:1;transform:none}
+
+.gate-sign{
+  font-size:clamp(37px,8.9vw,146px);
+  transform:scale(var(--signz,1));transform-origin:50% 60%;
+  transition:transform .7s var(--e2),opacity .5s var(--e2);
+}
+/* The sign is on the wall before you scroll, but only just: at rest
+   it is the ghost of itself, flat and barely inked, the way a sign
+   reads before the light reaches it. Scrolling inks each letter,
+   lifts it the last tenth of its height and pulls the extrusion out
+   of the plaster. --li is the letter's own clock, written per glyph,
+   so the sign fills in left to right rather than all at once. */
+.gate-sign i{
+  /* One window lights this room, so every letter throws its depth the
+     same way — down and to the right — rather than radiating from a
+     vanishing point the way the sign-off's does. The sign-off has a
+     camera between the letters; this is a sign on a wall seen square
+     on, and a starburst would give that away immediately. */
+  --sx:.5; --sy:.866;
+  opacity:calc(.1 + .9 * var(--li,1));
+  transform:translate3d(0,calc((1 - var(--li,1)) * .13em),0) scale(calc(.965 + var(--li,1) * .035));
+  transform-origin:50% 94%;
+}
+/* the registration mark, sized and seated like a letter of the
+   wordmark rather than pasted beside it */
+/* The mark is a letter of the wordmark, not a superscript beside it:
+   it stands on the same baseline (which is what a replaced element
+   aligned to `baseline` does for free) and reaches the cap line. */
+.gate-char{
+  width:.62em;height:auto;flex:none;
+  margin-left:-.14em;color:#17140f;
+  opacity:calc(.08 + .92 * var(--ci,1));
+  transform:translate3d(0,calc((1 - var(--ci,1)) * -.26em),0) scale(calc(.78 + var(--ci,1) * .22));
+  /* drop-shadow cannot stack forty copies of a path, so the mark's
+     depth is three hard offsets down the same light as the letters'
+     and one soft cast to sit it off the plaster */
+  filter:
+    drop-shadow(calc(var(--dep,0) * .09em) calc(var(--dep,0) * .156em) 0 #100e0c)
+    drop-shadow(calc(var(--dep,0) * .09em) calc(var(--dep,0) * .156em) 0 #0e0c0a)
+    drop-shadow(calc(var(--dep,0) * .09em) calc(var(--dep,0) * .156em) 0 #0c0a08)
+    drop-shadow(calc(var(--dep,0) * .3em + .01em) calc(var(--dep,0) * .5em + .02em) .05em rgba(50,34,18,.42));
+}
+@media(max-width:760px){.gate-char{width:.66em}}
+
+/* ── the three choices ────────────────────────────────────
+   Plain links on a cream wall: warm plaster behind, so they are
+   lit from above and throw a real shadow rather than sitting in
+   an outline. The <li> carries the arrival, the <a> the hover,
+   so neither transform has to know about the other. */
+.gate-pick{margin-top:clamp(6px,1.6vh,20px)}
+.gate-pick ul{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(9px,1.3vw,20px);list-style:none}
+/* three across becomes two and a widow on a phone, which reads as a
+   mistake; stacked, each choice is also a thumb-sized target */
+@media(max-width:560px){
+  .gate-pick ul{flex-direction:column;width:min(310px,80vw)}
+  .gate-pill{text-align:center}
+}
+.gate-pick li{
+  opacity:var(--p,1);
+  transform:translate3d(0,calc((1 - var(--p,1)) * 38px),0);
+}
+/* nothing to click while they are still on their way up */
+.gate.hold .gate-pick{pointer-events:none}
+.gate-pill{
+  display:block;position:relative;
+  padding:clamp(15px,1.9vh,21px) clamp(26px,3.2vw,54px);
+  border-radius:999px;color:#241f18;
+  background:linear-gradient(180deg,#faf4e8,#ece2cf);
+  font-family:var(--mono);font-size:clamp(10px,1.05vw,13px);
+  letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.9),
+    inset 0 -1px 0 rgba(96,74,48,.12),
+    0 1px 1px rgba(78,58,34,.12),
+    0 15px 24px -15px rgba(78,58,34,.6);
+  transition:
+    transform .55s var(--e2),box-shadow .55s var(--e2),
+    background .55s var(--e2),letter-spacing .55s var(--e2),opacity .45s var(--e2);
+}
+@media(hover:hover) and (pointer:fine){
+  .gate-pill:hover{
+    transform:translateY(-5px);letter-spacing:.235em;
+    background:linear-gradient(180deg,#fffbf2,#f3ead8);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.95),
+      0 2px 2px rgba(78,58,34,.14),
+      0 30px 38px -20px rgba(78,58,34,.66);
+  }
+  /* one of them is being considered, so the other two step back and
+     the sign behind them gives up the frame */
+  .gate-pick.hot li:not(.hot) .gate-pill{opacity:.5}
+  .gate.hot .gate-sign{transform:scale(calc(var(--signz,1) * .978));opacity:.72}
+}
+.gate-pill:active{transform:translateY(-1px)}
+
+.gate-cue{
+  position:absolute;left:50%;bottom:clamp(20px,3.6vh,42px);translate:-50% 0;
+  z-index:3;color:#3a342b;opacity:calc(var(--gcue,1) * .9);
+  display:flex;align-items:center;gap:11px;white-space:nowrap;pointer-events:none;
+}
+/* the cue is a tick while there is scrolling left to do and a
+   sentence once there is a decision to make, in the same slot */
+.gate-cue span{transition:opacity .45s var(--e2)}
+.gate-cue-b{position:absolute;left:0;top:0;opacity:0}
+.gate.ready .gate-cue-a{opacity:0}
+.gate.ready .gate-cue-b{opacity:1}
+.gate-cue i{display:block;width:1px;height:24px;background:currentColor;opacity:.45;position:relative;overflow:hidden}
+.gate-cue i::after{content:"";position:absolute;inset:0;background:currentColor;animation:cue 2.4s var(--e) infinite}
+.gate.ready .gate-cue i{opacity:0;transition:opacity .4s var(--e2)}
+
+/* ── the cut into the hero ────────────────────────────────
+   The curtain is the wall's own light, run up to a blowout: you
+   are not cut away from the room, you are dazzled out of it. It
+   lives outside the gate because it is still fading when the
+   gate is gone, and it is over the header because the header is
+   the first thing the hero brings back. */
+.gate.chosen .gate-sign{transform:scale(1.07);opacity:0;transition:transform .6s var(--e),opacity .45s var(--e) .04s}
+.gate.chosen .gate-pick li{opacity:0;transform:translate3d(0,-12px,0);transition:opacity .3s var(--e2) calc(var(--i) * 45ms),transform .5s var(--e2) calc(var(--i) * 45ms)}
+.gate.chosen .gate-kicker,.gate.chosen .gate-cue{opacity:0;transition:opacity .3s var(--e2)}
+.gate-veil{
+  position:fixed;inset:0;z-index:95;pointer-events:none;opacity:0;
+  background:radial-gradient(118% 88% at 50% 44%,#fffdf6,#f2e7d3 52%,#d7c6a8);
+}
+/* One animation rather than a class per end of it: the curtain closes,
+   holds long enough for the page to be rebuilt behind it, and clears
+   itself. Nothing the script does or fails to do in between can leave
+   a visitor looking at a blank screen. */
+.gate-shut .gate-veil{animation:dazzle 2s var(--e2) forwards}
+@keyframes dazzle{0%{opacity:0}22%{opacity:1}55%{opacity:1}100%{opacity:0}}
+.gate-off .gate{display:none}
+
+/* no script: the header already carries the switcher, so the
+   welcome is a beat the page can do without rather than a wall of
+   markup above the heading. Reduced motion keeps it, at rest. */
+html:not(.js) .gate{display:none}
+html.rm .gate{height:auto}
+html.rm .gate-stage{position:static;height:auto;min-height:88svh}
+html.rm .gate-sign{--dep:.13}
+html.rm .gate-cue{display:none}
+
 /* ── hero: a screen across a room ────────────────────────
    You open on a monitor at a distance with the site's own hero
    playing inside it. Scrolling walks you toward it: the device
@@ -901,7 +1079,10 @@ html:not(.js) .hero-stage, html.rm .hero-stage{position:static;height:auto;overf
 /* no script, or no appetite for motion: it is simply the sign-off */
 html:not(.js) .outro, html.rm .outro{height:auto}
 html:not(.js) .outro-stage, html.rm .outro-stage{position:static;height:auto;overflow:visible}
-html:not(.js) .wall, html.rm .wall,
+/* scoped to the sign-off: with no journey there is no room to walk
+   into, so its wall goes. The welcome's wall is the composition
+   rather than a camera move, and stays. */
+html:not(.js) .outro .wall, html.rm .outro .wall,
 html:not(.js) .sign-cam, html.rm .sign-cam,
 /* with no motion there is no journey, so the mark stays in the
    sign-off and the heading keeps the full measure */
@@ -909,7 +1090,7 @@ html:not(.js) .char-berth, html.rm .char-berth{display:none}
 html:not(.js) .contact-lead, html.rm .contact-lead{min-height:0}
 html:not(.js) .contact-say, html.rm .contact-say{position:static}
 html:not(.js) .outro-cue, html.rm .outro-cue,
-html:not(.js) .wall-light, html.rm .wall-light,
+html:not(.js) .outro .wall-light, html.rm .outro .wall-light,
 html:not(.js) .gloom, html.rm .gloom,
 html:not(.js) .blackout, html.rm .blackout{display:none}
 html:not(.js) .signoff, html.rm .signoff{

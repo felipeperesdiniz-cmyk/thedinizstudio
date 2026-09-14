@@ -2,6 +2,12 @@
 <html lang="{{$lang}}">
 <head>
 {{>head}}
+<!-- A visitor who has already picked a language on this visit is past
+     the welcome, and so is one who arrived at a fragment — a case
+     study's link back to #work is a jump into the page, not an
+     arrival at the studio's door. The class lands before the first
+     paint, so the gate is never drawn rather than drawn and dismissed. -->
+<script>try{if(location.hash||sessionStorage.getItem("ds-lang"))document.documentElement.className+=" gate-off"}catch(e){if(location.hash)document.documentElement.className+=" gate-off"}</script>
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,11 +15,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300..600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600&text=thedinizstuo&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/assets/site.css?v=30">
+<link rel="stylesheet" href="/assets/site.css?v=31">
 </head>
 <body>
 <a class="skip" href="#main">{{skip}}</a>
 
+{{>gate}}
 {{>header-home}}
 
 <main id="main">
@@ -345,6 +352,8 @@
   </section>
 </main>
 
+<div class="gate-veil" aria-hidden="true"></div>
+
 {{>footer}}
 
 <script type="application/ld+json">
@@ -352,6 +361,6 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
-<script src="/assets/site.js?v=30" defer></script>
+<script src="/assets/site.js?v=31" defer></script>
 </body>
 </html>
