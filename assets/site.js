@@ -490,6 +490,10 @@
       done.hidden = false;
       done.setAttribute('tabindex', '-1');
       done.focus();
+      // the call is the next step now rather than a second way in, so
+      // the card beside this one stops describing it and offers it
+      var sec = brief.closest('.contact');
+      if (sec) sec.classList.add('sent');
     }
 
     brief.addEventListener('submit', function (ev) {

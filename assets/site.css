@@ -497,7 +497,6 @@ html.rm .gate-cue{display:none}
 .disciplines a:hover,.disciplines a:focus-visible{color:var(--fg)}
 .disciplines a:hover::after,.disciplines a:focus-visible::after{transform:scaleX(1)}
 .site-foot-row{display:flex;align-items:center;gap:clamp(13px,2.4vw,30px)}
-.site-foot-row .cue{display:flex;align-items:center;gap:10px;white-space:nowrap;flex:none}
 .site-foot-row .rule{flex:1;height:1px;background:var(--rule)}
 @media(max-width:620px){
   .swap{justify-items:start}          /* it wraps to its own line here */
@@ -724,12 +723,31 @@ html:not(.js) .hero-stage, html.rm .hero-stage{position:static;height:auto;overf
 @media(max-width:820px){.quote{grid-template-columns:1fr}.quote footer{white-space:normal}}
 
 /* ── contact ────────────────────────────────────────────── */
+/* The one colour that means look here, on the one fact that decides
+   whether a visitor acts now: a lit dot, the way a booking page says
+   it is open. */
+.contact-words .avail{display:inline-flex;align-items:center;gap:10px;color:var(--fg)}
+.contact-words .avail::before{
+  content:"";flex:none;width:6px;height:6px;border-radius:50%;
+  background:var(--flag);box-shadow:0 0 0 3px rgba(232,145,106,.16);
+}
 .contact-grid{
   display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(18px,2.6vw,44px);
   align-items:start;margin-top:clamp(34px,5.5vh,68px);
 }
 @media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
 .card{border:1px solid var(--rule);border-radius:4px;padding:clamp(20px,2.3vw,32px)}
+/* Two steps, not two buttons side by side. The call follows the
+   brief — its own copy says "once the brief is in" — and stacked
+   under 900px its button landed directly beneath the send button,
+   where the pair read as one control with two labels. So while the
+   brief is unsent the card describes the next step rather than
+   offering it, and the moment the brief is sent the call becomes the
+   action it always was. Guarded on .js: with no script the form
+   cannot post at all, and this link is then the only way to reach
+   the studio from this section. */
+.js .call .btn{display:none}
+.js .contact.sent .call .btn{display:flex}
 .call{display:flex;flex-direction:column;gap:15px}
 .call h3{font-family:var(--display);font-weight:400;font-size:clamp(22px,2.7vw,36px);line-height:1.05}
 .call .why{color:var(--dim);font-size:16px;line-height:1.6;max-width:42ch}

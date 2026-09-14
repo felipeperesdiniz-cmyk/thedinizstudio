@@ -364,6 +364,11 @@
     "pt": "Eu digo se sou o estúdio certo para isso.",
     "es": "Yo le digo si soy el estudio adecuado para ello."
   },
+  "contact.booking": {
+    "en": "Currently booking projects starting Q4 2026",
+    "pt": "Agenda aberta para projetos a partir de out–dez 2026",
+    "es": "Agenda abierta para proyectos a partir de oct–dic 2026"
+  },
   "form.step1": {
     "en": "First / The brief",
     "pt": "Primeiro / O briefing",
