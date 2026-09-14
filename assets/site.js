@@ -554,71 +554,19 @@
   })();
 
   // ── the sign-off ────────────────────────────────────────
-  // The hero walks you toward a screen; this walks you into the
-  // studio's sign and then through it. Same pinhole as the hero:
-  // apparent size is F/distance, so a camera closing at a steady
-  // pace supplies its own acceleration. Each word is given a
-  // depth and a lateral drift in that same world, then projected:
-  // "the" falls back and left, "studio" slides right and past the
-  // lens, "diniz" stays on the axis and the camera goes into it
-  // until the ink of its own extrusion is the entire frame. That
-  // ink is the cut, and the studio ground is already behind it.
+  // The last thing the page says, and then the mark carries it into
+  // the form. This used to open on the studio's sign and walk a camera
+  // through the letters until the ink of one of them was the whole
+  // frame; the welcome says the studio's name on a wall already, and
+  // saying it twice made the second one a repeat rather than a return.
+  // What is left is the line, and the arrival: the mark falls into the
+  // scene on its own clock, lands heavy, and then keeps going — down
+  // and across into the empty half of the contact block, where it
+  // parks beside the heading for as long as the heading is on screen.
   var outro = document.getElementById('outro');
   if (!reduce && outro) (function () {
-    var stage  = outro.querySelector('.outro-stage');
-    var slot   = outro.querySelector('.so-char-slot');
-    var berth  = document.querySelector('.char-berth');
-    var sign   = outro.querySelector('.sign');
-    var words  = [].slice.call(outro.querySelectorAll('.wd'));
-
-    var HOLD  = 0.07;   // the sign is allowed to be a sign first
-    var CUT   = 0.68;   // the camera has arrived by here
-    var D0    = 1000;   // reference distance to the wall
-    var DMIN  = 26;     // how close the lens gets before the cut
-    var BACK  = 900;    // how far "the" retreats into the wall
-    var FWD   = 0.44;   // how much of the gap "studio" closes on the lens
-    var SIDE  = 0.50;   // lateral drift, as a share of D0
-    var RATE  = Math.log(D0 / DMIN);
-
-    // one <i> per letter, each extruding away from the vanishing
-    // point, so the sign has a single camera rather than sixteen
-    words.forEach(function (w) {
-      var frag = document.createDocumentFragment();
-      w.textContent.split('').forEach(function (ch) {
-        var i = document.createElement('i');
-        i.textContent = ch;
-        frag.appendChild(i);
-      });
-      w.textContent = '';
-      w.appendChild(frag);
-    });
-    var glyphs = [].slice.call(sign.querySelectorAll('i'));
-
-    var geo = null;                         // measured at rest, in px
-    function measure() {
-      words.forEach(function (w) { w.style.transform = ''; });
-      var s = stage.getBoundingClientRect();
-      var cx = s.left + s.width / 2, cy = s.top + s.height / 2;
-      geo = {
-        w: words.map(function (w) {
-          var b = w.getBoundingClientRect();
-          return { el: w, x: b.left + b.width / 2 - cx, y: b.top + b.height / 2 - cy,
-                   role: w.dataset.wd };
-        }),
-        diniz: 0
-      };
-      geo.w.forEach(function (o) { if (o.role === 'diniz') geo.diniz = o.x; });
-      glyphs.forEach(function (g) {
-        var b = g.getBoundingClientRect();
-        var dx = b.left + b.width / 2 - cx;
-        // the lens sits a little above the sign, so every letter throws
-        // its sides downward as well as away from the middle
-        var dy = b.top + b.height / 2 - cy + b.height * 0.62;
-        var m = Math.sqrt(dx * dx + dy * dy) || 1;
-        g.style.setProperty('--sx', (dx / m).toFixed(4));
-        g.style.setProperty('--sy', (dy / m).toFixed(4));
-      });
-    }
+    var slot  = outro.querySelector('.so-char-slot');
+    var berth = document.querySelector('.char-berth');
 
     function clamp01(v) { return v < 0 ? 0 : v > 1 ? 1 : v; }
     function ramp(v, a, b) { return clamp01((v - a) / (b - a)); }
@@ -645,109 +593,28 @@
     var GROW_A = 0.84, GROW_B = 1.40;  // and the fill, under the pin
     var curX = 0, curY = 0, curS = 1;
 
-    var fell = false, onWall = null;
+    var fell = false;
 
     function outroRender() {
       var box = outro.getBoundingClientRect();
       // the journey carries on well past this section, so the window
       // stays open until the mark has finished filling its berth
-      if (box.bottom < -innerHeight * 2.6 || box.top > innerHeight + 40) {
-        // Scrolling back up out of the window used to leave this class
-        // behind, and it hides the header: the sign-off had taken the
-        // frame and nothing above it ever gave the frame back. The
-        // opacity channel recovers on its own because the hero writes
-        // it every frame; the class has to be let go of by hand.
-        root.classList.remove('outro-on');
-        return;
-      }
-      if (!geo) measure();
+      if (box.bottom < -innerHeight * 2.6 || box.top > innerHeight + 40) return;
 
       var span = outro.offsetHeight - innerHeight;
       var p = clamp01(span > 0 ? -box.top / span : 0);
       // p tops out the moment the stage unpins; after that the whole
-      // section is sliding away to hand over to the contact block, and
-      // that stretch is what brings the chrome back
+      // section is sliding away to hand over to the contact block
       var gone = Math.max(0, innerHeight - box.bottom) / innerHeight;
-      var leave = clamp01(gone);
-      var t = clamp01((p - HOLD) / (CUT - HOLD));   // read the sign before moving
 
-      // Halving the distance doubles the size, so a lens that closes
-      // the remaining gap by a constant share each frame grows the
-      // sign at a constant rate — the push a camera operator makes,
-      // rather than the lurch a linear dolly gives at the end.
-      var d = D0 * Math.exp(-RATE * t);
-      var pan = geo.diniz * (t * (2 - t));   // settle "diniz" on the axis
-
-      geo.w.forEach(function (o) {
-        // "the" backs off by a fixed amount, so it ends up roughly the
-        // size it started and a long way left; "studio" keeps a fixed
-        // share of whatever gap is left, so it rushes the lens without
-        // ever crossing it
-        var depth = o.role === 'the' ? -BACK * t : o.role === 'studio' ? d * FWD * t : 0;
-        var side  = o.role === 'the' ? -SIDE * D0 * t * t
-                  : o.role === 'studio' ? SIDE * D0 * t * t : 0;
-        var dist = Math.max(12, d - depth);
-        var s = D0 / dist;
-        o.el.style.transform =
-          'translate3d(' + (s * (o.x + side - pan) - o.x).toFixed(1) + 'px,' +
-          ((s - 1) * o.y).toFixed(1) + 'px,0) scale(' + s.toFixed(4) + ')';
-        // The extrusion is a stack of copies of the glyph, so if its
-        // step is measured on the wall it shears into visible stripes
-        // the moment the camera magnifies it. Dividing the step by the
-        // word's own scale measures it on the screen instead, and the
-        // stack stays solid at any distance.
-        o.el.style.setProperty('--zs', Math.pow(1.12, Math.round(Math.log(s) / 0.1133)).toFixed(3));
-      });
-
-      var st = outro.style;
-      // depth is the point of the first half and beside the point in
-      // the second: by the time the lens is between the letters there
-      // is nothing in frame but the ink, so the relief bows out before
-      // the cut rather than fighting it
-      st.setProperty('--dep', (ramp(p, 0.05, 0.21) * (1 - ramp(p, 0.28, 0.46))).toFixed(3));
-      st.setProperty('--wallz', Math.min(6, D0 / d).toFixed(4));   // the wall is the plane the sign is on
-      st.setProperty('--cue', (1 - ramp(p, 0.015, 0.10)).toFixed(3));
-      // Moving between letters this deep puts the wall behind them in
-      // their shadow, so the frame darkens to ink of its own accord
-      // and the cut only has to finish what the geometry started.
-      st.setProperty('--gloom', ramp(p, 0.40, 0.62).toFixed(3));
-      var cut = ramp(p, 0.56, CUT);
-      st.setProperty('--cut', (cut * cut).toFixed(3));   // holds clear, then slams
-
-      // The header hands the frame over on the same channel the hero
-      // uses to bring it back, so the two never argue about opacity.
-      //
-      // It has to hand it over during the approach, not after it. The
-      // sign is fully up the instant the section pins, but p does not
-      // start moving until then — so for the whole climb into view the
-      // header sat there with the wordmark in it while the same
-      // wordmark rose into the middle of the frame. The studio's name,
-      // twice, in one picture. Keyed to the climb instead, the header
-      // is gone before the sign is big enough to read.
-      var coming = clamp01((innerHeight * 0.92 - box.top) / (innerHeight * 0.74));
-      var chrome = Math.max(1 - Math.max(coming, ramp(p, 0, 0.05)),
-                            ramp(leave, 0.08, 0.4));
-      root.style.setProperty('--chrome', chrome.toFixed(3));
-
-      var out = ramp(p, 0.74, 0.84);
-      st.setProperty('--out', out.toFixed(3));
-      st.setProperty('--outvis', out > 0 ? 'visible' : 'hidden');
-
-      // once the cut is solid there is no reason to keep compositing
-      // a sixty-times-scaled wall behind an opaque layer
-      var lit = p < 0.70;
-      if (lit !== onWall) {
-        onWall = lit;
-        st.setProperty('--wall', lit ? '1' : '0');
-      }
-      // invisible links do not belong in the tab order, and the one
-      // thing that knows whether they are invisible is the opacity
-      root.classList.toggle('outro-on', chrome < 0.02 && leave < 0.06);
-
-      // the character arrives last, and it arrives on its own clock:
-      // a fall wants weight, not a scrub
-      if (!fell && p > 0.86) { fell = true; outro.classList.add('fell'); }
-      else if (fell && p < 0.60) { fell = false; outro.classList.remove('fell'); }
+      // the mark arrives on its own clock: a fall wants weight, not a
+      // scrub. It comes once the scene has had the frame to itself for
+      // a moment, and it is re-armed if you scroll back up to watch it.
+      if (!fell && p > 0.34) { fell = true; outro.classList.add('fell'); }
+      else if (fell && p < 0.12) { fell = false; outro.classList.remove('fell'); }
+      // the stage clips the scene; once the mark is on its way out of
+      // the bottom of it there is nothing left worth clipping
+      outro.classList.toggle('handing', p > 0.5);
 
       // Then it keeps going, down and across into the empty half of
       // the contact block. The offset is measured to a real box in
@@ -780,15 +647,9 @@
         }
         outro.classList.toggle('leaving', gone > 0.02);
       }
-      outro.classList.toggle('handing', p > 0.9);
     }
 
     frameTasks.push(outroRender);
-    addEventListener('resize', function () { geo = null; }, { passive: true });
-    addEventListener('load', function () { geo = null; });
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(function () { geo = null; onScroll(); });
-    }
     outroRender();
   })();
 
@@ -799,7 +660,7 @@
   // lag is most of what separates this from a cursor effect.
   var fine = matchMedia('(hover:hover) and (pointer:fine)').matches;
   if (!reduce && fine) (function () {
-    var lamps = [].slice.call(document.querySelectorAll('.glow,.wall-light'));
+    var lamps = [].slice.call(document.querySelectorAll('.glow'));
     var magnets = [].slice.call(document.querySelectorAll('.btn,.visit'));
     var tiles = [].slice.call(document.querySelectorAll('.bp'));
 
