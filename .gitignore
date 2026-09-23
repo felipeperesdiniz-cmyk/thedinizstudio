@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+build
+.DS_Store
+*.pem
+.env*.local
+.vercel
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# Legacy static export and loose reference images, not used by the app
+dinizstudio
+animation
