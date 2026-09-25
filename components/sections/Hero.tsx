@@ -40,6 +40,12 @@ const grow = (b: Box, f: number): Box => {
 // Camera stops: mid shot, close shot, then a slow push-in while the O drops.
 const STOPS: Box[] = [invert(MID, WORD), WORD, grow(WORD, 1.035)]
 
+// Portrait screens get a tighter framing: the dolly starts partway in, and the
+// finished word spans nearly the full width.
+const PORTRAIT_START = 0.4
+const PORTRAIT_WORD_WIDTH = 0.97
+const LANDSCAPE_WORD_WIDTH = 0.92
+
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t
 const clamp01 = (v: number) => Math.min(1, Math.max(0, v))
 
@@ -114,15 +120,18 @@ export function Hero({ title }: { title: string }) {
     const glow = q('[data-hero-glow]')
 
     let scale = 1
+    let portrait = false
 
     const dropStart = () => STAGE_H / 2 - window.innerHeight / (2 * scale) - O_BOTTOM - 160
 
     const fit = () => {
       const vw = window.innerWidth
       const vh = window.innerHeight
+      portrait = vh > vw
       const cover = Math.max(vw / STAGE_W, vh / STAGE_H)
       // On narrow screens, keep the whole finished word on screen instead of covering.
-      const fitWord = (vw * 0.92) / ((WORD.x1 - WORD.x0) * 1.035)
+      const wordWidth = portrait ? PORTRAIT_WORD_WIDTH : LANDSCAPE_WORD_WIDTH
+      const fitWord = (vw * wordWidth) / ((WORD.x1 - WORD.x0) * 1.035)
       scale = Math.min(cover, fitWord)
       stage.style.transform = `translate(-50%, -50%) scale(${scale})`
     }
@@ -130,9 +139,15 @@ export function Hero({ title }: { title: string }) {
     // Scroll-driven state. Everything visual is derived from it in render().
     const cam = { u: 0, fall: 0, settle: 0 }
 
+    // The first leg is compressed on portrait so the shot opens closer in.
+    const shot = () =>
+      portrait
+        ? PORTRAIT_START + (1 - PORTRAIT_START) * Math.min(cam.u, 1) + Math.max(0, cam.u - 1)
+        : cam.u
+
     const render = () => {
-      const c = cameraAt(cam.u)
-      const u = cam.u
+      const u = shot()
+      const c = cameraAt(u)
       mid.style.transform = toMatrix(c, MID)
       plate.style.transform = toMatrix(c, PLATE)
 
@@ -239,7 +254,7 @@ export function Hero({ title }: { title: string }) {
     <section
       ref={sectionRef}
       aria-label="Introduction"
-      className={`relative bg-black ${played ? 'h-svh' : 'h-[480svh]'}`}
+      className={`relative bg-black ${played ? 'h-svh' : 'h-[480svh] portrait:h-[240svh]'}`}
     >
       <h1 className="sr-only">{title}</h1>
 

@@ -108,6 +108,11 @@ export const pt: Dictionary = {
     theSite: 'O site',
   },
 
+  player: {
+    soundOn: 'Ligar som',
+    soundOff: 'Desligar som',
+  },
+
   services: {
     meta: {
       title: 'Serviços | Criação de Sites, Identidade Visual e Marketing',

@@ -179,7 +179,7 @@ export function CaseStudyView({
         <Reveal>
           <Link
             href={workPath(locale)}
-            className="label inline-flex items-center gap-2 transition-colors hover:text-primary"
+            className="label -my-3 inline-flex items-center gap-2 py-3 transition-colors hover:text-primary"
           >
             <span aria-hidden="true">←</span> {t.work.allWork}
           </Link>
@@ -225,9 +225,9 @@ export function CaseStudyView({
                       href={project.url}
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="group inline-flex items-center gap-2 text-primary"
+                      className="group inline-flex max-w-full items-center gap-2 text-primary"
                     >
-                      <span className="link-underline">{host}</span>
+                      <span className="link-underline min-w-0 break-all">{host}</span>
                       <span
                         aria-hidden="true"
                         className="transition-transform duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
@@ -378,7 +378,7 @@ export function CaseStudyView({
                   }
                 >
                   <Reveal as="image" className="overflow-hidden bg-surface">
-                    <ReelPlayer {...media.video} />
+                    <ReelPlayer {...media.video} labels={t.player} />
                   </Reveal>
                   {chapter.videoCaption && (
                     <p className="label mt-5">{chapter.videoCaption}</p>

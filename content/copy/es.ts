@@ -108,6 +108,11 @@ export const es: Dictionary = {
     theSite: 'La web',
   },
 
+  player: {
+    soundOn: 'Activar sonido',
+    soundOff: 'Silenciar',
+  },
+
   services: {
     meta: {
       title: 'Servicios | Diseño Web, Identidad de Marca y Marketing',

@@ -74,21 +74,22 @@ export function Nav({ locale, alternates, ctaLabel, ctaLabelShort }: NavProps) {
       <div className="container-studio flex h-[var(--nav-height)] items-center justify-between">
         <Link
           href={homePath(locale)}
-          className="pointer-events-auto font-mono text-xs uppercase tracking-[0.08em] text-primary transition-opacity hover:opacity-70"
+          className="pointer-events-auto -my-3.5 py-3.5 font-mono text-xs uppercase tracking-[0.08em] text-primary transition-opacity hover:opacity-70"
           {...hover}
         >
           {SITE.wordmark}
         </Link>
 
         <div className="pointer-events-auto flex items-center gap-2 sm:gap-4 md:gap-6">
-          <nav aria-label="Language" className="flex items-center gap-2 sm:gap-3">
+          <nav aria-label="Language" className="flex items-center sm:gap-1.5">
             {LOCALES.map((code) => (
               <Link
                 key={code}
                 href={alternates[code]}
                 hrefLang={code}
                 aria-current={code === locale ? 'true' : undefined}
-                className={`font-mono text-xs uppercase tracking-[0.08em] transition-colors ${
+                // Padding widens the tap area to a finger's width without moving the labels.
+                className={`-my-3.5 px-1.5 py-3.5 font-mono text-xs uppercase tracking-[0.08em] transition-colors ${
                   code === locale ? 'text-primary' : 'text-secondary hover:text-primary'
                 }`}
                 {...hover}
@@ -100,7 +101,7 @@ export function Nav({ locale, alternates, ctaLabel, ctaLabelShort }: NavProps) {
 
           <Link
             href={contactPath(locale)}
-            className="inline-flex items-center whitespace-nowrap border border-line px-2.5 py-1.5 font-mono text-[0.625rem] uppercase tracking-[0.08em] text-primary transition-colors hover:border-primary sm:px-3 md:px-4 md:py-2 md:text-xs"
+            className="relative inline-flex items-center whitespace-nowrap border border-line px-2.5 py-2 font-mono text-[0.6875rem] uppercase tracking-[0.08em] text-primary transition-colors after:absolute after:inset-x-0 after:-inset-y-1.5 after:content-[''] hover:border-primary sm:px-3 md:px-4 md:text-xs"
             {...hover}
           >
             <span className="md:hidden">{ctaLabelShort}</span>

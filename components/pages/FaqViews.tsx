@@ -80,7 +80,7 @@ export function FaqItemView({
         <Reveal>
           <Link
             href={faqPath(locale)}
-            className="label inline-flex items-center gap-2 transition-colors hover:text-primary"
+            className="label -my-3 inline-flex items-center gap-2 py-3 transition-colors hover:text-primary"
           >
             <span aria-hidden="true">←</span> {t.faq.backLink}
           </Link>
@@ -88,7 +88,7 @@ export function FaqItemView({
 
         <Reveal delay={0.05} className="mt-16 md:mt-24">
           <p className="label">{faqGroupLabel(t, group)}</p>
-          <h1 className="mt-6 max-w-[24ch] font-display text-5xl leading-[1.05] text-primary md:text-6xl">
+          <h1 className="mt-6 max-w-[24ch] font-display text-4xl leading-[1.05] text-primary sm:text-5xl md:text-6xl">
             {item.q}
           </h1>
         </Reveal>

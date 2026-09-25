@@ -22,7 +22,8 @@
   --fs-3xl: clamp(2rem, 1.3rem + 3.2vw, 3rem);
   --fs-4xl: clamp(2.5rem, 1.35rem + 5.2vw, 4.5rem);
   --fs-5xl: clamp(3rem, 0.9rem + 9.4vw, 7rem);
-  --fs-6xl: clamp(4rem, 12vw, 11rem);
+  /* The inner max() only differs below ~530px, letting long words fit on phones. */
+  --fs-6xl: clamp(2.5rem, max(12vw, min(12.8vw, 4rem)), 11rem);
   --fs-display: clamp(4rem, 11vw, 11rem);
 
   /* Grid & spacing */
@@ -100,6 +101,8 @@
     font-weight: 400;
     line-height: var(--leading-display);
     text-wrap: balance;
+    /* Last resort on narrow screens: break a word that cannot fit rather than widen the page. */
+    overflow-wrap: break-word;
   }
 
   p {

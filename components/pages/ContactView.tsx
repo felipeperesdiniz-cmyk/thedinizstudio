@@ -104,7 +104,7 @@ export function ContactView({ t }: { t: Dictionary }) {
                       type="button"
                       onClick={() => setProject(option)}
                       aria-pressed={project === option}
-                      className={`border px-4 py-2 font-mono text-xs uppercase tracking-[0.08em] transition-colors ${
+                      className={`min-h-11 border px-4 py-2 font-mono text-xs uppercase tracking-[0.08em] transition-colors ${
                         project === option
                           ? 'border-primary text-primary'
                           : 'border-line text-secondary hover:border-secondary hover:text-primary'

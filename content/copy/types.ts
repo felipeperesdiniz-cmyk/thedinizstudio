@@ -107,6 +107,10 @@ export interface Dictionary {
     type: string
     theSite: string
   }
+  player: {
+    soundOn: string
+    soundOff: string
+  }
   services: {
     meta: Meta
     kicker: string

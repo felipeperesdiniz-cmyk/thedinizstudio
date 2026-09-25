@@ -108,6 +108,11 @@ export const en: Dictionary = {
     theSite: 'The site',
   },
 
+  player: {
+    soundOn: 'Sound on',
+    soundOff: 'Sound off',
+  },
+
   services: {
     meta: {
       title: 'Services | Web Design, Brand Identity and Marketing',

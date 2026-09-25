@@ -164,7 +164,7 @@ export function ServiceView({
                 return (
                   <div key={clip.mp4}>
                     <Reveal as="image" delay={i * 0.08} className="overflow-hidden bg-surface">
-                      <ReelPlayer {...clip} />
+                      <ReelPlayer {...clip} labels={t.player} />
                     </Reveal>
                     <p className="label mt-5">{project.title}</p>
                   </div>

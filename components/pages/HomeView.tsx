@@ -65,7 +65,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
                       )}
                     </div>
 
-                    <div className="grid grid-cols-3 items-start gap-[var(--gutter)] md:col-span-6 md:col-start-6">
+                    <div className="grid grid-cols-3 items-center gap-[var(--gutter)] md:col-span-6 md:col-start-6 md:items-start">
                       {SERVICE_MEDIA[key].map((thumb) => (
                         <div
                           key={thumb.src}
@@ -75,7 +75,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
                               ? undefined
                               : { aspectRatio: `${thumb.width} / ${thumb.height}` }
                           }
-                          className={`flex items-center justify-center self-start overflow-hidden ${
+                          className={`flex items-center justify-center self-center overflow-hidden md:self-start ${
                             thumb.tone === 'light'
                               ? 'aspect-[4/3] bg-[#e8e7e4] p-[10%]'
                               : 'bg-surface'
