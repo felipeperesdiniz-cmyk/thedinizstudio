@@ -2,7 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { gsap } from '@/lib/gsap'
 
 // Every frame shares one coordinate space: the plate, 1671 x 941.
@@ -60,12 +60,36 @@ function cameraAt(u: number): Affine {
   return { sx, sy, tx: cx - w / 2 - WORD.x0 * sx, ty: cy - h / 2 - WORD.y0 * sy }
 }
 
+// Set once the visitor has scrolled through the whole sequence in this tab, so
+// coming back to the home page shows the finished frame instead of replaying it.
+const PLAYED_KEY = 'hero-played'
+
+const readPlayed = () => {
+  try {
+    return sessionStorage.getItem(PLAYED_KEY) === '1'
+  } catch {
+    return false
+  }
+}
+
+const markPlayed = () => {
+  try {
+    sessionStorage.setItem(PLAYED_KEY, '1')
+  } catch {}
+}
+
 const toMatrix = (cam: Affine, m: Affine) =>
   `matrix(${cam.sx * m.sx}, 0, 0, ${cam.sy * m.sy}, ${cam.sx * m.tx + cam.tx}, ${cam.sy * m.ty + cam.ty})`
 
 export function Hero({ title }: { title: string }) {
   const sectionRef = useRef<HTMLElement>(null)
   const [reduced, setReduced] = useState(false)
+  const [played, setPlayed] = useState(false)
+
+  // Layout effect so a returning visitor never sees a frame of the tall intro.
+  useLayoutEffect(() => {
+    if (readPlayed()) setPlayed(true)
+  }, [])
 
   useEffect(() => {
     const query = window.matchMedia('(prefers-reduced-motion: reduce)')
@@ -126,6 +150,20 @@ export function Hero({ title }: { title: string }) {
     }
 
     fit()
+
+    if (played) {
+      // Jump straight to the landed frame, with no scroll sequence.
+      Object.assign(cam, { u: 2, fall: 1, settle: 1 })
+      render()
+      intro.style.opacity = '1'
+      const onResize = () => {
+        fit()
+        render()
+      }
+      window.addEventListener('resize', onResize)
+      return () => window.removeEventListener('resize', onResize)
+    }
+
     render()
 
     const ctx = gsap.context(() => {
@@ -139,6 +177,7 @@ export function Hero({ title }: { title: string }) {
           end: 'bottom bottom',
           scrub: 1.2,
           invalidateOnRefresh: true,
+          onLeave: markPlayed,
         },
         onUpdate: render,
       })
@@ -179,7 +218,7 @@ export function Hero({ title }: { title: string }) {
       window.removeEventListener('resize', onResize)
       ctx.revert()
     }
-  }, [reduced])
+  }, [reduced, played])
 
   if (reduced) {
     return (
@@ -197,7 +236,11 @@ export function Hero({ title }: { title: string }) {
   }
 
   return (
-    <section ref={sectionRef} aria-label="Introduction" className="relative h-[480svh] bg-black">
+    <section
+      ref={sectionRef}
+      aria-label="Introduction"
+      className={`relative bg-black ${played ? 'h-svh' : 'h-[480svh]'}`}
+    >
       <h1 className="sr-only">{title}</h1>
 
       <div className="sticky top-0 h-svh overflow-hidden">
