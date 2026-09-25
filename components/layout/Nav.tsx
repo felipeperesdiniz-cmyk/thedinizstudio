@@ -6,7 +6,6 @@ import { gsap } from '@/lib/gsap'
 import { getLenis } from '@/lib/lenis'
 import { SITE } from '@/lib/site'
 import { LOCALES, LOCALE_LABEL, contactPath, homePath, type Locale } from '@/lib/i18n'
-import { useCursor } from '@/hooks/useCursor'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 
 const HIDE_AFTER = 120
@@ -24,7 +23,6 @@ interface NavProps {
 export function Nav({ locale, alternates, ctaLabel, ctaLabelShort }: NavProps) {
   const navRef = useRef<HTMLElement>(null)
   const prefersReduced = useReducedMotion()
-  const { setCursorState } = useCursor()
 
   // Retract on scroll down, return on scroll up.
   useEffect(() => {
@@ -64,10 +62,6 @@ export function Nav({ locale, alternates, ctaLabel, ctaLabelShort }: NavProps) {
     return () => ctx.revert()
   }, [prefersReduced])
 
-  const hover = {
-    onMouseEnter: () => setCursorState('hover'),
-    onMouseLeave: () => setCursorState('default'),
-  }
 
   return (
     <header ref={navRef} className="pointer-events-none fixed inset-x-0 top-0 z-50">
@@ -75,7 +69,6 @@ export function Nav({ locale, alternates, ctaLabel, ctaLabelShort }: NavProps) {
         <Link
           href={homePath(locale)}
           className="pointer-events-auto -my-3.5 py-3.5 font-mono text-xs uppercase tracking-[0.08em] text-primary transition-opacity hover:opacity-70"
-          {...hover}
         >
           {SITE.wordmark}
         </Link>
@@ -92,7 +85,6 @@ export function Nav({ locale, alternates, ctaLabel, ctaLabelShort }: NavProps) {
                 className={`-my-3.5 px-1.5 py-3.5 font-mono text-xs uppercase tracking-[0.08em] transition-colors ${
                   code === locale ? 'text-primary' : 'text-secondary hover:text-primary'
                 }`}
-                {...hover}
               >
                 {LOCALE_LABEL[code]}
               </Link>
@@ -102,7 +94,6 @@ export function Nav({ locale, alternates, ctaLabel, ctaLabelShort }: NavProps) {
           <Link
             href={contactPath(locale)}
             className="relative inline-flex items-center whitespace-nowrap border border-line px-2.5 py-2 font-mono text-[0.6875rem] uppercase tracking-[0.08em] text-primary transition-colors after:absolute after:inset-x-0 after:-inset-y-1.5 after:content-[''] hover:border-primary sm:px-3 md:px-4 md:text-xs"
-            {...hover}
           >
             <span className="md:hidden">{ctaLabelShort}</span>
             <span className="hidden md:inline">{ctaLabel}</span>

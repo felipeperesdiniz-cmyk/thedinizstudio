@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useCursor } from '@/hooks/useCursor'
 import type { Project } from '@/content/projects'
 import type { Dictionary } from '@/content/copy/types'
 import { projectPath, type Locale } from '@/lib/i18n'
@@ -16,7 +15,6 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, index, flipped, locale, t }: ProjectCardProps) {
-  const { setCursorState } = useCursor()
   const copy = t.projects[project.slug]!
   const { highlight } = copy
 
@@ -24,10 +22,6 @@ export function ProjectCard({ project, index, flipped, locale, t }: ProjectCardP
     <article data-project>
       <Link
         href={projectPath(locale, project.slug)}
-        onMouseEnter={() => setCursorState('view')}
-        onMouseLeave={() => setCursorState('default')}
-        onFocus={() => setCursorState('view')}
-        onBlur={() => setCursorState('default')}
         className="group grid grid-cols-1 items-center gap-8 md:grid-cols-12 md:gap-[var(--gutter)]"
       >
         <div

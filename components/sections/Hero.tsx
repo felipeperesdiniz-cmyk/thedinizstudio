@@ -3,7 +3,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
-import { gsap } from '@/lib/gsap'
+import { gsap, ScrollTrigger } from '@/lib/gsap'
 
 // Every frame shares one coordinate space: the plate, 1671 x 941.
 const STAGE_W = 1671
@@ -97,6 +97,18 @@ export function Hero({ title }: { title: string }) {
     if (readPlayed()) setPlayed(true)
   }, [])
 
+  // Clicking Home while already on the home page keeps this component mounted
+  // and only scrolls to the top. Once the sequence has played, collapse it there
+  // instead of making the visitor scroll through it again.
+  useEffect(() => {
+    if (played || reduced) return
+    const onScroll = () => {
+      if (window.scrollY <= 1 && readPlayed()) setPlayed(true)
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [played, reduced])
+
   useEffect(() => {
     const query = window.matchMedia('(prefers-reduced-motion: reduce)')
     setReduced(query.matches)
@@ -171,12 +183,17 @@ export function Hero({ title }: { title: string }) {
       Object.assign(cam, { u: 2, fall: 1, settle: 1 })
       render()
       intro.style.opacity = '1'
+      // The section just lost several screens of height; re-measure every trigger below it.
+      const frame = requestAnimationFrame(() => ScrollTrigger.refresh())
       const onResize = () => {
         fit()
         render()
       }
       window.addEventListener('resize', onResize)
-      return () => window.removeEventListener('resize', onResize)
+      return () => {
+        cancelAnimationFrame(frame)
+        window.removeEventListener('resize', onResize)
+      }
     }
 
     render()

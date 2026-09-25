@@ -3,7 +3,6 @@ import { Analytics } from '@vercel/analytics/next'
 import '@/styles/globals.css'
 import { fontVariables } from '@/lib/fonts'
 import { LenisProvider } from '@/components/providers/LenisProvider'
-import { CursorProvider } from '@/components/providers/CursorProvider'
 import { PageTransition } from '@/components/layout/PageTransition'
 import { SITE } from '@/lib/site'
 
@@ -40,9 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={fontVariables}>
       <body>
         <LenisProvider>
-          <CursorProvider>
-            <PageTransition>{children}</PageTransition>
-          </CursorProvider>
+          <PageTransition>{children}</PageTransition>
         </LenisProvider>
         <div className="grain" aria-hidden="true" />
         <Analytics />

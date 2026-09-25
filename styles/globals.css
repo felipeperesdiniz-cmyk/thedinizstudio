@@ -142,18 +142,9 @@
   .lenis.lenis-stopped {
     overflow: hidden;
   }
-
-  /* The custom cursor replaces the native one on fine-pointer devices. */
-  @media (pointer: fine) {
-    body,
-    a,
-    button {
-      cursor: none;
-    }
-  }
 }
 
-/* Grain overlay: fixed, non-interactive, above the page and below the cursor. */
+/* Grain overlay: fixed, non-interactive, above the page. */
 
 .grain {
   position: fixed;
