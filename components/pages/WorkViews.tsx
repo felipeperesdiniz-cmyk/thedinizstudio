@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Reveal } from '@/components/ui/Reveal'
 import { ReelPlayer } from '@/components/ui/ReelPlayer'
 import { FilmStill } from '@/components/ui/FilmStill'
+import { IdentitySpecimen } from '@/components/ui/IdentitySpecimen'
 import { CtaBand } from '@/components/ui/CtaBand'
 import { PROJECTS, type Picture, type Project } from '@/content/projects'
 import type { Dictionary } from '@/content/copy/types'
@@ -285,15 +286,8 @@ export function CaseStudyView({
                   className="h-auto max-h-full w-full object-contain"
                 />
               </div>
-            ) : project.identityImage ? (
-              <Image
-                src={project.identityImage.src}
-                alt={`${project.title}: ${copy.screens[0]}`}
-                width={project.identityImage.width}
-                height={project.identityImage.height}
-                sizes="(max-width: 768px) 100vw, 45vw"
-                className="block h-auto w-full"
-              />
+            ) : project.specimen ? (
+              <IdentitySpecimen specimen={project.specimen} />
             ) : (
               <div className="flex aspect-[4/3] flex-col items-center justify-center gap-4 bg-surface">
                 <span className="font-display text-3xl text-primary">

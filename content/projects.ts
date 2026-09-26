@@ -14,6 +14,15 @@ export interface Clip {
   height: number
 }
 
+/** An identity shown as its type and palette, used when the logo is not the studio's work. */
+export interface Specimen {
+  faces: readonly string[]
+  /** A line from the client's own site, set in their display face. */
+  line: string
+  /** Ground, second ground, accent, ink. */
+  palette: readonly { hex: string }[]
+}
+
 export interface ChapterMedia {
   /** Lay the images out as an editorial sequence rather than an even grid. */
   story?: boolean
@@ -31,7 +40,7 @@ export interface Project {
   hero: Picture
   mark?: Picture
   /** Shown in the identity section when the logo is not the studio's own work. */
-  identityImage?: Picture
+  specimen?: Specimen
   screens: readonly Picture[]
   chapters: readonly ChapterMedia[]
 }
@@ -78,7 +87,11 @@ export const PROJECTS: readonly Project[] = [
       'data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAkAA4BaJZwAAvxV1uqwAAD+6j5Xs9smoI/dTSvDWUWX/48rf4QofeAUAA==',
     hero: { src: '/images/work/blend/hero.webp', width: 1600, height: 1000 },
     // The logo was Blend's before the studio arrived, so it is never shown as the studio's work.
-    identityImage: { src: '/images/work/blend/identity.webp', width: 1316, height: 725 },
+    specimen: {
+      faces: ['Cormorant Garamond', 'Inter'],
+      line: 'A precision cut, wash included, for every hair type.',
+      palette: [{ hex: '#F9F5F0' }, { hex: '#F0EAE3' }, { hex: '#887860' }, { hex: '#1E1A17' }],
+    },
     screens: screens('blend'),
     chapters: [
       {
