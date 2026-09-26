@@ -105,6 +105,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       description: meta.description,
       images: ['/og-image.jpg'],
     },
+    // One answer is too thin to rank alone; the FAQ page carries them all.
+    ...(route.kind === 'faqItem' && { robots: { index: false, follow: true } }),
   }
 }
 
