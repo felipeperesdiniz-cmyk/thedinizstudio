@@ -127,22 +127,26 @@ export function Intro({ t }: { t: Dictionary }) {
       className="container-studio py-[var(--section-padding)]"
     >
       <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-[var(--gutter)]">
-        <div className="md:col-span-6">
+        <div className="md:col-span-7">
           <p data-intro-kicker className="label">
             {t.home.intro.kicker}
           </p>
           <h2
             data-intro-heading
             id="intro-title"
-            className="mt-6 max-w-[14ch] font-display text-4xl leading-[1.05] text-primary will-change-transform"
+            className="mt-6 max-w-[12ch] font-display text-5xl leading-[1] text-primary will-change-transform"
           >
             {t.home.intro.title}
           </h2>
         </div>
 
-        <div className="flex flex-col gap-6 md:col-span-5 md:col-start-8">
+        <div className="flex flex-col gap-7 md:col-span-5 md:col-start-8 md:pt-12">
           {t.home.intro.body.map((paragraph) => (
-            <p key={paragraph} data-intro-line className="max-w-[52ch] text-secondary">
+            <p
+              key={paragraph}
+              data-intro-line
+              className="max-w-[46ch] text-lg leading-relaxed text-secondary md:text-xl"
+            >
               {paragraph}
             </p>
           ))}

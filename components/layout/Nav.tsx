@@ -24,6 +24,18 @@ export function Nav({ locale, alternates, ctaLabel, ctaLabelShort }: NavProps) {
   const navRef = useRef<HTMLElement>(null)
   const prefersReduced = useReducedMotion()
 
+  // Once away from the top, the bar gets a backdrop so it never sits on top of text.
+  useEffect(() => {
+    const nav = navRef.current
+    if (!nav) return
+    const onScroll = () => {
+      nav.dataset.solid = String(window.scrollY > 24)
+    }
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   // Retract on scroll down, return on scroll up.
   useEffect(() => {
     const nav = navRef.current
@@ -64,7 +76,11 @@ export function Nav({ locale, alternates, ctaLabel, ctaLabelShort }: NavProps) {
 
 
   return (
-    <header ref={navRef} className="pointer-events-none fixed inset-x-0 top-0 z-50">
+    <header
+      ref={navRef}
+      data-solid="false"
+      className="pointer-events-none fixed inset-x-0 top-0 z-50 border-b border-transparent transition-[background-color,border-color,backdrop-filter] duration-500 data-[solid=true]:border-line data-[solid=true]:bg-background/80 data-[solid=true]:backdrop-blur-md"
+    >
       <div className="container-studio flex h-[var(--nav-height)] items-center justify-between">
         <Link
           href={homePath(locale)}
