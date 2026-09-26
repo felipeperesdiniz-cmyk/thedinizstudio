@@ -28,7 +28,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
         <nav aria-label={t.footer.sections.work} className="flex flex-col gap-1 md:gap-3">
           <Link
             href={workPath(locale)}
-            className="label py-2 text-primary transition-colors hover:text-secondary md:py-0"
+            className="label py-3 text-primary transition-colors hover:text-secondary md:py-0"
           >
             {t.footer.sections.work}
           </Link>
@@ -46,7 +46,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
         <nav aria-label={t.footer.sections.services} className="flex flex-col gap-1 md:gap-3">
           <Link
             href={servicesPath(locale)}
-            className="label py-2 text-primary transition-colors hover:text-secondary md:py-0"
+            className="label py-3 text-primary transition-colors hover:text-secondary md:py-0"
           >
             {t.footer.sections.services}
           </Link>
@@ -64,7 +64,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
         <nav aria-label={t.footer.sections.studio} className="flex flex-col gap-1 md:gap-3">
           <Link
             href={aboutPath(locale)}
-            className="label py-2 text-primary transition-colors hover:text-secondary md:py-0"
+            className="label py-3 text-primary transition-colors hover:text-secondary md:py-0"
           >
             {t.nav.about}
           </Link>

@@ -95,7 +95,7 @@ export function Work({ locale, t }: { locale: Locale; t: Dictionary }) {
 
         <Link
           href={workPath(locale)}
-          className="group mt-20 inline-flex items-center gap-3 font-mono text-xs uppercase tracking-[0.08em] text-secondary transition-colors hover:text-primary"
+          className="group mt-17 inline-flex items-center gap-3 py-3 font-mono text-xs uppercase tracking-[0.08em] text-secondary transition-colors hover:text-primary"
         >
           <span className="link-underline pb-1">{t.home.work.link}</span>
           <span

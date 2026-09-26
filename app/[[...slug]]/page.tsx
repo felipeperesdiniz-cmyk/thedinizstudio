@@ -97,7 +97,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       siteName: SITE.name,
       locale: HTML_LANG[route.locale].replace('-', '_'),
       type: 'website',
-      images: [{ url: '/og-image.jpg', width: 1600, height: 551 }],
+      images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',

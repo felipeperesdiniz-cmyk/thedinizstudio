@@ -480,7 +480,7 @@ export const en: Dictionary = {
     },
     kicker: 'Contact',
     title: 'Start a project',
-    lede: 'This starts with a conversation, not a form. You get a straight answer on scope and timeline, a fixed quote in writing, and a reply within one business day — from the person who actually does the work.',
+    lede: 'Every project starts with a conversation. You get a straight answer on scope and timeline, a fixed quote in writing, and a reply within one business day — from the person who actually does the work.',
     form: {
       name: 'Your name',
       email: 'Email',

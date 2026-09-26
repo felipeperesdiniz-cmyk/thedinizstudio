@@ -283,12 +283,12 @@ export function ServiceView({
       <section aria-label={t.services.title} className="border-t border-line">
         <div className="container-studio py-16">
           <p className="label">{t.services.kicker}</p>
-          <div className="mt-6 flex flex-col gap-4 md:flex-row md:gap-12">
+          <div className="mt-5 flex flex-col gap-2 md:flex-row md:gap-12">
             {others.map((key) => (
               <Link
                 key={key}
                 href={servicePath(locale, key)}
-                className="group inline-flex items-center gap-3 font-display text-2xl text-secondary transition-colors hover:text-primary"
+                className="group inline-flex items-center gap-3 py-1 font-display text-2xl text-secondary transition-colors hover:text-primary"
               >
                 {t.services.cards[key].title}
                 <span

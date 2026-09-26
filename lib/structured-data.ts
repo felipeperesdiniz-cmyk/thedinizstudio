@@ -10,6 +10,8 @@ const organisation = (t: Dictionary) => ({
   url: SITE.url,
   email: SITE.email,
   telephone: SITE.phone,
+  logo: `${SITE.url}/apple-icon.png`,
+  image: `${SITE.url}/og-image.jpg`,
   description: t.meta.tagline,
   areaServed: ['United States', 'Brazil', 'Worldwide'],
   availableLanguage: ['English', 'Portuguese', 'Spanish'],

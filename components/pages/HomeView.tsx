@@ -124,7 +124,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
           <Reveal delay={0.1}>
             <Link
               href={servicesPath(locale)}
-              className="group mt-12 inline-flex items-center gap-3 font-mono text-xs uppercase tracking-[0.08em] text-secondary transition-colors hover:text-primary"
+              className="group mt-9 inline-flex items-center gap-3 py-3 font-mono text-xs uppercase tracking-[0.08em] text-secondary transition-colors hover:text-primary"
             >
               <span className="link-underline pb-1">{t.home.services.link}</span>
               <span
@@ -170,7 +170,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
           <Reveal delay={0.1}>
             <Link
               href={faqPath(locale)}
-              className="group mt-12 inline-flex items-center gap-3 font-mono text-xs uppercase tracking-[0.08em] text-secondary transition-colors hover:text-primary"
+              className="group mt-9 inline-flex items-center gap-3 py-3 font-mono text-xs uppercase tracking-[0.08em] text-secondary transition-colors hover:text-primary"
             >
               <span className="link-underline pb-1">{t.home.answers.link}</span>
               <span

@@ -206,7 +206,8 @@ export function Hero({ title, line, scrollLabel }: { title: string; line: string
     render()
 
     const ctx = gsap.context(() => {
-      gsap.fromTo(intro, { opacity: 0 }, { opacity: 1, duration: 1.8, ease: 'power2.out' })
+      // Short enough that the opening shot counts as loaded quickly on phones.
+      gsap.fromTo(intro, { opacity: 0 }, { opacity: 1, duration: 0.8, ease: 'power2.out' })
 
       const tl = gsap.timeline({
         defaults: { ease: 'none' },

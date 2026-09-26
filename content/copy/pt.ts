@@ -480,7 +480,7 @@ export const pt: Dictionary = {
     },
     kicker: 'Contato',
     title: 'Começar um projeto',
-    lede: 'Isso começa com uma conversa, não um formulário. Você recebe uma resposta direta sobre escopo e prazo, um orçamento fechado por escrito, e retorno em até um dia útil — da pessoa que de fato faz o trabalho.',
+    lede: 'Todo projeto começa com uma conversa. Você recebe uma resposta direta sobre escopo e prazo, um orçamento fechado por escrito, e retorno em até um dia útil — da pessoa que de fato faz o trabalho.',
     form: {
       name: 'Seu nome',
       email: 'E-mail',

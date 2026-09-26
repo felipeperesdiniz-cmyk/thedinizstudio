@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   authors: [{ name: SITE.name, url: SITE.url }],
   creator: SITE.name,
   publisher: SITE.name,
-  openGraph: { images: [{ url: '/og-image.jpg', width: 1600, height: 551 }] },
+  openGraph: { images: [{ url: '/og-image.jpg', width: 1200, height: 630 }] },
   twitter: { card: 'summary_large_image', images: ['/og-image.jpg'] },
   robots: {
     index: true,
