@@ -146,7 +146,8 @@ export const en: Dictionary = {
         title: 'Marketing and SEO',
         text: 'Being found and being followed: local search, Google Business Profiles, social media and the content behind both.',
         proof: [
-          { value: '+200%', label: 'Client Instagram growth' },
+          { value: '200', label: 'Client followers, from zero' },
+          { value: '1.5k', label: 'Studio followers, from zero' },
           { value: '27', label: 'Five-star reviews earned' },
         ],
       },
@@ -521,11 +522,11 @@ export const en: Dictionary = {
       meta: {
         title: 'Bordados com Amor | Website, Logo and Social Media',
         description:
-          'A trilingual website, a stitched logo and a managed Instagram for a hand embroidery artist. The account has tripled since launch with no paid promotion.',
+          'A trilingual website, a stitched logo and a managed Instagram for a hand embroidery artist. The account has grown from zero to 200 followers with no paid promotion.',
       },
       sector: 'Hand embroidery',
-      highlight: '+200% Instagram growth, fully organic',
-      lede: 'A stitched logo, a site in three languages, and an Instagram account that tripled without a cent of ad spend.',
+      highlight: 'Instagram from zero to 200 followers, fully organic',
+      lede: 'A stitched logo, a site in three languages, and an Instagram account grown from zero without a cent of ad spend.',
       description:
         'Hand embroidery, one piece at a time. The site is built around the pace of the work: a process told in five movements, then a catalogued archive where every piece carries the words stitched into it. Published in Portuguese, English and Spanish.',
       alt: 'bordadoscomamorbymari.com homepage, hand embroidery artist website designed by The Diniz Studio',
@@ -548,9 +549,9 @@ export const en: Dictionary = {
       },
       figures: [
         {
-          value: '+200%',
-          label: 'Instagram growth',
-          note: 'Since launch, with no paid promotion.',
+          value: '200',
+          label: 'Instagram followers',
+          note: 'From zero, with no paid promotion.',
         },
         { value: '3', label: 'Languages', note: 'Portuguese, English and Spanish.' },
         { value: '1', label: 'Studio, end to end', note: 'Logo, feed, captions and site.' },
@@ -559,7 +560,7 @@ export const en: Dictionary = {
         {
           kicker: 'Social',
           title: 'Grown, not bought',
-          text: 'The studio runs the account end to end: direction, shooting, writing and scheduling. It has tripled since launch without a single paid post, and every piece of it matches the site.',
+          text: 'The studio runs the account end to end: direction, shooting, writing and scheduling. It has grown from zero to 200 followers without a single paid post, and every piece of it matches the site.',
         },
         {
           kicker: 'Photography and film',
@@ -578,7 +579,7 @@ export const en: Dictionary = {
       screens: ['Home', 'Folhas Bordadas', 'Process', 'Archive'],
       quote: {
         text: 'I wanted something clean but still handmade and personal, and he somehow got exactly what I meant. Even the little details feel like they belong to the brand. It finally feels like my website.',
-        name: 'Mariana',
+        name: 'Mariana Peres',
         role: 'Bordados com Amor by Mari',
       },
     },
@@ -646,7 +647,7 @@ export const en: Dictionary = {
       screens: ['Services', 'Transformations', 'The artists', 'Reviews'],
       quote: {
         text: 'It looks professional, works great on mobile, and clients can actually find everything without having to message us first. We’ve had a lot of positive feedback since launching.',
-        name: 'Juliana',
+        name: 'Juliana Chen',
         role: 'Co-owner, Blend Hair Boutique',
       },
     },
@@ -774,7 +775,7 @@ export const en: Dictionary = {
       screens: ['The promise', 'Origins', 'Creations', 'Events'],
       quote: {
         text: 'I didn’t want a site packed with text competing with the dishes. Felipe understood that immediately. He gave the photography room to breathe and built everything else around it.',
-        name: 'Renata',
+        name: 'Renata Estrella',
         role: 'Renata Estrella Pâtisserie',
       },
     },

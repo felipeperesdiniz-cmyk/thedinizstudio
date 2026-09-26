@@ -146,7 +146,8 @@ export const es: Dictionary = {
         title: 'Marketing y SEO',
         text: 'Que te encuentren y que te sigan: búsqueda local, Perfil de Empresa en Google, redes sociales y el contenido detrás de ambas cosas.',
         proof: [
-          { value: '+200%', label: 'Crecimiento en Instagram de una clienta' },
+          { value: '200', label: 'Seguidores de una clienta, desde cero' },
+          { value: '1,5k', label: 'Seguidores del estudio, desde cero' },
           { value: '27', label: 'Reseñas de cinco estrellas conseguidas' },
         ],
       },
@@ -521,11 +522,11 @@ export const es: Dictionary = {
       meta: {
         title: 'Bordados com Amor | Web, Logo y Redes Sociales',
         description:
-          'Web trilingüe, logo bordado e Instagram gestionado para una artista del bordado a mano. La cuenta se ha triplicado desde el lanzamiento, sin publicidad pagada.',
+          'Web trilingüe, logo bordado e Instagram gestionado para una artista del bordado a mano. La cuenta pasó de cero a 200 seguidores, sin publicidad pagada.',
       },
       sector: 'Bordado a mano',
-      highlight: '+200% de crecimiento en Instagram, todo orgánico',
-      lede: 'Un logo bordado, una web en tres idiomas y una cuenta de Instagram que se triplicó sin un céntimo de publicidad.',
+      highlight: 'Instagram de cero a 200 seguidores, todo orgánico',
+      lede: 'Un logo bordado, una web en tres idiomas y una cuenta de Instagram construida desde cero sin un céntimo de publicidad.',
       description:
         'Bordado a mano, una pieza cada vez. La web está construida al ritmo del trabajo: un proceso contado en cinco movimientos y un archivo catalogado donde cada pieza lleva las palabras bordadas en ella. Publicada en portugués, inglés y español.',
       alt: 'bordadoscomamorbymari.com, web de artista del bordado a mano diseñada por The Diniz Studio',
@@ -548,9 +549,9 @@ export const es: Dictionary = {
       },
       figures: [
         {
-          value: '+200%',
-          label: 'Crecimiento en Instagram',
-          note: 'Desde el lanzamiento, sin publicidad.',
+          value: '200',
+          label: 'Seguidores en Instagram',
+          note: 'Desde cero, sin publicidad.',
         },
         { value: '3', label: 'Idiomas', note: 'Portugués, inglés y español.' },
         { value: '1', label: 'Estudio, de principio a fin', note: 'Logo, feed, textos y web.' },
@@ -559,7 +560,7 @@ export const es: Dictionary = {
         {
           kicker: 'Redes sociales',
           title: 'Crecida, no comprada',
-          text: 'El estudio lleva la cuenta de principio a fin: dirección, fotografía, textos y programación. Se ha triplicado desde el lanzamiento sin una sola publicación pagada, y cada pieza conversa con la web.',
+          text: 'El estudio lleva la cuenta de principio a fin: dirección, fotografía, textos y programación. Pasó de cero a 200 seguidores sin una sola publicación pagada, y cada pieza conversa con la web.',
         },
         {
           kicker: 'Fotografía y vídeo',
@@ -578,7 +579,7 @@ export const es: Dictionary = {
       screens: ['Inicio', 'Folhas Bordadas', 'Proceso', 'Archivo'],
       quote: {
         text: 'Quería algo limpio pero que siguiera siendo hecho a mano y personal, y él entendió exactamente lo que quería decir. Hasta los detalles pequeños parecen pertenecer a la marca. Por fin parece mi web.',
-        name: 'Mariana',
+        name: 'Mariana Peres',
         role: 'Bordados com Amor by Mari',
       },
     },
@@ -646,7 +647,7 @@ export const es: Dictionary = {
       screens: ['Servicios', 'Transformaciones', 'Las estilistas', 'Reseñas'],
       quote: {
         text: 'Se ve profesional, funciona muy bien en el móvil y las clientas encuentran todo sin tener que escribirnos antes. Hemos recibido muchos comentarios positivos desde que se publicó.',
-        name: 'Juliana',
+        name: 'Juliana Chen',
         role: 'Copropietaria, Blend Hair Boutique',
       },
     },
@@ -774,7 +775,7 @@ export const es: Dictionary = {
       screens: ['La promesa', 'Orígenes', 'Creaciones', 'Eventos'],
       quote: {
         text: 'No quería una web llena de texto compitiendo con los postres. Felipe lo entendió enseguida. Le dio aire a la fotografía y construyó todo lo demás alrededor.',
-        name: 'Renata',
+        name: 'Renata Estrella',
         role: 'Renata Estrella Pâtisserie',
       },
     },

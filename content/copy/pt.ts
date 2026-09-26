@@ -146,7 +146,8 @@ export const pt: Dictionary = {
         title: 'Marketing e SEO',
         text: 'Ser encontrado e ser seguido: busca local, Perfil da Empresa no Google, redes sociais e o conteúdo por trás disso.',
         proof: [
-          { value: '+200%', label: 'Crescimento no Instagram de cliente' },
+          { value: '200', label: 'Seguidores de cliente, do zero' },
+          { value: '1,5 mil', label: 'Seguidores do estúdio, do zero' },
           { value: '27', label: 'Avaliações cinco estrelas conquistadas' },
         ],
       },
@@ -521,11 +522,11 @@ export const pt: Dictionary = {
       meta: {
         title: 'Bordados com Amor | Site, Logo e Redes Sociais',
         description:
-          'Site trilíngue, logo bordada e Instagram gerenciado para uma artista do bordado à mão. A conta triplicou desde o lançamento, sem um centavo de anúncio.',
+          'Site trilíngue, logo bordada e Instagram gerenciado para uma artista do bordado à mão. A conta saiu do zero para 200 seguidores, sem um centavo de anúncio.',
       },
       sector: 'Bordado à mão',
-      highlight: '+200% de crescimento no Instagram, tudo orgânico',
-      lede: 'Uma logo bordada, um site em três idiomas e um Instagram que triplicou sem um centavo de anúncio.',
+      highlight: 'Instagram do zero a 200 seguidores, tudo orgânico',
+      lede: 'Uma logo bordada, um site em três idiomas e um Instagram construído do zero sem um centavo de anúncio.',
       description:
         'Bordado à mão, uma peça por vez. O site é construído no ritmo do trabalho: um processo contado em cinco movimentos e um arquivo catalogado em que cada peça carrega as palavras bordadas nela. Publicado em português, inglês e espanhol.',
       alt: 'bordadoscomamorbymari.com, site de artista do bordado à mão criado pelo The Diniz Studio',
@@ -548,9 +549,9 @@ export const pt: Dictionary = {
       },
       figures: [
         {
-          value: '+200%',
-          label: 'Crescimento no Instagram',
-          note: 'Desde o lançamento, sem anúncio.',
+          value: '200',
+          label: 'Seguidores no Instagram',
+          note: 'Do zero, sem anúncio.',
         },
         { value: '3', label: 'Idiomas', note: 'Português, inglês e espanhol.' },
         { value: '1', label: 'Estúdio, de ponta a ponta', note: 'Logo, feed, legendas e site.' },
@@ -559,7 +560,7 @@ export const pt: Dictionary = {
         {
           kicker: 'Redes sociais',
           title: 'Crescido, não comprado',
-          text: 'O estúdio cuida da conta de ponta a ponta: direção, fotografia, escrita e agendamento. Ela triplicou desde o lançamento sem um único post patrocinado, e cada peça disso conversa com o site.',
+          text: 'O estúdio cuida da conta de ponta a ponta: direção, fotografia, escrita e agendamento. Ela saiu do zero para 200 seguidores sem um único post patrocinado, e cada peça disso conversa com o site.',
         },
         {
           kicker: 'Fotografia e vídeo',
@@ -578,7 +579,7 @@ export const pt: Dictionary = {
       screens: ['Home', 'Folhas Bordadas', 'Processo', 'Arquivo'],
       quote: {
         text: 'Eu queria algo limpo, mas ainda feito à mão e pessoal, e ele entendeu exatamente o que eu quis dizer. Até os detalhinhos parecem pertencer à marca. Finalmente parece o meu site.',
-        name: 'Mariana',
+        name: 'Mariana Peres',
         role: 'Bordados com Amor by Mari',
       },
     },
@@ -646,7 +647,7 @@ export const pt: Dictionary = {
       screens: ['Serviços', 'Transformações', 'As profissionais', 'Avaliações'],
       quote: {
         text: 'Ficou profissional, funciona muito bem no celular e as clientes conseguem achar tudo sem precisar mandar mensagem antes. Recebemos muito retorno positivo desde que entrou no ar.',
-        name: 'Juliana',
+        name: 'Juliana Chen',
         role: 'Sócia, Blend Hair Boutique',
       },
     },
@@ -774,7 +775,7 @@ export const pt: Dictionary = {
       screens: ['A promessa', 'Origens', 'Criações', 'Eventos'],
       quote: {
         text: 'Eu não queria um site cheio de texto disputando com os doces. O Felipe entendeu na hora. Ele deu espaço para a fotografia respirar e construiu todo o resto em volta dela.',
-        name: 'Renata',
+        name: 'Renata Estrella',
         role: 'Renata Estrella Pâtisserie',
       },
     },
