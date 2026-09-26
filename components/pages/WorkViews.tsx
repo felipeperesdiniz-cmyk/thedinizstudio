@@ -285,6 +285,15 @@ export function CaseStudyView({
                   className="h-auto max-h-full w-full object-contain"
                 />
               </div>
+            ) : project.identityImage ? (
+              <Image
+                src={project.identityImage.src}
+                alt={`${project.title}: ${copy.screens[0]}`}
+                width={project.identityImage.width}
+                height={project.identityImage.height}
+                sizes="(max-width: 768px) 100vw, 45vw"
+                className="block h-auto w-full"
+              />
             ) : (
               <div className="flex aspect-[4/3] flex-col items-center justify-center gap-4 bg-surface">
                 <span className="font-display text-3xl text-primary">

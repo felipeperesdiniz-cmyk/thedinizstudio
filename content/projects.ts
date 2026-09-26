@@ -30,6 +30,8 @@ export interface Project {
   blurDataURL: string
   hero: Picture
   mark?: Picture
+  /** Shown in the identity section when the logo is not the studio's own work. */
+  identityImage?: Picture
   screens: readonly Picture[]
   chapters: readonly ChapterMedia[]
 }
@@ -75,7 +77,8 @@ export const PROJECTS: readonly Project[] = [
     blurDataURL:
       'data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAkAA4BaJZwAAvxV1uqwAAD+6j5Xs9smoI/dTSvDWUWX/48rf4QofeAUAA==',
     hero: { src: '/images/work/blend/hero.webp', width: 1600, height: 1000 },
-    mark: { src: '/images/work/blend/mark.webp', width: 900, height: 613 },
+    // The logo was Blend's before the studio arrived, so it is never shown as the studio's work.
+    identityImage: { src: '/images/work/blend/identity.webp', width: 1316, height: 725 },
     screens: screens('blend'),
     chapters: [
       {

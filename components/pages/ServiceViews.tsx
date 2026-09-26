@@ -135,7 +135,11 @@ export function ServiceView({
           </div>
         </Reveal>
 
-        <div className="mt-20 grid grid-cols-2 items-start gap-[var(--gutter)] md:mt-24 md:grid-cols-4">
+        <div
+          className={`mt-20 grid grid-cols-2 items-start gap-[var(--gutter)] md:mt-24 ${
+            media.gallery.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-4'
+          }`}
+        >
           {media.gallery.map((thumb, i) => (
             <Reveal key={thumb.src} as="image" delay={i * 0.07}>
               <MediaTile thumb={thumb} sizes="(max-width: 768px) 50vw, 24vw" />

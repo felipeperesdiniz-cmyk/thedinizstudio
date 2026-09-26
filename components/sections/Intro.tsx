@@ -48,11 +48,12 @@ export function Intro({ t }: { t: Dictionary }) {
           stagger: { each: 0.35, from: 'start' },
           scrollTrigger: {
             // Anchored to the heading, not the padded section, so the sweep
-            // only starts once the words are actually on screen.
+            // starts as the words come on screen and finishes as they near the
+            // top: a long stretch, so it reads as a slow build rather than a flash.
             trigger: heading,
-            start: 'top 72%',
-            end: 'bottom 40%',
-            scrub: 0.8,
+            start: 'top 85%',
+            end: 'bottom 20%',
+            scrub: 1.6,
           },
         },
       )
@@ -67,9 +68,9 @@ export function Intro({ t }: { t: Dictionary }) {
           ease: 'none',
           scrollTrigger: {
             trigger: heading,
-            start: 'top 85%',
-            end: 'bottom 40%',
-            scrub: 0.8,
+            start: 'top 90%',
+            end: 'bottom 20%',
+            scrub: 1.6,
           },
         },
       )

@@ -154,13 +154,6 @@ export const SERVICE_PAGE_MEDIA: Record<ServiceKey, ServicePageMedia> = {
         tone: 'light',
         alt: 'Rafa Diniz photography and film logo mark',
       },
-      {
-        src: '/images/work/blend/mark.webp',
-        width: 900,
-        height: 613,
-        tone: 'light',
-        alt: 'Blend Hair Boutique logo mark with a bobby pin illustration',
-      },
     ],
     related: ['bordados-com-amor-by-mari', 'rafa-diniz', 'renata-estrella-patisserie'],
   },
