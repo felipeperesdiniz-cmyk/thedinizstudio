@@ -26,9 +26,9 @@ export const pt: Dictionary = {
     meta: {
       title: 'The Diniz Studio | Criação de Sites, Identidade Visual e Marketing',
       description:
-        'Sites sob medida, identidade visual e o marketing em volta disso, para pequenos negócios no Brasil e nos EUA. Em português, inglês e espanhol.',
+        'Sites sob medida, identidade visual e o marketing em volta disso, para negócios no Brasil e nos EUA. Em português, inglês e espanhol.',
     },
-    heroLine: 'Sites, marcas e marketing para pequenos negócios, em português, inglês e espanhol.',
+    heroLine: 'Sites, marcas e marketing para negócios de todos os tamanhos, em português, inglês e espanhol.',
     heroScroll: 'Role',
     h1: 'The Diniz Studio. Criação de sites, identidade visual e marketing.',
     intro: {
@@ -163,9 +163,9 @@ export const pt: Dictionary = {
   servicePages: {
     'web-design': {
       meta: {
-        title: 'Criação de Sites | Sites Sob Medida para Pequenos Negócios',
+        title: 'Criação de Sites | Sites Sob Medida e Multilíngues',
         description:
-          'Sites sob medida para pequenos negócios. Feitos à mão, rápidos, multilíngues e pensados para o cliente achar você e fechar. Português, inglês e espanhol.',
+          'Sites sob medida para negócios de todos os tamanhos. Feitos à mão, rápidos, multilíngues e pensados para o cliente achar você e fechar. Português, inglês e espanhol.',
       },
       kicker: 'Serviço',
       title: 'Criação de sites',
@@ -268,9 +268,9 @@ export const pt: Dictionary = {
 
     'brand-identity': {
       meta: {
-        title: 'Identidade Visual e Criação de Logo para Pequenos Negócios',
+        title: 'Identidade Visual e Logo, Feitos para o Seu Negócio',
         description:
-          'Logo e identidade visual para pequenos negócios: cor, tipografia e as regras que seguram tudo, da vitrine ao site e ao Instagram.',
+          'Logo e identidade visual para negócios de todos os tamanhos: cor, tipografia e as regras que seguram tudo, da vitrine ao site e ao Instagram.',
       },
       kicker: 'Serviço',
       title: 'Identidade visual',
@@ -351,7 +351,7 @@ export const pt: Dictionary = {
 
     'marketing-seo': {
       meta: {
-        title: 'Marketing e SEO Local para Pequenos Negócios',
+        title: 'Marketing e SEO Local | Seja Encontrado e Escolhido',
         description:
           'SEO local, Perfil da Empresa no Google, redes sociais e conteúdo. Seja encontrado por quem procura o que você vende, em português, inglês ou espanhol.',
       },
@@ -441,7 +441,7 @@ export const pt: Dictionary = {
     meta: {
       title: 'O Estúdio | Quem Você Está Contratando',
       description:
-        'Um estúdio pequeno de sites e identidade visual, em português, inglês e espanhol, para pequenos negócios no Brasil e nos Estados Unidos.',
+        'Um estúdio independente de sites e identidade visual, em português, inglês e espanhol, para negócios no Brasil e nos Estados Unidos.',
     },
     kicker: 'Estúdio',
     title: 'Você contrata uma pessoa, não um departamento',

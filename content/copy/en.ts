@@ -26,9 +26,9 @@ export const en: Dictionary = {
     meta: {
       title: 'The Diniz Studio | Web Design, Branding and Marketing',
       description:
-        'Custom websites, brand identities and the marketing around them, for small businesses in the US and Brazil. In English, Portuguese and Spanish.',
+        'Custom websites, brand identities and the marketing around them, for businesses in the US and Brazil. In English, Portuguese and Spanish.',
     },
-    heroLine: 'Websites, brands and marketing for small businesses, in English, Portuguese and Spanish.',
+    heroLine: 'Websites, brands and marketing for businesses of every size, in English, Portuguese and Spanish.',
     heroScroll: 'Scroll',
     h1: 'The Diniz Studio. Web design, brand identity and marketing.',
     intro: {
@@ -163,9 +163,9 @@ export const en: Dictionary = {
   servicePages: {
     'web-design': {
       meta: {
-        title: 'Web Design and Development | Custom Websites for Small Businesses',
+        title: 'Web Design and Development | Custom, Multilingual Websites',
         description:
-          'Custom websites for small businesses. Hand-coded, fast, multilingual and built so customers can find you and book you. English, Portuguese, Spanish.',
+          'Custom websites for businesses of every size. Hand-coded, fast, multilingual and built so customers can find you and book you. English, Portuguese, Spanish.',
       },
       kicker: 'Service',
       title: 'Web design and development',
@@ -268,9 +268,9 @@ export const en: Dictionary = {
 
     'brand-identity': {
       meta: {
-        title: 'Brand Identity and Logo Design for Small Businesses',
+        title: 'Brand Identity and Logo Design, Drawn for Your Trade',
         description:
-          'Logo and brand identity for small businesses: colour, type and the rules that hold them together, from the shopfront to the website to Instagram.',
+          'Logo and brand identity for businesses of every size: colour, type and the rules that hold them together, from the shopfront to the website to Instagram.',
       },
       kicker: 'Service',
       title: 'Brand identity',
@@ -351,7 +351,7 @@ export const en: Dictionary = {
 
     'marketing-seo': {
       meta: {
-        title: 'Marketing and Local SEO for Small Businesses',
+        title: 'Marketing and Local SEO | Get Found, Get Chosen',
         description:
           'Local SEO, Google Business Profiles, social media and content. Get found when people search for what you sell, in English, Portuguese or Spanish.',
       },
@@ -441,7 +441,7 @@ export const en: Dictionary = {
     meta: {
       title: 'The Studio | Who You Are Hiring',
       description:
-        'The Diniz Studio is a small web design and branding studio working in English, Portuguese and Spanish, for small businesses in the United States and Brazil.',
+        'The Diniz Studio is an independent web design and branding studio working in English, Portuguese and Spanish, for businesses in the United States and Brazil.',
     },
     kicker: 'Studio',
     title: 'You are hiring a person, not a department',

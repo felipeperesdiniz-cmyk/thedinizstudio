@@ -26,9 +26,9 @@ export const es: Dictionary = {
     meta: {
       title: 'The Diniz Studio | Diseño Web, Branding y Marketing',
       description:
-        'Webs a medida, identidad de marca y el marketing alrededor, para pequeños negocios en Estados Unidos y Brasil. En español, inglés y portugués.',
+        'Webs a medida, identidad de marca y el marketing alrededor, para negocios en Estados Unidos y Brasil. En español, inglés y portugués.',
     },
-    heroLine: 'Webs, marcas y marketing para pequeños negocios, en español, inglés y portugués.',
+    heroLine: 'Webs, marcas y marketing para negocios de todos los tamaños, en español, inglés y portugués.',
     heroScroll: 'Desliza',
     h1: 'The Diniz Studio. Diseño web, identidad de marca y marketing.',
     intro: {
@@ -163,9 +163,9 @@ export const es: Dictionary = {
   servicePages: {
     'web-design': {
       meta: {
-        title: 'Diseño Web | Páginas a Medida para Pequeños Negocios',
+        title: 'Diseño Web | Páginas a Medida y Multilingües',
         description:
-          'Webs a medida para pequeños negocios. Hechas a mano, rápidas, multilingües y pensadas para que te encuentren y te contraten. Español, inglés y portugués.',
+          'Webs a medida para negocios de todos los tamaños. Hechas a mano, rápidas, multilingües y pensadas para que te encuentren y te contraten. Español, inglés y portugués.',
       },
       kicker: 'Servicio',
       title: 'Diseño y desarrollo web',
@@ -268,9 +268,9 @@ export const es: Dictionary = {
 
     'brand-identity': {
       meta: {
-        title: 'Identidad de Marca y Diseño de Logo para Pequeños Negocios',
+        title: 'Identidad de Marca y Diseño de Logo, Hechos para tu Negocio',
         description:
-          'Logo e identidad de marca para pequeños negocios: color, tipografía y las reglas que lo sostienen, de la vitrina a la web y a Instagram.',
+          'Logo e identidad de marca para negocios de todos los tamaños: color, tipografía y las reglas que lo sostienen, de la vitrina a la web y a Instagram.',
       },
       kicker: 'Servicio',
       title: 'Identidad de marca',
@@ -351,7 +351,7 @@ export const es: Dictionary = {
 
     'marketing-seo': {
       meta: {
-        title: 'Marketing y SEO Local para Pequeños Negocios',
+        title: 'Marketing y SEO Local | Que te Encuentren y te Elijan',
         description:
           'SEO local, Perfil de Empresa en Google, redes sociales y contenido. Que te encuentren cuando busquen lo que vendes, en español, inglés o portugués.',
       },
@@ -441,7 +441,7 @@ export const es: Dictionary = {
     meta: {
       title: 'El Estudio | A Quién Estás Contratando',
       description:
-        'The Diniz Studio es un estudio pequeño de diseño web y marca que trabaja en español, inglés y portugués para pequeños negocios en Estados Unidos y Brasil.',
+        'The Diniz Studio es un estudio independiente de diseño web y marca que trabaja en español, inglés y portugués para negocios en Estados Unidos y Brasil.',
     },
     kicker: 'Estudio',
     title: 'Contratas a una persona, no a un departamento',
