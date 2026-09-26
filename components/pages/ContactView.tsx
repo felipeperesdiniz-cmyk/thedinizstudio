@@ -5,8 +5,9 @@ import { Reveal } from '@/components/ui/Reveal'
 import { SITE } from '@/lib/site'
 import type { Dictionary } from '@/content/copy/types'
 
+// A full, filled box so the field reads as a place to type against the dark page.
 const FIELD =
-  'w-full border-b border-line bg-transparent py-3 text-primary outline-none transition-colors placeholder:text-secondary/70 focus:border-primary aria-[invalid=true]:border-primary'
+  'w-full border border-white/20 bg-white/[0.04] px-4 py-3.5 text-primary outline-none transition-colors placeholder:text-secondary/70 hover:border-white/35 focus:border-primary focus:bg-white/[0.07] aria-[invalid=true]:border-primary'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -96,7 +97,7 @@ export function ContactView({ t }: { t: Dictionary }) {
           <Reveal className="md:col-span-7">
             <form onSubmit={onSubmit} noValidate className="flex flex-col gap-10">
               <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
-                <label className="flex flex-col gap-2">
+                <label className="flex flex-col gap-3">
                   <span className="label">{form.name}</span>
                   <input
                     name="name"
@@ -112,7 +113,7 @@ export function ContactView({ t }: { t: Dictionary }) {
                     </p>
                   )}
                 </label>
-                <label className="flex flex-col gap-2">
+                <label className="flex flex-col gap-3">
                   <span className="label">{form.email}</span>
                   <input
                     name="email"
@@ -142,7 +143,7 @@ export function ContactView({ t }: { t: Dictionary }) {
                       className={`min-h-11 border px-4 py-2 font-mono text-xs uppercase tracking-[0.08em] transition-colors ${
                         project === option
                           ? 'border-primary text-primary'
-                          : 'border-line text-secondary hover:border-secondary hover:text-primary'
+                          : 'border-white/20 text-secondary hover:border-white/40 hover:text-primary'
                       }`}
                     >
                       {option}
@@ -151,7 +152,7 @@ export function ContactView({ t }: { t: Dictionary }) {
                 </div>
               </fieldset>
 
-              <label className="flex flex-col gap-2">
+              <label className="flex flex-col gap-3">
                 <span className="label">{form.message}</span>
                 <textarea
                   name="message"
