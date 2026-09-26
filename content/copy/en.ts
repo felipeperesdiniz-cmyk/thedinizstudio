@@ -26,9 +26,10 @@ export const en: Dictionary = {
     meta: {
       title: 'The Diniz Studio | Web Design, Branding and Marketing',
       description:
-        'Web design studio building custom websites, brand identities and the marketing around them. Work in English, Portuguese and Spanish for small businesses in the US and Brazil.',
+        'Custom websites, brand identities and the marketing around them, for small businesses in the US and Brazil. In English, Portuguese and Spanish.',
     },
     heroLine: 'Websites, brands and marketing for small businesses, in English, Portuguese and Spanish.',
+    heroScroll: 'Scroll',
     h1: 'The Diniz Studio. Web design, brand identity and marketing.',
     intro: {
       kicker: 'Why one studio',
@@ -89,7 +90,7 @@ export const en: Dictionary = {
     meta: {
       title: 'Work | Websites, Branding and Marketing Case Studies',
       description:
-        'Case studies from The Diniz Studio: custom websites, logos and brand identities, social media and local SEO for a hand embroidery artist, a hair salon, a photographer and a pastry chef.',
+        'Case studies: websites, logos, social media and local SEO for an embroidery artist, a hair salon, a photographer and a pastry chef.',
     },
     kicker: 'Work',
     title: 'Every project, in full',
@@ -119,7 +120,7 @@ export const en: Dictionary = {
     meta: {
       title: 'Services | Web Design, Brand Identity and Marketing',
       description:
-        'Custom website design and development, logo and brand identity, and the marketing that follows: social media, Google Business Profiles and local SEO. Available in English, Portuguese and Spanish.',
+        'Custom websites, logo and brand identity, and the marketing that follows: social media, Google Business Profiles and local SEO. In three languages.',
     },
     kicker: 'Services',
     title: 'What the studio does',
@@ -162,7 +163,7 @@ export const en: Dictionary = {
       meta: {
         title: 'Web Design and Development | Custom Websites for Small Businesses',
         description:
-          'Custom website design and development for small businesses. Hand-coded, fast, multilingual, and built so customers can find you and book you. English, Portuguese and Spanish.',
+          'Custom websites for small businesses. Hand-coded, fast, multilingual and built so customers can find you and book you. English, Portuguese, Spanish.',
       },
       kicker: 'Service',
       title: 'Web design and development',
@@ -267,7 +268,7 @@ export const en: Dictionary = {
       meta: {
         title: 'Brand Identity and Logo Design for Small Businesses',
         description:
-          'Logo design and brand identity: colour, typography and the rules that hold them together, drawn for small businesses and built to carry from a shopfront to a website to Instagram.',
+          'Logo and brand identity for small businesses: colour, type and the rules that hold them together, from the shopfront to the website to Instagram.',
       },
       kicker: 'Service',
       title: 'Brand identity',
@@ -350,7 +351,7 @@ export const en: Dictionary = {
       meta: {
         title: 'Marketing and Local SEO for Small Businesses',
         description:
-          'Local SEO, Google Business Profile setup and management, social media and content. Get found when people search for what you sell, in English, Portuguese or Spanish.',
+          'Local SEO, Google Business Profiles, social media and content. Get found when people search for what you sell, in English, Portuguese or Spanish.',
       },
       kicker: 'Service',
       title: 'Marketing and SEO',
@@ -475,7 +476,7 @@ export const en: Dictionary = {
     meta: {
       title: 'Contact | Start a Project',
       description:
-        'Tell the studio what you need: a new website, a logo and brand identity, or the marketing around them. Replies usually within a day, in English, Portuguese or Spanish.',
+        'Tell the studio what you need: a website, a logo and identity, or the marketing around them. Replies within a day, in English, Portuguese or Spanish.',
     },
     kicker: 'Contact',
     title: 'Start a project',
@@ -522,7 +523,7 @@ export const en: Dictionary = {
       meta: {
         title: 'Bordados com Amor | Website, Logo and Social Media',
         description:
-          'A trilingual website, a stitched logo and a managed Instagram for a hand embroidery artist. The account has grown from zero to 200 followers with no paid promotion.',
+          'A trilingual website, a stitched logo and a managed Instagram for a hand embroidery artist, grown from zero to 200 followers with no paid promotion.',
       },
       sector: 'Hand embroidery',
       highlight: 'Instagram from zero to 200 followers, fully organic',
@@ -588,7 +589,7 @@ export const en: Dictionary = {
       meta: {
         title: 'Blend Hair Boutique | Salon Website and Local SEO',
         description:
-          'A trilingual salon website in Plantation, Florida, with online booking, eight service pages and local SEO that puts its 4.9-star rating, from more than 1,230 reviews, in front of search.',
+          'A trilingual salon website in Plantation, Florida, with online booking, eight service pages and local SEO that shows its 4.9-star rating to search.',
       },
       sector: 'Hair salon',
       highlight: 'Eight service pages, booking from every one',
@@ -719,7 +720,7 @@ export const en: Dictionary = {
       meta: {
         title: 'Renata Estrella Pâtisserie | Brand, Website and Google Profile',
         description:
-          'Brand identity, website, e-book and Google Business Profile for a luxury pâtisserie in Rio de Janeiro. The profile the studio built now carries 27 five-star reviews.',
+          'Brand identity, website, e-book and Google Business Profile for a luxury pâtisserie in Rio. The profile the studio built carries 27 five-star reviews.',
       },
       sector: 'Pâtisserie',
       highlight: '27 five-star reviews on a profile built from zero',

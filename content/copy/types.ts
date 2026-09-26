@@ -79,6 +79,8 @@ export interface Dictionary {
     meta: Meta
     /** Visible line under the hero wordmark. */
     heroLine: string
+    /** Label beside the scroll cue at the foot of the hero. */
+    heroScroll: string
     h1: string
     intro: { kicker: string; title: string; body: readonly string[] }
     services: { kicker: string; title: string; text: string; link: string }

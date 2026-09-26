@@ -15,13 +15,7 @@ const STORY_LAYOUT = [
   'md:col-span-8 md:col-start-3',
 ]
 
-function Story({
-  images,
-  captions,
-}: {
-  images: readonly Picture[]
-  captions?: readonly string[]
-}) {
+function Story({ images, captions }: { images: readonly Picture[]; captions?: readonly string[] }) {
   return (
     <div className="grid grid-cols-1 gap-x-[var(--gutter)] gap-y-16 md:grid-cols-12 md:gap-y-24">
       {images.map((image, i) => (
@@ -92,9 +86,7 @@ export function WorkIndexView({ locale, t }: { locale: Locale; t: Dictionary }) 
           </h1>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="mt-10 max-w-[46ch] text-2xl leading-snug text-primary/90">
-            {t.work.lede}
-          </p>
+          <p className="mt-10 max-w-[46ch] text-2xl leading-snug text-primary/90">{t.work.lede}</p>
         </Reveal>
       </header>
 
@@ -134,9 +126,7 @@ export function WorkIndexView({ locale, t }: { locale: Locale; t: Dictionary }) 
                       </p>
                     </div>
 
-                    <p className="max-w-[28ch] text-secondary md:col-span-2">
-                      {copy.highlight}
-                    </p>
+                    <p className="max-w-[28ch] text-secondary md:col-span-2">{copy.highlight}</p>
 
                     <span
                       aria-hidden="true"
@@ -196,14 +186,12 @@ export function CaseStudyView({
 
         <div className="mt-12 grid grid-cols-1 gap-12 md:mt-16 md:grid-cols-12 md:gap-[var(--gutter)]">
           <Reveal delay={0.15} className="md:col-span-7">
-            <p className="max-w-[36ch] text-2xl leading-snug text-primary/90">
-              {copy.lede}
-            </p>
+            <p className="max-w-[36ch] text-2xl leading-snug text-primary/90">{copy.lede}</p>
           </Reveal>
 
           <Reveal delay={0.25} className="md:col-span-4 md:col-start-9">
             <dl className="grid grid-cols-2 gap-8 md:grid-cols-1">
-              <div>
+              <div className="row-span-2 md:row-span-1">
                 <dt className="label">{t.caseStudy.scope}</dt>
                 <dd className="mt-3 text-sm leading-relaxed text-secondary">
                   {copy.services.map((service) => (
@@ -213,30 +201,28 @@ export function CaseStudyView({
                   ))}
                 </dd>
               </div>
-              <div className="flex flex-col gap-8">
-                <div>
-                  <dt className="label">{t.caseStudy.where}</dt>
-                  <dd className="mt-3 text-sm text-secondary">{copy.location}</dd>
-                </div>
-                <div>
-                  <dt className="label">{t.caseStudy.live}</dt>
-                  <dd className="mt-3 text-sm">
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="group inline-flex max-w-full items-center gap-2 text-primary"
+              <div>
+                <dt className="label">{t.caseStudy.where}</dt>
+                <dd className="mt-3 text-sm text-secondary">{copy.location}</dd>
+              </div>
+              <div>
+                <dt className="label">{t.caseStudy.live}</dt>
+                <dd className="mt-3 text-sm">
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="group inline-flex max-w-full items-center gap-2 text-primary"
+                  >
+                    <span className="link-underline min-w-0 break-all">{host}</span>
+                    <span
+                      aria-hidden="true"
+                      className="transition-transform duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                     >
-                      <span className="link-underline min-w-0 break-all">{host}</span>
-                      <span
-                        aria-hidden="true"
-                        className="transition-transform duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                      >
-                        ↗
-                      </span>
-                    </a>
-                  </dd>
-                </div>
+                      ↗
+                    </span>
+                  </a>
+                </dd>
               </div>
             </dl>
           </Reveal>
@@ -380,9 +366,7 @@ export function CaseStudyView({
                   <Reveal as="image" className="overflow-hidden bg-surface">
                     <ReelPlayer {...media.video} labels={t.player} />
                   </Reveal>
-                  {chapter.videoCaption && (
-                    <p className="label mt-5">{chapter.videoCaption}</p>
-                  )}
+                  {chapter.videoCaption && <p className="label mt-5">{chapter.videoCaption}</p>}
                 </div>
               </div>
             )}
@@ -417,7 +401,10 @@ export function CaseStudyView({
         </div>
       </section>
 
-      <section aria-label={copy.quote.name} className="container-studio pb-[var(--section-padding)]">
+      <section
+        aria-label={copy.quote.name}
+        className="container-studio pb-[var(--section-padding)]"
+      >
         <Reveal>
           <blockquote className="max-w-[34ch] font-display text-2xl leading-[1.3] text-primary md:text-3xl md:leading-[1.25]">
             “{copy.quote.text}”

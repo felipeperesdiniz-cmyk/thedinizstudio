@@ -26,9 +26,10 @@ export const es: Dictionary = {
     meta: {
       title: 'The Diniz Studio | Diseño Web, Branding y Marketing',
       description:
-        'Estudio de diseño web que crea páginas a medida, identidades de marca y el marketing alrededor de todo eso. Trabajo en español, inglés y portugués para pequeños negocios en Estados Unidos y Brasil.',
+        'Webs a medida, identidad de marca y el marketing alrededor, para pequeños negocios en Estados Unidos y Brasil. En español, inglés y portugués.',
     },
     heroLine: 'Webs, marcas y marketing para pequeños negocios, en español, inglés y portugués.',
+    heroScroll: 'Desliza',
     h1: 'The Diniz Studio. Diseño web, identidad de marca y marketing.',
     intro: {
       kicker: 'Por qué un solo estudio',
@@ -89,7 +90,7 @@ export const es: Dictionary = {
     meta: {
       title: 'Proyectos | Casos de Diseño Web, Branding y Marketing',
       description:
-        'Casos de The Diniz Studio: webs a medida, logos e identidad de marca, redes sociales y SEO local para una bordadora, un salón de belleza, un fotógrafo y una pastelera.',
+        'Casos: webs, logos, redes sociales y SEO local para una bordadora, un salón de belleza, un fotógrafo y una pastelera.',
     },
     kicker: 'Proyectos',
     title: 'Cada proyecto, completo',
@@ -119,7 +120,7 @@ export const es: Dictionary = {
     meta: {
       title: 'Servicios | Diseño Web, Identidad de Marca y Marketing',
       description:
-        'Diseño y desarrollo de páginas web a medida, logo e identidad de marca, y el marketing que viene después: redes sociales, Perfil de Empresa en Google y SEO local. En español, inglés y portugués.',
+        'Webs a medida, logo e identidad de marca, y el marketing que viene después: redes sociales, Perfil de Empresa en Google y SEO local. En tres idiomas.',
     },
     kicker: 'Servicios',
     title: 'Qué hace el estudio',
@@ -162,14 +163,14 @@ export const es: Dictionary = {
       meta: {
         title: 'Diseño Web | Páginas a Medida para Pequeños Negocios',
         description:
-          'Diseño y desarrollo de páginas web a medida para pequeños negocios. Hechas a mano, rápidas, multilingües y pensadas para que te encuentren y te contraten. Español, inglés y portugués.',
+          'Webs a medida para pequeños negocios. Hechas a mano, rápidas, multilingües y pensadas para que te encuentren y te contraten. Español, inglés y portugués.',
       },
       kicker: 'Servicio',
       title: 'Diseño y desarrollo web',
       lede: 'Una web hecha para tu negocio, no adaptada de una plantilla que otro ya está usando.',
       body: [
-        'Quien busca una web nueva suele estar resolviendo uno de estos tres problemas: la web actual no está a la altura del trabajo, va lenta o se rompe en el móvil, o la gente entra y nunca escribe. Los tres tienen solución, y los tres dependen de lo mismo: decidir para qué sirve la web antes de que alguien abra un programa de diseño.',
-        'Cada página aquí se escribe y se programa a mano. Sin constructor de páginas, sin plantilla, sin licencia mensual de un plugin que algún día se rompe. Por eso estas webs se mantienen ligeras en el móvil, se sostienen en Google y un asistente de inteligencia artificial puede leerlas con claridad cuando alguien le pide una recomendación.',
+        'Quien busca una web nueva suele estar resolviendo uno de estos tres problemas: la web actual no está a la altura del trabajo, va lenta o se rompe en el celular, o la gente entra y nunca escribe. Los tres tienen solución, y los tres dependen de lo mismo: decidir para qué sirve la web antes de que alguien abra un programa de diseño.',
+        'Cada página aquí se escribe y se programa a mano. Sin constructor de páginas, sin plantilla, sin licencia mensual de un plugin que algún día se rompe. Por eso estas webs se mantienen ligeras en el celular, se sostienen en Google y un asistente de inteligencia artificial puede leerlas con claridad cuando alguien le pide una recomendación.',
         'Cuando tiene sentido, la web se publica en español, inglés y portugués. Cada idioma tiene su dirección y su texto, escrito y no traducido por una máquina, que es lo que hace que aparezcas en una búsqueda hecha en cualquiera de los tres.',
       ],
       included: {
@@ -181,7 +182,7 @@ export const es: Dictionary = {
           },
           {
             title: 'Diseño y desarrollo',
-            text: 'Maquetación, tipografía, movimiento y código. Todo adaptable, probado en móviles reales y tuyo para siempre.',
+            text: 'Maquetación, tipografía, movimiento y código. Todo adaptable, probado en celulares reales y tuyo para siempre.',
           },
           {
             title: 'Textos que trabajan',
@@ -267,14 +268,14 @@ export const es: Dictionary = {
       meta: {
         title: 'Identidad de Marca y Diseño de Logo para Pequeños Negocios',
         description:
-          'Diseño de logo e identidad de marca: color, tipografía y las reglas que lo sostienen, dibujadas para pequeños negocios y hechas para funcionar del escaparate a la web y a Instagram.',
+          'Logo e identidad de marca para pequeños negocios: color, tipografía y las reglas que lo sostienen, de la vitrina a la web y a Instagram.',
       },
       kicker: 'Servicio',
       title: 'Identidad de marca',
       lede: 'El logo es la parte más pequeña. La identidad es lo que hace que un cliente te reconozca la segunda vez.',
       body: [
         'La mayoría llega aquí con un logo hecho deprisa, un color que solo existe en un archivo y ninguna idea de qué tipografía usar para imprimir una carta. Funciona hasta que necesitas web, lista de precios y feed de Instagram a la vez, y nada encaja.',
-        'Una identidad lo resuelve decidiendo pocas cosas y sosteniéndolas: una o dos tipografías, una paleta que funcione en pantalla y en papel, una marca que se lea del tamaño de un icono de móvil, y reglas simples de qué va dónde.',
+        'Una identidad lo resuelve decidiendo pocas cosas y sosteniéndolas: una o dos tipografías, una paleta que funcione en pantalla y en papel, una marca que se lea del tamaño de un ícono de celular, y reglas simples de qué va dónde.',
         'El trabajo se dibuja sobre lo que vendes de verdad. Una bordadora y un salón necesitan cosas distintas de un logo, y ninguno de los dos necesita un símbolo que podría ser de una empresa de tecnología.',
       ],
       included: {
@@ -350,7 +351,7 @@ export const es: Dictionary = {
       meta: {
         title: 'Marketing y SEO Local para Pequeños Negocios',
         description:
-          'SEO local, creación y gestión del Perfil de Empresa en Google, redes sociales y contenido. Que te encuentren cuando busquen lo que vendes, en español, inglés o portugués.',
+          'SEO local, Perfil de Empresa en Google, redes sociales y contenido. Que te encuentren cuando busquen lo que vendes, en español, inglés o portugués.',
       },
       kicker: 'Servicio',
       title: 'Marketing y SEO',
@@ -526,7 +527,7 @@ export const es: Dictionary = {
       },
       sector: 'Bordado a mano',
       highlight: 'Instagram de cero a 200 seguidores, todo orgánico',
-      lede: 'Un logo bordado, una web en tres idiomas y una cuenta de Instagram construida desde cero sin un céntimo de publicidad.',
+      lede: 'Un logo bordado, una web en tres idiomas y una cuenta de Instagram construida desde cero sin un centavo de publicidad.',
       description:
         'Bordado a mano, una pieza cada vez. La web está construida al ritmo del trabajo: un proceso contado en cinco movimientos y un archivo catalogado donde cada pieza lleva las palabras bordadas en ella. Publicada en portugués, inglés y español.',
       alt: 'bordadoscomamorbymari.com, web de artista del bordado a mano diseñada por The Diniz Studio',
@@ -588,13 +589,13 @@ export const es: Dictionary = {
       meta: {
         title: 'Blend Hair Boutique | Web de Salón y SEO Local',
         description:
-          'Web trilingüe para un salón en Plantation, Florida, con reserva en línea, ocho páginas de servicio y SEO local que lleva su 4,9, con más de 1.230 reseñas, a la búsqueda.',
+          'Web trilingüe para un salón en Plantation, Florida, con reserva en línea, ocho páginas de servicio y SEO local que muestra su 4,9 en la búsqueda.',
       },
       sector: 'Salón de belleza',
       highlight: 'Ocho páginas de servicio, reserva desde cada una',
       lede: 'Una web trilingüe para un salón brasileño en Florida, donde cada página termina en una reserva hecha sin descolgar el teléfono.',
       description:
-        'Un salón llevado por brasileñas en el sur de Florida, con un equipo que está casi al completo desde que abrió. Páginas de servicio que responden la pregunta antes de que se haga, perfiles de las estilistas y reserva al alcance desde cualquier sitio: una barra fija de llamar, reservar y WhatsApp en el móvil. Publicada en tres idiomas.',
+        'Un salón llevado por brasileñas en el sur de Florida, con un equipo que está casi al completo desde que abrió. Páginas de servicio que responden la pregunta antes de que se haga, perfiles de las estilistas y reserva al alcance desde cualquier sitio: una barra fija de llamar, reservar y WhatsApp en el celular. Publicada en tres idiomas.',
       alt: 'blendhairboutique.com, web de salón de belleza diseñada por The Diniz Studio',
       location: 'Plantation, FL',
       services: [
@@ -636,7 +637,7 @@ export const es: Dictionary = {
         {
           kicker: 'Reservas',
           title: 'Cada página termina en una reserva',
-          text: 'Del color y las mechas al peinado de novia, cada página de servicio explica un tratamiento y pasa directamente al sistema de reservas. WhatsApp y el teléfono quedan a un toque en una barra que te sigue en el móvil.',
+          text: 'Del color y las mechas al peinado de novia, cada página de servicio explica un tratamiento y pasa directamente al sistema de reservas. WhatsApp y el teléfono quedan a un toque en una barra que te sigue en el celular.',
         },
         {
           kicker: 'Búsqueda local',
@@ -646,7 +647,7 @@ export const es: Dictionary = {
       ],
       screens: ['Servicios', 'Transformaciones', 'Las estilistas', 'Reseñas'],
       quote: {
-        text: 'Se ve profesional, funciona muy bien en el móvil y las clientas encuentran todo sin tener que escribirnos antes. Hemos recibido muchos comentarios positivos desde que se publicó.',
+        text: 'Se ve profesional, funciona muy bien en el celular y las clientas encuentran todo sin tener que escribirnos antes. Hemos recibido muchos comentarios positivos desde que se publicó.',
         name: 'Juliana Chen',
         role: 'Copropietaria, Blend Hair Boutique',
       },
@@ -719,7 +720,7 @@ export const es: Dictionary = {
       meta: {
         title: 'Renata Estrella Pâtisserie | Marca, Web y Perfil de Google',
         description:
-          'Identidad de marca, web, e-book y Perfil de Empresa en Google para una pastelería de lujo en Río de Janeiro. El perfil que creó el estudio ya tiene 27 reseñas de cinco estrellas.',
+          'Marca, web, e-book y Perfil de Empresa en Google para una pastelería de lujo en Río. El perfil que creó el estudio tiene 27 reseñas de 5 estrellas.',
       },
       sector: 'Pastelería',
       highlight: '27 reseñas de cinco estrellas en un perfil creado desde cero',

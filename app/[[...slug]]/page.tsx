@@ -32,6 +32,13 @@ function resolve(slug: string[] | undefined): Route | null {
   return matchRoute(slug ?? [], PROJECT_SLUGS)
 }
 
+/** Shortens text at a word boundary, for meta descriptions. */
+function clip(text: string, max: number): string {
+  if (text.length <= max) return text
+  const cut = text.slice(0, max - 1)
+  return `${cut.slice(0, cut.lastIndexOf(' ')).replace(/[,.;:—-]+$/, '')}…`
+}
+
 function metaFor(route: Route) {
   const t = dictionary(route.locale)
 
@@ -55,16 +62,19 @@ function metaFor(route: Route) {
     case 'faqItem': {
       const item = faqItemsFor(t, route.group)[route.index]!
       const context = route.group === 'general' ? '' : ` — ${faqGroupLabel(t, route.group)}`
-      return { title: `${item.q}${context} | ${SITE.name}`, description: item.a }
+      // Search results cut titles near 60 characters and descriptions near 160,
+      // so the studio name is dropped first when space runs out; the context keeps titles unique.
+      const title = `${item.q}${context}`
+      const branded = `${title} | ${SITE.name}`
+      return {
+        title: branded.length <= 60 ? branded : title,
+        description: clip(item.a, 158),
+      }
     }
   }
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<Params>
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { slug } = await params
   const route = resolve(slug)
   if (!route) return {}

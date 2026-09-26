@@ -257,6 +257,38 @@
   pointer-events: none;
 }
 
+.hero-cue-o {
+  opacity: 0;
+  animation: hero-cue-fall 2.6s cubic-bezier(0.55, 0, 0.85, 0.35) infinite;
+}
+
+/* Falls, lands at the foot of the line, then disappears before the next drop. */
+@keyframes hero-cue-fall {
+  0% {
+    opacity: 0;
+    translate: 0 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  62% {
+    opacity: 1;
+    translate: 0 41px;
+  }
+  68% {
+    translate: 0 38px;
+  }
+  74% {
+    opacity: 1;
+    translate: 0 41px;
+  }
+  90%,
+  100% {
+    opacity: 0;
+    translate: 0 41px;
+  }
+}
+
 .hero-vignette {
   background:
     radial-gradient(ellipse 80% 70% at 50% 50%, transparent 55%, rgba(0, 0, 0, 0.55)),

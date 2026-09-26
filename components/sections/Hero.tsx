@@ -92,7 +92,7 @@ const markPlayed = () => {
 const toMatrix = (cam: Affine, m: Affine) =>
   `matrix(${cam.sx * m.sx}, 0, 0, ${cam.sy * m.sy}, ${cam.sx * m.tx + cam.tx}, ${cam.sy * m.ty + cam.ty})`
 
-export function Hero({ title, line }: { title: string; line: string }) {
+export function Hero({ title, line, scrollLabel }: { title: string; line: string; scrollLabel: string }) {
   const sectionRef = useRef<HTMLElement>(null)
   const [reduced, setReduced] = useState(false)
   const [played, setPlayed] = useState(false)
@@ -135,6 +135,7 @@ export function Hero({ title, line }: { title: string; line: string }) {
     const streak = q('[data-hero-streak]')
     const floor = q('[data-hero-floor]')
     const glow = q('[data-hero-glow]')
+    const cue = section.querySelector<HTMLElement>('[data-hero-cue]')
 
     let scale = 1
     let portrait = false
@@ -173,6 +174,9 @@ export function Hero({ title, line }: { title: string; line: string }) {
       const y = dropStart() * (1 - cam.fall) - 10 * Math.sin(Math.PI * cam.settle)
       drop.style.transform = `translate3d(0, ${y}px, 0)`
       drop.style.visibility = cam.fall > 0 ? 'visible' : 'hidden'
+
+      // The scroll cue has done its job as soon as the camera starts to move.
+      if (cue) cue.style.opacity = String(1 - clamp01(cam.u / 0.12))
 
       // The reflection mirrors the falling letter and gains strength near the floor.
       floor.style.transform = `translate3d(0, ${-y}px, 0)`
@@ -329,17 +333,30 @@ export function Hero({ title, line }: { title: string; line: string }) {
 
         <div aria-hidden="true" className="hero-vignette pointer-events-none absolute inset-0" />
 
-        <HeroLine text={line} />
+        <HeroLine text={line} cue={played ? undefined : scrollLabel} />
       </div>
     </section>
   )
 }
 
 // What the studio does, on the first screen, so nobody has to scroll to find out.
-function HeroLine({ text }: { text: string }) {
+function HeroLine({ text, cue }: { text: string; cue?: string }) {
   return (
-    <div className="container-studio absolute inset-x-0 bottom-10 md:bottom-14">
+    <div className="container-studio absolute inset-x-0 bottom-10 flex items-end justify-between gap-6 md:bottom-14">
       <p className="max-w-[34ch] text-lg leading-snug text-primary md:max-w-[44ch] md:text-xl">{text}</p>
+      {cue && <ScrollCue label={cue} />}
+    </div>
+  )
+}
+
+// A small o falling down a hairline, the same move the hero is about to make with its O.
+function ScrollCue({ label }: { label: string }) {
+  return (
+    <div data-hero-cue aria-hidden="true" className="flex shrink-0 items-end gap-3 pb-1">
+      <span className="label">{label}</span>
+      <span className="relative block h-12 w-px bg-white/15">
+        <span className="hero-cue-o absolute left-1/2 top-0 block size-[7px] -translate-x-1/2 rounded-full border border-primary" />
+      </span>
     </div>
   )
 }

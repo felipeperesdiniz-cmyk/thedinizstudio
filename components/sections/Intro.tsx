@@ -90,7 +90,9 @@ export function Intro({ t }: { t: Dictionary }) {
 
       // Played once, per line, so the body reads rather than shimmers.
       paragraphs.forEach((paragraph, i) => {
-        const split = new SplitText(paragraph, { type: 'lines', mask: 'lines' })
+        // Whole words stay in each line, so screen readers can read the lines as they are;
+        // the default aria-label is not allowed on a <p>.
+        const split = new SplitText(paragraph, { type: 'lines', mask: 'lines', aria: 'none' })
         splits.push(split)
 
         gsap.fromTo(

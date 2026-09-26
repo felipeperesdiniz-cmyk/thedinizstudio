@@ -16,15 +16,7 @@ import type { Dictionary } from '@/content/copy/types'
 import { SERVICE_PAGE_MEDIA, type Thumb } from '@/content/service-media'
 import { projectBySlug } from '@/content/projects'
 
-export function PageHead({
-  kicker,
-  title,
-  lede,
-}: {
-  kicker: string
-  title: string
-  lede: string
-}) {
+export function PageHead({ kicker, title, lede }: { kicker: string; title: string; lede: string }) {
   return (
     <header className="container-studio pb-16 pt-[calc(var(--nav-height)+5rem)] md:pb-24 md:pt-[calc(var(--nav-height)+8rem)]">
       <Reveal>
@@ -211,9 +203,7 @@ export function ServiceView({
                   <div className="grid grid-cols-1 gap-4 border-b border-line py-8 md:grid-cols-12 md:gap-8">
                     <span className="label md:col-span-1">{String(i + 1).padStart(2, '0')}</span>
                     <h3 className="text-lg text-primary md:col-span-4">{step.title}</h3>
-                    <p className="max-w-[52ch] text-secondary md:col-span-7">
-                      {step.text}
-                    </p>
+                    <p className="max-w-[52ch] text-secondary md:col-span-7">{step.text}</p>
                   </div>
                 </Reveal>
               </li>
@@ -234,17 +224,19 @@ export function ServiceView({
 
           <dl className="mt-14 border-t border-line">
             {page.faq.items.map((item, i) => (
-              <Reveal key={item.slug} delay={i * 0.04}>
-                <div className="grid grid-cols-1 gap-4 border-b border-line py-10 md:grid-cols-12 md:gap-8">
-                  <dt className="font-display text-2xl leading-snug text-primary md:col-span-5">
-                    <Link href={faqItemPath(locale, service, i)} className="group inline">
-                      <span className="link-underline pb-1">{item.q}</span>
-                    </Link>
-                  </dt>
-                  <dd className="max-w-[56ch] text-secondary md:col-span-6 md:col-start-7">
-                    {item.a}
-                  </dd>
-                </div>
+              <Reveal
+                key={item.slug}
+                delay={i * 0.04}
+                className="grid grid-cols-1 gap-4 border-b border-line py-10 md:grid-cols-12 md:gap-8"
+              >
+                <dt className="font-display text-2xl leading-snug text-primary md:col-span-5">
+                  <Link href={faqItemPath(locale, service, i)} className="group inline">
+                    <span className="link-underline pb-1">{item.q}</span>
+                  </Link>
+                </dt>
+                <dd className="max-w-[56ch] text-secondary md:col-span-6 md:col-start-7">
+                  {item.a}
+                </dd>
               </Reveal>
             ))}
           </dl>

@@ -5,6 +5,7 @@ import { fontVariables } from '@/lib/fonts'
 import { LenisProvider } from '@/components/providers/LenisProvider'
 import { PageTransition } from '@/components/layout/PageTransition'
 import { SITE } from '@/lib/site'
+import { HTML_LANG } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -34,9 +35,21 @@ export const viewport: Viewport = {
   initialScale: 1,
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+// The root layout lives inside the catch-all so <html lang> is right in the served HTML,
+// not only after JavaScript runs.
+export default async function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode
+  params: Promise<{ slug?: string[] }>
+}) {
+  const { slug } = await params
+  const first = slug?.[0]
+  const lang = first === 'pt' ? HTML_LANG.pt : first === 'es' ? HTML_LANG.es : HTML_LANG.en
+
   return (
-    <html lang="en" className={fontVariables}>
+    <html lang={lang} className={fontVariables}>
       <body>
         <LenisProvider>
           <PageTransition>{children}</PageTransition>

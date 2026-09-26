@@ -5,14 +5,21 @@ import { Work } from '@/components/sections/Work'
 import { Intro } from '@/components/sections/Intro'
 import { Reveal } from '@/components/ui/Reveal'
 import { CtaBand } from '@/components/ui/CtaBand'
-import { SERVICE_KEYS, faqItemPath, faqPath, servicePath, servicesPath, type Locale } from '@/lib/i18n'
+import {
+  SERVICE_KEYS,
+  faqItemPath,
+  faqPath,
+  servicePath,
+  servicesPath,
+  type Locale,
+} from '@/lib/i18n'
 import type { Dictionary } from '@/content/copy/types'
 import { SERVICE_MEDIA } from '@/content/service-media'
 
 export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
   return (
     <>
-      <Hero title={t.home.h1} line={t.home.heroLine} />
+      <Hero title={t.home.h1} line={t.home.heroLine} scrollLabel={t.home.heroScroll} />
 
       <Intro t={t} />
 
@@ -24,7 +31,10 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
           <Reveal className="grid grid-cols-1 gap-8 md:grid-cols-12">
             <div className="md:col-span-5">
               <p className="label">{t.home.services.kicker}</p>
-              <h2 id="services-title" className="mt-6 max-w-[16ch] font-display text-4xl text-primary">
+              <h2
+                id="services-title"
+                className="mt-6 max-w-[16ch] font-display text-4xl text-primary"
+              >
                 {t.home.services.title}
               </h2>
             </div>
@@ -41,9 +51,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
                     href={servicePath(locale, key)}
                     className="group grid grid-cols-1 gap-6 border-b border-line py-10 md:grid-cols-12 md:gap-8"
                   >
-                    <span className="label md:col-span-1">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
+                    <span className="label md:col-span-1">{String(i + 1).padStart(2, '0')}</span>
 
                     <div className="md:col-span-4">
                       <h3 className="font-display text-3xl text-primary">
@@ -142,17 +150,19 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
 
           <dl className="mt-16 border-t border-line md:mt-20">
             {t.home.answers.items.map((item, i) => (
-              <Reveal key={item.slug} delay={i * 0.05}>
-                <div className="grid grid-cols-1 gap-4 border-b border-line py-10 md:grid-cols-12 md:gap-8">
-                  <dt className="font-display text-2xl leading-snug text-primary md:col-span-5">
-                    <Link href={faqItemPath(locale, 'general', i)} className="group inline">
-                      <span className="link-underline pb-1">{item.q}</span>
-                    </Link>
-                  </dt>
-                  <dd className="max-w-[52ch] text-secondary md:col-span-6 md:col-start-7">
-                    {item.a}
-                  </dd>
-                </div>
+              <Reveal
+                key={item.slug}
+                delay={i * 0.05}
+                className="grid grid-cols-1 gap-4 border-b border-line py-10 md:grid-cols-12 md:gap-8"
+              >
+                <dt className="font-display text-2xl leading-snug text-primary md:col-span-5">
+                  <Link href={faqItemPath(locale, 'general', i)} className="group inline">
+                    <span className="link-underline pb-1">{item.q}</span>
+                  </Link>
+                </dt>
+                <dd className="max-w-[52ch] text-secondary md:col-span-6 md:col-start-7">
+                  {item.a}
+                </dd>
               </Reveal>
             ))}
           </dl>

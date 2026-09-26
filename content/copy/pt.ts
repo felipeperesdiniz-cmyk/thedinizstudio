@@ -26,9 +26,10 @@ export const pt: Dictionary = {
     meta: {
       title: 'The Diniz Studio | Criação de Sites, Identidade Visual e Marketing',
       description:
-        'Estúdio de criação de sites sob medida, identidade visual e o marketing em volta disso. Trabalho em português, inglês e espanhol para pequenos negócios no Brasil e nos Estados Unidos.',
+        'Sites sob medida, identidade visual e o marketing em volta disso, para pequenos negócios no Brasil e nos EUA. Em português, inglês e espanhol.',
     },
     heroLine: 'Sites, marcas e marketing para pequenos negócios, em português, inglês e espanhol.',
+    heroScroll: 'Role',
     h1: 'The Diniz Studio. Criação de sites, identidade visual e marketing.',
     intro: {
       kicker: 'Por que um estúdio só',
@@ -89,7 +90,7 @@ export const pt: Dictionary = {
     meta: {
       title: 'Projetos | Sites, Identidade Visual e Marketing',
       description:
-        'Casos do The Diniz Studio: sites sob medida, logos e identidade visual, redes sociais e SEO local para uma bordadeira, um salão de beleza, um fotógrafo e uma confeiteira.',
+        'Casos: sites, logos, redes sociais e SEO local para uma bordadeira, um salão de beleza, um fotógrafo e uma confeiteira.',
     },
     kicker: 'Projetos',
     title: 'Cada projeto, por inteiro',
@@ -119,7 +120,7 @@ export const pt: Dictionary = {
     meta: {
       title: 'Serviços | Criação de Sites, Identidade Visual e Marketing',
       description:
-        'Criação e desenvolvimento de sites sob medida, logo e identidade visual, e o marketing que vem depois: redes sociais, Perfil da Empresa no Google e SEO local. Em português, inglês e espanhol.',
+        'Sites sob medida, logo e identidade visual, e o marketing que vem depois: redes sociais, Perfil da Empresa no Google e SEO local. Em três idiomas.',
     },
     kicker: 'Serviços',
     title: 'O que o estúdio faz',
@@ -162,7 +163,7 @@ export const pt: Dictionary = {
       meta: {
         title: 'Criação de Sites | Sites Sob Medida para Pequenos Negócios',
         description:
-          'Criação e desenvolvimento de sites sob medida para pequenos negócios. Feitos à mão, rápidos, multilíngues e pensados para o cliente achar você e fechar. Português, inglês e espanhol.',
+          'Sites sob medida para pequenos negócios. Feitos à mão, rápidos, multilíngues e pensados para o cliente achar você e fechar. Português, inglês e espanhol.',
       },
       kicker: 'Serviço',
       title: 'Criação de sites',
@@ -267,7 +268,7 @@ export const pt: Dictionary = {
       meta: {
         title: 'Identidade Visual e Criação de Logo para Pequenos Negócios',
         description:
-          'Criação de logo e identidade visual: cor, tipografia e as regras que seguram tudo, desenhadas para pequenos negócios e feitas para funcionar da vitrine ao site e ao Instagram.',
+          'Logo e identidade visual para pequenos negócios: cor, tipografia e as regras que seguram tudo, da vitrine ao site e ao Instagram.',
       },
       kicker: 'Serviço',
       title: 'Identidade visual',
@@ -350,7 +351,7 @@ export const pt: Dictionary = {
       meta: {
         title: 'Marketing e SEO Local para Pequenos Negócios',
         description:
-          'SEO local, criação e gestão do Perfil da Empresa no Google, redes sociais e conteúdo. Seja encontrado quando procurarem o que você vende, em português, inglês ou espanhol.',
+          'SEO local, Perfil da Empresa no Google, redes sociais e conteúdo. Seja encontrado por quem procura o que você vende, em português, inglês ou espanhol.',
       },
       kicker: 'Serviço',
       title: 'Marketing e SEO',
@@ -438,7 +439,7 @@ export const pt: Dictionary = {
     meta: {
       title: 'O Estúdio | Quem Você Está Contratando',
       description:
-        'The Diniz Studio é um estúdio pequeno de criação de sites e identidade visual, trabalhando em português, inglês e espanhol para pequenos negócios no Brasil e nos Estados Unidos.',
+        'Um estúdio pequeno de sites e identidade visual, em português, inglês e espanhol, para pequenos negócios no Brasil e nos Estados Unidos.',
     },
     kicker: 'Estúdio',
     title: 'Você contrata uma pessoa, não um departamento',
@@ -475,7 +476,7 @@ export const pt: Dictionary = {
     meta: {
       title: 'Contato | Começar um Projeto',
       description:
-        'Conte o que você precisa: um site novo, logo e identidade visual, ou o marketing em volta disso. Resposta normalmente em um dia, em português, inglês ou espanhol.',
+        'Conte o que você precisa: um site, logo e identidade visual, ou o marketing em volta disso. Resposta em até um dia, em português, inglês ou espanhol.',
     },
     kicker: 'Contato',
     title: 'Começar um projeto',
@@ -588,7 +589,7 @@ export const pt: Dictionary = {
       meta: {
         title: 'Blend Hair Boutique | Site de Salão e SEO Local',
         description:
-          'Site trilíngue para um salão em Plantation, Flórida, com agendamento online, oito páginas de serviço e SEO local que leva a nota 4,9, de mais de 1.230 avaliações, até a busca.',
+          'Site trilíngue para um salão em Plantation, Flórida, com agendamento online, oito páginas de serviço e SEO local que mostra a nota 4,9 na busca.',
       },
       sector: 'Salão de beleza',
       highlight: 'Oito páginas de serviço, agendamento em todas',
@@ -719,7 +720,7 @@ export const pt: Dictionary = {
       meta: {
         title: 'Renata Estrella Pâtisserie | Marca, Site e Perfil no Google',
         description:
-          'Identidade visual, site, e-book e Perfil da Empresa no Google para uma pâtisserie de luxo no Rio de Janeiro. O perfil criado pelo estúdio já tem 27 avaliações cinco estrelas.',
+          'Identidade visual, site, e-book e Perfil da Empresa no Google para uma pâtisserie de luxo no Rio. O perfil criado pelo estúdio tem 27 avaliações 5 estrelas.',
       },
       sector: 'Pâtisserie',
       highlight: '27 avaliações cinco estrelas em um perfil criado do zero',
