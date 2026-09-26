@@ -34,7 +34,7 @@ export function PageHead({
         </h1>
       </Reveal>
       <Reveal delay={0.1}>
-        <p className="mt-10 max-w-[44ch] text-2xl font-light leading-snug text-primary/90">{lede}</p>
+        <p className="mt-10 max-w-[44ch] text-2xl leading-snug text-primary/90">{lede}</p>
       </Reveal>
     </header>
   )
@@ -88,7 +88,7 @@ export function ServicesIndexView({ locale, t }: { locale: Locale; t: Dictionary
                   <h2 className="font-display text-3xl text-primary md:col-span-5">
                     <span className="link-underline pb-1">{t.services.cards[key].title}</span>
                   </h2>
-                  <p className="max-w-[44ch] font-light text-secondary md:col-span-5">
+                  <p className="max-w-[44ch] text-secondary md:col-span-5">
                     {t.services.cards[key].text}
                   </p>
                   <span
@@ -136,7 +136,7 @@ export function ServiceView({
         <Reveal className="grid grid-cols-1 gap-6 md:grid-cols-12">
           <div className="flex flex-col gap-6 md:col-span-7 md:col-start-6">
             {page.body.map((paragraph) => (
-              <p key={paragraph} className="max-w-[56ch] font-light text-secondary">
+              <p key={paragraph} className="max-w-[56ch] text-secondary">
                 {paragraph}
               </p>
             ))}
@@ -188,7 +188,7 @@ export function ServiceView({
               <li key={item.title}>
                 <Reveal delay={i * 0.06}>
                   <h3 className="border-t border-line pt-5 text-lg text-primary">{item.title}</h3>
-                  <p className="mt-3 max-w-[46ch] font-light text-secondary">{item.text}</p>
+                  <p className="mt-3 max-w-[46ch] text-secondary">{item.text}</p>
                 </Reveal>
               </li>
             ))}
@@ -211,7 +211,7 @@ export function ServiceView({
                   <div className="grid grid-cols-1 gap-4 border-b border-line py-8 md:grid-cols-12 md:gap-8">
                     <span className="label md:col-span-1">{String(i + 1).padStart(2, '0')}</span>
                     <h3 className="text-lg text-primary md:col-span-4">{step.title}</h3>
-                    <p className="max-w-[52ch] font-light text-secondary md:col-span-7">
+                    <p className="max-w-[52ch] text-secondary md:col-span-7">
                       {step.text}
                     </p>
                   </div>
@@ -241,7 +241,7 @@ export function ServiceView({
                       <span className="link-underline pb-1">{item.q}</span>
                     </Link>
                   </dt>
-                  <dd className="max-w-[56ch] font-light text-secondary md:col-span-6 md:col-start-7">
+                  <dd className="max-w-[56ch] text-secondary md:col-span-6 md:col-start-7">
                     {item.a}
                   </dd>
                 </div>
@@ -273,7 +273,7 @@ export function ServiceView({
                         width={project.hero.width}
                         height={project.hero.height}
                         sizes="(max-width: 768px) 100vw, 32vw"
-                        className="block h-auto w-full grayscale transition-[filter,scale] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04] group-hover:grayscale-0"
+                        className="block h-auto w-full transition-[scale] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
                       />
                     </div>
                     <h3 className="mt-5 font-display text-2xl text-primary">
@@ -325,7 +325,7 @@ export function AboutView({ locale, t }: { locale: Locale; t: Dictionary }) {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-[var(--gutter)]">
           <Reveal className="flex flex-col gap-6 md:col-span-6">
             {t.about.body.map((paragraph) => (
-              <p key={paragraph} className="max-w-[52ch] font-light text-secondary">
+              <p key={paragraph} className="max-w-[52ch] text-secondary">
                 {paragraph}
               </p>
             ))}

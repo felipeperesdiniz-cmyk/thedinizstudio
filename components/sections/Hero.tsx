@@ -63,7 +63,12 @@ function cameraAt(u: number): Affine {
 
   const sx = w / (WORD.x1 - WORD.x0)
   const sy = h / (WORD.y1 - WORD.y0)
-  return { sx, sy, tx: cx - w / 2 - WORD.x0 * sx, ty: cy - h / 2 - WORD.y0 * sy }
+  return {
+    sx,
+    sy,
+    tx: cx - w / 2 - WORD.x0 * sx,
+    ty: cy - h / 2 - WORD.y0 * sy,
+  }
 }
 
 // Set once the visitor has scrolled through the whole sequence in this tab, so
@@ -87,7 +92,7 @@ const markPlayed = () => {
 const toMatrix = (cam: Affine, m: Affine) =>
   `matrix(${cam.sx * m.sx}, 0, 0, ${cam.sy * m.sy}, ${cam.sx * m.tx + cam.tx}, ${cam.sy * m.ty + cam.ty})`
 
-export function Hero({ title }: { title: string }) {
+export function Hero({ title, line }: { title: string; line: string }) {
   const sectionRef = useRef<HTMLElement>(null)
   const [reduced, setReduced] = useState(false)
   const [played, setPlayed] = useState(false)
@@ -153,9 +158,7 @@ export function Hero({ title }: { title: string }) {
 
     // The first leg is compressed on portrait so the shot opens closer in.
     const shot = () =>
-      portrait
-        ? PORTRAIT_START + (1 - PORTRAIT_START) * Math.min(cam.u, 1) + Math.max(0, cam.u - 1)
-        : cam.u
+      portrait ? PORTRAIT_START + (1 - PORTRAIT_START) * Math.min(cam.u, 1) + Math.max(0, cam.u - 1) : cam.u
 
     const render = () => {
       const u = shot()
@@ -263,6 +266,7 @@ export function Hero({ title }: { title: string }) {
           height={STAGE_H}
           className="absolute inset-0 h-full w-full object-cover"
         />
+        <HeroLine text={line} />
       </section>
     )
   }
@@ -324,7 +328,18 @@ export function Hero({ title }: { title: string }) {
         </div>
 
         <div aria-hidden="true" className="hero-vignette pointer-events-none absolute inset-0" />
+
+        <HeroLine text={line} />
       </div>
     </section>
+  )
+}
+
+// What the studio does, on the first screen, so nobody has to scroll to find out.
+function HeroLine({ text }: { text: string }) {
+  return (
+    <div className="container-studio absolute inset-x-0 bottom-10 md:bottom-14">
+      <p className="max-w-[34ch] text-lg leading-snug text-primary md:max-w-[44ch] md:text-xl">{text}</p>
+    </div>
   )
 }

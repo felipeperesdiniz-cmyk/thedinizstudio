@@ -12,9 +12,11 @@ import { SERVICE_MEDIA } from '@/content/service-media'
 export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
   return (
     <>
-      <Hero title={t.home.h1} />
+      <Hero title={t.home.h1} line={t.home.heroLine} />
 
       <Intro t={t} />
+
+      <Work locale={locale} t={t} />
 
       {/* Services */}
       <section aria-labelledby="services-title" className="border-t border-line">
@@ -26,7 +28,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
                 {t.home.services.title}
               </h2>
             </div>
-            <p className="max-w-[44ch] font-light text-secondary md:col-span-5 md:col-start-8 md:self-end">
+            <p className="max-w-[44ch] text-secondary md:col-span-5 md:col-start-8 md:self-end">
               {t.home.services.text}
             </p>
           </Reveal>
@@ -47,7 +49,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
                       <h3 className="font-display text-3xl text-primary">
                         <span className="link-underline pb-1">{t.services.cards[key].title}</span>
                       </h3>
-                      <p className="mt-5 max-w-[38ch] font-light text-secondary">
+                      <p className="mt-5 max-w-[38ch] text-secondary">
                         {t.services.cards[key].text}
                       </p>
 
@@ -92,7 +94,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
                                 ? 'h-auto max-h-full w-full object-contain transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]'
                                 : thumb.tone === 'artwork'
                                   ? 'h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]'
-                                  : 'h-full w-full object-cover grayscale transition-[filter,scale] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04] group-hover:grayscale-0'
+                                  : 'h-full w-full object-cover transition-[scale] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]'
                             }
                           />
                         </div>
@@ -128,8 +130,6 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
         </div>
       </section>
 
-      <Work locale={locale} t={t} />
-
       {/* The questions people ask before they hire, answered on the page */}
       <section aria-labelledby="answers-title" className="border-t border-line">
         <div className="container-studio py-[var(--section-padding)]">
@@ -149,7 +149,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
                       <span className="link-underline pb-1">{item.q}</span>
                     </Link>
                   </dt>
-                  <dd className="max-w-[52ch] font-light text-secondary md:col-span-6 md:col-start-7">
+                  <dd className="max-w-[52ch] text-secondary md:col-span-6 md:col-start-7">
                     {item.a}
                   </dd>
                 </div>

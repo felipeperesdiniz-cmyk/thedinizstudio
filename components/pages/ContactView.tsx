@@ -11,16 +11,21 @@ const FIELD =
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 type FieldErrors = { name?: string; email?: string; message?: string }
+type Status = 'idle' | 'sending' | 'sent' | 'failed'
+
+// Public by design: a Web3Forms key only lets visitors send to the studio's inbox.
+const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'f7b83f36-9d40-4f68-a3d3-67cc9e554a7e'
 
 export function ContactView({ t }: { t: Dictionary }) {
   const { form } = t.contact
   const [project, setProject] = useState(form.projectOptions[0] ?? '')
   const [errors, setErrors] = useState<FieldErrors>({})
+  const [status, setStatus] = useState<Status>('idle')
 
-  // No server yet, so the form hands the message to the visitor's mail app.
-  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const data = new FormData(event.currentTarget)
+    const formElement = event.currentTarget
+    const data = new FormData(formElement)
     const name = String(data.get('name') ?? '').trim()
     const email = String(data.get('email') ?? '').trim()
     const message = String(data.get('message') ?? '').trim()
@@ -34,10 +39,42 @@ export function ContactView({ t }: { t: Dictionary }) {
     if (Object.keys(nextErrors).length > 0) return
 
     const subject = `${project} — ${name}`
-    const body = `${message}\n\n${name}\n${email}`
-    window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`
+
+    // Without a key, hand the message to the visitor's mail app instead.
+    if (!WEB3FORMS_KEY) {
+      const body = `${message}\n\n${name}\n${email}`
+      window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent(
+        subject,
+      )}&body=${encodeURIComponent(body)}`
+      return
+    }
+
+    setStatus('sending')
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject,
+          from_name: SITE.name,
+          name,
+          email,
+          project,
+          message,
+          botcheck: data.get('botcheck') ?? '',
+        }),
+      })
+      const result = (await response.json()) as { success?: boolean }
+      if (!response.ok || !result.success) throw new Error('Not sent')
+      formElement.reset()
+      setStatus('sent')
+    } catch {
+      setStatus('failed')
+    }
   }
 
   return (
@@ -50,9 +87,7 @@ export function ContactView({ t }: { t: Dictionary }) {
           </h1>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="mt-10 max-w-[44ch] text-2xl font-light leading-snug text-primary/90">
-            {t.contact.lede}
-          </p>
+          <p className="mt-10 max-w-[44ch] text-2xl leading-snug text-primary/90">{t.contact.lede}</p>
         </Reveal>
       </header>
 
@@ -132,12 +167,23 @@ export function ContactView({ t }: { t: Dictionary }) {
                 )}
               </label>
 
+              {/* Honeypot: people never see it, bots fill it in. */}
+              <input
+                type="checkbox"
+                name="botcheck"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="hidden"
+              />
+
               <div className="flex flex-col gap-4">
                 <button
                   type="submit"
-                  className="group inline-flex items-center gap-3 self-start border border-line px-6 py-4 font-mono text-xs uppercase tracking-[0.08em] text-primary transition-colors hover:border-primary"
+                  disabled={status === 'sending'}
+                  className="group inline-flex min-h-12 items-center gap-3 self-start bg-primary px-6 font-mono text-xs uppercase tracking-[0.08em] text-background transition-colors hover:bg-white disabled:opacity-60"
                 >
-                  {form.submit}
+                  {status === 'sending' ? form.sending : form.submit}
                   <span
                     aria-hidden="true"
                     className="transition-transform duration-500 group-hover:translate-x-1.5"
@@ -145,13 +191,41 @@ export function ContactView({ t }: { t: Dictionary }) {
                     →
                   </span>
                 </button>
-                <p className="label max-w-[40ch]">{form.note}</p>
+                <p role="status" aria-live="polite" className="max-w-[44ch] text-sm text-secondary">
+                  {status === 'sent' ? (
+                    <span className="text-primary">{form.success}</span>
+                  ) : status === 'failed' ? (
+                    <span className="text-primary">
+                      {form.failure}{' '}
+                      <a href={`mailto:${SITE.email}`} className="underline underline-offset-4">
+                        {SITE.email}
+                      </a>
+                      .
+                    </span>
+                  ) : (
+                    form.note
+                  )}
+                </p>
               </div>
             </form>
           </Reveal>
 
           <Reveal delay={0.15} className="md:col-span-4 md:col-start-9">
             <dl className="border-t border-line">
+              <div className="border-b border-line py-5">
+                <dt className="label">{t.contact.direct.meeting}</dt>
+                <dd className="mt-2">
+                  <a
+                    href={SITE.meeting}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="group inline-flex items-center gap-2 text-primary"
+                  >
+                    <span className="link-underline pb-1">{t.contact.direct.meetingText}</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </dd>
+              </div>
               <div className="border-b border-line py-5">
                 <dt className="label">{t.contact.direct.email}</dt>
                 <dd className="mt-2">

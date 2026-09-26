@@ -17,8 +17,9 @@ export const es: Dictionary = {
 
   cta: {
     label: 'Empezar un proyecto',
-    title: '¿Necesitas una página web nueva?',
-    text: 'Cuéntame qué vendes y a quién. Recibes una respuesta clara sobre alcance y plazo, y un presupuesto cerrado por escrito. Solo consultas serias.',
+    title: '¿Tienes un proyecto en mente?',
+    text: 'Cuéntame qué vendes y a quién. Recibes una respuesta clara sobre alcance y plazo, y un presupuesto cerrado por escrito.',
+    bookCall: 'Agenda una llamada de 30 minutos',
   },
 
   home: {
@@ -27,12 +28,13 @@ export const es: Dictionary = {
       description:
         'Estudio de diseño web que crea páginas a medida, identidades de marca y el marketing alrededor de todo eso. Trabajo en español, inglés y portugués para pequeños negocios en Estados Unidos y Brasil.',
     },
+    heroLine: 'Webs, marcas y marketing para pequeños negocios, en español, inglés y portugués.',
     h1: 'The Diniz Studio. Diseño web, identidad de marca y marketing.',
     intro: {
-      kicker: 'Qué es esto',
-      title: 'Un estudio para la web, la marca y el marketing',
+      kicker: 'Por qué un solo estudio',
+      title: 'Tres proveedores que nunca se hablan',
       body: [
-        'La mayoría de los negocios pequeños termina con tres proveedores que nunca se hablan: uno hace la web, otro dibuja el logo, otro publica en Instagram. Nada combina y nadie responde por lo único que importa, que es si suena el teléfono.',
+        'Uno hace la web, otro dibuja el logo, otro publica en Instagram. Nada combina, y nadie responde por lo único que importa: si suena el teléfono.',
         'Aquí las tres cosas salen del mismo sitio. El logo, la web y las publicaciones nacen de las mismas decisiones, así que quien te encuentra en Google, en Instagram o por recomendación encuentra siempre el mismo negocio.',
         'Cada web se escribe y se programa desde cero, en español, inglés y portugués cuando el público lo necesita, y se prepara para que los buscadores y los asistentes de inteligencia artificial puedan leerla bien.',
       ],
@@ -57,7 +59,7 @@ export const es: Dictionary = {
         {
           slug: 'como-consigo-un-presupuesto',
           q: '¿Cómo consigo un presupuesto?',
-          a: 'Cada proyecto se presupuesta por separado, porque una web de una página y una web trilingüe con logo y fotografía no son el mismo trabajo. Cuéntame qué necesitas y recibes un precio cerrado por escrito antes de empezar nada. Solo consultas serias, por favor.',
+          a: 'Cada proyecto se presupuesta por separado, porque una web de una página y una web trilingüe con logo y fotografía no son el mismo trabajo. Cuéntame qué necesitas y recibes un precio cerrado por escrito antes de empezar nada.',
         },
         {
           slug: 'cuanto-tarda',
@@ -128,7 +130,7 @@ export const es: Dictionary = {
         text: 'Webs escritas desde cero: rápidas, multilingües y hechas para convertir una visita en un contacto.',
         proof: [
           { value: '3', label: 'Idiomas por web' },
-          { value: '~1s', label: 'Carga en el móvil' },
+          { value: '100%', label: 'Código tuyo' },
           { value: '0', label: 'Plantillas usadas' },
         ],
       },
@@ -145,7 +147,6 @@ export const es: Dictionary = {
         text: 'Que te encuentren y que te sigan: búsqueda local, Perfil de Empresa en Google, redes sociales y el contenido detrás de ambas cosas.',
         proof: [
           { value: '+200%', label: 'Crecimiento en Instagram de una clienta' },
-          { value: '1,5k+', label: 'Seguidores del estudio' },
           { value: '27', label: 'Reseñas de cinco estrellas conseguidas' },
         ],
       },
@@ -167,7 +168,7 @@ export const es: Dictionary = {
       lede: 'Una web hecha para tu negocio, no adaptada de una plantilla que otro ya está usando.',
       body: [
         'Quien busca una web nueva suele estar resolviendo uno de estos tres problemas: la web actual no está a la altura del trabajo, va lenta o se rompe en el móvil, o la gente entra y nunca escribe. Los tres tienen solución, y los tres dependen de lo mismo: decidir para qué sirve la web antes de que alguien abra un programa de diseño.',
-        'Cada página aquí se escribe y se programa a mano. Sin constructor de páginas, sin plantilla, sin licencia mensual de un plugin que algún día se rompe. Por eso estas webs cargan en aproximadamente un segundo en el móvil, se sostienen en Google y un asistente de inteligencia artificial puede leerlas con claridad cuando alguien le pide una recomendación.',
+        'Cada página aquí se escribe y se programa a mano. Sin constructor de páginas, sin plantilla, sin licencia mensual de un plugin que algún día se rompe. Por eso estas webs se mantienen ligeras en el móvil, se sostienen en Google y un asistente de inteligencia artificial puede leerlas con claridad cuando alguien le pide una recomendación.',
         'Cuando tiene sentido, la web se publica en español, inglés y portugués. Cada idioma tiene su dirección y su texto, escrito y no traducido por una máquina, que es lo que hace que aparezcas en una búsqueda hecha en cualquiera de los tres.',
       ],
       included: {
@@ -491,14 +492,23 @@ export const es: Dictionary = {
       ],
       message: 'Cuéntame',
       submit: 'Enviar',
-      note: 'Esto abre tu aplicación de correo con el mensaje listo para enviar.',
+      note: 'Llega directo a mi bandeja de entrada. Respuesta en un día hábil.',
+      sending: 'Enviando…',
+      success: 'Gracias, tu mensaje llegó. Recibirás respuesta en un día hábil.',
+      failure: 'No se pudo enviar. Escríbeme directamente a',
       errors: {
         name: 'Escribe tu nombre.',
         email: 'Escribe un correo válido.',
         message: 'Cuéntame un poco sobre el proyecto.',
       },
     },
-    direct: { email: 'Correo', whatsapp: 'WhatsApp', instagram: 'Instagram' },
+    direct: {
+      email: 'Correo',
+      whatsapp: 'WhatsApp',
+      instagram: 'Instagram',
+      meeting: 'Llamada',
+      meetingText: 'Agendar 30 minutos',
+    },
   },
 
   footer: {
@@ -577,10 +587,10 @@ export const es: Dictionary = {
       meta: {
         title: 'Blend Hair Boutique | Web de Salón y SEO Local',
         description:
-          'Web trilingüe para un salón en Plantation, Florida, con reserva en línea, ocho páginas de servicio y el SEO local detrás de un 4,9 con más de 1.230 reseñas.',
+          'Web trilingüe para un salón en Plantation, Florida, con reserva en línea, ocho páginas de servicio y SEO local que lleva su 4,9, con más de 1.230 reseñas, a la búsqueda.',
       },
       sector: 'Salón de belleza',
-      highlight: '4,9 estrellas con más de 1.230 reseñas en Google',
+      highlight: 'Ocho páginas de servicio, reserva desde cada una',
       lede: 'Una web trilingüe para un salón brasileño en Florida, donde cada página termina en una reserva hecha sin descolgar el teléfono.',
       description:
         'Un salón llevado por brasileñas en el sur de Florida, con un equipo que está casi al completo desde que abrió. Páginas de servicio que responden la pregunta antes de que se haga, perfiles de las estilistas y reserva al alcance desde cualquier sitio: una barra fija de llamar, reservar y WhatsApp en el móvil. Publicada en tres idiomas.',
@@ -693,7 +703,7 @@ export const es: Dictionary = {
         {
           kicker: 'Construcción',
           title: 'Estático, y hecho a mano',
-          text: 'Sin plantilla y sin constructor de páginas, y por eso una fotografía del tamaño de una pared llega igualmente en aproximadamente un segundo.',
+          text: 'Sin plantilla y sin constructor de páginas, lo que mantiene las páginas ligeras incluso con fotografías del tamaño de una pared.',
         },
       ],
       screens: ['Películas', 'Archivo', 'Sobre él', 'Servicios'],

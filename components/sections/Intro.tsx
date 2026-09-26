@@ -140,7 +140,7 @@ export function Intro({ t }: { t: Dictionary }) {
 
         <div className="flex flex-col gap-6 md:col-span-5 md:col-start-8">
           {t.home.intro.body.map((paragraph) => (
-            <p key={paragraph} data-intro-line className="max-w-[52ch] font-light text-secondary">
+            <p key={paragraph} data-intro-line className="max-w-[52ch] text-secondary">
               {paragraph}
             </p>
           ))}

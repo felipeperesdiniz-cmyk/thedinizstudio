@@ -37,7 +37,7 @@ export function FaqIndexView({ locale, t }: { locale: Locale; t: Dictionary }) {
                     <h2 className="font-display text-2xl leading-snug text-primary md:col-span-6">
                       <span className="link-underline pb-1">{item.q}</span>
                     </h2>
-                    <p className="max-w-[46ch] font-light text-secondary md:col-span-4">
+                    <p className="max-w-[46ch] text-secondary md:col-span-4">
                       {item.a}
                     </p>
                     <span
@@ -96,7 +96,7 @@ export function FaqItemView({
 
       <section className="container-studio pb-[var(--section-padding)]">
         <Reveal delay={0.1}>
-          <p className="max-w-[62ch] text-xl font-light leading-relaxed text-primary/90 md:text-2xl">
+          <p className="max-w-[62ch] text-xl leading-relaxed text-primary/90 md:text-2xl">
             {item.a}
           </p>
         </Reveal>

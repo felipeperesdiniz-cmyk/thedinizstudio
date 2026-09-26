@@ -17,8 +17,9 @@ export const pt: Dictionary = {
 
   cta: {
     label: 'Começar um projeto',
-    title: 'Precisa de um site novo?',
-    text: 'Conte o que você vende e para quem. Você recebe uma resposta direta sobre escopo e prazo, e um orçamento fechado por escrito. Apenas contatos sérios.',
+    title: 'Tem um projeto em mente?',
+    text: 'Conte o que você vende e para quem. Você recebe uma resposta direta sobre escopo e prazo, e um orçamento fechado por escrito.',
+    bookCall: 'Agendar uma conversa de 30 minutos',
   },
 
   home: {
@@ -27,12 +28,13 @@ export const pt: Dictionary = {
       description:
         'Estúdio de criação de sites sob medida, identidade visual e o marketing em volta disso. Trabalho em português, inglês e espanhol para pequenos negócios no Brasil e nos Estados Unidos.',
     },
+    heroLine: 'Sites, marcas e marketing para pequenos negócios, em português, inglês e espanhol.',
     h1: 'The Diniz Studio. Criação de sites, identidade visual e marketing.',
     intro: {
-      kicker: 'O que é isto',
-      title: 'Um estúdio para o site, a marca e o marketing',
+      kicker: 'Por que um estúdio só',
+      title: 'Três fornecedores que nunca se falam',
       body: [
-        'A maioria dos pequenos negócios acaba com três fornecedores que nunca se falam: um faz o site, outro desenha a logo, outro publica no Instagram. Nada combina e ninguém responde pela pergunta que importa, que é se o telefone toca.',
+        'Um faz o site, outro desenha a logo, outro publica no Instagram. Nada combina, e ninguém responde pela pergunta que importa: se o telefone toca.',
         'Aqui os três saem do mesmo lugar. A logo, o site e os posts nascem das mesmas decisões, então quem encontra você no Google, no Instagram ou por indicação encontra sempre o mesmo negócio.',
         'Cada site é escrito e programado do zero, em português, inglês e espanhol quando o público precisa, e preparado para ser lido corretamente por buscadores e por assistentes de inteligência artificial.',
       ],
@@ -57,7 +59,7 @@ export const pt: Dictionary = {
         {
           slug: 'como-eu-recebo-um-orcamento',
           q: 'Como eu recebo um orçamento?',
-          a: 'Cada projeto é orçado sozinho, porque um site de uma página e um site trilíngue com logo e fotografia não são o mesmo trabalho. Conte o que você precisa e recebe um preço fechado por escrito antes de qualquer coisa começar. Contatos sérios, por favor.',
+          a: 'Cada projeto é orçado sozinho, porque um site de uma página e um site trilíngue com logo e fotografia não são o mesmo trabalho. Conte o que você precisa e recebe um preço fechado por escrito antes de qualquer coisa começar.',
         },
         {
           slug: 'quanto-tempo-leva',
@@ -128,7 +130,7 @@ export const pt: Dictionary = {
         text: 'Sites escritos do zero: rápidos, multilíngues e feitos para transformar visita em contato.',
         proof: [
           { value: '3', label: 'Idiomas por site' },
-          { value: '~1s', label: 'Carregamento no celular' },
+          { value: '100%', label: 'Código seu' },
           { value: '0', label: 'Modelos prontos' },
         ],
       },
@@ -145,7 +147,6 @@ export const pt: Dictionary = {
         text: 'Ser encontrado e ser seguido: busca local, Perfil da Empresa no Google, redes sociais e o conteúdo por trás disso.',
         proof: [
           { value: '+200%', label: 'Crescimento no Instagram de cliente' },
-          { value: '1,5 mil+', label: 'Seguidores do estúdio' },
           { value: '27', label: 'Avaliações cinco estrelas conquistadas' },
         ],
       },
@@ -167,7 +168,7 @@ export const pt: Dictionary = {
       lede: 'Um site feito para o seu negócio, e não adaptado de um modelo que outra pessoa já está usando.',
       body: [
         'Quem procura um site novo normalmente está resolvendo um de três problemas: o site atual não tem a mesma qualidade do trabalho, ele é lento ou quebrado no celular, ou as pessoas entram e nunca entram em contato. Os três têm solução, e os três dependem da mesma coisa: decidir para que serve o site antes de alguém abrir qualquer programa de design.',
-        'Cada página aqui é escrita e programada à mão. Sem construtor de páginas, sem tema pronto, sem licença mensal de um plugin que um dia quebra. É por isso que esses sites carregam em cerca de um segundo no celular, se sustentam no Google e podem ser lidos com clareza por assistentes de inteligência artificial quando alguém pede uma indicação.',
+        'Cada página aqui é escrita e programada à mão. Sem construtor de páginas, sem tema pronto, sem licença mensal de um plugin que um dia quebra. É por isso que esses sites ficam leves no celular, se sustentam no Google e podem ser lidos com clareza por assistentes de inteligência artificial quando alguém pede uma indicação.',
         'Quando faz sentido, o site é publicado em português, inglês e espanhol. Cada idioma ganha o seu endereço e o seu texto, escrito e não traduzido por máquina, que é o que faz você aparecer em uma busca feita em qualquer um dos três.',
       ],
       included: {
@@ -491,14 +492,23 @@ export const pt: Dictionary = {
       ],
       message: 'Conte um pouco',
       submit: 'Enviar',
-      note: 'Isto abre o seu aplicativo de e-mail com a mensagem pronta para enviar.',
+      note: 'Vai direto para a minha caixa de entrada. Resposta em até um dia útil.',
+      sending: 'Enviando…',
+      success: 'Obrigado, sua mensagem chegou. Você recebe resposta em até um dia útil.',
+      failure: 'Não foi possível enviar. Escreva direto para',
       errors: {
         name: 'Digite seu nome.',
         email: 'Digite um e-mail válido.',
         message: 'Conte um pouco sobre o projeto.',
       },
     },
-    direct: { email: 'E-mail', whatsapp: 'WhatsApp', instagram: 'Instagram' },
+    direct: {
+      email: 'E-mail',
+      whatsapp: 'WhatsApp',
+      instagram: 'Instagram',
+      meeting: 'Conversa',
+      meetingText: 'Agendar 30 minutos',
+    },
   },
 
   footer: {
@@ -577,10 +587,10 @@ export const pt: Dictionary = {
       meta: {
         title: 'Blend Hair Boutique | Site de Salão e SEO Local',
         description:
-          'Site trilíngue para um salão em Plantation, Flórida, com agendamento online, oito páginas de serviço e o SEO local por trás de uma nota 4,9 em mais de 1.230 avaliações.',
+          'Site trilíngue para um salão em Plantation, Flórida, com agendamento online, oito páginas de serviço e SEO local que leva a nota 4,9, de mais de 1.230 avaliações, até a busca.',
       },
       sector: 'Salão de beleza',
-      highlight: '4,9 estrelas em mais de 1.230 avaliações no Google',
+      highlight: 'Oito páginas de serviço, agendamento em todas',
       lede: 'Um site trilíngue para um salão brasileiro na Flórida, onde cada página termina em um agendamento feito sem pegar o telefone.',
       description:
         'Um salão tocado por brasileiras no sul da Flórida, com uma equipe que está lá quase toda desde a inauguração. Páginas de serviço que respondem a pergunta antes de ela ser feita, perfis das profissionais e agendamento ao alcance de qualquer página: uma barra fixa de ligar, agendar e WhatsApp no celular. Publicado em três idiomas.',
@@ -693,7 +703,7 @@ export const pt: Dictionary = {
         {
           kicker: 'Construção',
           title: 'Estático, e feito à mão',
-          text: 'Sem modelo pronto e sem construtor de páginas, e é por isso que uma fotografia do tamanho de uma parede ainda chega em cerca de um segundo.',
+          text: 'Sem modelo pronto e sem construtor de páginas, o que mantém as páginas leves mesmo com fotografias do tamanho de uma parede.',
         },
       ],
       screens: ['Filmes', 'Arquivo', 'Sobre', 'Serviços'],

@@ -21,21 +21,22 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
     <footer className="border-t border-line bg-background">
       <div className="container-studio grid grid-cols-2 gap-10 py-16 md:grid-cols-4 md:gap-8">
         <div className="col-span-2 flex flex-col gap-3 md:col-span-1">
-          <span className="font-mono text-xs uppercase tracking-[0.08em] text-primary">
-            {SITE.wordmark}
-          </span>
+          <span className="font-mono text-xs uppercase tracking-[0.08em] text-primary">{SITE.wordmark}</span>
           <span className="label max-w-[26ch]">{t.meta.tagline}</span>
         </div>
 
         <nav aria-label={t.footer.sections.work} className="flex flex-col gap-1 md:gap-3">
-          <Link href={workPath(locale)} className="label py-2 transition-colors hover:text-primary md:py-0">
+          <Link
+            href={workPath(locale)}
+            className="label py-2 text-primary transition-colors hover:text-secondary md:py-0"
+          >
             {t.footer.sections.work}
           </Link>
           {PROJECTS.map((project) => (
             <Link
               key={project.slug}
               href={projectPath(locale, project.slug)}
-              className="label py-2 transition-colors hover:text-primary md:py-0"
+              className="py-2 text-sm text-secondary transition-colors hover:text-primary md:py-0"
             >
               {project.title}
             </Link>
@@ -43,14 +44,17 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
         </nav>
 
         <nav aria-label={t.footer.sections.services} className="flex flex-col gap-1 md:gap-3">
-          <Link href={servicesPath(locale)} className="label py-2 transition-colors hover:text-primary md:py-0">
+          <Link
+            href={servicesPath(locale)}
+            className="label py-2 text-primary transition-colors hover:text-secondary md:py-0"
+          >
             {t.footer.sections.services}
           </Link>
           {SERVICE_KEYS.map((key) => (
             <Link
               key={key}
               href={servicePath(locale, key)}
-              className="label py-2 transition-colors hover:text-primary md:py-0"
+              className="py-2 text-sm text-secondary transition-colors hover:text-primary md:py-0"
             >
               {t.services.cards[key].title}
             </Link>
@@ -58,24 +62,36 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
         </nav>
 
         <nav aria-label={t.footer.sections.studio} className="flex flex-col gap-1 md:gap-3">
-          <Link href={aboutPath(locale)} className="label py-2 transition-colors hover:text-primary md:py-0">
+          <Link
+            href={aboutPath(locale)}
+            className="label py-2 text-primary transition-colors hover:text-secondary md:py-0"
+          >
             {t.nav.about}
           </Link>
-          <Link href={contactPath(locale)} className="label py-2 transition-colors hover:text-primary md:py-0">
+          <Link
+            href={contactPath(locale)}
+            className="py-2 text-sm text-secondary transition-colors hover:text-primary md:py-0"
+          >
             {t.nav.contact}
           </Link>
-          <Link href={faqPath(locale)} className="label py-2 transition-colors hover:text-primary md:py-0">
+          <Link
+            href={faqPath(locale)}
+            className="py-2 text-sm text-secondary transition-colors hover:text-primary md:py-0"
+          >
             {t.faq.kicker}
           </Link>
           <a
             href={SITE.instagram}
             target="_blank"
             rel="noreferrer noopener"
-            className="label py-2 transition-colors hover:text-primary md:py-0"
+            className="py-2 text-sm text-secondary transition-colors hover:text-primary md:py-0"
           >
             Instagram
           </a>
-          <a href={`mailto:${SITE.email}`} className="label py-2 transition-colors hover:text-primary md:py-0">
+          <a
+            href={`mailto:${SITE.email}`}
+            className="py-2 text-sm text-secondary transition-colors hover:text-primary md:py-0"
+          >
             {SITE.email}
           </a>
         </nav>

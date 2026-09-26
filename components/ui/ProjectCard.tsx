@@ -39,7 +39,7 @@ export function ProjectCard({ project, index, flipped, locale, t }: ProjectCardP
             blurDataURL={project.blurDataURL}
             sizes="(max-width: 768px) 100vw, 58vw"
             // Tailwind v4 emits the standalone `scale` property, so the transition names it.
-            className="block h-auto w-full brightness-[0.8] grayscale transition-[filter,scale] duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-[filter,scale] group-hover:scale-[1.06] group-hover:brightness-100 group-hover:grayscale-0 group-focus-visible:scale-[1.06] group-focus-visible:brightness-100 group-focus-visible:grayscale-0"
+            className="block h-auto w-full pointer-fine:brightness-[0.8] transition-[scale,filter] duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-[scale] group-hover:scale-[1.06] group-hover:brightness-100 group-focus-visible:scale-[1.06] group-focus-visible:brightness-100"
           />
 
           <div
@@ -76,7 +76,7 @@ export function ProjectCard({ project, index, flipped, locale, t }: ProjectCardP
             {copy.location}
           </p>
 
-          <p className="max-w-[46ch] text-base font-light text-secondary transition-colors duration-500 group-hover:text-primary/80">
+          <p className="max-w-[46ch] text-base text-secondary transition-colors duration-500 group-hover:text-primary/80">
             {copy.description}
           </p>
 

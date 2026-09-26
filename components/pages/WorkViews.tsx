@@ -92,7 +92,7 @@ export function WorkIndexView({ locale, t }: { locale: Locale; t: Dictionary }) 
           </h1>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="mt-10 max-w-[46ch] text-2xl font-light leading-snug text-primary/90">
+          <p className="mt-10 max-w-[46ch] text-2xl leading-snug text-primary/90">
             {t.work.lede}
           </p>
         </Reveal>
@@ -121,7 +121,7 @@ export function WorkIndexView({ locale, t }: { locale: Locale; t: Dictionary }) 
                         placeholder="blur"
                         blurDataURL={project.blurDataURL}
                         sizes="(max-width: 768px) 100vw, 33vw"
-                        className="block h-auto w-full grayscale transition-[filter,scale] duration-700 will-change-[filter,scale] group-hover:scale-[1.04] group-hover:grayscale-0"
+                        className="block h-auto w-full transition-[scale] duration-700 will-change-[scale] group-hover:scale-[1.04]"
                       />
                     </div>
 
@@ -134,7 +134,7 @@ export function WorkIndexView({ locale, t }: { locale: Locale; t: Dictionary }) 
                       </p>
                     </div>
 
-                    <p className="max-w-[28ch] font-light text-secondary md:col-span-2">
+                    <p className="max-w-[28ch] text-secondary md:col-span-2">
                       {copy.highlight}
                     </p>
 
@@ -196,7 +196,7 @@ export function CaseStudyView({
 
         <div className="mt-12 grid grid-cols-1 gap-12 md:mt-16 md:grid-cols-12 md:gap-[var(--gutter)]">
           <Reveal delay={0.15} className="md:col-span-7">
-            <p className="max-w-[36ch] text-2xl font-light leading-snug text-primary/90">
+            <p className="max-w-[36ch] text-2xl leading-snug text-primary/90">
               {copy.lede}
             </p>
           </Reveal>
@@ -266,7 +266,7 @@ export function CaseStudyView({
             <h2 id="identity" className="mt-6 font-display text-4xl text-primary">
               {identity.title}
             </h2>
-            <p className="mt-8 max-w-[44ch] font-light text-secondary">{identity.text}</p>
+            <p className="mt-8 max-w-[44ch] text-secondary">{identity.text}</p>
           </Reveal>
 
           <Reveal as="image" className="overflow-hidden md:col-span-6 md:col-start-7">
@@ -324,7 +324,7 @@ export function CaseStudyView({
                 {figure.value}
               </p>
               <p className="mt-6 text-sm text-primary">{figure.label}</p>
-              <p className="mt-2 max-w-[28ch] text-sm font-light text-secondary">{figure.note}</p>
+              <p className="mt-2 max-w-[28ch] text-sm text-secondary">{figure.note}</p>
             </Reveal>
           ))}
         </div>
@@ -353,7 +353,7 @@ export function CaseStudyView({
                   {chapter.title}
                 </h2>
               </div>
-              <p className="max-w-[46ch] font-light text-secondary md:col-span-5 md:col-start-8 md:self-center">
+              <p className="max-w-[46ch] text-secondary md:col-span-5 md:col-start-8 md:self-center">
                 {chapter.text}
               </p>
             </Reveal>

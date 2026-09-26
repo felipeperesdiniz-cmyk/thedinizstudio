@@ -73,9 +73,12 @@ export interface Dictionary {
     /** Repeated band at the foot of most pages. */
     title: string
     text: string
+    bookCall: string
   }
   home: {
     meta: Meta
+    /** Visible line under the hero wordmark. */
+    heroLine: string
     h1: string
     intro: { kicker: string; title: string; body: readonly string[] }
     services: { kicker: string; title: string; text: string; link: string }
@@ -163,9 +166,12 @@ export interface Dictionary {
       message: string
       submit: string
       note: string
+      sending: string
+      success: string
+      failure: string
       errors: { name: string; email: string; message: string }
     }
-    direct: { email: string; whatsapp: string; instagram: string }
+    direct: { email: string; whatsapp: string; instagram: string; meeting: string; meetingText: string }
   }
   footer: {
     sections: { work: string; services: string; studio: string }

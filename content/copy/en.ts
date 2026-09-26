@@ -17,8 +17,9 @@ export const en: Dictionary = {
 
   cta: {
     label: 'Start a project',
-    title: 'Need a new website?',
-    text: 'Tell me what you sell and who you sell it to. You get a straight answer on scope and timeline, and a fixed quote in writing. Serious enquiries only.',
+    title: 'Have a project in mind?',
+    text: 'Tell me what you sell and who you sell it to. You get a straight answer on scope and timeline, and a fixed quote in writing.',
+    bookCall: 'Book a 30-minute call',
   },
 
   home: {
@@ -27,12 +28,13 @@ export const en: Dictionary = {
       description:
         'Web design studio building custom websites, brand identities and the marketing around them. Work in English, Portuguese and Spanish for small businesses in the US and Brazil.',
     },
+    heroLine: 'Websites, brands and marketing for small businesses, in English, Portuguese and Spanish.',
     h1: 'The Diniz Studio. Web design, brand identity and marketing.',
     intro: {
-      kicker: 'What this is',
-      title: 'One studio for the website, the brand and the marketing',
+      kicker: 'Why one studio',
+      title: 'Three suppliers who never speak',
       body: [
-        'Most small businesses end up with three suppliers who never speak: one builds the site, one draws the logo, one posts to Instagram. Nothing matches and no one is accountable for whether the phone rings.',
+        'One builds the site, one draws the logo, one posts to Instagram. Nothing matches, and no one is accountable for whether the phone rings.',
         'This studio does all three. The logo, the website and the posts come out of the same set of decisions, so a customer who finds you on Google, on Instagram or through a friend meets the same business every time.',
         'Every site is written and built from scratch, in English, Portuguese and Spanish where the audience needs it, and set up so search engines and AI assistants can read it properly.',
       ],
@@ -57,7 +59,7 @@ export const en: Dictionary = {
         {
           slug: 'how-do-i-get-a-price',
           q: 'How do I get a price?',
-          a: 'Every project is quoted on its own, because a one-page site and a trilingual site with a logo and photography are not the same job. Tell me what you need and you get a fixed price in writing before anything starts. Serious enquiries only, please.',
+          a: 'Every project is quoted on its own, because a one-page site and a trilingual site with a logo and photography are not the same job. Tell me what you need and you get a fixed price in writing before anything starts.',
         },
         {
           slug: 'how-long-does-it-take',
@@ -128,7 +130,7 @@ export const en: Dictionary = {
         text: 'Custom sites written from scratch: fast, multilingual, and built to turn a visitor into an enquiry.',
         proof: [
           { value: '3', label: 'Languages per site' },
-          { value: '~1s', label: 'Load on a phone' },
+          { value: '100%', label: 'Code you own' },
           { value: '0', label: 'Templates used' },
         ],
       },
@@ -145,7 +147,6 @@ export const en: Dictionary = {
         text: 'Being found and being followed: local search, Google Business Profiles, social media and the content behind both.',
         proof: [
           { value: '+200%', label: 'Client Instagram growth' },
-          { value: '1.5k+', label: 'Studio followers' },
           { value: '27', label: 'Five-star reviews earned' },
         ],
       },
@@ -167,7 +168,7 @@ export const en: Dictionary = {
       lede: 'A website built for your business, not adapted from a template someone else is already using.',
       body: [
         'If you are searching for a new website, you are usually solving one of three problems: the current site looks nothing like the quality of your work, it is slow or broken on a phone, or people visit and never get in touch. All three are fixable, and all three come down to the same thing, which is deciding what the site is for before anyone opens a design tool.',
-        'Every page here is written and coded by hand. No page builder, no theme, no monthly licence for a plugin that eventually breaks. That is why these sites load in about a second on a phone, hold up in Google, and can be read cleanly by AI assistants when someone asks one for a recommendation.',
+        'Every page here is written and coded by hand. No page builder, no theme, no monthly licence for a plugin that eventually breaks. That is why these sites stay light on a phone, hold up in Google, and can be read cleanly by AI assistants when someone asks one for a recommendation.',
         'Where it makes sense, the site is published in English, Portuguese and Spanish. Each language gets its own address and its own text, written rather than translated by a machine, which is how you show up for a search made in any of the three.',
       ],
       included: {
@@ -491,14 +492,23 @@ export const en: Dictionary = {
       ],
       message: 'Tell me about it',
       submit: 'Send',
-      note: 'This opens your email app with the message ready to send.',
+      note: 'Goes straight to my inbox. Replies within one business day.',
+      sending: 'Sending…',
+      success: 'Thanks, your message is in. You will hear back within one business day.',
+      failure: 'That did not go through. Email me directly at',
       errors: {
         name: 'Enter your name.',
         email: 'Enter a valid email address.',
         message: 'Tell me a little about the project.',
       },
     },
-    direct: { email: 'Email', whatsapp: 'WhatsApp', instagram: 'Instagram' },
+    direct: {
+      email: 'Email',
+      whatsapp: 'WhatsApp',
+      instagram: 'Instagram',
+      meeting: 'Call',
+      meetingText: 'Book 30 minutes',
+    },
   },
 
   footer: {
@@ -577,10 +587,10 @@ export const en: Dictionary = {
       meta: {
         title: 'Blend Hair Boutique | Salon Website and Local SEO',
         description:
-          'A trilingual salon website in Plantation, Florida, with online booking, eight service pages and the local SEO behind a 4.9 star rating from more than 1,230 reviews.',
+          'A trilingual salon website in Plantation, Florida, with online booking, eight service pages and local SEO that puts its 4.9-star rating, from more than 1,230 reviews, in front of search.',
       },
       sector: 'Hair salon',
-      highlight: '4.9 stars across 1,230+ Google reviews',
+      highlight: 'Eight service pages, booking from every one',
       lede: 'A trilingual site for a Brazilian-owned salon in Florida, where every page ends in a booking made without picking up the phone.',
       description:
         'A Brazilian-run salon in South Florida whose team has mostly been there since it opened. Service pages that answer the question before it is asked, stylist profiles, and booking reachable from anywhere: a persistent call, book and WhatsApp bar on mobile. Published in three languages.',
@@ -693,7 +703,7 @@ export const en: Dictionary = {
         {
           kicker: 'Build',
           title: 'Static, and hand-coded',
-          text: 'No template and no page builder, which is why a photograph the size of a wall still arrives in about a second.',
+          text: 'No template and no page builder, which keeps the pages light even with photographs the size of a wall.',
         },
       ],
       screens: ['Films', 'Archive', 'About', 'Services'],

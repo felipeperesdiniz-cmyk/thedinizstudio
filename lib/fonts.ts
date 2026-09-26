@@ -9,7 +9,7 @@ export const serif = Gloock({
 
 export const sans = Hanken_Grotesk({
   subsets: ['latin'],
-  weight: ['300', '400'],
+  weight: ['400'],
   display: 'swap',
   variable: '--ff-sans',
 })

@@ -77,7 +77,7 @@ export function Work({ locale, t }: { locale: Locale; t: Dictionary }) {
               {t.home.work.title}
             </h2>
           </div>
-          <p className="max-w-[42ch] font-light text-secondary">{t.home.work.text}</p>
+          <p className="max-w-[42ch] text-secondary">{t.home.work.text}</p>
         </div>
 
         <div className="work-list mt-20 flex flex-col gap-[clamp(5rem,10vw,10rem)]">
