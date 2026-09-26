@@ -103,10 +103,12 @@ export function FaqItemView({
       </section>
 
       {otherItems.length > 0 && (
-        <section aria-label={t.faq.moreQuestions} className="border-t border-line">
+        <section aria-labelledby="more-questions" className="border-t border-line">
           <div className="container-studio py-[var(--section-padding)]">
             <Reveal>
-              <p className="label">{t.faq.moreQuestions}</p>
+              <h2 id="more-questions" className="label leading-[var(--leading-body)]">
+                {t.faq.moreQuestions}
+              </h2>
             </Reveal>
 
             <ul className="mt-10 border-t border-line">

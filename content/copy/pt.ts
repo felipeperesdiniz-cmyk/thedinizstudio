@@ -114,6 +114,8 @@ export const pt: Dictionary = {
   player: {
     soundOn: 'Ligar som',
     soundOff: 'Desligar som',
+    watch: 'Assistir ao filme',
+    close: 'Fechar',
   },
 
   services: {

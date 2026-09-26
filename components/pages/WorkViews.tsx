@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Reveal } from '@/components/ui/Reveal'
 import { ReelPlayer } from '@/components/ui/ReelPlayer'
+import { FilmStill } from '@/components/ui/FilmStill'
 import { CtaBand } from '@/components/ui/CtaBand'
 import { PROJECTS, type Picture, type Project } from '@/content/projects'
 import type { Dictionary } from '@/content/copy/types'
@@ -15,20 +16,37 @@ const STORY_LAYOUT = [
   'md:col-span-8 md:col-start-3',
 ]
 
-function Story({ images, captions }: { images: readonly Picture[]; captions?: readonly string[] }) {
+function Story({
+  images,
+  captions,
+  labels,
+}: {
+  images: readonly Picture[]
+  captions?: readonly string[]
+  labels: Dictionary['player']
+}) {
   return (
     <div className="grid grid-cols-1 gap-x-[var(--gutter)] gap-y-16 md:grid-cols-12 md:gap-y-24">
       {images.map((image, i) => (
         <figure key={image.src} className={STORY_LAYOUT[i % STORY_LAYOUT.length]}>
           <Reveal as="image" className="overflow-hidden bg-surface">
-            <Image
-              src={image.src}
-              alt={captions?.[i] ?? ''}
-              width={image.width}
-              height={image.height}
-              sizes="(max-width: 768px) 100vw, 55vw"
-              className="block h-auto w-full"
-            />
+            {image.youtube ? (
+              <FilmStill
+                image={{ ...image, youtube: image.youtube }}
+                alt={captions?.[i] ?? ''}
+                sizes="(max-width: 768px) 100vw, 55vw"
+                labels={labels}
+              />
+            ) : (
+              <Image
+                src={image.src}
+                alt={captions?.[i] ?? ''}
+                width={image.width}
+                height={image.height}
+                sizes="(max-width: 768px) 100vw, 55vw"
+                className="block h-auto w-full"
+              />
+            )}
           </Reveal>
           {captions?.[i] && <figcaption className="label mt-5">{captions[i]}</figcaption>}
         </figure>
@@ -347,7 +365,7 @@ export function CaseStudyView({
             {media.images && (
               <div className="mt-16 md:mt-24">
                 {media.story ? (
-                  <Story images={media.images} captions={chapter.captions} />
+                  <Story images={media.images} captions={chapter.captions} labels={t.player} />
                 ) : (
                   <Gallery images={media.images} captions={chapter.captions} />
                 )}

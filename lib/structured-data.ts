@@ -13,7 +13,12 @@ const organisation = (t: Dictionary) => ({
   logo: `${SITE.url}/apple-icon.png`,
   image: `${SITE.url}/og-image.jpg`,
   description: t.meta.tagline,
-  areaServed: ['United States', 'Brazil', 'Worldwide'],
+  areaServed: [
+    { '@type': 'City', name: 'Miami', containedInPlace: { '@type': 'State', name: 'Florida' } },
+    { '@type': 'City', name: 'Boston', containedInPlace: { '@type': 'State', name: 'Massachusetts' } },
+    'United States',
+    'Brazil',
+  ],
   availableLanguage: ['English', 'Portuguese', 'Spanish'],
   serviceType: [
     'Web Design',

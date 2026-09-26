@@ -115,6 +115,8 @@ export interface Dictionary {
   player: {
     soundOn: string
     soundOff: string
+    watch: string
+    close: string
   }
   services: {
     meta: Meta

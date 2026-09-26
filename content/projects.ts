@@ -2,6 +2,8 @@ export interface Picture {
   src: string
   width: number
   height: number
+  /** YouTube video id: the still opens this film when clicked. */
+  youtube?: string
 }
 
 export interface Clip {
@@ -102,10 +104,12 @@ export const PROJECTS: readonly Project[] = [
     chapters: [
       {
         story: true,
-        images: [1, 2].map((i) => ({
-          src: `/images/work/rafa/film-${i}.webp`,
+        // Paixão Calejada, then B2B Ranch.
+        images: ['BNN8BEkgFSk', '4IPh_fbGn5g'].map((youtube, i) => ({
+          src: `/images/work/rafa/film-${i + 1}.webp`,
           width: 1000,
           height: 419,
+          youtube,
         })),
       },
       {},
