@@ -32,6 +32,17 @@ const organisation = (t: Dictionary) => ({
   sameAs: [SITE.instagram],
 })
 
+// Google takes the site name shown in results from this node, so the brand reads right.
+const website = {
+  '@type': 'WebSite',
+  '@id': `${SITE.url}/#website`,
+  name: SITE.name,
+  alternateName: ['Diniz Studio', 'thedinizstudio'],
+  url: SITE.url,
+  inLanguage: Object.values(HTML_LANG),
+  publisher: { '@id': `${SITE.url}/#studio` },
+}
+
 /**
  * One JSON-LD graph per page. Search engines use it for rich results, and
  * assistants use it to answer questions about what the studio does.
@@ -39,7 +50,7 @@ const organisation = (t: Dictionary) => ({
 export function structuredData(route: Route, t: Dictionary) {
   const paths = alternatesFor(route)
   const url = `${SITE.url}${paths[route.locale]}`
-  const graph: Record<string, unknown>[] = [organisation(t)]
+  const graph: Record<string, unknown>[] = [organisation(t), website]
 
   const webPage = (name: string, description: string) => ({
     '@type': 'WebPage',
@@ -48,7 +59,7 @@ export function structuredData(route: Route, t: Dictionary) {
     name,
     description,
     inLanguage: HTML_LANG[route.locale],
-    isPartOf: { '@type': 'WebSite', name: SITE.name, url: SITE.url },
+    isPartOf: { '@id': `${SITE.url}/#website` },
     publisher: { '@id': `${SITE.url}/#studio` },
   })
 
