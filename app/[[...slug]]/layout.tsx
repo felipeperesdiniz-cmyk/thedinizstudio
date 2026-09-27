@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   publisher: SITE.name,
   openGraph: { images: [{ url: '/og-image.jpg', width: 1200, height: 630 }] },
   twitter: { card: 'summary_large_image', images: ['/og-image.jpg'] },
+  // Bing Webmaster Tools ownership; removing it unverifies the site.
+  verification: { other: { 'msvalidate.01': 'FE3139FB92E13A3957C3135C6668D578' } },
   robots: {
     index: true,
     follow: true,
