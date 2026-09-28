@@ -1,9 +1,10 @@
 import type { Dictionary } from './types'
+import { industriesPt } from './industries-pt'
 
 export const pt: Dictionary = {
   meta: {
     siteName: 'The Diniz Studio',
-    tagline: 'Criação de sites, identidade visual e marketing, em três idiomas.',
+    tagline: 'Um estúdio conduzido pelo fundador, para negócios de serviço e criativos, em três idiomas.',
   },
 
   nav: {
@@ -26,30 +27,44 @@ export const pt: Dictionary = {
     meta: {
       title: 'The Diniz Studio | Criação de Sites, Identidade Visual e Marketing',
       description:
-        'Sites sob medida, identidade visual e o marketing em volta disso, para negócios no Brasil e nos EUA. Em português, inglês e espanhol.',
+        'Um estúdio conduzido pelo fundador: sites, identidade visual e marketing para negócios de serviço e criativos no Brasil e nos EUA. Em português, inglês e espanhol.',
     },
-    heroLine: 'Sites, marcas e marketing para negócios de todos os tamanhos, em português, inglês e espanhol.',
+    heroLine: 'Um estúdio conduzido pelo fundador, para negócios de serviço e criativos. Sites, marcas e marketing em português, inglês e espanhol.',
     heroScroll: 'Role',
-    h1: 'The Diniz Studio. Criação de sites, identidade visual e marketing.',
+    h1: 'The Diniz Studio. Criação de sites, identidade visual e marketing para negócios de serviço e criativos.',
     intro: {
       kicker: 'Por que um estúdio só',
       title: 'Três fornecedores que nunca se falam',
       body: [
-        'Um faz o site, outro desenha a logo, outro publica no Instagram. Nada combina, e ninguém responde pela pergunta que importa: se o telefone toca.',
-        'Aqui os três saem do mesmo lugar. A logo, o site e os posts nascem das mesmas decisões, então quem encontra você no Google, no Instagram ou por indicação encontra sempre o mesmo negócio.',
-        'Cada site é escrito e programado do zero, em português, inglês e espanhol quando o público precisa, e preparado para ser lido corretamente por buscadores e por assistentes de inteligência artificial.',
+        'Um faz o site, outro desenha a logo, outro publica no Instagram. Nada combina, e ninguém está olhando para o conjunto.',
+        'Aqui o site, a identidade e o marketing saem da mesma pessoa e das mesmas decisões, então quem encontra você no Google, no Instagram ou por indicação encontra sempre o mesmo negócio. Você não precisa dos três: leve a parte que falta, e ela vai conversar com o que você já tem.',
+        'O estúdio trabalha com negócios de serviço e criativos, como salões, artesãos, fotógrafos e chefs, e principalmente com quem atende clientes que falam mais de um idioma. Os sites são escritos em português, inglês e espanhol sempre que o público precisa.',
       ],
+    },
+    founder: {
+      kicker: 'Com quem você trabalha',
+      title: 'Felipe Diniz, fundador',
+      body: [
+        'O The Diniz Studio é tocado por Felipe Diniz. A mesma pessoa responde a sua primeira mensagem, desenha o site, escreve o código e atende o telefone meses depois quando você quiser mudar alguma coisa.',
+        'Um ou dois projetos por vez, em português, inglês e espanhol, para negócios no Brasil e nos Estados Unidos. Nenhum gerente de contas entre você e o trabalho.',
+      ],
+      link: 'Mais sobre o estúdio',
+    },
+    quote: {
+      kicker: 'Palavra de cliente',
+      project: 'blend-hair-boutique',
+      link: 'Ler o caso do Blend',
     },
     services: {
       kicker: 'Serviços',
       title: 'Três coisas, bem feitas',
-      text: 'Um site que vende, uma identidade que segura tudo junto, e o trabalho de busca e redes que traz gente até lá.',
+      text: 'Um site, uma identidade que segura tudo junto, e o trabalho de busca e redes em volta deles. Contrate o estúdio para um só, ou combine.',
       link: 'Ver todos os serviços',
     },
     work: {
       kicker: 'Projetos selecionados',
       title: 'Quatro negócios, quatro problemas',
-      text: 'Uma bordadeira, um salão, um fotógrafo e uma confeiteira. Cada projeto conta o que foi feito e o que mudou depois.',
+      text: 'Uma bordadeira, um salão, um fotógrafo e uma confeiteira. Cada caso separa o que foi feito do que foi medido.',
       link: 'Ver todos os projetos',
     },
     answers: {
@@ -60,7 +75,7 @@ export const pt: Dictionary = {
         {
           slug: 'como-eu-recebo-um-orcamento',
           q: 'Como eu recebo um orçamento?',
-          a: 'Cada projeto é orçado sozinho, porque um site de uma página e um site trilíngue com logo e fotografia não são o mesmo trabalho. Conte o que você precisa e recebe um preço fechado por escrito antes de qualquer coisa começar.',
+          a: 'Cada projeto é orçado sozinho, porque um site de uma página e um site trilíngue com logo e fotografia não são o mesmo trabalho. Conte o que você precisa e recebe um preço fechado por escrito antes de qualquer coisa começar. Hospedagem, domínio e ferramentas de terceiros são cobrados pelos próprios fornecedores, e o orçamento diz quais se aplicam.',
         },
         {
           slug: 'quanto-tempo-leva',
@@ -70,17 +85,17 @@ export const pt: Dictionary = {
         {
           slug: 'voce-faz-em-mais-de-um-idioma',
           q: 'Você faz em mais de um idioma?',
-          a: 'Faço. Português, inglês e espanhol, cada um no seu endereço e declarado ao Google, para que uma busca em qualquer um dos três caia em uma página escrita naquele idioma, e não em uma tradução automática.',
+          a: 'Faço. Português, inglês e espanhol, cada um no seu endereço e declarado aos buscadores, para que eles consigam associar cada página a quem busca naquele idioma. Cada versão é escrita, não traduzida por máquina.',
         },
         {
           slug: 'voce-so-faz-sites',
           q: 'Você só faz sites?',
-          a: 'Não. Também logo e identidade visual, direção de fotografia, redes sociais, Perfil da Empresa no Google e SEO local. Muitos clientes começam pelo site e seguem com o estúdio cuidando do marketing.',
+          a: 'Não. Também logo e identidade visual, direção de fotografia, redes sociais, Perfil da Empresa no Google e SEO local. Você pode contratar só uma dessas coisas, ou combinar. Ninguém precisa de tudo.',
         },
         {
           slug: 'com-o-que-voce-constroi',
           q: 'Com o que você constrói?',
-          a: 'Código próprio, não construtor de páginas. É por isso que esses sites carregam rápido, aparecem bem na busca e podem ser alterados sem depender de assinatura nenhuma.',
+          a: 'Código próprio, não construtor de páginas. Isso mantém as páginas leves e rápidas, e não há assinatura de construtor para continuar pagando. Hospedagem e domínio continuam sendo pagos aos fornecedores, como em qualquer site.',
         },
       ],
     },
@@ -94,7 +109,7 @@ export const pt: Dictionary = {
     },
     kicker: 'Projetos',
     title: 'Cada projeto, por inteiro',
-    lede: 'O que o negócio precisava, o que foi feito e o que mudou. Cada projeto leva ao site no ar.',
+    lede: 'O que o negócio precisava e o que foi feito. Cada número diz o que está medindo, e cada projeto leva ao site no ar.',
     viewProject: 'Ver o caso',
     caseStudy: 'Ver o caso',
     visitSite: 'Visitar o site',
@@ -109,6 +124,7 @@ export const pt: Dictionary = {
     identity: 'Identidade',
     type: 'Tipografia',
     theSite: 'O site',
+    figureKind: { delivered: 'Entregue', measured: 'Medido', client: 'Sobre o cliente' },
   },
 
   player: {
@@ -126,14 +142,14 @@ export const pt: Dictionary = {
     },
     kicker: 'Serviços',
     title: 'O que o estúdio faz',
-    lede: 'Três serviços que funcionam como um. Leve tudo, ou só a parte que está faltando.',
+    lede: 'Três serviços pensados para funcionar juntos. Contrate o estúdio para um deles, ou combine.',
     cards: {
       'web-design': {
         title: 'Criação de sites',
         text: 'Sites escritos do zero: rápidos, multilíngues e feitos para transformar visita em contato.',
         proof: [
-          { value: '3', label: 'Idiomas por site' },
-          { value: '100%', label: 'Código seu' },
+          { value: 'Até 3', label: 'Idiomas por site' },
+          { value: '100%', label: 'Código entregue a você' },
           { value: '0', label: 'Modelos prontos' },
         ],
       },
@@ -141,7 +157,7 @@ export const pt: Dictionary = {
         title: 'Identidade visual',
         text: 'Logo, cor, tipografia e as regras que seguram tudo, desenhadas para como o seu negócio realmente vende.',
         proof: [
-          { value: '0', label: 'Mensalidade de licença' },
+          { value: '0', label: 'Taxa de renovação da logo' },
           { value: 'Seus', label: 'Arquivos de origem inclusos' },
         ],
       },
@@ -149,9 +165,9 @@ export const pt: Dictionary = {
         title: 'Marketing e SEO',
         text: 'Ser encontrado e ser seguido: busca local, Perfil da Empresa no Google, redes sociais e o conteúdo por trás disso.',
         proof: [
-          { value: '200', label: 'Seguidores de cliente, do zero' },
-          { value: '1,5 mil', label: 'Seguidores do estúdio, do zero' },
-          { value: '27', label: 'Avaliações cinco estrelas conquistadas' },
+          { value: '200', label: 'Seguidores em uma conta de cliente que o estúdio cuida' },
+          { value: '1,5 mil', label: 'Seguidores na conta do próprio estúdio' },
+          { value: 'Avulso', label: 'Diagnóstico e ajustes; mensal opcional' },
         ],
       },
     },
@@ -165,15 +181,15 @@ export const pt: Dictionary = {
       meta: {
         title: 'Criação de Sites | Sites Sob Medida e Multilíngues',
         description:
-          'Sites sob medida para negócios de todos os tamanhos. Feitos à mão, rápidos, multilíngues e pensados para o cliente achar você e fechar. Português, inglês e espanhol.',
+          'Sites sob medida para negócios de serviço e criativos. Feitos à mão, rápidos e multilíngues, com entrega clara e a base técnica de que os buscadores precisam.',
       },
       kicker: 'Serviço',
       title: 'Criação de sites',
       lede: 'Um site feito para o seu negócio, e não adaptado de um modelo que outra pessoa já está usando.',
       body: [
         'Quem procura um site novo normalmente está resolvendo um de três problemas: o site atual não tem a mesma qualidade do trabalho, ele é lento ou quebrado no celular, ou as pessoas entram e nunca entram em contato. Os três têm solução, e os três dependem da mesma coisa: decidir para que serve o site antes de alguém abrir qualquer programa de design.',
-        'Cada página aqui é escrita e programada à mão. Sem construtor de páginas, sem tema pronto, sem licença mensal de um plugin que um dia quebra. É por isso que esses sites ficam leves no celular, se sustentam no Google e podem ser lidos com clareza por assistentes de inteligência artificial quando alguém pede uma indicação.',
-        'Quando faz sentido, o site é publicado em português, inglês e espanhol. Cada idioma ganha o seu endereço e o seu texto, escrito e não traduzido por máquina, que é o que faz você aparecer em uma busca feita em qualquer um dos três.',
+        'Cada página aqui é escrita e programada à mão. Sem construtor de páginas, sem tema pronto, sem licença mensal de um plugin que um dia quebra. Isso mantém o site leve no celular e entrega a buscadores e assistentes de inteligência artificial páginas limpas e estruturadas para ler. Ajuda a ser descoberto; não garante posição nem menção.',
+        'Quando faz sentido, o site é publicado em português, inglês e espanhol. Cada idioma ganha o seu endereço e o seu texto, escrito e não traduzido por máquina, para que os buscadores associem cada versão a quem busca naquele idioma.',
       ],
       included: {
         title: 'O que você recebe',
@@ -184,7 +200,7 @@ export const pt: Dictionary = {
           },
           {
             title: 'Design e desenvolvimento',
-            text: 'Layout, tipografia, movimento e código. Tudo responsivo, testado em celulares de verdade, e seu para sempre.',
+            text: 'Layout, tipografia, movimento e código. Tudo responsivo e testado em celulares de verdade.',
           },
           {
             title: 'Textos que trabalham',
@@ -196,11 +212,19 @@ export const pt: Dictionary = {
           },
           {
             title: 'SEO técnico desde o início',
-            text: 'Dados estruturados, sitemap, títulos limpos, imagens leves. As coisas que decidem se você é encontrado.',
+            text: 'Dados estruturados, sitemap, títulos limpos, imagens leves: a base de que os buscadores precisam para ler o site direito. Ajuda a ser encontrado; a posição ainda depende de concorrência e de tempo.',
           },
           {
-            title: 'Entrega e suporte',
-            text: 'Você recebe o código, a configuração do domínio e uma explicação. Alterações depois são cobradas por serviço, nunca por assinatura obrigatória.',
+            title: 'O que é seu na entrega',
+            text: 'O site pronto e o código-fonte, o domínio conectado e uma explicação de como tudo funciona. Nada fica retido para prender você ao estúdio.',
+          },
+          {
+            title: 'Suporte opcional depois',
+            text: 'O suporte depois do lançamento é opcional. Alterações são orçadas por serviço, ou em condições combinadas por escrito se você quiser ajuda regular. Não há mensalidade obrigatória.',
+          },
+          {
+            title: 'Custos de terceiros, avisados antes',
+            text: 'Hospedagem, domínio, plataforma de agendamento ou qualquer outro serviço externo é cobrado pelo próprio fornecedor e pode ter taxas próprias. A proposta lista quais o seu site vai usar.',
           },
         ],
       },
@@ -240,7 +264,7 @@ export const pt: Dictionary = {
           {
             slug: 'como-o-projeto-e-orcado',
             q: 'Como o projeto é orçado?',
-            a: 'Como um preço fechado para o trabalho inteiro, por escrito, antes de começar. Ele muda com o número de páginas, de idiomas e com a inclusão de fotografia e logo. O valor da proposta é o valor que você paga, e não existe cobrança por hora depois.',
+            a: 'Como um preço fechado para o trabalho inteiro, por escrito, antes de começar. Ele muda com o número de páginas, de idiomas e com a inclusão de fotografia e logo. O valor da proposta é o valor que você paga, e não existe cobrança por hora depois. Custos de terceiros, como hospedagem, domínio ou plataforma de agendamento, ficam fora desse valor e aparecem separados.',
           },
           {
             slug: 'da-para-reformar-o-site-que-eu-ja-tenho',
@@ -250,17 +274,22 @@ export const pt: Dictionary = {
           {
             slug: 'preciso-de-wordpress-wix-ou-squarespace',
             q: 'Eu preciso de Wordpress, Wix ou Squarespace?',
-            a: 'Não precisa. Essas ferramentas fazem sentido quando ninguém vai cuidar do site. Um site feito à mão entrega um resultado mais rápido e mais seguro, sem mensalidade, e sem prender você a uma plataforma que muda de preço quando quer.',
+            a: 'Não precisa. Essas ferramentas fazem sentido se você quer montar e editar tudo sozinho. Um site feito à mão dispensa a assinatura do construtor e a manutenção de plugins, e não prende você a uma plataforma que muda de preço quando quer. Hospedagem e domínio continuam sendo pagos, como em qualquer site.',
           },
           {
             slug: 'vou-conseguir-atualizar-o-site-sozinho',
             q: 'Vou conseguir atualizar sozinho?',
-            a: 'Se você quiser editar textos e imagens, o site vem com um editor simples por trás. Muitos clientes preferem mandar as alterações, e isso é cobrado por serviço.',
+            a: 'Se você quiser. Um editor de conteúdo simples entra quando está previsto na proposta, o que vale a pena se você vai mudar textos, imagens, preços ou listas com frequência. Sem ele, você manda as alterações e elas são feitas para você, cobradas por serviço. Você sabe qual é o caso antes de o projeto começar.',
+          },
+          {
+            slug: 'o-que-recebo-na-entrega-e-o-que-e-cobrado-a-parte',
+            q: 'O que eu recebo na entrega, e o que é cobrado à parte?',
+            a: 'Você recebe o site pronto, o código-fonte, o domínio conectado e uma explicação de como tudo funciona. Hospedagem, o próprio domínio, plataforma de agendamento ou qualquer outro serviço externo são pagos ao fornecedor e podem ter taxas próprias; a proposta lista cada um. O suporte depois do lançamento é opcional, cobrado por serviço ou em condições combinadas por escrito.',
           },
           {
             slug: 'como-sei-que-vai-aparecer-no-google',
             q: 'Como eu sei que vai aparecer no Google?',
-            a: 'Quem decide isso é estrutura, velocidade e conteúdo, e os três fazem parte da construção: uma página por coisa que você vende, títulos limpos, dados estruturados e um Perfil da Empresa no Google se você atende uma cidade. Posição se conquista ao longo de meses, e você acompanha isso nos relatórios.',
+            a: 'Ninguém pode prometer uma posição no Google. O que a construção faz é dar aos buscadores o que eles precisam para ler o site: uma página por coisa que você vende, títulos limpos, dados estruturados, páginas rápidas e um Perfil da Empresa no Google se você atende uma cidade. Onde você aparece depois depende de concorrência, avaliações e tempo, sem prazo fixo, e você acompanha isso nos relatórios.',
           },
         ],
       },
@@ -270,7 +299,7 @@ export const pt: Dictionary = {
       meta: {
         title: 'Identidade Visual e Logo, Feitos para o Seu Negócio',
         description:
-          'Logo e identidade visual para negócios de todos os tamanhos: cor, tipografia e as regras que seguram tudo, da vitrine ao site e ao Instagram.',
+          'Logo e identidade visual para negócios de serviço e criativos: cor, tipografia e as regras que seguram tudo, da vitrine ao site e ao Instagram.',
       },
       kicker: 'Serviço',
       title: 'Identidade visual',
@@ -351,40 +380,44 @@ export const pt: Dictionary = {
 
     'marketing-seo': {
       meta: {
-        title: 'Marketing e SEO Local | Seja Encontrado e Escolhido',
+        title: 'Marketing e SEO Local | Configuração Avulsa ou Mensal',
         description:
-          'SEO local, Perfil da Empresa no Google, redes sociais e conteúdo. Seja encontrado por quem procura o que você vende, em português, inglês ou espanhol.',
+          'SEO local, Perfil da Empresa no Google, redes sociais e conteúdo: diagnóstico e configuração avulsos, com trabalho mensal opcional. Em português, inglês ou espanhol.',
       },
       kicker: 'Serviço',
       title: 'Marketing e SEO',
-      lede: 'Um site que ninguém acha é um cartão de visita. Esta é a parte que leva gente até ele.',
+      lede: 'Um site que ninguém acha é um cartão de visita. Esta é a parte que ajuda as pessoas a encontrá-lo.',
       body: [
-        'Ser encontrado deixou de ser uma coisa só. A pessoa pode digitar o serviço e a cidade no Google, pedir uma indicação a um assistente de inteligência artificial, ou passar por você no Instagram. Os três se ganham com o mesmo material: páginas claras que respondem perguntas reais, um perfil completo e ativo, e posts com a cara do negócio a que pertencem.',
-        'O trabalho começa pelas buscas que os seus clientes realmente fazem, no idioma em que fazem. Elas viram páginas, e as páginas viram o que o Google mostra e o que um assistente cita quando responde.',
-        'Para quem vende para a própria cidade, o Perfil da Empresa no Google costuma valer mais do que qualquer outra coisa desta lista. Ele é criado do jeito certo, preenchido com fotografia e mantido vivo com publicações e respostas.',
+        'Ser encontrado deixou de ser uma coisa só. A pessoa pode digitar o serviço e a cidade no Google, pedir uma indicação a um assistente de inteligência artificial, ou passar por você no Instagram. O mesmo material ajuda nos três casos: páginas claras que respondem perguntas reais, um perfil completo e ativo, e posts com a cara do negócio a que pertencem.',
+        'O trabalho tem duas partes. Primeiro, um diagnóstico e uma configuração avulsos: onde você aparece hoje, o que está faltando, e a base arrumada a partir das buscas que os seus clientes fazem, no idioma em que fazem. Depois, só se você quiser, um trabalho mensal para continuar publicando e manter o perfil em dia. Para quem vende para a própria cidade, o Perfil da Empresa no Google costuma ser o melhor ponto de partida.',
+        'Nada disso garante posição, presença em respostas de IA ou prazo para resultado. Buscadores e assistentes decidem o que mostram, e a concorrência onde você atua pesa. O que o estúdio controla é o quanto as suas informações estão claras, completas e atualizadas quando eles olham.',
       ],
       included: {
         title: 'O que entra',
         items: [
           {
-            title: 'SEO local',
-            text: 'Uma página por coisa que você vende, dados estruturados e os sinais locais que decidem se você aparece no mapa.',
+            title: 'Avulso: o diagnóstico',
+            text: 'Uma análise por escrito de onde você aparece hoje na busca, no mapa e nas redes, do que está faltando ou errado, e do que arrumar primeiro.',
           },
           {
-            title: 'Perfil da Empresa no Google',
-            text: 'Criado ou arrumado, categorias e área de atendimento corretas, fotografia carregada, publicações e respostas a avaliações.',
+            title: 'Avulso: a configuração',
+            text: 'Páginas de serviço e dados estruturados no site; o Perfil da Empresa no Google criado ou arrumado, com categorias, área de atendimento, horários e fotografia; perfis nas redes alinhados à sua identidade.',
           },
           {
-            title: 'Redes sociais',
-            text: 'Direção, fotografia, legendas e agendamento, nas mesmas cores e tipografia de tudo o que é seu.',
+            title: 'Mensal, se você quiser: publicação',
+            text: 'Posts nas redes (direção, fotografia, legendas e agendamento), publicações no Perfil da Empresa no Google e páginas novas que respondem ao que o cliente pergunta antes de comprar. O que entra em cada mês é combinado com você por escrito.',
           },
           {
-            title: 'Conteúdo que responde',
-            text: 'As perguntas que o cliente faz antes de comprar, escritas direito, que é o que buscadores e assistentes premiam.',
+            title: 'Mensal, se você quiser: manutenção',
+            text: 'Horários, serviços e fotos sempre atualizados, e respostas às avaliações quando você pedir que o estúdio cuide disso.',
+          },
+          {
+            title: 'Sua aprovação primeiro',
+            text: 'Posts, páginas e mudanças no perfil são enviados a você antes de irem ao ar. Nada é publicado em seu nome sem a sua aprovação.',
           },
           {
             title: 'Relatório em português claro',
-            text: 'O que buscaram, o que clicaram e o que fizeram depois. Sem painel que você precisa decifrar.',
+            text: 'No trabalho mensal: o que buscaram, o que clicaram e o que fizeram depois. Sem painel que você precisa decifrar.',
           },
         ],
       },
@@ -392,20 +425,20 @@ export const pt: Dictionary = {
         title: 'Como funciona',
         steps: [
           {
-            title: 'Diagnóstico',
+            title: 'Diagnóstico (avulso)',
             text: 'Onde você aparece hoje, o que está faltando e o que os concorrentes estão ganhando que você não.',
           },
           {
-            title: 'Arrumar a base',
-            text: 'O site, o perfil e os dados estruturados, nessa ordem. Não adianta divulgar uma página que não pode ser lida.',
+            title: 'Arrumar a base (avulso)',
+            text: 'O site, o perfil e os dados estruturados, nessa ordem. Não adianta divulgar uma página que não pode ser lida. Você pode parar aqui.',
           },
           {
-            title: 'Publicar',
-            text: 'Páginas de serviço, respostas e posts, em um calendário que você enxerga.',
+            title: 'Aprovar e publicar (mensal, opcional)',
+            text: 'Páginas de serviço, respostas e posts são preparados, enviados para a sua aprovação e publicados em um calendário que você enxerga.',
           },
           {
-            title: 'Revisar',
-            text: 'Todo mês, em linguagem simples, com o mês seguinte decidido pelo que aconteceu no anterior.',
+            title: 'Revisar (mensal, opcional)',
+            text: 'Um relatório em linguagem simples, com o mês seguinte decidido pelo que aconteceu no anterior.',
           },
         ],
       },
@@ -415,17 +448,17 @@ export const pt: Dictionary = {
           {
             slug: 'em-quanto-tempo-vejo-resultado-de-seo',
             q: 'Em quanto tempo vejo resultado?',
-            a: 'Um Perfil da Empresa no Google pode mudar o volume de ligações em semanas. Colocar uma página de serviço no topo costuma levar de dois a seis meses, dependendo da concorrência na sua cidade.',
+            a: 'Não existe prazo fixo, e ninguém pode prometer um com honestidade. Alguns negócios começam a aparecer em novas buscas poucas semanas depois da configuração; outros levam meses. Depende da concorrência onde você atua, das suas avaliações e do quanto os buscadores já sabem sobre você. Se você mantiver o trabalho mensal, os relatórios mostram o que está mudando.',
           },
           {
             slug: 'da-para-aparecer-no-chatgpt-e-em-outras-respostas-de-ia',
             q: 'Dá para aparecer no ChatGPT e em outras respostas de IA?',
-            a: 'Ninguém garante isso, e quem garante está vendendo alguma coisa. O que funciona é ser a fonte mais clara sobre o assunto: páginas que dizem com todas as letras o que você faz, para quem faz e onde, marcadas para uma máquina conseguir ler. É assim que este site é feito, e é assim que o seu será.',
+            a: 'Ninguém garante isso, e quem garante está vendendo alguma coisa. Os assistentes de IA decidem sozinhos o que mencionar. O que o estúdio pode fazer é deixar as suas informações fáceis de entender: páginas que dizem com todas as letras o que você faz, para quem faz e onde, marcadas para uma máquina conseguir ler. Isso aumenta a chance de você ser descrito corretamente; não promete uma menção.',
           },
           {
             slug: 'preciso-assinar-por-varios-meses',
             q: 'Preciso assinar por vários meses?',
-            a: 'Não. O diagnóstico e os ajustes são um serviço avulso. O acompanhamento é mensal e você pode parar quando quiser.',
+            a: 'Não. O diagnóstico e a configuração são um serviço avulso, com orçamento próprio. O trabalho mensal é opcional, tem escopo combinado por escrito, e você pode parar quando quiser.',
           },
           {
             slug: 'em-qual-idioma-eu-devo-publicar',
@@ -515,8 +548,10 @@ export const pt: Dictionary = {
     },
   },
 
+  ...industriesPt,
+
   footer: {
-    sections: { work: 'Projetos', services: 'Serviços', studio: 'Estúdio' },
+    sections: { work: 'Projetos', services: 'Serviços', industries: 'Segmentos', studio: 'Estúdio' },
     rights: 'Todos os direitos reservados.',
   },
 
@@ -525,10 +560,10 @@ export const pt: Dictionary = {
       meta: {
         title: 'Bordados com Amor | Site, Logo e Redes Sociais',
         description:
-          'Site trilíngue, logo bordada e Instagram gerenciado para uma artista do bordado à mão. A conta saiu do zero para 200 seguidores, sem um centavo de anúncio.',
+          'Site trilíngue, logo bordada e Instagram gerenciado para uma artista do bordado à mão. A conta, cuidada pelo estúdio, saiu do zero para 200 seguidores sem anúncio.',
       },
       sector: 'Bordado à mão',
-      highlight: 'Instagram do zero a 200 seguidores, tudo orgânico',
+      highlight: 'Instagram cuidado pelo estúdio: do zero a 200 seguidores, sem anúncio',
       lede: 'Uma logo bordada, um site em três idiomas e um Instagram construído do zero sem um centavo de anúncio.',
       description:
         'Bordado à mão, uma peça por vez. O site é construído no ritmo do trabalho: um processo contado em cinco movimentos e um arquivo catalogado em que cada peça carrega as palavras bordadas nela. Publicado em português, inglês e espanhol.',
@@ -554,10 +589,21 @@ export const pt: Dictionary = {
         {
           value: '200',
           label: 'Seguidores no Instagram',
-          note: 'Do zero, sem anúncio.',
+          note: 'Na conta que o estúdio cuida desde que começou do zero, sem anúncio. Um número de seguidores, não de vendas.',
+          kind: 'measured',
         },
-        { value: '3', label: 'Idiomas', note: 'Português, inglês e espanhol.' },
-        { value: '1', label: 'Estúdio, de ponta a ponta', note: 'Logo, feed, legendas e site.' },
+        {
+          value: '3',
+          label: 'Idiomas',
+          note: 'Português, inglês e espanhol.',
+          kind: 'delivered',
+        },
+        {
+          value: '1',
+          label: 'Estúdio, de ponta a ponta',
+          note: 'Logo, feed, legendas e site.',
+          kind: 'delivered',
+        },
       ],
       chapters: [
         {
@@ -591,7 +637,7 @@ export const pt: Dictionary = {
       meta: {
         title: 'Blend Hair Boutique | Site de Salão e SEO Local',
         description:
-          'Site trilíngue para um salão em Plantation, Flórida, com agendamento online, oito páginas de serviço e SEO local que mostra a nota 4,9 na busca.',
+          'Site trilíngue para um salão em Plantation, Flórida, com agendamento online, oito páginas de serviço e dados estruturados que mostram aos buscadores a nota 4,9 que o salão já tinha.',
       },
       sector: 'Salão de beleza',
       highlight: 'Oito páginas de serviço, agendamento em todas',
@@ -619,15 +665,22 @@ export const pt: Dictionary = {
       figures: [
         {
           value: '4,9',
-          label: 'Mais de 1.230 avaliações',
-          note: 'Mostradas na página e declaradas à busca.',
+          label: 'Nota no Google, mais de 1.230 avaliações',
+          note: 'Conquistada pelo salão, não pelo estúdio. O site mostra a nota e a marca para a busca.',
+          kind: 'client',
         },
         {
           value: '8',
           label: 'Páginas de serviço',
           note: 'Uma por procedimento, cada uma respondendo a uma busca.',
+          kind: 'delivered',
         },
-        { value: '3', label: 'Idiomas', note: 'Inglês, português e espanhol.' },
+        {
+          value: '3',
+          label: 'Idiomas',
+          note: 'Inglês, português e espanhol.',
+          kind: 'delivered',
+        },
       ],
       chapters: [
         {
@@ -644,7 +697,7 @@ export const pt: Dictionary = {
         {
           kicker: 'Busca local',
           title: 'Legível para um buscador',
-          text: 'O Blend já tinha conquistado as avaliações. O site tornou isso contável: endereço, horários, serviços e nota marcados para o Google, uma página por procedimento para responder ao que as pessoas digitam, e uma página de avaliações que mostra a nota em vez de afirmá-la.',
+          text: 'O Blend já tinha conquistado as avaliações antes de o estúdio chegar. O site as tornou legíveis para os buscadores: endereço, horários, serviços e nota marcados para o Google, uma página por procedimento para responder ao que as pessoas digitam, e uma página de avaliações que mostra a nota em vez de afirmá-la.',
         },
       ],
       screens: ['Serviços', 'Transformações', 'As profissionais', 'Avaliações'],
@@ -685,9 +738,24 @@ export const pt: Dictionary = {
         ],
       },
       figures: [
-        { value: '2', label: 'Curtas', note: 'Dirigidos, filmados e montados por Rafael.' },
-        { value: '53s', label: 'Showreel', note: 'Na abertura, e em nenhum outro lugar.' },
-        { value: '0', label: 'Modelos prontos', note: 'Estático e feito à mão do início ao fim.' },
+        {
+          value: '2',
+          label: 'Curtas',
+          note: 'Dirigidos, filmados e montados por Rafael. O site os apresenta.',
+          kind: 'client',
+        },
+        {
+          value: '53s',
+          label: 'Showreel',
+          note: 'O reel do Rafael, na abertura e em nenhum outro lugar.',
+          kind: 'client',
+        },
+        {
+          value: '0',
+          label: 'Modelos prontos',
+          note: 'Estático e feito à mão do início ao fim.',
+          kind: 'delivered',
+        },
       ],
       chapters: [
         {
@@ -715,6 +783,7 @@ export const pt: Dictionary = {
         text: 'Cheguei com um monte de referências e ideias pela metade. Tinha coisa no design final que eu nunca teria pensado em pedir, e agora não consigo imaginar o site sem elas.',
         name: 'Rafael',
         role: 'Fotógrafo e cineasta',
+        disclosure: 'Rafael é irmão de Felipe Diniz.',
       },
     },
 
@@ -722,11 +791,11 @@ export const pt: Dictionary = {
       meta: {
         title: 'Renata Estrella Pâtisserie | Marca, Site e Perfil no Google',
         description:
-          'Identidade visual, site, e-book e Perfil da Empresa no Google para uma pâtisserie de luxo no Rio. O perfil criado pelo estúdio tem 27 avaliações 5 estrelas.',
+          'Identidade visual, site, e-book de receitas e Perfil da Empresa no Google para uma pâtisserie de luxo no Rio, tudo criado do zero pelo estúdio.',
       },
       sector: 'Pâtisserie',
-      highlight: '27 avaliações cinco estrelas em um perfil criado do zero',
-      lede: 'Tudo desenhado do zero: a logo, o site, um e-book de receitas e o perfil no Google que hoje carrega 27 avaliações cinco estrelas.',
+      highlight: 'Logo, site, e-book e perfil no Google, criados do zero',
+      lede: 'Tudo desenhado do zero: a logo, o site, um e-book de receitas e o Perfil da Empresa no Google que o estúdio criou e ainda administra.',
       description:
         'Formada pela Ferrandi Paris, pelo Ritz Escoffier e pelo Le Cordon Bleu, Renata cria confeitaria sob encomenda para eventos. O site precisava ler do jeito que o trabalho é: exato, sem pressa, francês na contenção. Um vídeo na abertura, um arquivo editorial de criações e um caminho de contato que funciona como uma consultoria, não como um carrinho de compras.',
       alt: 'renataestrellapatisserie.com, site de pâtisserie de luxo criado pelo The Diniz Studio',
@@ -751,11 +820,22 @@ export const pt: Dictionary = {
       figures: [
         {
           value: '27',
-          label: 'Avaliações cinco estrelas',
-          note: 'No perfil do Google que o estúdio criou e mantém.',
+          label: 'Avaliações cinco estrelas no Google',
+          note: 'Deixadas por clientes da Renata no perfil que o estúdio criou e administra. O mérito é da Renata, não do estúdio.',
+          kind: 'measured',
         },
-        { value: '9', label: 'Receitas', note: 'Em um e-book vendido pelo site.' },
-        { value: '3', label: 'Escolas', note: 'Ferrandi, Ritz Escoffier, Le Cordon Bleu.' },
+        {
+          value: '9',
+          label: 'Receitas',
+          note: 'Em um e-book desenhado pelo estúdio e vendido pelo site.',
+          kind: 'delivered',
+        },
+        {
+          value: '3',
+          label: 'Escolas',
+          note: 'Ferrandi, Ritz Escoffier, Le Cordon Bleu.',
+          kind: 'client',
+        },
       ],
       chapters: [
         {

@@ -1,4 +1,4 @@
-import type { ServiceKey } from '@/lib/i18n'
+import type { IndustryKey, ServiceKey } from '@/lib/i18n'
 
 export interface Meta {
   title: string
@@ -9,6 +9,11 @@ export interface Figure {
   value: string
   label: string
   note: string
+  /**
+   * What the number is: something the studio made, a count taken from a live
+   * account or profile, or a fact about the client that the studio did not produce.
+   */
+  kind: 'delivered' | 'measured' | 'client'
 }
 
 export interface ChapterCopy {
@@ -40,7 +45,13 @@ export interface ProjectCopy {
   figures: readonly Figure[]
   chapters: readonly ChapterCopy[]
   screens: readonly string[]
-  quote: { text: string; name: string; role: string }
+  quote: {
+    text: string
+    name: string
+    role: string
+    /** A personal relationship between the client and the studio, stated beside the quote. */
+    disclosure?: string
+  }
 }
 
 export interface ServicePageCopy {
@@ -53,6 +64,22 @@ export interface ServicePageCopy {
   included: { title: string; items: readonly { title: string; text: string }[] }
   process: { title: string; steps: readonly { title: string; text: string }[] }
   faq: { title: string; items: readonly { slug: string; q: string; a: string }[] }
+}
+
+/** A landing page for one kind of business, led by the case study that proves it. */
+export interface IndustryPageCopy {
+  meta: Meta
+  kicker: string
+  title: string
+  lede: string
+  /** Who the page is for, as a search engine should read it (structured data). */
+  audience: string
+  /** Two or three paragraphs on what this kind of business needs from a site. */
+  body: readonly string[]
+  needs: { title: string; items: readonly { title: string; text: string }[] }
+  /** The case study, retold for this audience. Only facts stated on the case study itself. */
+  proof: { title: string; text: string }
+  faq: { title: string; items: readonly { q: string; a: string }[] }
 }
 
 export interface Dictionary {
@@ -83,6 +110,9 @@ export interface Dictionary {
     heroScroll: string
     h1: string
     intro: { kicker: string; title: string; body: readonly string[] }
+    founder: { kicker: string; title: string; body: readonly string[]; link: string }
+    /** A client quote on the home page, taken from the named case study. */
+    quote: { kicker: string; project: string; link: string }
     services: { kicker: string; title: string; text: string; link: string }
     work: { kicker: string; title: string; text: string; link: string }
     answers: {
@@ -111,6 +141,8 @@ export interface Dictionary {
     identity: string
     type: string
     theSite: string
+    /** Tag over each figure, so a deliverable never reads as a result. */
+    figureKind: Record<Figure['kind'], string>
   }
   player: {
     soundOn: string
@@ -139,6 +171,21 @@ export interface Dictionary {
     reels: string
   }
   servicePages: Record<ServiceKey, ServicePageCopy>
+  /** The hub listing every kind of business the studio builds for. */
+  industries: {
+    meta: Meta
+    kicker: string
+    title: string
+    lede: string
+    /** Short label for each industry, used in lists, the footer and the hub. */
+    cards: Record<IndustryKey, { title: string; text: string }>
+    /** Label over the case study on an industry page. */
+    caseStudy: string
+    readCase: string
+    /** Heading over the links to the other industry pages. */
+    others: string
+  }
+  industryPages: Record<IndustryKey, IndustryPageCopy>
   about: {
     meta: Meta
     kicker: string
@@ -178,7 +225,7 @@ export interface Dictionary {
     direct: { email: string; whatsapp: string; instagram: string; meeting: string; meetingText: string }
   }
   footer: {
-    sections: { work: string; services: string; studio: string }
+    sections: { work: string; services: string; industries: string; studio: string }
     rights: string
   }
   projects: Record<string, ProjectCopy>

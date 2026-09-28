@@ -1,9 +1,10 @@
 import type { Dictionary } from './types'
+import { industriesEn } from './industries-en'
 
 export const en: Dictionary = {
   meta: {
     siteName: 'The Diniz Studio',
-    tagline: 'Web design, brand identity and marketing, in three languages.',
+    tagline: 'A founder-led studio for service and creative businesses, in three languages.',
   },
 
   nav: {
@@ -26,30 +27,44 @@ export const en: Dictionary = {
     meta: {
       title: 'The Diniz Studio | Web Design, Branding and Marketing',
       description:
-        'Custom websites, brand identities and the marketing around them, for businesses in the US and Brazil. In English, Portuguese and Spanish.',
+        'A founder-led studio making websites, brand identities and marketing for service and creative businesses in the US and Brazil. In English, Portuguese and Spanish.',
     },
-    heroLine: 'Websites, brands and marketing for businesses of every size, in English, Portuguese and Spanish.',
+    heroLine: 'A founder-led studio for service and creative businesses. Websites, brands and marketing in English, Portuguese and Spanish.',
     heroScroll: 'Scroll',
-    h1: 'The Diniz Studio. Web design, brand identity and marketing.',
+    h1: 'The Diniz Studio. Web design, brand identity and marketing for service and creative businesses.',
     intro: {
       kicker: 'Why one studio',
       title: 'Three suppliers who never speak',
       body: [
-        'One builds the site, one draws the logo, one posts to Instagram. Nothing matches, and no one is accountable for whether the phone rings.',
-        'This studio does all three. The logo, the website and the posts come out of the same set of decisions, so a customer who finds you on Google, on Instagram or through a friend meets the same business every time.',
-        'Every site is written and built from scratch, in English, Portuguese and Spanish where the audience needs it, and set up so search engines and AI assistants can read it properly.',
+        'One builds the site, one draws the logo, one posts to Instagram. Nothing matches, and nobody is looking at the whole picture.',
+        'Here the website, the identity and the marketing come from the same person and the same decisions, so a customer who finds you on Google, on Instagram or through a friend meets the same business. You do not need all three: take the one you are missing, and it will fit with what you already have.',
+        'The studio works with service and creative businesses, such as salons, makers, photographers and chefs, and especially with those whose customers speak more than one language. Sites are written in English, Portuguese and Spanish wherever the audience needs it.',
       ],
+    },
+    founder: {
+      kicker: 'Who you work with',
+      title: 'Felipe Diniz, founder',
+      body: [
+        'The Diniz Studio is run by Felipe Diniz. The same person answers your first message, designs the site, writes the code and picks up the phone months later when you want something changed.',
+        'One or two projects at a time, in English, Portuguese and Spanish, for businesses in the United States and Brazil. No account manager between you and the work.',
+      ],
+      link: 'More about the studio',
+    },
+    quote: {
+      kicker: 'From a client',
+      project: 'blend-hair-boutique',
+      link: 'Read the Blend case study',
     },
     services: {
       kicker: 'Services',
       title: 'Three things, done properly',
-      text: 'A website that sells, an identity that holds it together, and the search and social work that brings people to it.',
+      text: 'A website, an identity to hold it together, and the search and social work around them. Hire the studio for one, or combine them.',
       link: 'See all services',
     },
     work: {
       kicker: 'Selected work',
       title: 'Four businesses, four problems',
-      text: 'A hand embroidery artist, a salon, a photographer and a pastry chef. Each one has the full account of what was made and what it changed.',
+      text: 'A hand embroidery artist, a salon, a photographer and a pastry chef. Each case study keeps what was made apart from what has been measured.',
       link: 'See all work',
     },
     answers: {
@@ -60,7 +75,7 @@ export const en: Dictionary = {
         {
           slug: 'how-do-i-get-a-price',
           q: 'How do I get a price?',
-          a: 'Every project is quoted on its own, because a one-page site and a trilingual site with a logo and photography are not the same job. Tell me what you need and you get a fixed price in writing before anything starts.',
+          a: 'Every project is quoted on its own, because a one-page site and a trilingual site with a logo and photography are not the same job. Tell me what you need and you get a fixed price in writing before anything starts. Hosting, the domain and any third-party tools are billed by their providers, and the quote says which ones apply.',
         },
         {
           slug: 'how-long-does-it-take',
@@ -70,17 +85,17 @@ export const en: Dictionary = {
         {
           slug: 'do-you-build-in-more-than-one-language',
           q: 'Do you build in more than one language?',
-          a: 'Yes. English, Portuguese and Spanish, each at its own address and declared to Google, so a search in any of the three lands on a page written in that language rather than a machine translation.',
+          a: 'Yes. English, Portuguese and Spanish, each at its own address and declared to search engines, so they can match each page to people searching in that language. Every version is written, not machine-translated.',
         },
         {
           slug: 'do-you-only-do-websites',
           q: 'Do you only do websites?',
-          a: 'No. Logo and brand identity, photography direction, social media, Google Business Profiles and local SEO. Many clients start with a site and keep the studio on for the marketing.',
+          a: 'No. Logo and brand identity, photography direction, social media, Google Business Profiles and local SEO. You can hire the studio for any one of these, or combine them. Nobody needs all of it.',
         },
         {
           slug: 'what-do-you-build-with',
           q: 'What do you build with?',
-          a: 'Custom code rather than a page builder. That is why these sites load quickly, rank well and can be changed without a subscription to anything.',
+          a: 'Custom code rather than a page builder. That keeps the pages light and fast, and there is no page-builder subscription to keep paying. Hosting and the domain are still paid to their providers, as with any site.',
         },
       ],
     },
@@ -94,7 +109,7 @@ export const en: Dictionary = {
     },
     kicker: 'Work',
     title: 'Every project, in full',
-    lede: 'What the business needed, what was made, and what it changed. Each project links through to the live site.',
+    lede: 'What the business needed and what was made. Every figure is labelled for what it counts, and each project links through to the live site.',
     viewProject: 'View case study',
     caseStudy: 'Case study',
     visitSite: 'Visit site',
@@ -109,6 +124,7 @@ export const en: Dictionary = {
     identity: 'Identity',
     type: 'Type',
     theSite: 'The site',
+    figureKind: { delivered: 'Delivered', measured: 'Measured', client: 'About the client' },
   },
 
   player: {
@@ -126,14 +142,14 @@ export const en: Dictionary = {
     },
     kicker: 'Services',
     title: 'What the studio does',
-    lede: 'Three services that work as one. Take the whole thing, or the part you are missing.',
+    lede: 'Three services built to fit together. Hire the studio for one of them, or combine them.',
     cards: {
       'web-design': {
         title: 'Web design and development',
         text: 'Custom sites written from scratch: fast, multilingual, and built to turn a visitor into an enquiry.',
         proof: [
-          { value: '3', label: 'Languages per site' },
-          { value: '100%', label: 'Code you own' },
+          { value: 'Up to 3', label: 'Languages per site' },
+          { value: '100%', label: 'Code handed over' },
           { value: '0', label: 'Templates used' },
         ],
       },
@@ -141,7 +157,7 @@ export const en: Dictionary = {
         title: 'Brand identity',
         text: 'Logo, colour, type and the rules that hold them together, drawn for how your business actually trades.',
         proof: [
-          { value: '0', label: 'Licence fees, ever' },
+          { value: '0', label: 'Renewal fees for the logo' },
           { value: 'Yours', label: 'Source files included' },
         ],
       },
@@ -149,9 +165,9 @@ export const en: Dictionary = {
         title: 'Marketing and SEO',
         text: 'Being found and being followed: local search, Google Business Profiles, social media and the content behind both.',
         proof: [
-          { value: '200', label: 'Client followers, from zero' },
-          { value: '1.5k', label: 'Studio followers, from zero' },
-          { value: '27', label: 'Five-star reviews earned' },
+          { value: '200', label: 'Followers on a client account the studio runs' },
+          { value: '1.5k', label: 'Followers on the studio’s own account' },
+          { value: 'One-off', label: 'Audit and setup; monthly work optional' },
         ],
       },
     },
@@ -165,15 +181,15 @@ export const en: Dictionary = {
       meta: {
         title: 'Web Design and Development | Custom, Multilingual Websites',
         description:
-          'Custom websites for businesses of every size. Hand-coded, fast, multilingual and built so customers can find you and book you. English, Portuguese, Spanish.',
+          'Custom websites for service and creative businesses. Hand-coded, fast and multilingual, with clear handover and the technical groundwork search engines need.',
       },
       kicker: 'Service',
       title: 'Web design and development',
       lede: 'A website built for your business, not adapted from a template someone else is already using.',
       body: [
         'If you are searching for a new website, you are usually solving one of three problems: the current site looks nothing like the quality of your work, it is slow or broken on a phone, or people visit and never get in touch. All three are fixable, and all three come down to the same thing, which is deciding what the site is for before anyone opens a design tool.',
-        'Every page here is written and coded by hand. No page builder, no theme, no monthly licence for a plugin that eventually breaks. That is why these sites stay light on a phone, hold up in Google, and can be read cleanly by AI assistants when someone asks one for a recommendation.',
-        'Where it makes sense, the site is published in English, Portuguese and Spanish. Each language gets its own address and its own text, written rather than translated by a machine, which is how you show up for a search made in any of the three.',
+        'Every page here is written and coded by hand. No page builder, no theme, no monthly licence for a plugin that eventually breaks. That keeps the site light on a phone and gives search engines and AI assistants clean, structured pages to read. It helps you get discovered; it does not guarantee a ranking or a mention.',
+        'Where it makes sense, the site is published in English, Portuguese and Spanish. Each language gets its own address and its own text, written rather than translated by a machine, so search engines can match each version to people searching in that language.',
       ],
       included: {
         title: 'What you get',
@@ -184,7 +200,7 @@ export const en: Dictionary = {
           },
           {
             title: 'Design and build',
-            text: 'Layout, type, motion and code. Everything responsive, tested on real phones, and yours to keep.',
+            text: 'Layout, type, motion and code. Everything responsive and tested on real phones.',
           },
           {
             title: 'Words that do the work',
@@ -196,11 +212,19 @@ export const en: Dictionary = {
           },
           {
             title: 'Technical SEO from the start',
-            text: 'Structured data, sitemaps, clean headings, fast images. The things that decide whether you are found at all.',
+            text: 'Structured data, sitemaps, clean headings, fast images: the groundwork search engines need to read the site properly. It helps discovery; rankings still depend on competition and time.',
           },
           {
-            title: 'Handover and support',
-            text: 'You get the code, the domain setup and a walkthrough. Changes afterwards are priced per job, never a lock-in.',
+            title: 'What you own at handover',
+            text: 'The finished site and its source code, the domain connected, and a walkthrough of how it all works. Nothing is held back to keep you tied to the studio.',
+          },
+          {
+            title: 'Optional support afterwards',
+            text: 'Support after launch is optional. Changes are quoted per job, or on terms agreed in writing if you want regular help. There is no retainer you have to sign.',
+          },
+          {
+            title: 'Third-party costs, stated upfront',
+            text: 'Hosting, the domain, a booking platform or any other outside service is billed by its provider and may carry its own fees. The proposal lists which ones your site needs.',
           },
         ],
       },
@@ -240,7 +264,7 @@ export const en: Dictionary = {
           {
             slug: 'how-is-a-website-project-priced',
             q: 'How is the project priced?',
-            a: 'As one fixed price for the whole job, written down before it starts. It moves with the number of pages, the number of languages, and whether photography and a logo are part of it. The figure you are quoted is the figure you pay, and there is no hourly billing afterwards.',
+            a: 'As one fixed price for the whole job, written down before it starts. It moves with the number of pages, the number of languages, and whether photography and a logo are part of it. The figure you are quoted is the figure you pay, and there is no hourly billing afterwards. Third-party costs such as hosting, the domain or a booking platform sit outside that figure and are listed separately.',
           },
           {
             slug: 'can-you-redesign-my-existing-website',
@@ -250,17 +274,22 @@ export const en: Dictionary = {
           {
             slug: 'do-i-need-wordpress-wix-or-squarespace',
             q: 'Do I need Wordpress, Wix or Squarespace?',
-            a: 'You do not. Those make sense when nobody is going to maintain the site. A hand-built site gives you a faster, safer result without a monthly fee, and you are not locked to a platform that changes its pricing.',
+            a: 'You do not. Those make sense if you want to build and edit everything yourself. A hand-built site avoids the page-builder subscription and the plugin upkeep, and ties you to no platform that can change its pricing. You still pay for hosting and a domain, as with any website.',
           },
           {
             slug: 'will-i-be-able-to-update-the-site-myself',
             q: 'Will I be able to update it myself?',
-            a: 'If you want to edit text and images yourself, the site is built with a simple editor behind it. Many clients prefer to send changes instead, which is priced per job.',
+            a: 'If you want to. A simple content editor is included when it is written into the proposal, which is worth doing if you will change text, images, prices or listings often. Without one, you send changes and they are made for you, priced per job. You will know which applies before the project starts.',
+          },
+          {
+            slug: 'what-do-i-get-at-handover-and-what-costs-extra',
+            q: 'What do I get at handover, and what costs extra?',
+            a: 'You get the finished site, its source code, the domain connected and a walkthrough. Hosting, the domain itself, a booking platform or any other outside service is paid to its provider and may have its own fees; the proposal lists them. Support after launch is optional and priced per job or on terms agreed in writing.',
           },
           {
             slug: 'will-my-website-show-up-on-google',
             q: 'How do I know it will show up on Google?',
-            a: 'Structure, speed and content decide that, and all three are part of the build: one page per thing you sell, clean headings, structured data, and a Google Business Profile if you serve a city. Ranking is earned over months, and you will be able to see it happen in the analytics.',
+            a: 'Nobody can promise a position on Google. What the build does is give search engines what they need to read the site: one page per thing you sell, clean headings, structured data, fast pages, and a Google Business Profile if you serve a city. Where you appear then depends on competition, reviews and time, with no fixed timeline, and you can follow it in the analytics.',
           },
         ],
       },
@@ -270,7 +299,7 @@ export const en: Dictionary = {
       meta: {
         title: 'Brand Identity and Logo Design, Drawn for Your Trade',
         description:
-          'Logo and brand identity for businesses of every size: colour, type and the rules that hold them together, from the shopfront to the website to Instagram.',
+          'Logo and brand identity for service and creative businesses: colour, type and the rules that hold them together, from the shopfront to the website to Instagram.',
       },
       kicker: 'Service',
       title: 'Brand identity',
@@ -351,40 +380,44 @@ export const en: Dictionary = {
 
     'marketing-seo': {
       meta: {
-        title: 'Marketing and Local SEO | Get Found, Get Chosen',
+        title: 'Marketing and Local SEO | One-off Setup or Monthly Work',
         description:
-          'Local SEO, Google Business Profiles, social media and content. Get found when people search for what you sell, in English, Portuguese or Spanish.',
+          'Local SEO, Google Business Profiles, social media and content: a one-off audit and setup, with optional monthly work. In English, Portuguese or Spanish.',
       },
       kicker: 'Service',
       title: 'Marketing and SEO',
-      lede: 'A site nobody finds is a business card. This is the part that brings people to it.',
+      lede: 'A site nobody finds is a business card. This is the part that helps people find it.',
       body: [
-        'Being found is not one thing any more. Someone might type your service and a city into Google, ask an AI assistant for a recommendation, or scroll past you on Instagram. All three are won with the same material: clear pages that answer real questions, a listing that is complete and active, and posts that look like the business they belong to.',
-        'The work starts with the searches your customers actually make, in the language they make them in. Those become pages, and the pages become the thing Google shows and the thing an assistant quotes when it answers.',
-        'For businesses that sell to their own city, the Google Business Profile is usually worth more than anything else on this list. It gets created properly, filled with photography, and kept alive with posts and replies.',
+        'Being found is not one thing any more. Someone might type your service and a city into Google, ask an AI assistant for a recommendation, or scroll past you on Instagram. The same material helps with all three: clear pages that answer real questions, a listing that is complete and active, and posts that look like the business they belong to.',
+        'The work comes in two parts. First, a one-off audit and setup: where you appear today, what is missing, and fixing the base, starting with the searches your customers make in the language they make them in. Then, only if you want it, monthly work to keep publishing and keep the listing current. For a business that sells to its own city, the Google Business Profile is often the best place to start.',
+        'None of this guarantees a ranking, a place in an AI answer or a date for results. Search engines and assistants decide what they show, and competition where you work matters. What the studio controls is how clear, complete and current your information is when they look.',
       ],
       included: {
         title: 'What this covers',
         items: [
           {
-            title: 'Local SEO',
-            text: 'One page per thing you sell, structured data, and the local signals that decide whether you appear in the map results.',
+            title: 'One-off: the audit',
+            text: 'A written review of where you show up today in search, on maps and on social, what is missing or wrong, and what to fix first.',
           },
           {
-            title: 'Google Business Profile',
-            text: 'Created or cleaned up, categories and service areas set correctly, photography loaded, posts and review replies handled.',
+            title: 'One-off: the setup',
+            text: 'Service pages and structured data on the site; the Google Business Profile created or cleaned up, with categories, service areas, hours and photography; social profiles brought in line with your identity.',
           },
           {
-            title: 'Social media',
-            text: 'Direction, shooting, captions and scheduling, in the same colours and type as everything else you own.',
+            title: 'Monthly, if you want it: publishing',
+            text: 'Social posts (direction, shooting, captions and scheduling), Google Business Profile posts, and new pages that answer what customers ask before they buy. What goes into each month is agreed with you in writing.',
           },
           {
-            title: 'Content that answers',
-            text: 'The questions customers ask before they buy, written out properly, which is what search engines and AI assistants reward.',
+            title: 'Monthly, if you want it: upkeep',
+            text: 'Keeping hours, services and photos current, and replying to reviews where you have asked the studio to.',
+          },
+          {
+            title: 'Your approval first',
+            text: 'Posts, pages and profile changes are sent to you before they go live. Nothing is published in your name without your approval.',
           },
           {
             title: 'Reporting in plain words',
-            text: 'What people searched, what they clicked and what they did next. No dashboard you have to interpret.',
+            text: 'For monthly work: what people searched, what they clicked and what they did next. No dashboard you have to interpret.',
           },
         ],
       },
@@ -392,20 +425,20 @@ export const en: Dictionary = {
         title: 'How it runs',
         steps: [
           {
-            title: 'Audit',
+            title: 'Audit (one-off)',
             text: 'Where you currently appear, what you are missing, and what your competitors are getting that you are not.',
           },
           {
-            title: 'Fix the base',
-            text: 'The site, the listing and the structured data, in that order. There is no point promoting a page that cannot be read.',
+            title: 'Fix the base (one-off)',
+            text: 'The site, the listing and the structured data, in that order. There is no point promoting a page that cannot be read. You can stop here.',
           },
           {
-            title: 'Publish',
-            text: 'Service pages, answers and posts, on a schedule you can see.',
+            title: 'Approve and publish (monthly, optional)',
+            text: 'Service pages, answers and posts are drafted, sent to you for approval, then published on a schedule you can see.',
           },
           {
-            title: 'Review',
-            text: 'Monthly, in plain language, with the next month decided from what happened in the last one.',
+            title: 'Review (monthly, optional)',
+            text: 'A plain-language report, with the next month decided from what happened in the last one.',
           },
         ],
       },
@@ -415,17 +448,17 @@ export const en: Dictionary = {
           {
             slug: 'how-long-until-i-see-seo-results',
             q: 'How long until I see results?',
-            a: 'A Google Business Profile can change your phone volume in weeks. Ranking a service page usually takes two to six months, depending on how much competition there is in your city.',
+            a: 'There is no fixed timeline, and nobody can honestly promise one. Some businesses start showing up for new searches within weeks of the setup; others take months. It depends on competition where you work, your reviews and how much search engines already know about you. If you keep monthly work, the reports show what is changing.',
           },
           {
             slug: 'can-you-get-me-into-chatgpt-and-ai-answers',
             q: 'Can you get me into ChatGPT and other AI answers?',
-            a: 'Nobody can guarantee that, and anyone who says otherwise is selling something. What works is being the clearest source on the question: pages that state plainly what you do, who you do it for and where, marked up so a machine can read it. That is how this site is built, and it is how yours gets built.',
+            a: 'Nobody can guarantee that, and anyone who says otherwise is selling something. AI assistants decide for themselves what to mention. What the studio can do is make your information easy to understand: pages that state plainly what you do, who you do it for and where, marked up so a machine can read them. That improves the chance of being described correctly; it does not promise a mention.',
           },
           {
             slug: 'do-i-have-to-sign-up-for-months',
             q: 'Do I have to sign up for months?',
-            a: 'No. The audit and the fixes are a one-off job. Ongoing work is monthly and you can stop whenever you want.',
+            a: 'No. The audit and setup are a one-off job with their own quote. Monthly work is optional, its scope is agreed in writing, and you can stop whenever you want.',
           },
           {
             slug: 'which-language-should-i-publish-in',
@@ -515,8 +548,10 @@ export const en: Dictionary = {
     },
   },
 
+  ...industriesEn,
+
   footer: {
-    sections: { work: 'Work', services: 'Services', studio: 'Studio' },
+    sections: { work: 'Work', services: 'Services', industries: 'Industries', studio: 'Studio' },
     rights: 'All rights reserved.',
   },
 
@@ -525,10 +560,10 @@ export const en: Dictionary = {
       meta: {
         title: 'Bordados com Amor | Website, Logo and Social Media',
         description:
-          'A trilingual website, a stitched logo and a managed Instagram for a hand embroidery artist, grown from zero to 200 followers with no paid promotion.',
+          'A trilingual website, a stitched logo and a managed Instagram for a hand embroidery artist. The account, run by the studio, has grown from zero to 200 followers without ads.',
       },
       sector: 'Hand embroidery',
-      highlight: 'Instagram from zero to 200 followers, fully organic',
+      highlight: 'Instagram run by the studio: zero to 200 followers, no ads',
       lede: 'A stitched logo, a site in three languages, and an Instagram account grown from zero without a cent of ad spend.',
       description:
         'Hand embroidery, one piece at a time. The site is built around the pace of the work: a process told in five movements, then a catalogued archive where every piece carries the words stitched into it. Published in Portuguese, English and Spanish.',
@@ -554,10 +589,21 @@ export const en: Dictionary = {
         {
           value: '200',
           label: 'Instagram followers',
-          note: 'From zero, with no paid promotion.',
+          note: 'On the account the studio has run since it started from zero, with no paid promotion. A follower count, not sales.',
+          kind: 'measured',
         },
-        { value: '3', label: 'Languages', note: 'Portuguese, English and Spanish.' },
-        { value: '1', label: 'Studio, end to end', note: 'Logo, feed, captions and site.' },
+        {
+          value: '3',
+          label: 'Languages',
+          note: 'Portuguese, English and Spanish.',
+          kind: 'delivered',
+        },
+        {
+          value: '1',
+          label: 'Studio, end to end',
+          note: 'Logo, feed, captions and site.',
+          kind: 'delivered',
+        },
       ],
       chapters: [
         {
@@ -591,7 +637,7 @@ export const en: Dictionary = {
       meta: {
         title: 'Blend Hair Boutique | Salon Website and Local SEO',
         description:
-          'A trilingual salon website in Plantation, Florida, with online booking, eight service pages and local SEO that shows its 4.9-star rating to search.',
+          'A trilingual salon website in Plantation, Florida, with online booking, eight service pages, and structured data that shows search engines the salon’s existing 4.9-star rating.',
       },
       sector: 'Hair salon',
       highlight: 'Eight service pages, booking from every one',
@@ -619,15 +665,22 @@ export const en: Dictionary = {
       figures: [
         {
           value: '4.9',
-          label: '1,230+ Google reviews',
-          note: 'Shown on the page and declared to search.',
+          label: 'Google rating, 1,230+ reviews',
+          note: 'Earned by the salon, not the studio. The site displays the rating and marks it up for search.',
+          kind: 'client',
         },
         {
           value: '8',
           label: 'Service pages',
-          note: 'One per treatment, each its own search answer.',
+          note: 'One per treatment, each answering its own search.',
+          kind: 'delivered',
         },
-        { value: '3', label: 'Languages', note: 'English, Portuguese and Spanish.' },
+        {
+          value: '3',
+          label: 'Languages',
+          note: 'English, Portuguese and Spanish.',
+          kind: 'delivered',
+        },
       ],
       chapters: [
         {
@@ -644,7 +697,7 @@ export const en: Dictionary = {
         {
           kicker: 'Local search',
           title: 'Legible to a search engine',
-          text: 'Blend had already earned the reviews. The site made them countable: address, hours, services and rating marked up for Google, a page for each treatment to answer what people type, and a reviews page that shows the rating instead of claiming it.',
+          text: 'Blend had already earned the reviews before the studio arrived. The site made them legible to search engines: address, hours, services and rating marked up for Google, a page for each treatment to answer what people type, and a reviews page that shows the rating instead of claiming it.',
         },
       ],
       screens: ['Services', 'Transformations', 'The artists', 'Reviews'],
@@ -685,9 +738,24 @@ export const en: Dictionary = {
         ],
       },
       figures: [
-        { value: '2', label: 'Short films', note: 'Directed, shot and cut by Rafael.' },
-        { value: '53s', label: 'Showreel', note: 'In the hero, and nowhere else.' },
-        { value: '0', label: 'Templates', note: 'Static and hand-coded throughout.' },
+        {
+          value: '2',
+          label: 'Short films',
+          note: 'Directed, shot and cut by Rafael. The site presents them.',
+          kind: 'client',
+        },
+        {
+          value: '53s',
+          label: 'Showreel',
+          note: 'Rafael’s reel, placed in the hero and nowhere else.',
+          kind: 'client',
+        },
+        {
+          value: '0',
+          label: 'Templates',
+          note: 'Static and hand-coded throughout.',
+          kind: 'delivered',
+        },
       ],
       chapters: [
         {
@@ -715,6 +783,7 @@ export const en: Dictionary = {
         text: 'I came in with a bunch of references and half-finished ideas. There were things in the final design I never would’ve thought to ask for, but now I can’t imagine the site without them.',
         name: 'Rafael',
         role: 'Photographer and filmmaker',
+        disclosure: 'Rafael is Felipe Diniz’s brother.',
       },
     },
 
@@ -722,11 +791,11 @@ export const en: Dictionary = {
       meta: {
         title: 'Renata Estrella Pâtisserie | Brand, Website and Google Profile',
         description:
-          'Brand identity, website, e-book and Google Business Profile for a luxury pâtisserie in Rio. The profile the studio built carries 27 five-star reviews.',
+          'Brand identity, website, recipe e-book and a Google Business Profile for a luxury pâtisserie in Rio, all made from nothing by the studio.',
       },
       sector: 'Pâtisserie',
-      highlight: '27 five-star reviews on a profile built from zero',
-      lede: 'Everything drawn from nothing: the logo, the site, a recipe e-book, and the Google profile that now carries 27 five-star reviews.',
+      highlight: 'Logo, site, e-book and Google profile, made from nothing',
+      lede: 'Everything drawn from nothing: the logo, the site, a recipe e-book, and the Google Business Profile the studio set up and still manages.',
       description:
         'Trained at Ferrandi Paris, Ritz Escoffier and Le Cordon Bleu, Renata builds commissioned pastry for events. The site had to read the way the work does: exact, unhurried, French in its restraint. A video hero, an editorial archive of creations, and an enquiry path that behaves like a consultation rather than a checkout.',
       alt: 'renataestrellapatisserie.com homepage, luxury pâtisserie website designed by The Diniz Studio',
@@ -751,11 +820,22 @@ export const en: Dictionary = {
       figures: [
         {
           value: '27',
-          label: 'Five-star reviews',
-          note: 'On the Google profile the studio set up and runs.',
+          label: 'Five-star Google reviews',
+          note: 'Left by Renata’s clients on the profile the studio set up and manages. The credit is hers, not the studio’s.',
+          kind: 'measured',
         },
-        { value: '9', label: 'Recipes', note: 'In an e-book sold from the site.' },
-        { value: '3', label: 'Schools', note: 'Ferrandi, Ritz Escoffier, Le Cordon Bleu.' },
+        {
+          value: '9',
+          label: 'Recipes',
+          note: 'In an e-book designed by the studio and sold from the site.',
+          kind: 'delivered',
+        },
+        {
+          value: '3',
+          label: 'Schools',
+          note: 'Ferrandi, Ritz Escoffier, Le Cordon Bleu.',
+          kind: 'client',
+        },
       ],
       chapters: [
         {

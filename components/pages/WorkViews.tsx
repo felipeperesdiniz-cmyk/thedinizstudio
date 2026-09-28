@@ -7,7 +7,8 @@ import { IdentitySpecimen } from '@/components/ui/IdentitySpecimen'
 import { CtaBand } from '@/components/ui/CtaBand'
 import { PROJECTS, type Picture, type Project } from '@/content/projects'
 import type { Dictionary } from '@/content/copy/types'
-import { projectPath, workPath, type Locale } from '@/lib/i18n'
+import { industryPath, projectPath, workPath, type Locale } from '@/lib/i18n'
+import { industryForProject } from '@/content/industries'
 
 const STORY_LAYOUT = [
   'md:col-span-7 md:col-start-1',
@@ -181,6 +182,7 @@ export function CaseStudyView({
   const number = String(index + 1).padStart(2, '0')
   const host = new URL(project.url).hostname.replace(/^www\./, '')
   const { identity } = copy
+  const industry = industryForProject(project.slug)
 
   return (
     <article className="bg-background">
@@ -327,6 +329,7 @@ export function CaseStudyView({
                 i > 0 ? 'border-t border-line md:border-l md:border-t-0 md:pl-10' : ''
               }`}
             >
+              <p className="label mb-6">{t.caseStudy.figureKind[figure.kind]}</p>
               <p className="font-display text-[clamp(3rem,5.5vw,5rem)] leading-none text-primary">
                 {figure.value}
               </p>
@@ -433,7 +436,27 @@ export function CaseStudyView({
           <p className="label mt-10">
             {copy.quote.name} · {copy.quote.role}
           </p>
+          {copy.quote.disclosure && (
+            <p className="mt-4 max-w-[46ch] text-sm text-secondary">{copy.quote.disclosure}</p>
+          )}
         </Reveal>
+
+        {industry && (
+          <Reveal delay={0.1} className="mt-16">
+            <Link
+              href={industryPath(locale, industry)}
+              className="group inline-flex items-center gap-3 py-2 font-display text-2xl text-secondary transition-colors hover:text-primary"
+            >
+              {t.industryPages[industry].kicker}
+              <span
+                aria-hidden="true"
+                className="text-xl transition-transform duration-500 group-hover:translate-x-1.5"
+              >
+                →
+              </span>
+            </Link>
+          </Reveal>
+        )}
       </section>
 
       <Link href={projectPath(locale, next.slug)} className="group block border-t border-line">

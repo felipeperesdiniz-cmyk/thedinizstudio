@@ -7,8 +7,10 @@ import { Reveal } from '@/components/ui/Reveal'
 import { CtaBand } from '@/components/ui/CtaBand'
 import {
   SERVICE_KEYS,
+  aboutPath,
   faqItemPath,
   faqPath,
+  projectPath,
   servicePath,
   servicesPath,
   type Locale,
@@ -16,7 +18,27 @@ import {
 import type { Dictionary } from '@/content/copy/types'
 import { SERVICE_MEDIA } from '@/content/service-media'
 
+function TextLink({ href, label }: { href: string; label: string }) {
+  return (
+    <Link
+      href={href}
+      className="group mt-9 inline-flex items-center gap-3 py-3 font-mono text-xs uppercase tracking-[0.08em] text-secondary transition-colors hover:text-primary"
+    >
+      <span className="link-underline pb-1">{label}</span>
+      <span
+        aria-hidden="true"
+        className="transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-1.5"
+      >
+        →
+      </span>
+    </Link>
+  )
+}
+
 export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
+  const { founder } = t.home
+  const quote = t.projects[t.home.quote.project]!.quote
+
   return (
     <>
       <Hero title={t.home.h1} line={t.home.heroLine} scrollLabel={t.home.heroScroll} />
@@ -134,6 +156,39 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
                 →
               </span>
             </Link>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Who does the work, and what a client said about it */}
+      <section aria-labelledby="founder-title" className="border-t border-line">
+        <div className="container-studio grid grid-cols-1 gap-20 py-[var(--section-padding)] md:grid-cols-12 md:gap-[var(--gutter)]">
+          <Reveal className="md:col-span-5">
+            <p className="label">{founder.kicker}</p>
+            <h2 id="founder-title" className="mt-6 max-w-[16ch] font-display text-4xl text-primary">
+              {founder.title}
+            </h2>
+            <div className="mt-8 flex flex-col gap-5">
+              {founder.body.map((paragraph) => (
+                <p key={paragraph} className="max-w-[44ch] text-secondary">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            <TextLink href={aboutPath(locale)} label={founder.link} />
+          </Reveal>
+
+          <Reveal delay={0.1} className="md:col-span-6 md:col-start-7 md:self-center">
+            <figure>
+              <p className="label">{t.home.quote.kicker}</p>
+              <blockquote className="mt-6 max-w-[30ch] font-display text-2xl leading-[1.3] text-primary md:text-3xl md:leading-[1.25]">
+                “{quote.text}”
+              </blockquote>
+              <figcaption className="label mt-8">
+                {quote.name} · {quote.role}
+              </figcaption>
+            </figure>
+            <TextLink href={projectPath(locale, t.home.quote.project)} label={t.home.quote.link} />
           </Reveal>
         </div>
       </section>

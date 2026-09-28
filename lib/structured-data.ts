@@ -2,6 +2,7 @@ import { SITE } from '@/lib/site'
 import { FAQ_GROUPS, HTML_LANG, alternatesFor, type Route } from '@/lib/i18n'
 import { faqGroupLabel, faqItemsFor } from '@/content/copy'
 import type { Dictionary } from '@/content/copy/types'
+import { INDUSTRIES } from '@/content/industries'
 
 const organisation = (t: Dictionary) => ({
   '@type': 'ProfessionalService',
@@ -110,6 +111,28 @@ export function structuredData(route: Route, t: Dictionary) {
         serviceType: page.title,
         provider: { '@id': `${SITE.url}/#studio` },
         areaServed: ['United States', 'Brazil'],
+        availableLanguage: ['English', 'Portuguese', 'Spanish'],
+      })
+      graph.push(faq(page.faq.items))
+      break
+    }
+
+    case 'industries':
+      graph.push(webPage(t.industries.meta.title, t.industries.meta.description))
+      break
+
+    case 'industry': {
+      const page = t.industryPages[route.industry]
+      const industry = INDUSTRIES[route.industry]
+      graph.push(webPage(page.meta.title, page.meta.description))
+      graph.push({
+        '@type': 'Service',
+        name: page.title,
+        description: page.meta.description,
+        serviceType: 'Web Design',
+        audience: { '@type': 'BusinessAudience', name: page.audience },
+        provider: { '@id': `${SITE.url}/#studio` },
+        areaServed: industry.areaServed,
         availableLanguage: ['English', 'Portuguese', 'Spanish'],
       })
       graph.push(faq(page.faq.items))

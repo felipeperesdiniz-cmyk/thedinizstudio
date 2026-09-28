@@ -14,18 +14,30 @@ export const LOCALE_LABEL: Record<Locale, string> = { en: 'EN', pt: 'PT', es: 'E
 export const SERVICE_KEYS = ['web-design', 'brand-identity', 'marketing-seo'] as const
 export type ServiceKey = (typeof SERVICE_KEYS)[number]
 
+/** The kinds of business the studio builds for, each with a landing page led by its case study. */
+export const INDUSTRY_KEYS = ['salons-med-spas', 'photographers-filmmakers', 'artists-makers', 'food-events'] as const
+export type IndustryKey = (typeof INDUSTRY_KEYS)[number]
+
 /** The first segment of every localised path. English has none. */
 const PREFIX: Record<Locale, string> = { en: '', pt: 'pt', es: 'es' }
 
 /** Section folder names, translated so each market searches in its own words. */
 const SEGMENT: Record<
   Locale,
-  { work: string; services: string; about: string; contact: string; faq: string }
+  { work: string; services: string; industries: string; about: string; contact: string; faq: string }
 > = {
-  en: { work: 'work', services: 'services', about: 'about', contact: 'contact', faq: 'faq' },
+  en: {
+    work: 'work',
+    services: 'services',
+    industries: 'websites-for',
+    about: 'about',
+    contact: 'contact',
+    faq: 'faq',
+  },
   pt: {
     work: 'projetos',
     services: 'servicos',
+    industries: 'sites-para',
     about: 'estudio',
     contact: 'contato',
     faq: 'perguntas',
@@ -33,6 +45,7 @@ const SEGMENT: Record<
   es: {
     work: 'proyectos',
     services: 'servicios',
+    industries: 'webs-para',
     about: 'estudio',
     contact: 'contacto',
     faq: 'preguntas',
@@ -66,6 +79,7 @@ const FAQ_SLUG: Record<Locale, Record<FaqGroup, readonly string[]>> = {
       'can-you-redesign-my-existing-website',
       'do-i-need-wordpress-wix-or-squarespace',
       'will-i-be-able-to-update-the-site-myself',
+      'what-do-i-get-at-handover-and-what-costs-extra',
       'will-my-website-show-up-on-google',
     ],
     'brand-identity': [
@@ -95,6 +109,7 @@ const FAQ_SLUG: Record<Locale, Record<FaqGroup, readonly string[]>> = {
       'da-para-reformar-o-site-que-eu-ja-tenho',
       'preciso-de-wordpress-wix-ou-squarespace',
       'vou-conseguir-atualizar-o-site-sozinho',
+      'o-que-recebo-na-entrega-e-o-que-e-cobrado-a-parte',
       'como-sei-que-vai-aparecer-no-google',
     ],
     'brand-identity': [
@@ -124,6 +139,7 @@ const FAQ_SLUG: Record<Locale, Record<FaqGroup, readonly string[]>> = {
       'puedes-rehacer-la-web-que-ya-tengo',
       'necesito-wordpress-wix-o-squarespace',
       'podre-actualizarla-yo-mismo',
+      'que-recibo-en-la-entrega-y-que-se-paga-aparte',
       'como-se-que-aparecera-en-google',
     ],
     'brand-identity': [
@@ -160,6 +176,28 @@ const SERVICE_SLUG: Record<Locale, Record<ServiceKey, string>> = {
   },
 }
 
+/** Industry page slugs, per language, worded the way each market searches. */
+const INDUSTRY_SLUG: Record<Locale, Record<IndustryKey, string>> = {
+  en: {
+    'salons-med-spas': 'salons-and-med-spas',
+    'photographers-filmmakers': 'photographers-and-filmmakers',
+    'artists-makers': 'artists-and-makers',
+    'food-events': 'bakeries-restaurants-and-caterers',
+  },
+  pt: {
+    'salons-med-spas': 'saloes-e-clinicas-de-estetica',
+    'photographers-filmmakers': 'fotografos-e-videomakers',
+    'artists-makers': 'artistas-e-artesaos',
+    'food-events': 'confeitarias-restaurantes-e-buffets',
+  },
+  es: {
+    'salons-med-spas': 'salones-y-centros-de-estetica',
+    'photographers-filmmakers': 'fotografos-y-videografos',
+    'artists-makers': 'artistas-y-artesanos',
+    'food-events': 'pastelerias-restaurantes-y-catering',
+  },
+}
+
 const join = (...parts: (string | undefined)[]) => {
   const path = parts.filter((part) => part && part.length > 0).join('/')
   return `/${path}`.replace(/\/{2,}/g, '/')
@@ -172,6 +210,10 @@ export const projectPath = (locale: Locale, slug: string) =>
 export const servicesPath = (locale: Locale) => join(PREFIX[locale], SEGMENT[locale].services)
 export const servicePath = (locale: Locale, key: ServiceKey) =>
   join(PREFIX[locale], SEGMENT[locale].services, SERVICE_SLUG[locale][key])
+export const industriesPath = (locale: Locale) =>
+  join(PREFIX[locale], SEGMENT[locale].industries)
+export const industryPath = (locale: Locale, key: IndustryKey) =>
+  join(PREFIX[locale], SEGMENT[locale].industries, INDUSTRY_SLUG[locale][key])
 export const aboutPath = (locale: Locale) => join(PREFIX[locale], SEGMENT[locale].about)
 export const contactPath = (locale: Locale) => join(PREFIX[locale], SEGMENT[locale].contact)
 export const faqPath = (locale: Locale) => join(PREFIX[locale], SEGMENT[locale].faq)
@@ -184,6 +226,8 @@ export type Route =
   | { kind: 'project'; locale: Locale; slug: string }
   | { kind: 'services'; locale: Locale }
   | { kind: 'service'; locale: Locale; service: ServiceKey }
+  | { kind: 'industries'; locale: Locale }
+  | { kind: 'industry'; locale: Locale; industry: IndustryKey }
   | { kind: 'about'; locale: Locale }
   | { kind: 'contact'; locale: Locale }
   | { kind: 'faq'; locale: Locale }
@@ -213,6 +257,15 @@ export function matchRoute(segments: string[], projectSlugs: readonly string[]):
     if (rest.length === 2) {
       const entry = Object.entries(SERVICE_SLUG[locale]).find(([, slug]) => slug === rest[1])
       if (entry) return { kind: 'service', locale, service: entry[0] as ServiceKey }
+    }
+    return null
+  }
+
+  if (rest[0] === seg.industries) {
+    if (rest.length === 1) return { kind: 'industries', locale }
+    if (rest.length === 2) {
+      const entry = Object.entries(INDUSTRY_SLUG[locale]).find(([, slug]) => slug === rest[1])
+      if (entry) return { kind: 'industry', locale, industry: entry[0] as IndustryKey }
     }
     return null
   }
@@ -248,6 +301,10 @@ export function alternatesFor(route: Route): Record<Locale, string> {
         return servicesPath(locale)
       case 'service':
         return servicePath(locale, route.service)
+      case 'industries':
+        return industriesPath(locale)
+      case 'industry':
+        return industryPath(locale, route.industry)
       case 'about':
         return aboutPath(locale)
       case 'contact':
@@ -279,6 +336,8 @@ export function allRoutes(projectSlugs: readonly string[]): Route[] {
       }
     }
     for (const service of SERVICE_KEYS) routes.push({ kind: 'service', locale, service })
+    routes.push({ kind: 'industries', locale })
+    for (const industry of INDUSTRY_KEYS) routes.push({ kind: 'industry', locale, industry })
     for (const slug of projectSlugs) routes.push({ kind: 'project', locale, slug })
   }
 

@@ -1,10 +1,13 @@
 import Link from 'next/link'
 import { SITE } from '@/lib/site'
 import {
+  INDUSTRY_KEYS,
   SERVICE_KEYS,
   aboutPath,
   contactPath,
   faqPath,
+  industriesPath,
+  industryPath,
   projectPath,
   servicePath,
   servicesPath,
@@ -19,7 +22,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
 
   return (
     <footer className="border-t border-line bg-background">
-      <div className="container-studio grid grid-cols-2 gap-10 py-16 md:grid-cols-4 md:gap-8">
+      <div className="container-studio grid grid-cols-2 gap-10 py-16 md:grid-cols-5 md:gap-8">
         <div className="col-span-2 flex flex-col gap-3 md:col-span-1">
           <span className="font-mono text-xs uppercase tracking-[0.08em] text-primary">{SITE.wordmark}</span>
           <span className="label max-w-[26ch]">{t.meta.tagline}</span>
@@ -57,6 +60,24 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
               className="py-2 text-sm text-secondary transition-colors hover:text-primary md:py-0"
             >
               {t.services.cards[key].title}
+            </Link>
+          ))}
+        </nav>
+
+        <nav aria-label={t.footer.sections.industries} className="flex flex-col gap-1 md:gap-3">
+          <Link
+            href={industriesPath(locale)}
+            className="label py-3 text-primary transition-colors hover:text-secondary md:py-0"
+          >
+            {t.footer.sections.industries}
+          </Link>
+          {INDUSTRY_KEYS.map((key) => (
+            <Link
+              key={key}
+              href={industryPath(locale, key)}
+              className="py-2 text-sm text-secondary transition-colors hover:text-primary md:py-0"
+            >
+              {t.industries.cards[key].title}
             </Link>
           ))}
         </nav>

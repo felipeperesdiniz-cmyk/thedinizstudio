@@ -1,9 +1,10 @@
 import type { Dictionary } from './types'
+import { industriesEs } from './industries-es'
 
 export const es: Dictionary = {
   meta: {
     siteName: 'The Diniz Studio',
-    tagline: 'Diseño web, identidad de marca y marketing, en tres idiomas.',
+    tagline: 'Un estudio dirigido por su fundador, para negocios de servicios y creativos, en tres idiomas.',
   },
 
   nav: {
@@ -26,30 +27,44 @@ export const es: Dictionary = {
     meta: {
       title: 'The Diniz Studio | Diseño Web, Branding y Marketing',
       description:
-        'Webs a medida, identidad de marca y el marketing alrededor, para negocios en Estados Unidos y Brasil. En español, inglés y portugués.',
+        'Un estudio dirigido por su fundador: webs, identidad de marca y marketing para negocios de servicios y creativos en Estados Unidos y Brasil. En español, inglés y portugués.',
     },
-    heroLine: 'Webs, marcas y marketing para negocios de todos los tamaños, en español, inglés y portugués.',
+    heroLine: 'Un estudio dirigido por su fundador, para negocios de servicios y creativos. Webs, marcas y marketing en español, inglés y portugués.',
     heroScroll: 'Desliza',
-    h1: 'The Diniz Studio. Diseño web, identidad de marca y marketing.',
+    h1: 'The Diniz Studio. Diseño web, identidad de marca y marketing para negocios de servicios y creativos.',
     intro: {
       kicker: 'Por qué un solo estudio',
       title: 'Tres proveedores que nunca se hablan',
       body: [
-        'Uno hace la web, otro dibuja el logo, otro publica en Instagram. Nada combina, y nadie responde por lo único que importa: si suena el teléfono.',
-        'Aquí las tres cosas salen del mismo sitio. El logo, la web y las publicaciones nacen de las mismas decisiones, así que quien te encuentra en Google, en Instagram o por recomendación encuentra siempre el mismo negocio.',
-        'Cada web se escribe y se programa desde cero, en español, inglés y portugués cuando el público lo necesita, y se prepara para que los buscadores y los asistentes de inteligencia artificial puedan leerla bien.',
+        'Uno hace la web, otro dibuja el logo, otro publica en Instagram. Nada combina, y nadie mira el conjunto.',
+        'Aquí la web, la identidad y el marketing salen de la misma persona y de las mismas decisiones, así que quien te encuentra en Google, en Instagram o por recomendación encuentra siempre el mismo negocio. No necesitas las tres cosas: llévate la que te falta, y encajará con lo que ya tienes.',
+        'El estudio trabaja con negocios de servicios y creativos, como salones, artesanos, fotógrafos y chefs, y sobre todo con quienes atienden a clientes que hablan más de un idioma. Las webs se escriben en español, inglés y portugués siempre que el público lo necesita.',
       ],
+    },
+    founder: {
+      kicker: 'Con quién trabajas',
+      title: 'Felipe Diniz, fundador',
+      body: [
+        'The Diniz Studio lo lleva Felipe Diniz. La misma persona responde tu primer mensaje, diseña la web, escribe el código y coge el teléfono meses después cuando quieras cambiar algo.',
+        'Uno o dos proyectos a la vez, en español, inglés y portugués, para negocios en Estados Unidos y Brasil. Ningún gestor de cuentas entre tú y el trabajo.',
+      ],
+      link: 'Más sobre el estudio',
+    },
+    quote: {
+      kicker: 'Testimonio',
+      project: 'blend-hair-boutique',
+      link: 'Leer el caso de Blend',
     },
     services: {
       kicker: 'Servicios',
       title: 'Tres cosas, bien hechas',
-      text: 'Una web que vende, una identidad que lo sostiene todo, y el trabajo de búsqueda y redes que trae gente hasta ahí.',
+      text: 'Una web, una identidad que lo sostiene todo, y el trabajo de búsqueda y redes alrededor. Contrata al estudio para una sola cosa, o combínalas.',
       link: 'Ver todos los servicios',
     },
     work: {
       kicker: 'Proyectos seleccionados',
       title: 'Cuatro negocios, cuatro problemas',
-      text: 'Una bordadora, un salón, un fotógrafo y una pastelera. Cada proyecto cuenta qué se hizo y qué cambió después.',
+      text: 'Una bordadora, un salón, un fotógrafo y una pastelera. Cada caso separa lo que se hizo de lo que se ha medido.',
       link: 'Ver todos los proyectos',
     },
     answers: {
@@ -60,7 +75,7 @@ export const es: Dictionary = {
         {
           slug: 'como-consigo-un-presupuesto',
           q: '¿Cómo consigo un presupuesto?',
-          a: 'Cada proyecto se presupuesta por separado, porque una web de una página y una web trilingüe con logo y fotografía no son el mismo trabajo. Cuéntame qué necesitas y recibes un precio cerrado por escrito antes de empezar nada.',
+          a: 'Cada proyecto se presupuesta por separado, porque una web de una página y una web trilingüe con logo y fotografía no son el mismo trabajo. Cuéntame qué necesitas y recibes un precio cerrado por escrito antes de empezar nada. El hosting, el dominio y las herramientas de terceros los cobra cada proveedor, y el presupuesto indica cuáles aplican.',
         },
         {
           slug: 'cuanto-tarda',
@@ -70,17 +85,17 @@ export const es: Dictionary = {
         {
           slug: 'trabajas-en-mas-de-un-idioma',
           q: '¿Trabajas en más de un idioma?',
-          a: 'Sí. Español, inglés y portugués, cada uno con su propia dirección y declarado a Google, para que una búsqueda en cualquiera de los tres llegue a una página escrita en ese idioma y no a una traducción automática.',
+          a: 'Sí. Español, inglés y portugués, cada uno con su propia dirección y declarado a los buscadores, para que puedan relacionar cada página con quien busca en ese idioma. Cada versión se escribe, no se traduce a máquina.',
         },
         {
           slug: 'solo-haces-paginas-web',
           q: '¿Solo haces páginas web?',
-          a: 'No. También logo e identidad de marca, dirección de fotografía, redes sociales, Perfil de Empresa en Google y SEO local. Muchos clientes empiezan por la web y siguen con el estudio para el marketing.',
+          a: 'No. También logo e identidad de marca, dirección de fotografía, redes sociales, Perfil de Empresa en Google y SEO local. Puedes contratar solo una de estas cosas, o combinarlas. Nadie necesita todo.',
         },
         {
           slug: 'con-que-lo-construyes',
           q: '¿Con qué lo construyes?',
-          a: 'Código propio, no un constructor de páginas. Por eso estas webs cargan rápido, funcionan en la búsqueda y se pueden cambiar sin depender de ninguna suscripción.',
+          a: 'Código propio, no un constructor de páginas. Eso mantiene las páginas ligeras y rápidas, y no hay suscripción a un constructor que seguir pagando. El hosting y el dominio se siguen pagando a sus proveedores, como en cualquier web.',
         },
       ],
     },
@@ -94,7 +109,7 @@ export const es: Dictionary = {
     },
     kicker: 'Proyectos',
     title: 'Cada proyecto, completo',
-    lede: 'Qué necesitaba el negocio, qué se hizo y qué cambió. Cada proyecto enlaza a la web publicada.',
+    lede: 'Qué necesitaba el negocio y qué se hizo. Cada cifra indica qué está midiendo, y cada proyecto enlaza a la web publicada.',
     viewProject: 'Ver el caso',
     caseStudy: 'Ver el caso',
     visitSite: 'Visitar la web',
@@ -109,6 +124,7 @@ export const es: Dictionary = {
     identity: 'Identidad',
     type: 'Tipografía',
     theSite: 'La web',
+    figureKind: { delivered: 'Entregado', measured: 'Medido', client: 'Sobre el cliente' },
   },
 
   player: {
@@ -126,14 +142,14 @@ export const es: Dictionary = {
     },
     kicker: 'Servicios',
     title: 'Qué hace el estudio',
-    lede: 'Tres servicios que funcionan como uno. Llévalo entero, o solo la parte que te falta.',
+    lede: 'Tres servicios pensados para encajar. Contrata al estudio para uno de ellos, o combínalos.',
     cards: {
       'web-design': {
         title: 'Diseño y desarrollo web',
         text: 'Webs escritas desde cero: rápidas, multilingües y hechas para convertir una visita en un contacto.',
         proof: [
-          { value: '3', label: 'Idiomas por web' },
-          { value: '100%', label: 'Código tuyo' },
+          { value: 'Hasta 3', label: 'Idiomas por web' },
+          { value: '100%', label: 'Código entregado' },
           { value: '0', label: 'Plantillas usadas' },
         ],
       },
@@ -141,7 +157,7 @@ export const es: Dictionary = {
         title: 'Identidad de marca',
         text: 'Logo, color, tipografía y las reglas que lo sostienen, dibujadas para cómo vende tu negocio de verdad.',
         proof: [
-          { value: '0', label: 'Cuotas de licencia' },
+          { value: '0', label: 'Renovaciones del logo' },
           { value: 'Tuyos', label: 'Archivos originales incluidos' },
         ],
       },
@@ -149,9 +165,9 @@ export const es: Dictionary = {
         title: 'Marketing y SEO',
         text: 'Que te encuentren y que te sigan: búsqueda local, Perfil de Empresa en Google, redes sociales y el contenido detrás de ambas cosas.',
         proof: [
-          { value: '200', label: 'Seguidores de una clienta, desde cero' },
-          { value: '1,5k', label: 'Seguidores del estudio, desde cero' },
-          { value: '27', label: 'Reseñas de cinco estrellas conseguidas' },
+          { value: '200', label: 'Seguidores en una cuenta de clienta que lleva el estudio' },
+          { value: '1,5k', label: 'Seguidores en la cuenta del propio estudio' },
+          { value: 'Puntual', label: 'Diagnóstico y puesta a punto; mensual opcional' },
         ],
       },
     },
@@ -165,15 +181,15 @@ export const es: Dictionary = {
       meta: {
         title: 'Diseño Web | Páginas a Medida y Multilingües',
         description:
-          'Webs a medida para negocios de todos los tamaños. Hechas a mano, rápidas, multilingües y pensadas para que te encuentren y te contraten. Español, inglés y portugués.',
+          'Webs a medida para negocios de servicios y creativos. Hechas a mano, rápidas y multilingües, con una entrega clara y la base técnica que necesitan los buscadores.',
       },
       kicker: 'Servicio',
       title: 'Diseño y desarrollo web',
       lede: 'Una web hecha para tu negocio, no adaptada de una plantilla que otro ya está usando.',
       body: [
         'Quien busca una web nueva suele estar resolviendo uno de estos tres problemas: la web actual no está a la altura del trabajo, va lenta o se rompe en el celular, o la gente entra y nunca escribe. Los tres tienen solución, y los tres dependen de lo mismo: decidir para qué sirve la web antes de que alguien abra un programa de diseño.',
-        'Cada página aquí se escribe y se programa a mano. Sin constructor de páginas, sin plantilla, sin licencia mensual de un plugin que algún día se rompe. Por eso estas webs se mantienen ligeras en el celular, se sostienen en Google y un asistente de inteligencia artificial puede leerlas con claridad cuando alguien le pide una recomendación.',
-        'Cuando tiene sentido, la web se publica en español, inglés y portugués. Cada idioma tiene su dirección y su texto, escrito y no traducido por una máquina, que es lo que hace que aparezcas en una búsqueda hecha en cualquiera de los tres.',
+        'Cada página aquí se escribe y se programa a mano. Sin constructor de páginas, sin plantilla, sin licencia mensual de un plugin que algún día se rompe. Eso mantiene la web ligera en el celular y ofrece a buscadores y asistentes de inteligencia artificial páginas limpias y estructuradas para leer. Ayuda a que te descubran; no garantiza una posición ni una mención.',
+        'Cuando tiene sentido, la web se publica en español, inglés y portugués. Cada idioma tiene su dirección y su texto, escrito y no traducido por una máquina, para que los buscadores relacionen cada versión con quien busca en ese idioma.',
       ],
       included: {
         title: 'Qué recibes',
@@ -184,7 +200,7 @@ export const es: Dictionary = {
           },
           {
             title: 'Diseño y desarrollo',
-            text: 'Maquetación, tipografía, movimiento y código. Todo adaptable, probado en celulares reales y tuyo para siempre.',
+            text: 'Maquetación, tipografía, movimiento y código. Todo adaptable y probado en celulares reales.',
           },
           {
             title: 'Textos que trabajan',
@@ -196,11 +212,19 @@ export const es: Dictionary = {
           },
           {
             title: 'SEO técnico desde el principio',
-            text: 'Datos estructurados, mapa del sitio, encabezados limpios, imágenes ligeras. Lo que decide si te encuentran.',
+            text: 'Datos estructurados, mapa del sitio, encabezados limpios, imágenes ligeras: la base que necesitan los buscadores para leer bien la web. Ayuda a que te encuentren; la posición sigue dependiendo de la competencia y del tiempo.',
           },
           {
-            title: 'Entrega y soporte',
-            text: 'Recibes el código, la configuración del dominio y una explicación. Los cambios después se cobran por trabajo, nunca por permanencia.',
+            title: 'Lo que es tuyo en la entrega',
+            text: 'La web terminada y su código fuente, el dominio conectado y una explicación de cómo funciona todo. No se retiene nada para atarte al estudio.',
+          },
+          {
+            title: 'Soporte opcional después',
+            text: 'El soporte después del lanzamiento es opcional. Los cambios se presupuestan por trabajo, o en condiciones acordadas por escrito si quieres ayuda regular. No hay cuota obligatoria.',
+          },
+          {
+            title: 'Costes de terceros, avisados antes',
+            text: 'El hosting, el dominio, una plataforma de reservas o cualquier otro servicio externo lo cobra su proveedor y puede tener sus propias tarifas. La propuesta indica cuáles necesita tu web.',
           },
         ],
       },
@@ -240,7 +264,7 @@ export const es: Dictionary = {
           {
             slug: 'como-se-presupuesta-el-proyecto',
             q: '¿Cómo se presupuesta el proyecto?',
-            a: 'Como un precio cerrado para el trabajo entero, por escrito, antes de empezar. Se mueve con el número de páginas, los idiomas y si entran fotografía y logo. El precio que te doy es el que pagas, y después no hay facturación por horas.',
+            a: 'Como un precio cerrado para el trabajo entero, por escrito, antes de empezar. Se mueve con el número de páginas, los idiomas y si entran fotografía y logo. El precio que te doy es el que pagas, y después no hay facturación por horas. Los costes de terceros, como el hosting, el dominio o una plataforma de reservas, quedan fuera de ese precio y se detallan aparte.',
           },
           {
             slug: 'puedes-rehacer-la-web-que-ya-tengo',
@@ -250,17 +274,22 @@ export const es: Dictionary = {
           {
             slug: 'necesito-wordpress-wix-o-squarespace',
             q: '¿Necesito Wordpress, Wix o Squarespace?',
-            a: 'No los necesitas. Tienen sentido cuando nadie va a mantener la web. Una web hecha a mano da un resultado más rápido y más seguro, sin cuota mensual, y sin atarte a una plataforma que cambia sus precios cuando quiere.',
+            a: 'No los necesitas. Tienen sentido si quieres montar y editar todo tú. Una web hecha a mano evita la suscripción al constructor y el mantenimiento de plugins, y no te ata a una plataforma que cambia sus precios cuando quiere. El hosting y el dominio se siguen pagando, como en cualquier web.',
           },
           {
             slug: 'podre-actualizarla-yo-mismo',
             q: '¿Podré actualizarla yo?',
-            a: 'Si quieres editar textos e imágenes, la web lleva detrás un editor sencillo. Muchos clientes prefieren mandar los cambios, y eso se cobra por trabajo.',
+            a: 'Si quieres, sí. Un editor de contenido sencillo se incluye cuando figura en la propuesta, y vale la pena si vas a cambiar textos, imágenes, precios o listados a menudo. Sin él, me mandas los cambios y se hacen por ti, cobrados por trabajo. Sabrás cuál es tu caso antes de empezar el proyecto.',
+          },
+          {
+            slug: 'que-recibo-en-la-entrega-y-que-se-paga-aparte',
+            q: '¿Qué recibo en la entrega, y qué se paga aparte?',
+            a: 'Recibes la web terminada, su código fuente, el dominio conectado y una explicación de cómo funciona todo. El hosting, el propio dominio, una plataforma de reservas o cualquier otro servicio externo se paga a su proveedor y puede tener sus propias tarifas; la propuesta los detalla. El soporte después del lanzamiento es opcional, por trabajo o en condiciones acordadas por escrito.',
           },
           {
             slug: 'como-se-que-aparecera-en-google',
             q: '¿Cómo sé que aparecerá en Google?',
-            a: 'Eso lo deciden la estructura, la velocidad y el contenido, y los tres forman parte del trabajo: una página por cada cosa que vendes, encabezados limpios, datos estructurados y un Perfil de Empresa en Google si atiendes a una ciudad. La posición se gana a lo largo de meses, y lo verás en la analítica.',
+            a: 'Nadie puede prometer una posición en Google. Lo que hace el trabajo es darles a los buscadores lo que necesitan para leer la web: una página por cada cosa que vendes, encabezados limpios, datos estructurados, páginas rápidas y un Perfil de Empresa en Google si atiendes a una ciudad. Dónde apareces después depende de la competencia, las reseñas y el tiempo, sin un plazo fijo, y podrás seguirlo en la analítica.',
           },
         ],
       },
@@ -270,7 +299,7 @@ export const es: Dictionary = {
       meta: {
         title: 'Identidad de Marca y Diseño de Logo, Hechos para tu Negocio',
         description:
-          'Logo e identidad de marca para negocios de todos los tamaños: color, tipografía y las reglas que lo sostienen, de la vitrina a la web y a Instagram.',
+          'Logo e identidad de marca para negocios de servicios y creativos: color, tipografía y las reglas que lo sostienen, de la vitrina a la web y a Instagram.',
       },
       kicker: 'Servicio',
       title: 'Identidad de marca',
@@ -351,40 +380,44 @@ export const es: Dictionary = {
 
     'marketing-seo': {
       meta: {
-        title: 'Marketing y SEO Local | Que te Encuentren y te Elijan',
+        title: 'Marketing y SEO Local | Puesta a Punto o Trabajo Mensual',
         description:
-          'SEO local, Perfil de Empresa en Google, redes sociales y contenido. Que te encuentren cuando busquen lo que vendes, en español, inglés o portugués.',
+          'SEO local, Perfil de Empresa en Google, redes sociales y contenido: diagnóstico y puesta a punto puntuales, con trabajo mensual opcional. En español, inglés o portugués.',
       },
       kicker: 'Servicio',
       title: 'Marketing y SEO',
-      lede: 'Una web que nadie encuentra es una tarjeta de visita. Esta es la parte que lleva gente hasta ella.',
+      lede: 'Una web que nadie encuentra es una tarjeta de visita. Esta es la parte que ayuda a que la encuentren.',
       body: [
-        'Que te encuentren ya no es una sola cosa. Alguien puede escribir tu servicio y su ciudad en Google, pedirle una recomendación a un asistente de inteligencia artificial, o pasar por tu perfil en Instagram. Las tres se ganan con el mismo material: páginas claras que responden preguntas reales, una ficha completa y activa, y publicaciones que se parecen al negocio al que pertenecen.',
-        'El trabajo empieza por las búsquedas que tus clientes hacen de verdad, en el idioma en que las hacen. Esas búsquedas se convierten en páginas, y las páginas en lo que Google muestra y lo que un asistente cita cuando responde.',
-        'Para un negocio que vende a su propia ciudad, el Perfil de Empresa en Google suele valer más que cualquier otra cosa de esta lista. Se crea bien, se llena de fotografía y se mantiene vivo con publicaciones y respuestas.',
+        'Que te encuentren ya no es una sola cosa. Alguien puede escribir tu servicio y su ciudad en Google, pedirle una recomendación a un asistente de inteligencia artificial, o pasar por tu perfil en Instagram. El mismo material ayuda en los tres casos: páginas claras que responden preguntas reales, una ficha completa y activa, y publicaciones que se parecen al negocio al que pertenecen.',
+        'El trabajo tiene dos partes. Primero, un diagnóstico y una puesta a punto puntuales: dónde apareces hoy, qué falta, y la base arreglada a partir de las búsquedas que hacen tus clientes, en el idioma en que las hacen. Después, solo si lo quieres, un trabajo mensual para seguir publicando y mantener la ficha al día. Para un negocio que vende a su propia ciudad, el Perfil de Empresa en Google suele ser el mejor punto de partida.',
+        'Nada de esto garantiza una posición, un lugar en las respuestas de IA ni una fecha para los resultados. Los buscadores y los asistentes deciden qué muestran, y la competencia donde trabajas pesa. Lo que controla el estudio es lo clara, completa y actualizada que está tu información cuando miran.',
       ],
       included: {
         title: 'Qué incluye',
         items: [
           {
-            title: 'SEO local',
-            text: 'Una página por cada cosa que vendes, datos estructurados y las señales locales que deciden si apareces en el mapa.',
+            title: 'Puntual: el diagnóstico',
+            text: 'Un análisis por escrito de dónde apareces hoy en la búsqueda, en el mapa y en redes, de lo que falta o está mal, y de qué arreglar primero.',
           },
           {
-            title: 'Perfil de Empresa en Google',
-            text: 'Creado o arreglado, categorías y zonas de servicio bien puestas, fotografía cargada, publicaciones y respuestas a reseñas.',
+            title: 'Puntual: la puesta a punto',
+            text: 'Páginas de servicio y datos estructurados en la web; el Perfil de Empresa en Google creado o arreglado, con categorías, zonas de servicio, horarios y fotografía; perfiles en redes alineados con tu identidad.',
           },
           {
-            title: 'Redes sociales',
-            text: 'Dirección, fotografía, textos y programación, en los mismos colores y tipografías que todo lo demás.',
+            title: 'Mensual, si lo quieres: publicación',
+            text: 'Publicaciones en redes (dirección, fotografía, textos y programación), publicaciones en el Perfil de Empresa en Google y páginas nuevas que responden a lo que el cliente pregunta antes de comprar. Lo que entra cada mes se acuerda contigo por escrito.',
           },
           {
-            title: 'Contenido que responde',
-            text: 'Las preguntas que hace el cliente antes de comprar, escritas como toca, que es lo que premian los buscadores y los asistentes.',
+            title: 'Mensual, si lo quieres: mantenimiento',
+            text: 'Horarios, servicios y fotos siempre al día, y respuestas a las reseñas cuando le pidas al estudio que se ocupe.',
+          },
+          {
+            title: 'Primero, tu aprobación',
+            text: 'Las publicaciones, las páginas y los cambios en la ficha te llegan antes de publicarse. No se publica nada en tu nombre sin tu aprobación.',
           },
           {
             title: 'Informes en lenguaje claro',
-            text: 'Qué buscaron, qué pulsaron y qué hicieron después. Sin un panel que tengas que interpretar.',
+            text: 'En el trabajo mensual: qué buscaron, qué pulsaron y qué hicieron después. Sin un panel que tengas que interpretar.',
           },
         ],
       },
@@ -392,20 +425,20 @@ export const es: Dictionary = {
         title: 'Cómo funciona',
         steps: [
           {
-            title: 'Diagnóstico',
+            title: 'Diagnóstico (puntual)',
             text: 'Dónde apareces hoy, qué te falta y qué están consiguiendo tus competidores que tú no.',
           },
           {
-            title: 'Arreglar la base',
-            text: 'La web, la ficha y los datos estructurados, en ese orden. No sirve de nada promocionar una página que no se puede leer.',
+            title: 'Arreglar la base (puntual)',
+            text: 'La web, la ficha y los datos estructurados, en ese orden. No sirve de nada promocionar una página que no se puede leer. Puedes parar aquí.',
           },
           {
-            title: 'Publicar',
-            text: 'Páginas de servicio, respuestas y publicaciones, con un calendario que puedes ver.',
+            title: 'Aprobar y publicar (mensual, opcional)',
+            text: 'Páginas de servicio, respuestas y publicaciones se preparan, te llegan para que las apruebes y se publican con un calendario que puedes ver.',
           },
           {
-            title: 'Revisar',
-            text: 'Cada mes, en lenguaje sencillo, y el mes siguiente se decide con lo que pasó en el anterior.',
+            title: 'Revisar (mensual, opcional)',
+            text: 'Un informe en lenguaje sencillo, y el mes siguiente se decide con lo que pasó en el anterior.',
           },
         ],
       },
@@ -415,17 +448,17 @@ export const es: Dictionary = {
           {
             slug: 'en-cuanto-tiempo-veo-resultados-de-seo',
             q: '¿En cuánto tiempo veo resultados?',
-            a: 'Un Perfil de Empresa en Google puede cambiar tu volumen de llamadas en semanas. Posicionar una página de servicio suele llevar de dos a seis meses, según la competencia que haya en tu ciudad.',
+            a: 'No hay un plazo fijo, y nadie puede prometerlo con honestidad. Algunos negocios empiezan a aparecer en búsquedas nuevas pocas semanas después de la puesta a punto; otros tardan meses. Depende de la competencia donde trabajas, de tus reseñas y de cuánto saben ya de ti los buscadores. Si mantienes el trabajo mensual, los informes muestran lo que está cambiando.',
           },
           {
             slug: 'puedes-hacer-que-aparezca-en-chatgpt-y-en-otras-respuestas-de-ia',
             q: '¿Puedes hacer que aparezca en ChatGPT y en otras respuestas de IA?',
-            a: 'Nadie puede garantizarlo, y quien diga lo contrario te está vendiendo algo. Lo que funciona es ser la fuente más clara sobre el tema: páginas que dicen con todas las letras qué haces, para quién y dónde, marcadas para que una máquina pueda leerlas. Así está hecha esta web, y así se hará la tuya.',
+            a: 'Nadie puede garantizarlo, y quien diga lo contrario te está vendiendo algo. Los asistentes de IA deciden por su cuenta qué mencionar. Lo que puede hacer el estudio es que tu información sea fácil de entender: páginas que dicen con todas las letras qué haces, para quién y dónde, marcadas para que una máquina pueda leerlas. Eso mejora la probabilidad de que te describan bien; no promete una mención.',
           },
           {
             slug: 'tengo-que-comprometerme-por-meses',
             q: '¿Tengo que comprometerme por meses?',
-            a: 'No. El diagnóstico y los arreglos son un trabajo puntual. El seguimiento es mensual y puedes parar cuando quieras.',
+            a: 'No. El diagnóstico y la puesta a punto son un trabajo puntual, con su propio presupuesto. El trabajo mensual es opcional, su alcance se acuerda por escrito, y puedes parar cuando quieras.',
           },
           {
             slug: 'en-que-idioma-deberia-publicar',
@@ -515,8 +548,10 @@ export const es: Dictionary = {
     },
   },
 
+  ...industriesEs,
+
   footer: {
-    sections: { work: 'Proyectos', services: 'Servicios', studio: 'Estudio' },
+    sections: { work: 'Proyectos', services: 'Servicios', industries: 'Sectores', studio: 'Estudio' },
     rights: 'Todos los derechos reservados.',
   },
 
@@ -525,10 +560,10 @@ export const es: Dictionary = {
       meta: {
         title: 'Bordados com Amor | Web, Logo y Redes Sociales',
         description:
-          'Web trilingüe, logo bordado e Instagram gestionado para una artista del bordado a mano. La cuenta pasó de cero a 200 seguidores, sin publicidad pagada.',
+          'Web trilingüe, logo bordado e Instagram gestionado para una artista del bordado a mano. La cuenta, que lleva el estudio, pasó de cero a 200 seguidores sin publicidad.',
       },
       sector: 'Bordado a mano',
-      highlight: 'Instagram de cero a 200 seguidores, todo orgánico',
+      highlight: 'Instagram llevado por el estudio: de cero a 200 seguidores, sin anuncios',
       lede: 'Un logo bordado, una web en tres idiomas y una cuenta de Instagram construida desde cero sin un centavo de publicidad.',
       description:
         'Bordado a mano, una pieza cada vez. La web está construida al ritmo del trabajo: un proceso contado en cinco movimientos y un archivo catalogado donde cada pieza lleva las palabras bordadas en ella. Publicada en portugués, inglés y español.',
@@ -554,10 +589,21 @@ export const es: Dictionary = {
         {
           value: '200',
           label: 'Seguidores en Instagram',
-          note: 'Desde cero, sin publicidad.',
+          note: 'En la cuenta que el estudio lleva desde que empezó de cero, sin publicidad. Una cifra de seguidores, no de ventas.',
+          kind: 'measured',
         },
-        { value: '3', label: 'Idiomas', note: 'Portugués, inglés y español.' },
-        { value: '1', label: 'Estudio, de principio a fin', note: 'Logo, feed, textos y web.' },
+        {
+          value: '3',
+          label: 'Idiomas',
+          note: 'Portugués, inglés y español.',
+          kind: 'delivered',
+        },
+        {
+          value: '1',
+          label: 'Estudio, de principio a fin',
+          note: 'Logo, feed, textos y web.',
+          kind: 'delivered',
+        },
       ],
       chapters: [
         {
@@ -591,7 +637,7 @@ export const es: Dictionary = {
       meta: {
         title: 'Blend Hair Boutique | Web de Salón y SEO Local',
         description:
-          'Web trilingüe para un salón en Plantation, Florida, con reserva en línea, ocho páginas de servicio y SEO local que muestra su 4,9 en la búsqueda.',
+          'Web trilingüe para un salón en Plantation, Florida, con reserva en línea, ocho páginas de servicio y datos estructurados que muestran a los buscadores el 4,9 que el salón ya tenía.',
       },
       sector: 'Salón de belleza',
       highlight: 'Ocho páginas de servicio, reserva desde cada una',
@@ -619,15 +665,22 @@ export const es: Dictionary = {
       figures: [
         {
           value: '4,9',
-          label: 'Más de 1.230 reseñas',
-          note: 'Mostradas en la página y declaradas a la búsqueda.',
+          label: 'Valoración en Google, más de 1.230 reseñas',
+          note: 'Ganada por el salón, no por el estudio. La web muestra la nota y la marca para la búsqueda.',
+          kind: 'client',
         },
         {
           value: '8',
           label: 'Páginas de servicio',
           note: 'Una por tratamiento, cada una responde a una búsqueda.',
+          kind: 'delivered',
         },
-        { value: '3', label: 'Idiomas', note: 'Inglés, portugués y español.' },
+        {
+          value: '3',
+          label: 'Idiomas',
+          note: 'Inglés, portugués y español.',
+          kind: 'delivered',
+        },
       ],
       chapters: [
         {
@@ -644,7 +697,7 @@ export const es: Dictionary = {
         {
           kicker: 'Búsqueda local',
           title: 'Legible para un buscador',
-          text: 'Blend ya se había ganado las reseñas. La web las hizo contables: dirección, horarios, servicios y valoración marcados para Google, una página por tratamiento para responder a lo que la gente escribe, y una página de reseñas que enseña la nota en vez de afirmarla.',
+          text: 'Blend ya se había ganado las reseñas antes de que llegara el estudio. La web las hizo legibles para los buscadores: dirección, horarios, servicios y valoración marcados para Google, una página por tratamiento para responder a lo que la gente escribe, y una página de reseñas que enseña la nota en vez de afirmarla.',
         },
       ],
       screens: ['Servicios', 'Transformaciones', 'Las estilistas', 'Reseñas'],
@@ -685,9 +738,24 @@ export const es: Dictionary = {
         ],
       },
       figures: [
-        { value: '2', label: 'Cortometrajes', note: 'Dirigidos, filmados y montados por Rafael.' },
-        { value: '53s', label: 'Showreel', note: 'En la portada, y en ningún otro sitio.' },
-        { value: '0', label: 'Plantillas', note: 'Estático y hecho a mano de principio a fin.' },
+        {
+          value: '2',
+          label: 'Cortometrajes',
+          note: 'Dirigidos, filmados y montados por Rafael. La web los presenta.',
+          kind: 'client',
+        },
+        {
+          value: '53s',
+          label: 'Showreel',
+          note: 'El reel de Rafael, en la portada y en ningún otro sitio.',
+          kind: 'client',
+        },
+        {
+          value: '0',
+          label: 'Plantillas',
+          note: 'Estático y hecho a mano de principio a fin.',
+          kind: 'delivered',
+        },
       ],
       chapters: [
         {
@@ -715,6 +783,7 @@ export const es: Dictionary = {
         text: 'Llegué con un montón de referencias e ideas a medias. Había cosas en el diseño final que nunca se me habría ocurrido pedir, y ahora no imagino la web sin ellas.',
         name: 'Rafael',
         role: 'Fotógrafo y cineasta',
+        disclosure: 'Rafael es hermano de Felipe Diniz.',
       },
     },
 
@@ -722,11 +791,11 @@ export const es: Dictionary = {
       meta: {
         title: 'Renata Estrella Pâtisserie | Marca, Web y Perfil de Google',
         description:
-          'Marca, web, e-book y Perfil de Empresa en Google para una pastelería de lujo en Río. El perfil que creó el estudio tiene 27 reseñas de 5 estrellas.',
+          'Marca, web, e-book de recetas y Perfil de Empresa en Google para una pastelería de lujo en Río, todo creado desde cero por el estudio.',
       },
       sector: 'Pastelería',
-      highlight: '27 reseñas de cinco estrellas en un perfil creado desde cero',
-      lede: 'Todo dibujado desde cero: el logo, la web, un e-book de recetas y el perfil de Google que hoy lleva 27 reseñas de cinco estrellas.',
+      highlight: 'Logo, web, e-book y perfil de Google, creados desde cero',
+      lede: 'Todo dibujado desde cero: el logo, la web, un e-book de recetas y el Perfil de Empresa en Google que el estudio creó y sigue gestionando.',
       description:
         'Formada en Ferrandi París, Ritz Escoffier y Le Cordon Bleu, Renata crea pastelería por encargo para eventos. La web tenía que leerse como se lee su trabajo: exacta, sin prisa, francesa en la contención. Un vídeo de portada, un archivo editorial de creaciones y un camino de contacto que se comporta como una consulta y no como un carrito.',
       alt: 'renataestrellapatisserie.com, web de pastelería de lujo diseñada por The Diniz Studio',
@@ -751,11 +820,22 @@ export const es: Dictionary = {
       figures: [
         {
           value: '27',
-          label: 'Reseñas de cinco estrellas',
-          note: 'En el perfil de Google que el estudio creó y mantiene.',
+          label: 'Reseñas de cinco estrellas en Google',
+          note: 'Dejadas por clientes de Renata en el perfil que el estudio creó y gestiona. El mérito es de Renata, no del estudio.',
+          kind: 'measured',
         },
-        { value: '9', label: 'Recetas', note: 'En un e-book vendido desde la web.' },
-        { value: '3', label: 'Escuelas', note: 'Ferrandi, Ritz Escoffier, Le Cordon Bleu.' },
+        {
+          value: '9',
+          label: 'Recetas',
+          note: 'En un e-book diseñado por el estudio y vendido desde la web.',
+          kind: 'delivered',
+        },
+        {
+          value: '3',
+          label: 'Escuelas',
+          note: 'Ferrandi, Ritz Escoffier, Le Cordon Bleu.',
+          kind: 'client',
+        },
       ],
       chapters: [
         {

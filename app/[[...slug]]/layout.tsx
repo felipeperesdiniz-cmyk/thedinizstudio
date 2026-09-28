@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: '%s | The Diniz Studio®',
   },
   description:
-    'Web design studio building custom websites, brand identities and the marketing around them, in English, Portuguese and Spanish.',
+    'Founder-led studio building websites, brand identities and marketing for service and creative businesses, in English, Portuguese and Spanish.',
   applicationName: SITE.name,
   authors: [{ name: SITE.name, url: SITE.url }],
   creator: SITE.name,
