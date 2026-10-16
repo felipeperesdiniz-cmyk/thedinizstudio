@@ -13,3 +13,4 @@ pnpm dev
 - `content/work.ts` selected projects
 - `styles/globals.css` colour and type tokens
 - `app/matcha` Tsuyu, a scroll told concept site for a fictional matcha brand (`components/matcha`): one live WebGL tin choreographed across every section in `stage/choreography.ts`
+- `app/fashion` Trama, a scroll told concept site for a fictional clothing house (`components/fashion`): one live WebGL cloth that is woven, dyed, cut and hung across every section, choreographed in `stage/choreography.ts`
