@@ -1,0 +1,150 @@
+@import 'tailwindcss';
+
+/* Tsuyu concept: washi paper, ink and matcha. */
+
+:root {
+  --washi: #eeebe3;
+  --ink: #141711;
+  --forest: #1c2a19;
+  --matcha: #9db43f;
+  --celadon: #d5dcc2;
+  --night: #0f140e;
+  --gutter-x: clamp(1rem, 3vw, 2.5rem);
+}
+
+@theme inline {
+  --color-washi: var(--washi);
+  --color-ink: var(--ink);
+  --color-forest: var(--forest);
+  --color-matcha: var(--matcha);
+  --color-celadon: var(--celadon);
+  --color-night: var(--night);
+
+  --font-display: var(--m-display), 'Hiragino Mincho ProN', 'Yu Mincho', Georgia, serif;
+  --font-sans: var(--m-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--m-mono), ui-monospace, Menlo, monospace;
+}
+
+/* Layouts that only make sense while scroll animation runs; set by the experience. */
+@custom-variant motion (&:where([data-motion='on'] *));
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: auto;
+  }
+
+  body {
+    margin: 0;
+    background: var(--washi);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ::selection {
+    background: var(--matcha);
+    color: var(--ink);
+  }
+
+  :focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: 4px;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+}
+
+.m-grain {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  pointer-events: none;
+  opacity: 0.06;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC44NSIgbnVtT2N0YXZlcz0iNCIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjxmZUNvbG9yTWF0cml4IHR5cGU9InNhdHVyYXRlIiB2YWx1ZXM9IjAiLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsdGVyPSJ1cmwoI24pIi8+PC9zdmc+Cg==");
+  background-size: 200px 200px;
+}
+
+.m-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/* Stroke drawings animate from 1 to 0. */
+.m-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+
+/* Collection rows: dim the ones not under the pointer. */
+@media (hover: hover) {
+  .m-rows:has(.m-row:hover) .m-row:not(:hover) {
+    opacity: 0.28;
+  }
+}
+
+.m-row {
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.m-row[data-active='true'] .m-row-name {
+  font-style: italic;
+}
+
+@keyframes m-tick {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.m-tick {
+  transform-origin: 50% 50%;
+  animation: m-tick 4s steps(60) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* SplitText masks clip at the line box; give descenders room. */
+.m-c-mask,
+.m-l-mask {
+  padding-bottom: 0.16em;
+  margin-bottom: -0.16em;
+}
