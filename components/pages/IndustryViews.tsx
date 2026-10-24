@@ -144,13 +144,13 @@ export function IndustryView({
 
             <Reveal delay={0.1} className="flex flex-col justify-center gap-6 md:col-span-5">
               <p className="label">{t.industries.caseStudy}</p>
-              <h2 id="proof" className="font-display text-4xl leading-[1.05] text-primary">
+              <h2 id="proof" className="font-display text-4xl leading-[1.2] text-primary">
                 {page.proof.title}
               </h2>
               <p className="max-w-[46ch] text-secondary">{page.proof.text}</p>
               <Link
                 href={projectPath(locale, slug)}
-                className="group inline-flex items-center gap-3 self-start py-2 font-mono text-xs uppercase tracking-[0.08em] text-primary"
+                className="group inline-flex items-center gap-3 self-start py-2 text-sm text-primary"
               >
                 <span className="link-underline pb-1">{t.industries.readCase}</span>
                 <span

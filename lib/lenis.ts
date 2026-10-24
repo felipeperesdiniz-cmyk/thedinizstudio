@@ -10,8 +10,9 @@ export function initLenis(): Lenis | null {
   if (lenis) return lenis
 
   lenis = new Lenis({
-    duration: 1.2,
-    easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    // A steady follow rather than a fixed-length glide: it never overshoots and never feels floaty.
+    lerp: 0.085,
+    wheelMultiplier: 0.9,
     orientation: 'vertical',
     gestureOrientation: 'vertical',
     smoothWheel: true,

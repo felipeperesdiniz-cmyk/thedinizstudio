@@ -49,7 +49,7 @@ export function ProjectCard({ project, index, flipped, locale, t }: ProjectCardP
 
           <span
             aria-hidden="true"
-            className="pointer-events-none absolute bottom-5 left-5 flex translate-y-3 items-center gap-3 font-mono text-xs uppercase tracking-[0.08em] text-white opacity-0 transition-[opacity,translate] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-y-0 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:opacity-100"
+            className="pointer-events-none absolute bottom-5 left-5 flex translate-y-3 items-center gap-3 text-sm text-white opacity-0 transition-[opacity,translate] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-y-0 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:opacity-100"
           >
             <span className="h-px w-8 bg-white" />
             {t.work.caseStudy}
@@ -66,7 +66,7 @@ export function ProjectCard({ project, index, flipped, locale, t }: ProjectCardP
             {String(index + 1).padStart(2, '0')}
           </span>
 
-          <h3 className="font-display text-3xl leading-[1.05] text-primary">
+          <h3 className="font-display text-3xl leading-[1.2] text-primary">
             <span className="link-underline pb-1">{project.title}</span>
           </h3>
 
@@ -87,7 +87,7 @@ export function ProjectCard({ project, index, flipped, locale, t }: ProjectCardP
             </p>
           )}
 
-          <span className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.08em] text-secondary transition-colors duration-500 group-hover:text-primary group-focus-visible:text-primary">
+          <span className="inline-flex items-center gap-2 text-sm text-secondary transition-colors duration-500 group-hover:text-primary group-focus-visible:text-primary">
             {t.work.viewProject}
             <span className="inline-block transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-1.5">
               →

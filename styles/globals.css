@@ -3,41 +3,58 @@
 /* Design tokens */
 
 :root {
-  /* Black and grey only */
-  --background: #0a0a0a;
-  --surface: #141414;
-  --border: #222222;
-  --text-primary: #ececec;
-  --text-secondary: #a3a3a3;
-  --accent: #c4c4c4;
-  --accent-2: #ffffff;
+  /* White page, soft black ink. Dark sections swap these through .theme-ink. */
+  --background: #ffffff;
+  --surface: #f4f3f1;
+  --border: #e4e2de;
+  --text-primary: #1c1c1b;
+  --text-secondary: #77746e;
+  --accent: #1c1c1b;
+  --accent-2: #000000;
+  --signal: #b5462a;
 
-  /* Type scale */
-  --fs-xs: 0.75rem;
-  --fs-sm: 0.875rem;
-  --fs-base: 1rem;
-  --fs-lg: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
-  --fs-xl: clamp(1.25rem, 1.05rem + 0.9vw, 1.5rem);
-  --fs-2xl: clamp(1.5rem, 1.15rem + 1.6vw, 2rem);
-  --fs-3xl: clamp(2rem, 1.3rem + 3.2vw, 3rem);
-  --fs-4xl: clamp(2.5rem, 1.35rem + 5.2vw, 4.5rem);
-  --fs-5xl: clamp(3rem, 0.9rem + 9.4vw, 7rem);
-  /* The inner max() only differs below ~530px, letting long words fit on phones. */
-  --fs-6xl: clamp(2.5rem, max(12vw, min(12.8vw, 4rem)), 11rem);
-  --fs-display: clamp(4rem, 11vw, 11rem);
+  --ink: #141413;
+  --paper: #ffffff;
+
+  /* Type scale: small and even. Images carry the size, not the words. */
+  --fs-xs: 0.6875rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.9375rem;
+  --fs-lg: 1rem;
+  --fs-xl: 1.125rem;
+  --fs-2xl: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --fs-3xl: clamp(1.5rem, 1.25rem + 0.9vw, 1.875rem);
+  --fs-4xl: clamp(1.75rem, 1.4rem + 1.3vw, 2.375rem);
+  --fs-5xl: clamp(2rem, 1.5rem + 1.8vw, 2.875rem);
+  --fs-6xl: clamp(2.125rem, 1.5rem + 2.4vw, 3.25rem);
+  --fs-display: clamp(2.25rem, 1.5rem + 3vw, 3.75rem);
 
   /* Grid & spacing */
   --max-width: 1440px;
-  --content-padding: clamp(1.5rem, 5vw, 6rem);
-  --section-padding: clamp(6rem, 12vw, 14rem);
-  --gutter: clamp(1rem, 2vw, 1.5rem);
+  --content-padding: clamp(1.25rem, 3.5vw, 3rem);
+  --section-padding: clamp(5rem, 9vw, 9rem);
+  --gutter: clamp(0.75rem, 1.5vw, 1.25rem);
 
-  /* Fixed chrome */
-  --nav-height: 4.5rem;
+  --nav-height: 4.25rem;
 
-  --tracking-label: 0.08em;
-  --leading-display: 0.92;
-  --leading-body: 1.65;
+  --tracking-label: 0.18em;
+  --leading-display: 1.2;
+  --leading-body: 1.75;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.theme-ink {
+  --background: #141413;
+  --surface: #1f1f1d;
+  --border: #33322f;
+  --text-primary: #f4f3f1;
+  --text-secondary: #9a978f;
+  --accent: #f4f3f1;
+  --accent-2: #ffffff;
+  background-color: var(--background);
+  color: var(--text-primary);
 }
 
 /* Expose the tokens above to Tailwind's utility generator. */
@@ -49,10 +66,14 @@
   --color-secondary: var(--text-secondary);
   --color-accent: var(--accent);
   --color-accent-2: var(--accent-2);
+  --color-signal: var(--signal);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
 
   --font-display: var(--ff-serif), ui-serif, Georgia, 'Times New Roman', serif;
+  --font-serif: var(--ff-serif), ui-serif, Georgia, 'Times New Roman', serif;
   --font-sans: var(--ff-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-mono: var(--ff-mono), ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --font-mono: var(--ff-sans), ui-sans-serif, system-ui, sans-serif;
 
   --text-xs: var(--fs-xs);
   --text-sm: var(--fs-sm);
@@ -86,11 +107,13 @@
     color: var(--text-primary);
     font-family: var(--ff-sans), ui-sans-serif, system-ui, sans-serif;
     font-size: var(--fs-base);
+    font-weight: 400;
     line-height: var(--leading-body);
+    letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   h1,
@@ -98,10 +121,11 @@
   h3,
   h4 {
     margin: 0;
+    font-family: var(--ff-serif), Georgia, serif;
     font-weight: 400;
     line-height: var(--leading-display);
+    letter-spacing: 0.01em;
     text-wrap: balance;
-    /* Last resort on narrow screens: break a word that cannot fit rather than widen the page. */
     overflow-wrap: break-word;
   }
 
@@ -116,16 +140,15 @@
   }
 
   ::selection {
-    background-color: var(--accent);
+    background-color: var(--text-primary);
     color: var(--background);
   }
 
   :focus-visible {
-    outline: 1px solid var(--accent);
+    outline: 1px solid var(--text-primary);
     outline-offset: 4px;
   }
 
-  /* Lenis owns the wheel; these are its required host styles. */
   html.lenis,
   html.lenis body {
     height: auto;
@@ -144,19 +167,6 @@
   }
 }
 
-/* Grain overlay: fixed, non-interactive, above the page. */
-
-.grain {
-  position: fixed;
-  inset: 0;
-  z-index: 60;
-  pointer-events: none;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC44NSIgbnVtT2N0YXZlcz0iNCIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjxmZUNvbG9yTWF0cml4IHR5cGU9InNhdHVyYXRlIiB2YWx1ZXM9IjAiLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsdGVyPSJ1cmwoI24pIi8+PC9zdmc+Cg==");
-  background-repeat: repeat;
-  background-size: 200px 200px;
-}
-
 /* Layout primitives */
 
 .container-studio {
@@ -166,16 +176,19 @@
   padding-inline: var(--content-padding);
 }
 
-.label {
-  font-family: var(--ff-mono), ui-monospace, monospace;
+/* Small labels: capitals, widely spaced, like a shop's signage. */
+.label,
+.tick {
+  font-family: var(--ff-sans), ui-sans-serif, sans-serif;
   font-size: var(--fs-xs);
+  font-weight: 600;
   letter-spacing: var(--tracking-label);
   text-transform: uppercase;
   color: var(--text-secondary);
 }
 
-.clip-hidden {
-  clip-path: inset(100% 0 0 0);
+.tick {
+  font-variant-numeric: tabular-nums;
 }
 
 .skip-link {
@@ -184,8 +197,8 @@
   left: 0;
   z-index: 100;
   padding: 0.75rem 1.25rem;
-  background-color: var(--surface);
-  color: var(--text-primary);
+  background-color: var(--text-primary);
+  color: var(--background);
   font-size: var(--fs-sm);
   transform: translateY(-120%);
 }
@@ -194,130 +207,104 @@
   transform: translateY(0);
 }
 
-/* Hero */
-
-.hero-layer {
-  position: absolute;
-  inset: 0;
-  transform-origin: 0 0;
-  will-change: transform, opacity;
-}
-
-.hero-frame {
-  display: block;
-  width: 100%;
-  height: 100%;
-  user-select: none;
-  -webkit-mask-image:
-    linear-gradient(to right, transparent, #000 5%, #000 95%, transparent),
-    linear-gradient(to bottom, transparent, #000 5%, #000 92%, transparent);
-  -webkit-mask-composite: source-in;
-  mask-image:
-    linear-gradient(to right, transparent, #000 5%, #000 95%, transparent),
-    linear-gradient(to bottom, transparent, #000 5%, #000 92%, transparent);
-  mask-composite: intersect;
-}
-
-@media (max-aspect-ratio: 1/1) {
-  .hero-frame {
-    -webkit-mask-image:
-      linear-gradient(to right, transparent, #000 4%, #000 96%, transparent),
-      linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
-    mask-image:
-      linear-gradient(to right, transparent, #000 4%, #000 96%, transparent),
-      linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
-  }
-}
-
-.hero-streak {
-  left: calc(50% - 40px);
-  bottom: 70%;
-  width: 80px;
-  height: 900px;
-  transform-origin: 50% 100%;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(255, 255, 255, 0.18) 25%,
-    rgba(255, 255, 255, 0.55) 48%,
-    rgba(255, 255, 255, 0.2) 60%,
-    rgba(255, 255, 255, 0.35) 72%,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(to top, #000, transparent);
-  mask-image: linear-gradient(to top, #000, transparent);
-  filter: blur(4px);
-  mix-blend-mode: screen;
-  pointer-events: none;
-}
-
-.hero-glow {
-  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.45), transparent);
-  mix-blend-mode: screen;
-  pointer-events: none;
-}
-
-.hero-cue-o {
-  opacity: 0;
-  animation: hero-cue-fall 2.6s cubic-bezier(0.55, 0, 0.85, 0.35) infinite;
-}
-
-/* Falls, lands at the foot of the line, then disappears before the next drop. */
-@keyframes hero-cue-fall {
-  0% {
-    opacity: 0;
-    translate: 0 0;
-  }
-  12% {
-    opacity: 1;
-  }
-  62% {
-    opacity: 1;
-    translate: 0 41px;
-  }
-  68% {
-    translate: 0 38px;
-  }
-  74% {
-    opacity: 1;
-    translate: 0 41px;
-  }
-  90%,
-  100% {
-    opacity: 0;
-    translate: 0 41px;
-  }
-}
-
-.hero-vignette {
-  background:
-    radial-gradient(ellipse 80% 70% at 50% 50%, transparent 55%, rgba(0, 0, 0, 0.55)),
-    linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent 28%);
-}
-
-/* Selected work: dim the rows that are not being hovered */
-
-@media (hover: hover) {
-  .work-list:has(article:hover) article:not(:hover) {
-    opacity: 0.35;
-  }
-}
-
-.work-list article {
-  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
+/* Links and buttons */
 
 .link-underline {
   background-image: linear-gradient(currentColor, currentColor);
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: 0% 1px;
-  transition: background-size 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: background-size 0.6s var(--ease-out);
 }
 
 .group:hover .link-underline,
 .group:focus-visible .link-underline {
   background-size: 100% 1px;
+}
+
+.btn {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding-inline: 1.5rem;
+  border: 1px solid currentColor;
+  font-family: var(--ff-sans), ui-sans-serif, sans-serif;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition:
+    background-color 0.35s var(--ease-out),
+    color 0.35s var(--ease-out),
+    border-color 0.35s var(--ease-out);
+}
+
+.btn-solid {
+  border-color: var(--text-primary);
+  background: var(--text-primary);
+  color: var(--background);
+}
+
+.btn-solid:hover {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.btn-ghost {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+.btn-ghost:hover {
+  background: var(--text-primary);
+  color: var(--background);
+}
+
+/* On a photograph: white outline, fills on hover (also when its card is hovered). */
+.btn-light {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-light:hover,
+.group:hover .film-watch {
+  background: #fff;
+  color: #1c1c1b;
+}
+
+/* Work strip: endless and slow; pauses under the pointer. */
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Selected work index: dim the rows that are not being hovered */
+
+@media (hover: hover) {
+  .work-list:has(article:hover) article:not(:hover),
+  .index-list:has(li:hover) li:not(:hover) {
+    opacity: 0.3;
+  }
+}
+
+.work-list article,
+.index-list li {
+  transition: opacity 0.6s var(--ease-out);
 }
 
 /* Reduced motion */
@@ -332,7 +319,34 @@
     scroll-behavior: auto !important;
   }
 
-  .clip-hidden {
-    clip-path: none;
+  .marquee {
+    animation: none;
+  }
+}
+
+/* The first-visit curtain is skipped before paint once seen. */
+html[data-loaded='true'] .preloader {
+  display: none;
+}
+
+/* Home hero: the photograph settles, the words arrive a beat later. */
+.hero-settle {
+  animation: hero-settle 2.4s var(--ease-out) both;
+}
+
+.hero-rise {
+  animation: hero-rise 1.2s var(--ease-out) 0.35s both;
+}
+
+@keyframes hero-settle {
+  from {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
   }
 }

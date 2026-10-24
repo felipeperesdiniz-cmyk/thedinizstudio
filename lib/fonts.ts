@@ -1,24 +1,19 @@
-import { Gloock, Hanken_Grotesk, Spline_Sans_Mono } from 'next/font/google'
+import { Libre_Caslon_Text, Mulish } from 'next/font/google'
 
-export const serif = Gloock({
+// A bookish serif for headlines, a plain sans for everything you read or press.
+export const serif = Libre_Caslon_Text({
   subsets: ['latin'],
   weight: ['400'],
+  style: ['normal', 'italic'],
   display: 'swap',
   variable: '--ff-serif',
 })
 
-export const sans = Hanken_Grotesk({
+export const sans = Mulish({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['300', '400', '600'],
   display: 'swap',
   variable: '--ff-sans',
 })
 
-export const mono = Spline_Sans_Mono({
-  subsets: ['latin'],
-  weight: ['400'],
-  display: 'swap',
-  variable: '--ff-mono',
-})
-
-export const fontVariables = `${serif.variable} ${sans.variable} ${mono.variable}`
+export const fontVariables = `${serif.variable} ${sans.variable}`

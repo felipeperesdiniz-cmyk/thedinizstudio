@@ -1,244 +1,68 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { Hero } from '@/components/sections/Hero'
-import { Work } from '@/components/sections/Work'
-import { Intro } from '@/components/sections/Intro'
-import { Reveal } from '@/components/ui/Reveal'
+import { HomeHero } from '@/components/home/HomeHero'
+import { Note } from '@/components/home/Note'
+import { WorkGrid } from '@/components/home/WorkGrid'
+import { Films, type FilmEntry } from '@/components/home/Films'
+import { ServicesRow } from '@/components/home/ServicesRow'
+import { Founder } from '@/components/home/Founder'
+import { Answers } from '@/components/home/Answers'
 import { CtaBand } from '@/components/ui/CtaBand'
-import {
-  SERVICE_KEYS,
-  aboutPath,
-  faqItemPath,
-  faqPath,
-  projectPath,
-  servicePath,
-  servicesPath,
-  type Locale,
-} from '@/lib/i18n'
+import { HOME_STORY } from '@/content/copy/home-story'
+import { projectPath, type Locale } from '@/lib/i18n'
 import type { Dictionary } from '@/content/copy/types'
-import { SERVICE_MEDIA } from '@/content/service-media'
 
-function TextLink({ href, label }: { href: string; label: string }) {
-  return (
-    <Link
-      href={href}
-      className="group mt-9 inline-flex items-center gap-3 py-3 font-mono text-xs uppercase tracking-[0.08em] text-secondary transition-colors hover:text-primary"
-    >
-      <span className="link-underline pb-1">{label}</span>
-      <span
-        aria-hidden="true"
-        className="transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-1.5"
-      >
-        →
-      </span>
-    </Link>
-  )
-}
-
+/**
+ * Pictures first, words small. A photograph of the work, a note from the person who makes it,
+ * the work, the films made for it, what the studio sells, who does it, and the questions before hiring.
+ */
 export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
-  const { founder } = t.home
-  const quote = t.projects[t.home.quote.project]!.quote
+  const story = HOME_STORY[locale]
+
+  const films: FilmEntry[] = [
+    {
+      project: 'Bordados com Amor',
+      href: projectPath(locale, 'bordados-com-amor-by-mari'),
+      caption: story.films.mari,
+      length: '0:17',
+      preview: '/films/mari-preview.mp4',
+      poster: '/films/mari-preview-poster.webp',
+      full: '/films/mari-film.mp4',
+    },
+    {
+      project: 'Blend Hair Boutique',
+      href: projectPath(locale, 'blend-hair-boutique'),
+      caption: t.projects['blend-hair-boutique']!.chapters[0]!.videoCaption ?? '',
+      length: '0:27',
+      preview: '/films/blend-preview.mp4',
+      poster: '/films/blend-preview-poster.webp',
+      full: '/films/blend-film.mp4',
+    },
+    {
+      project: 'Rafa Diniz',
+      href: projectPath(locale, 'rafa-diniz'),
+      caption: story.films.rafa,
+      length: '0:53',
+      preview: '/films/rafa-preview.mp4',
+      poster: '/films/rafa-preview-poster.webp',
+      full: '/films/rafa-reel.mp4',
+    },
+  ]
 
   return (
     <>
-      <Hero title={t.home.h1} line={t.home.heroLine} scrollLabel={t.home.heroScroll} />
-
-      <Intro t={t} />
-
-      <Work locale={locale} t={t} />
-
-      {/* Services */}
-      <section aria-labelledby="services-title" className="border-t border-line">
-        <div className="container-studio py-[var(--section-padding)]">
-          <Reveal className="grid grid-cols-1 gap-8 md:grid-cols-12">
-            <div className="md:col-span-5">
-              <p className="label">{t.home.services.kicker}</p>
-              <h2
-                id="services-title"
-                className="mt-6 max-w-[16ch] font-display text-4xl text-primary"
-              >
-                {t.home.services.title}
-              </h2>
-            </div>
-            <p className="max-w-[44ch] text-secondary md:col-span-5 md:col-start-8 md:self-end">
-              {t.home.services.text}
-            </p>
-          </Reveal>
-
-          <ul className="mt-16 grid grid-cols-1 gap-px border-t border-line md:mt-20">
-            {SERVICE_KEYS.map((key, i) => (
-              <li key={key}>
-                <Reveal delay={i * 0.08}>
-                  <Link
-                    href={servicePath(locale, key)}
-                    className="group grid grid-cols-1 gap-6 border-b border-line py-10 md:grid-cols-12 md:gap-8"
-                  >
-                    <span className="label md:col-span-1">{String(i + 1).padStart(2, '0')}</span>
-
-                    <div className="md:col-span-4">
-                      <h3 className="font-display text-3xl text-primary">
-                        <span className="link-underline pb-1">{t.services.cards[key].title}</span>
-                      </h3>
-                      <p className="mt-5 max-w-[38ch] text-secondary">
-                        {t.services.cards[key].text}
-                      </p>
-
-                      {t.services.cards[key].proof && (
-                        <dl className="mt-8 grid grid-cols-3 gap-x-5 gap-y-6">
-                          {t.services.cards[key].proof.map((item) => (
-                            <div key={item.label}>
-                              <dt className="font-display text-2xl leading-none text-primary">
-                                {item.value}
-                              </dt>
-                              <dd className="label mt-2 break-words leading-snug">{item.label}</dd>
-                            </div>
-                          ))}
-                        </dl>
-                      )}
-                    </div>
-
-                    <div className="grid grid-cols-3 items-center gap-[var(--gutter)] md:col-span-6 md:col-start-6 md:items-start">
-                      {SERVICE_MEDIA[key].map((thumb) => (
-                        <div
-                          key={thumb.src}
-                          // The tile takes the image's own shape, so nothing is cropped.
-                          style={
-                            thumb.tone === 'light'
-                              ? undefined
-                              : { aspectRatio: `${thumb.width} / ${thumb.height}` }
-                          }
-                          className={`flex items-center justify-center self-center overflow-hidden md:self-start ${
-                            thumb.tone === 'light'
-                              ? 'aspect-[4/3] bg-[#e8e7e4] p-[10%]'
-                              : 'bg-surface'
-                          }`}
-                        >
-                          <Image
-                            src={thumb.src}
-                            alt={thumb.alt}
-                            width={thumb.width}
-                            height={thumb.height}
-                            sizes="(max-width: 768px) 30vw, 16vw"
-                            className={
-                              thumb.tone === 'light'
-                                ? 'h-auto max-h-full w-full object-contain transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]'
-                                : thumb.tone === 'artwork'
-                                  ? 'h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]'
-                                  : 'h-full w-full object-cover transition-[scale] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]'
-                            }
-                          />
-                        </div>
-                      ))}
-                    </div>
-
-                    <span
-                      aria-hidden="true"
-                      className="hidden font-display text-2xl text-secondary transition-[translate,color] duration-500 group-hover:translate-x-2 group-hover:text-primary md:col-span-1 md:block md:justify-self-end md:self-center"
-                    >
-                      →
-                    </span>
-                  </Link>
-                </Reveal>
-              </li>
-            ))}
-          </ul>
-
-          <Reveal delay={0.1}>
-            <Link
-              href={servicesPath(locale)}
-              className="group mt-9 inline-flex items-center gap-3 py-3 font-mono text-xs uppercase tracking-[0.08em] text-secondary transition-colors hover:text-primary"
-            >
-              <span className="link-underline pb-1">{t.home.services.link}</span>
-              <span
-                aria-hidden="true"
-                className="transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-1.5"
-              >
-                →
-              </span>
-            </Link>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Who does the work, and what a client said about it */}
-      <section aria-labelledby="founder-title" className="border-t border-line">
-        <div className="container-studio grid grid-cols-1 gap-20 py-[var(--section-padding)] md:grid-cols-12 md:gap-[var(--gutter)]">
-          <Reveal className="md:col-span-5">
-            <p className="label">{founder.kicker}</p>
-            <h2 id="founder-title" className="mt-6 max-w-[16ch] font-display text-4xl text-primary">
-              {founder.title}
-            </h2>
-            <div className="mt-8 flex flex-col gap-5">
-              {founder.body.map((paragraph) => (
-                <p key={paragraph} className="max-w-[44ch] text-secondary">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-            <TextLink href={aboutPath(locale)} label={founder.link} />
-          </Reveal>
-
-          <Reveal delay={0.1} className="md:col-span-6 md:col-start-7 md:self-center">
-            <figure>
-              <p className="label">{t.home.quote.kicker}</p>
-              <blockquote className="mt-6 max-w-[30ch] font-display text-2xl leading-[1.3] text-primary md:text-3xl md:leading-[1.25]">
-                “{quote.text}”
-              </blockquote>
-              <figcaption className="label mt-8">
-                {quote.name} · {quote.role}
-              </figcaption>
-            </figure>
-            <TextLink href={projectPath(locale, t.home.quote.project)} label={t.home.quote.link} />
-          </Reveal>
-        </div>
-      </section>
-
-      {/* The questions people ask before they hire, answered on the page */}
-      <section aria-labelledby="answers-title" className="border-t border-line">
-        <div className="container-studio py-[var(--section-padding)]">
-          <Reveal>
-            <p className="label">{t.home.answers.kicker}</p>
-            <h2 id="answers-title" className="mt-6 max-w-[20ch] font-display text-4xl text-primary">
-              {t.home.answers.title}
-            </h2>
-          </Reveal>
-
-          <dl className="mt-16 border-t border-line md:mt-20">
-            {t.home.answers.items.map((item, i) => (
-              <Reveal
-                key={item.slug}
-                delay={i * 0.05}
-                className="grid grid-cols-1 gap-4 border-b border-line py-10 md:grid-cols-12 md:gap-8"
-              >
-                <dt className="font-display text-2xl leading-snug text-primary md:col-span-5">
-                  <Link href={faqItemPath(locale, 'general', i)} className="group inline">
-                    <span className="link-underline pb-1">{item.q}</span>
-                  </Link>
-                </dt>
-                <dd className="max-w-[52ch] text-secondary md:col-span-6 md:col-start-7">
-                  {item.a}
-                </dd>
-              </Reveal>
-            ))}
-          </dl>
-
-          <Reveal delay={0.1}>
-            <Link
-              href={faqPath(locale)}
-              className="group mt-9 inline-flex items-center gap-3 py-3 font-mono text-xs uppercase tracking-[0.08em] text-secondary transition-colors hover:text-primary"
-            >
-              <span className="link-underline pb-1">{t.home.answers.link}</span>
-              <span
-                aria-hidden="true"
-                className="transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-1.5"
-              >
-                →
-              </span>
-            </Link>
-          </Reveal>
-        </div>
-      </section>
-
+      <HomeHero locale={locale} h1={t.home.h1} line={t.home.heroLine} cta={t.cta.label} story={story.hero} />
+      <Note story={story.note} />
+      <WorkGrid locale={locale} t={t} story={story.work} />
+      <Films
+        kicker={story.films.kicker}
+        title={story.films.title}
+        watch={t.player.watch}
+        close={t.player.close}
+        caseLabel={story.work.view}
+        films={films}
+      />
+      <ServicesRow locale={locale} t={t} kicker={story.services.kicker} />
+      <Founder locale={locale} t={t} capacity={story.studio.capacity} />
+      <Answers locale={locale} t={t} />
       <CtaBand locale={locale} t={t} />
     </>
   )

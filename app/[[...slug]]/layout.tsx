@@ -31,8 +31,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#0A0A0A',
-  colorScheme: 'dark',
+  themeColor: '#FFFFFF',
+  colorScheme: 'light',
   width: 'device-width',
   initialScale: 1,
 }
@@ -51,12 +51,11 @@ export default async function RootLayout({
   const lang = first === 'pt' ? HTML_LANG.pt : first === 'es' ? HTML_LANG.es : HTML_LANG.en
 
   return (
-    <html lang={lang} className={fontVariables}>
+    <html lang={lang} className={fontVariables} suppressHydrationWarning>
       <body>
         <LenisProvider>
           <PageTransition>{children}</PageTransition>
         </LenisProvider>
-        <div className="grain" aria-hidden="true" />
         <Analytics />
       </body>
     </html>

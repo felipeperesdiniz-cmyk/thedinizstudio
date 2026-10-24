@@ -21,7 +21,7 @@ export function PageHead({ kicker, title, lede }: { kicker: string; title: strin
     <header className="container-studio pb-16 pt-[calc(var(--nav-height)+5rem)] md:pb-24 md:pt-[calc(var(--nav-height)+8rem)]">
       <Reveal>
         <p className="label">{kicker}</p>
-        <h1 className="mt-6 max-w-[16ch] font-display text-6xl leading-[0.95] text-primary">
+        <h1 className="mt-6 max-w-[16ch] font-display text-6xl leading-[1.15] text-primary">
           {title}
         </h1>
       </Reveal>
@@ -328,6 +328,16 @@ export function AboutView({ locale, t }: { locale: Locale; t: Dictionary }) {
           </Reveal>
 
           <Reveal delay={0.1} className="md:col-span-4 md:col-start-9">
+            <div className="relative mb-10 aspect-[1200/1679] overflow-hidden bg-white">
+              <Image
+                src="/images/studio/felipe-diniz-arms.webp"
+                alt={t.home.founder.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                quality={90}
+                className="object-cover"
+              />
+            </div>
             <dl className="border-t border-line">
               {t.about.facts.map((fact) => (
                 <div key={fact.label} className="border-b border-line py-5">

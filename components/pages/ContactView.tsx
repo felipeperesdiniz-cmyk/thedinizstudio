@@ -5,9 +5,9 @@ import { Reveal } from '@/components/ui/Reveal'
 import { SITE } from '@/lib/site'
 import type { Dictionary } from '@/content/copy/types'
 
-// A full, filled box so the field reads as a place to type against the dark page.
+// A full, filled box so the field reads as a place to type against the page.
 const FIELD =
-  'w-full border border-white/20 bg-white/[0.04] px-4 py-3.5 text-primary outline-none transition-colors placeholder:text-secondary/70 hover:border-white/35 focus:border-primary focus:bg-white/[0.07] aria-[invalid=true]:border-primary'
+  'w-full border border-line bg-white/60 px-4 py-3.5 text-primary outline-none transition-colors placeholder:text-secondary/70 hover:border-secondary focus:border-primary focus:bg-white aria-[invalid=true]:border-primary'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -83,7 +83,7 @@ export function ContactView({ t }: { t: Dictionary }) {
       <header className="container-studio pb-16 pt-[calc(var(--nav-height)+5rem)] md:pb-20 md:pt-[calc(var(--nav-height)+8rem)]">
         <Reveal>
           <p className="label">{t.contact.kicker}</p>
-          <h1 className="mt-6 max-w-[14ch] font-display text-6xl leading-[0.95] text-primary">
+          <h1 className="mt-6 max-w-[14ch] font-display text-6xl leading-[1.15] text-primary">
             {t.contact.title}
           </h1>
         </Reveal>
@@ -140,7 +140,7 @@ export function ContactView({ t }: { t: Dictionary }) {
                       type="button"
                       onClick={() => setProject(option)}
                       aria-pressed={project === option}
-                      className={`min-h-11 border px-4 py-2 font-mono text-xs uppercase tracking-[0.08em] transition-colors ${
+                      className={`min-h-11 border px-4 py-2 text-sm transition-colors ${
                         project === option
                           ? 'border-primary text-primary'
                           : 'border-white/20 text-secondary hover:border-white/40 hover:text-primary'
@@ -182,7 +182,7 @@ export function ContactView({ t }: { t: Dictionary }) {
                 <button
                   type="submit"
                   disabled={status === 'sending'}
-                  className="group inline-flex min-h-12 items-center gap-3 self-start bg-primary px-6 font-mono text-xs uppercase tracking-[0.08em] text-background transition-colors hover:bg-white disabled:opacity-60"
+                  className="btn btn-solid group min-h-12 self-start px-6 disabled:opacity-60"
                 >
                   {status === 'sending' ? form.sending : form.submit}
                   <span

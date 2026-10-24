@@ -46,7 +46,7 @@ export function ReelPlayer({ mp4, webm, poster, width, height, labels }: ReelPla
         type="button"
         onClick={toggle}
         aria-pressed={!muted}
-        className="absolute bottom-3 left-3 flex min-h-11 items-center gap-2 border border-white/30 bg-black/40 px-3 font-mono text-xs uppercase tracking-[0.08em] text-white backdrop-blur-sm transition-colors hover:bg-black/70 md:bottom-4 md:left-4"
+        className="absolute bottom-3 left-3 flex min-h-11 items-center gap-2 border border-white/30 bg-black/40 px-3 text-sm text-white backdrop-blur-sm transition-colors hover:bg-black/70 md:bottom-4 md:left-4"
       >
         <SpeakerIcon muted={muted} />
         {muted ? labels.soundOn : labels.soundOff}

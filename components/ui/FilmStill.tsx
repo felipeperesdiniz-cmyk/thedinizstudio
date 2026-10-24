@@ -50,7 +50,7 @@ export function FilmStill({ image, alt, sizes, labels }: FilmStillProps) {
           sizes={sizes}
           className="block h-auto w-full transition-[scale] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
         />
-        <span className="absolute bottom-3 left-3 flex min-h-11 items-center gap-2 border border-white/30 bg-black/40 px-3 font-mono text-xs uppercase tracking-[0.08em] text-white backdrop-blur-sm transition-colors group-hover:bg-black/70 md:bottom-4 md:left-4">
+        <span className="absolute bottom-3 left-3 flex min-h-11 items-center gap-2 border border-white/30 bg-black/40 px-3 text-sm text-white backdrop-blur-sm transition-colors group-hover:bg-black/70 md:bottom-4 md:left-4">
           <svg aria-hidden="true" viewBox="0 0 16 16" width="12" height="12" fill="currentColor">
             <path d="M4 2.5v11L13 8z" />
           </svg>
@@ -70,7 +70,7 @@ export function FilmStill({ image, alt, sizes, labels }: FilmStillProps) {
           <button
             type="button"
             onClick={() => setOpen(false)}
-            className="flex min-h-11 items-center gap-2 px-1 font-mono text-xs uppercase tracking-[0.08em] text-white/80 transition-colors hover:text-white"
+            className="flex min-h-11 items-center gap-2 px-1 text-sm text-white/80 transition-colors hover:text-white"
           >
             {labels.close}
             <span aria-hidden="true" className="text-base leading-none">

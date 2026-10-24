@@ -12,3 +12,8 @@ tsconfig.tsbuildinfo
 # Legacy static export and loose reference images, not used by the app
 dinizstudio
 animation
+
+# Local Claude Code permissions, per machine
+.claude/settings.local.json
+# Rendered reel export (84 MB); the source is marketing/reel/source.html
+marketing/reel/*.mp4

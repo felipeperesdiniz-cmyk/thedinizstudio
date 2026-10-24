@@ -15,6 +15,9 @@ if (typeof window !== 'undefined') {
   ScrollTrigger.defaults({
     toggleActions: 'play none none none',
   })
+
+  // Phones resize the viewport as the address bar slides; re-measuring then makes pinned sections jump.
+  ScrollTrigger.config({ ignoreMobileResize: true })
 }
 
 export { gsap, ScrollTrigger, Flip, SplitText }

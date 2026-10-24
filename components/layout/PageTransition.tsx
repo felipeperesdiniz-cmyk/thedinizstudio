@@ -34,8 +34,8 @@ export function PageTransition({ children }: { children: ReactNode }) {
           },
         })
         .set(overlay, { autoAlpha: 1, yPercent: 100 })
-        .to(overlay, { yPercent: 0, duration: 0.4, ease: 'power3.inOut' })
-        .to(overlay, { yPercent: -100, duration: 0.3, ease: 'power3.inOut' })
+        .to(overlay, { yPercent: 0, duration: 0.55, ease: 'power3.inOut' })
+        .to(overlay, { yPercent: -100, duration: 0.55, ease: 'power3.inOut' }, '+=0.05')
         .set(overlay, { autoAlpha: 0 })
     })
 

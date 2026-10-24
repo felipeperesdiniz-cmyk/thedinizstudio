@@ -101,7 +101,7 @@ export function WorkIndexView({ locale, t }: { locale: Locale; t: Dictionary }) 
       <header className="container-studio pb-16 pt-[calc(var(--nav-height)+5rem)] md:pb-24 md:pt-[calc(var(--nav-height)+8rem)]">
         <Reveal>
           <p className="label">{t.work.kicker}</p>
-          <h1 className="mt-6 max-w-[16ch] font-display text-6xl leading-[0.95] text-primary">
+          <h1 className="mt-6 max-w-[16ch] font-display text-6xl leading-[1.15] text-primary">
             {t.work.title}
           </h1>
         </Reveal>
@@ -138,7 +138,7 @@ export function WorkIndexView({ locale, t }: { locale: Locale; t: Dictionary }) 
                     </div>
 
                     <div className="md:col-span-4">
-                      <h2 className="font-display text-3xl leading-[1.05] text-primary">
+                      <h2 className="font-display text-3xl leading-[1.2] text-primary">
                         <span className="link-underline pb-1">{project.title}</span>
                       </h2>
                       <p className="label mt-3">
@@ -200,7 +200,7 @@ export function CaseStudyView({
           <p className="label">
             {number} / {copy.sector}
           </p>
-          <h1 className="mt-6 font-display text-6xl leading-[0.95] text-primary">
+          <h1 className="mt-6 font-display text-6xl leading-[1.15] text-primary">
             {project.title}
           </h1>
         </Reveal>
@@ -463,7 +463,7 @@ export function CaseStudyView({
         <div className="container-studio flex flex-col gap-6 py-20 md:flex-row md:items-end md:justify-between md:py-28">
           <div>
             <p className="label">{t.work.nextProject}</p>
-            <p className="mt-6 font-display text-6xl leading-[0.95] text-secondary transition-colors duration-700 group-hover:text-primary">
+            <p className="mt-6 font-display text-6xl leading-[1.15] text-secondary transition-colors duration-700 group-hover:text-primary">
               {next.title}
             </p>
           </div>

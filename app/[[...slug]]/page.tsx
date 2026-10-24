@@ -165,12 +165,7 @@ export default async function Page({ params }: { params: Promise<Params> }) {
       <a href="#main" className="skip-link">
         {t.nav.skip}
       </a>
-      <Nav
-        locale={locale}
-        alternates={alternates}
-        ctaLabel={t.cta.label}
-        ctaLabelShort={t.nav.contact}
-      />
+      <Nav locale={locale} alternates={alternates} t={t} />
       <main id="main">{view()}</main>
       <Footer locale={locale} t={t} />
     </div>
