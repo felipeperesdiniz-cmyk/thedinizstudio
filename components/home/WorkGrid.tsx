@@ -33,12 +33,12 @@ export function WorkGrid({ locale, t, story }: { locale: Locale; t: Dictionary; 
             <li key={project.slug}>
               <Reveal delay={(i % 2) * 0.08}>
                 <Link href={projectPath(locale, project.slug)} className="group block">
-                  <div className="relative aspect-[16/10] overflow-hidden bg-surface">
+                  <div className="relative aspect-video overflow-hidden bg-surface">
                     {MOTION[project.slug] ? (
                       <LoopVideo
                         src={MOTION[project.slug]!.src}
                         poster={MOTION[project.slug]!.poster}
-                        className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-[1.2s] ease-[var(--ease-out)] group-hover:scale-[1.03]"
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1.2s] ease-[var(--ease-out)] group-hover:scale-[1.03]"
                       />
                     ) : (
                       <Image
