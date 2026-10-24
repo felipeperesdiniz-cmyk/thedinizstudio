@@ -10,7 +10,8 @@ export interface HomeStory {
     viewWork: string
   }
   work: { kicker: string; view: string; visit: string }
-  note: { kicker: string; text: string }
+  /** What a client weighs before writing: price, time, languages, ownership. All stated in the FAQ. */
+  facts: readonly { value: string; text: string }[]
   films: { kicker: string; title: string; rafa: string; mari: string }
   services: { kicker: string }
   studio: { capacity: string }
@@ -25,10 +26,12 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
       viewWork: 'View the work',
     },
     work: { kicker: 'Selected work', view: 'View case study', visit: 'Visit site' },
-    note: {
-      kicker: 'The studio',
-      text: 'I’m Felipe Diniz. I design and build websites, logos and Instagram accounts for small businesses: so far a hand embroidery artist between Weston and Rio, a salon in Plantation, a photographer in Gainesville and a pastry chef in Rio de Janeiro. Every site is written, not machine-translated, in the languages its customers speak.',
-    },
+    facts: [
+      { value: 'Fixed price', text: 'Quoted in writing before anything starts. No hourly billing afterwards.' },
+      { value: '4 to 8 weeks', text: 'From the first conversation to launch, for most projects.' },
+      { value: 'Three languages', text: 'English, Portuguese and Spanish, each at its own address.' },
+      { value: 'Yours at handover', text: 'The finished site, its source code and the domain. No licence to renew.' },
+    ],
     films: { kicker: 'Film', title: 'Films on the sites', rafa: 'The showreel that opens the site', mari: 'Mariana at work, behind the home page' },
     services: { kicker: 'Services' },
     studio: { capacity: 'One or two projects at a time' },
@@ -42,10 +45,12 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
       viewWork: 'Ver os projetos',
     },
     work: { kicker: 'Projetos selecionados', view: 'Ver o projeto', visit: 'Visitar o site' },
-    note: {
-      kicker: 'O estúdio',
-      text: 'Sou Felipe Diniz. Desenho e construo sites, logos e perfis de Instagram para pequenos negócios: até agora, uma bordadeira entre Weston e o Rio, um salão em Plantation, um fotógrafo em Gainesville e uma confeiteira no Rio de Janeiro. Cada site é escrito, não traduzido por máquina, nos idiomas que os clientes falam.',
-    },
+    facts: [
+      { value: 'Preço fixo', text: 'Orçado por escrito antes de começar. Sem cobrança por hora depois.' },
+      { value: '4 a 8 semanas', text: 'Da primeira conversa até o ar, na maioria dos projetos.' },
+      { value: 'Três idiomas', text: 'Inglês, português e espanhol, cada um no seu endereço.' },
+      { value: 'Seu na entrega', text: 'O site pronto, o código-fonte e o domínio. Nenhuma licença para renovar.' },
+    ],
     films: { kicker: 'Filme', title: 'Filmes nos sites', rafa: 'O showreel que abre o site', mari: 'Mariana bordando, por trás da página inicial' },
     services: { kicker: 'Serviços' },
     studio: { capacity: 'Um ou dois projetos por vez' },
@@ -59,10 +64,12 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
       viewWork: 'Ver los proyectos',
     },
     work: { kicker: 'Proyectos seleccionados', view: 'Ver el proyecto', visit: 'Visitar la web' },
-    note: {
-      kicker: 'El estudio',
-      text: 'Soy Felipe Diniz. Diseño y construyo webs, logos y perfiles de Instagram para pequeños negocios: hasta ahora, una bordadora entre Weston y Río, un salón en Plantation, un fotógrafo en Gainesville y una pastelera en Río de Janeiro. Cada web está escrita, no traducida por máquina, en los idiomas que hablan sus clientes.',
-    },
+    facts: [
+      { value: 'Precio fijo', text: 'Presupuestado por escrito antes de empezar. Sin cobro por hora después.' },
+      { value: 'De 4 a 8 semanas', text: 'Desde la primera conversación hasta la publicación, en la mayoría de los proyectos.' },
+      { value: 'Tres idiomas', text: 'Inglés, portugués y español, cada uno en su propia dirección.' },
+      { value: 'Tuyo en la entrega', text: 'La web terminada, su código fuente y el dominio. Ninguna licencia que renovar.' },
+    ],
     films: { kicker: 'Película', title: 'Películas en las webs', rafa: 'El showreel que abre la web', mari: 'Mariana bordando, detrás de la página de inicio' },
     services: { kicker: 'Servicios' },
     studio: { capacity: 'Uno o dos proyectos a la vez' },

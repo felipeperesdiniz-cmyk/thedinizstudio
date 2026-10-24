@@ -1,5 +1,5 @@
 import { HomeHero } from '@/components/home/HomeHero'
-import { Note } from '@/components/home/Note'
+import { Facts } from '@/components/home/Facts'
 import { WorkGrid } from '@/components/home/WorkGrid'
 import { Films, type FilmEntry } from '@/components/home/Films'
 import { ServicesRow } from '@/components/home/ServicesRow'
@@ -11,7 +11,7 @@ import { projectPath, type Locale } from '@/lib/i18n'
 import type { Dictionary } from '@/content/copy/types'
 
 /**
- * Pictures first, words small. A photograph of the work, a note from the person who makes it,
+ * Pictures first, words small. A photograph of the work, what a client wants settled first (price, time, languages, ownership),
  * the work, the films made for it, what the studio sells, who does it, and the questions before hiring.
  */
 export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
@@ -50,7 +50,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
   return (
     <>
       <HomeHero locale={locale} h1={t.home.h1} line={t.home.heroLine} cta={t.cta.label} story={story.hero} />
-      <Note story={story.note} />
+      <Facts facts={story.facts} />
       <WorkGrid locale={locale} t={t} story={story.work} />
       <Films
         kicker={story.films.kicker}
