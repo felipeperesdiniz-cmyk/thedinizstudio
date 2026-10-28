@@ -4,6 +4,9 @@ import type { Locale } from '@/lib/i18n'
 export interface HomeStory {
   hero: {
     title: string
+    /** Credit for the photograph behind the title. */
+    credit: string
+    alt: string
     viewWork: string
   }
   work: { kicker: string; view: string; visit: string }
@@ -18,6 +21,8 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
   en: {
     hero: {
       title: 'Websites, identity and marketing, made with care',
+      credit: 'Bordados com Amor, hand embroidery',
+      alt: 'A dry leaf embroidered by hand with the word AMOR and a sprig of small red flowers, lying on grass',
       viewWork: 'View the work',
     },
     work: { kicker: 'Selected work', view: 'View case study', visit: 'Visit site' },
@@ -39,6 +44,8 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
   pt: {
     hero: {
       title: 'Sites, identidade e marketing, feitos com cuidado',
+      credit: 'Bordados com Amor, bordado à mão',
+      alt: 'Uma folha seca bordada à mão com a palavra AMOR e um ramo de florzinhas vermelhas, sobre a grama',
       viewWork: 'Ver os projetos',
     },
     work: { kicker: 'Projetos selecionados', view: 'Ver o projeto', visit: 'Visitar o site' },
@@ -60,6 +67,8 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
   es: {
     hero: {
       title: 'Webs, identidad y marketing, hechos con cuidado',
+      credit: 'Bordados com Amor, bordado a mano',
+      alt: 'Una hoja seca bordada a mano con la palabra AMOR y una rama de florecitas rojas, sobre el césped',
       viewWork: 'Ver los proyectos',
     },
     work: { kicker: 'Proyectos seleccionados', view: 'Ver el proyecto', visit: 'Visitar la web' },
