@@ -11,30 +11,38 @@ interface HomeHeroProps {
   story: HomeStory['hero']
 }
 
-/** One photograph of a client's work, the full width of the screen, with the studio's offer set quietly on it. */
+/**
+ * The embroidered leaf from Bordados com Amor, set on a ground the colour of the soil it lies on.
+ * The photograph's edges fade into that ground, so the leaf reads as lying in the page rather than in a frame.
+ * Phones stack the photograph above the words; wider screens put the words in the open ground to its left.
+ */
 export function HomeHero({ locale, h1, line, cta, story }: HomeHeroProps) {
   return (
-    <section aria-labelledby="home-title" className="relative mt-[var(--nav-height)] h-[calc(88svh-var(--nav-height))] min-h-[30rem] overflow-hidden bg-ink text-white">
-      <Image
-        src="/images/work/bordados/photo-4.webp"
-        alt={story.alt}
-        fill
-        priority
-        sizes="100vw"
-        quality={90}
-        className="hero-settle object-cover object-[50%_80%]"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/0" />
+    <section
+      aria-labelledby="home-title"
+      className="relative mt-[var(--nav-height)] overflow-hidden bg-[#1b1814] text-white lg:h-[calc(88svh-var(--nav-height))] lg:min-h-[34rem]"
+    >
+      <div className="relative aspect-[4/3] w-full lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:w-[68%] [mask-image:linear-gradient(to_bottom,black_70%,transparent)] lg:[mask-image:linear-gradient(to_right,transparent,black_30%,black_92%,transparent),linear-gradient(to_bottom,transparent,black_12%,black_86%,transparent)] lg:[mask-composite:intersect]">
+        <Image
+          src="/images/work/bordados/hero-leaf.webp"
+          alt={story.alt}
+          fill
+          priority
+          sizes="(max-width: 1024px) 100vw, 68vw"
+          quality={90}
+          className="hero-settle object-cover object-[50%_52%] lg:object-[28%_50%]"
+        />
+      </div>
 
-      <div className="hero-rise absolute inset-x-0 bottom-0 [text-shadow:0_1px_24px_rgba(0,0,0,0.45)] flex flex-col items-center px-[var(--content-padding)] pb-[clamp(3rem,8vh,5.5rem)] text-center">
+      <div className="hero-rise relative flex h-full flex-col justify-end px-[var(--content-padding)] pb-14 pt-2 lg:max-w-[min(34rem,42%)] lg:pb-[clamp(3rem,9vh,6rem)] lg:pt-0">
         <h1 id="home-title" className="sr-only">
           {h1}
         </h1>
-        <p aria-hidden="true" className="max-w-[24ch] font-serif text-5xl leading-[1.2] tracking-[0.01em]">
+        <p aria-hidden="true" className="max-w-[16ch] font-serif text-5xl leading-[1.15] tracking-[0.01em]">
           {story.title}
         </p>
-        <p className="mt-5 max-w-[52ch] text-sm font-light leading-relaxed text-white/85">{line}</p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <p className="mt-6 max-w-[40ch] text-sm font-light leading-relaxed text-white/75">{line}</p>
+        <div className="mt-9 flex flex-wrap gap-3">
           <a href="#work" className="btn btn-light">
             {story.viewWork}
           </a>
@@ -44,7 +52,7 @@ export function HomeHero({ locale, h1, line, cta, story }: HomeHeroProps) {
         </div>
       </div>
 
-      <p className="label absolute bottom-5 left-[var(--content-padding)] hidden text-white/60 md:block">{story.credit}</p>
+      <p className="label absolute bottom-6 right-[var(--content-padding)] hidden text-white/45 lg:block">{story.credit}</p>
     </section>
   )
 }

@@ -1,5 +1,5 @@
 import { HomeHero } from '@/components/home/HomeHero'
-import { Facts } from '@/components/home/Facts'
+import { Terms } from '@/components/home/Terms'
 import { WorkGrid } from '@/components/home/WorkGrid'
 import { Films, type FilmEntry } from '@/components/home/Films'
 import { ServicesRow } from '@/components/home/ServicesRow'
@@ -50,7 +50,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
   return (
     <>
       <HomeHero locale={locale} h1={t.home.h1} line={t.home.heroLine} cta={t.cta.label} story={story.hero} />
-      <Facts facts={story.facts} />
+      <Terms terms={story.terms} />
       <WorkGrid locale={locale} t={t} story={story.work} />
       <Films
         kicker={story.films.kicker}
