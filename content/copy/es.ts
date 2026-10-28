@@ -17,9 +17,10 @@ export const es: Dictionary = {
   },
 
   cta: {
-    label: 'Empezar un proyecto',
-    title: '¿Tienes un proyecto en mente?',
-    text: 'Cuéntame qué vendes y a quién. Recibes una respuesta clara sobre alcance y plazo, y un presupuesto cerrado por escrito.',
+    label: 'Hablemos de tu proyecto',
+    kicker: 'Siguiente paso',
+    title: 'Cuéntame sobre tu negocio. Recibe un precio cerrado.',
+    text: 'Unas líneas sobre lo que vendes, a quién y qué todavía no funciona. Respondo yo mismo en un día hábil, y el precio llega por escrito antes de empezar cualquier trabajo.',
     bookCall: 'Agenda una llamada de 30 minutos',
   },
 
@@ -509,12 +510,12 @@ export const es: Dictionary = {
 
   contact: {
     meta: {
-      title: 'Contacto | Empezar un Proyecto',
+      title: 'Contacto | Hablemos de tu Proyecto',
       description:
         'Cuéntame qué necesitas: una web nueva, logo e identidad de marca, o el marketing alrededor. Respuesta normalmente en un día, en español, inglés o portugués.',
     },
     kicker: 'Contacto',
-    title: 'Empezar un proyecto',
+    title: 'Hablemos de tu proyecto',
     lede: 'Todo proyecto empieza con una conversación. Recibes una respuesta clara sobre alcance y plazo, un presupuesto cerrado por escrito, y respuesta en un día hábil — de la persona que de verdad hace el trabajo.',
     form: {
       name: 'Tu nombre',

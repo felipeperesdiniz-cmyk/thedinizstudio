@@ -24,27 +24,27 @@ export function Reveal({ children, as = 'text', delay = 0, className = '' }: Rev
     }
 
     const ctx = gsap.context(() => {
-      const trigger = { trigger: el, start: 'top 88%' }
+      const trigger = { trigger: el, start: 'top 92%' }
 
       if (as === 'image') {
         const inner = el.firstElementChild
         gsap.fromTo(
           el,
           { opacity: 1, clipPath: 'inset(100% 0 0 0)' },
-          { clipPath: 'inset(0% 0 0 0)', duration: 1.3, delay, ease: 'expo.out', scrollTrigger: trigger },
+          { clipPath: 'inset(0% 0 0 0)', duration: 0.8, delay, ease: 'expo.out', scrollTrigger: trigger },
         )
         if (inner) {
           gsap.fromTo(
             inner,
             { scale: 1.12 },
-            { scale: 1, duration: 1.8, delay, ease: 'expo.out', scrollTrigger: trigger },
+            { scale: 1, duration: 1.1, delay, ease: 'expo.out', scrollTrigger: trigger },
           )
         }
       } else {
         gsap.fromTo(
           el,
-          { opacity: 0, y: 28 },
-          { opacity: 1, y: 0, duration: 1.1, delay, ease: 'power3.out', scrollTrigger: trigger },
+          { opacity: 0, y: 16 },
+          { opacity: 1, y: 0, duration: 0.6, delay, ease: 'power3.out', scrollTrigger: trigger },
         )
       }
     }, el)

@@ -10,9 +10,8 @@ export interface HomeStory {
     viewWork: string
   }
   work: { kicker: string; view: string; visit: string }
-  /** What a client weighs before writing: price, time, languages, ownership. All stated in the FAQ. */
+  /** What a buyer weighs before writing: price, running costs, editing, time, ownership. All stated in the FAQ. */
   terms: { kicker: string; title: string; items: readonly { term: string; text: string }[] }
-  films: { kicker: string; title: string; rafa: string; mari: string }
   services: { kicker: string }
   studio: { capacity: string }
 }
@@ -28,15 +27,15 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
     work: { kicker: 'Selected work', view: 'View case study', visit: 'Visit site' },
     terms: {
       kicker: 'Before you write',
-      title: 'The terms, settled up front',
+      title: 'What it costs, and what comes after',
       items: [
-        { term: 'Fixed price', text: 'Quoted in writing before anything starts. No hourly billing afterwards.' },
+        { term: 'Fixed price', text: 'One price for the whole job, in writing before anything starts. It moves with the number of pages and languages, and whether a logo or photography is included.' },
+        { term: 'Running costs', text: 'Hosting and the domain, paid straight to their providers. No page-builder subscription and no licence to renew; the proposal lists every outside cost.' },
+        { term: 'Editing after launch', text: 'A simple editor for text, photos and prices, when it is written into the proposal. Or send changes and they are made for you, priced per job.' },
         { term: '4 to 8 weeks', text: 'From the first conversation to launch, for most projects.' },
-        { term: 'Three languages', text: 'English, Portuguese and Spanish, each at its own address.' },
-        { term: 'Yours at handover', text: 'The finished site, its source code and the domain. No licence to renew.' },
+        { term: 'Yours at handover', text: 'The finished site, its source code and the domain, with a walkthrough.' },
       ],
     },
-    films: { kicker: 'Film', title: 'Films on the sites', rafa: 'The showreel that opens the site', mari: 'Mariana at work, behind the home page' },
     services: { kicker: 'Services' },
     studio: { capacity: 'One or two projects at a time' },
   },
@@ -51,15 +50,15 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
     work: { kicker: 'Projetos selecionados', view: 'Ver o projeto', visit: 'Visitar o site' },
     terms: {
       kicker: 'Antes de escrever',
-      title: 'As condições, definidas de antemão',
+      title: 'O que custa, e o que vem depois',
       items: [
-        { term: 'Preço fixo', text: 'Orçado por escrito antes de começar. Sem cobrança por hora depois.' },
+        { term: 'Preço fixo', text: 'Um preço para o trabalho inteiro, por escrito antes de começar. Varia com o número de páginas e idiomas, e se inclui logo ou fotografia.' },
+        { term: 'Custos depois do ar', text: 'Hospedagem e domínio, pagos direto aos fornecedores. Sem assinatura de construtor de sites e sem licença para renovar; a proposta lista todo custo externo.' },
+        { term: 'Editar depois do lançamento', text: 'Um editor simples para textos, fotos e preços, quando estiver na proposta. Ou você envia as mudanças e elas são feitas para você, com preço por pedido.' },
         { term: '4 a 8 semanas', text: 'Da primeira conversa até o ar, na maioria dos projetos.' },
-        { term: 'Três idiomas', text: 'Inglês, português e espanhol, cada um no seu endereço.' },
-        { term: 'Seu na entrega', text: 'O site pronto, o código-fonte e o domínio. Nenhuma licença para renovar.' },
+        { term: 'Seu na entrega', text: 'O site pronto, o código-fonte e o domínio, com uma apresentação de como tudo funciona.' },
       ],
     },
-    films: { kicker: 'Filme', title: 'Filmes nos sites', rafa: 'O showreel que abre o site', mari: 'Mariana bordando, por trás da página inicial' },
     services: { kicker: 'Serviços' },
     studio: { capacity: 'Um ou dois projetos por vez' },
   },
@@ -74,15 +73,15 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
     work: { kicker: 'Proyectos seleccionados', view: 'Ver el proyecto', visit: 'Visitar la web' },
     terms: {
       kicker: 'Antes de escribir',
-      title: 'Las condiciones, claras desde el principio',
+      title: 'Lo que cuesta, y lo que viene después',
       items: [
-        { term: 'Precio fijo', text: 'Presupuestado por escrito antes de empezar. Sin cobro por hora después.' },
+        { term: 'Precio fijo', text: 'Un precio por todo el trabajo, por escrito antes de empezar. Cambia según el número de páginas e idiomas, y si incluye logo o fotografía.' },
+        { term: 'Costes continuos', text: 'Hosting y dominio, pagados directamente a sus proveedores. Sin suscripción a un creador de webs y sin licencia que renovar; la propuesta detalla cada coste externo.' },
+        { term: 'Editar después del lanzamiento', text: 'Un editor sencillo para textos, fotos y precios, cuando está en la propuesta. O envías los cambios y se hacen por ti, con precio por encargo.' },
         { term: 'De 4 a 8 semanas', text: 'Desde la primera conversación hasta la publicación, en la mayoría de los proyectos.' },
-        { term: 'Tres idiomas', text: 'Inglés, portugués y español, cada uno en su propia dirección.' },
-        { term: 'Tuyo en la entrega', text: 'La web terminada, su código fuente y el dominio. Ninguna licencia que renovar.' },
+        { term: 'Tuyo en la entrega', text: 'La web terminada, su código fuente y el dominio, con una explicación de cómo funciona todo.' },
       ],
     },
-    films: { kicker: 'Película', title: 'Películas en las webs', rafa: 'El showreel que abre la web', mari: 'Mariana bordando, detrás de la página de inicio' },
     services: { kicker: 'Servicios' },
     studio: { capacity: 'Uno o dos proyectos a la vez' },
   },

@@ -17,9 +17,10 @@ export const en: Dictionary = {
   },
 
   cta: {
-    label: 'Start a project',
-    title: 'Have a project in mind?',
-    text: 'Tell me what you sell and who you sell it to. You get a straight answer on scope and timeline, and a fixed quote in writing.',
+    label: 'Discuss your project',
+    kicker: 'Next step',
+    title: 'Tell me about the business. Get a fixed quote.',
+    text: 'A few lines on what you sell, who buys it and what is not working yet. I reply myself within one business day, and the price comes in writing before any work starts.',
     bookCall: 'Book a 30-minute call',
   },
 
@@ -509,12 +510,12 @@ export const en: Dictionary = {
 
   contact: {
     meta: {
-      title: 'Contact | Start a Project',
+      title: 'Contact | Discuss Your Project',
       description:
         'Tell the studio what you need: a website, a logo and identity, or the marketing around them. Replies within a day, in English, Portuguese or Spanish.',
     },
     kicker: 'Contact',
-    title: 'Start a project',
+    title: 'Discuss your project',
     lede: 'Every project starts with a conversation. You get a straight answer on scope and timeline, a fixed quote in writing, and a reply within one business day — from the person who actually does the work.',
     form: {
       name: 'Your name',

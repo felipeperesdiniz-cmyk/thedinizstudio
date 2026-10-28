@@ -96,8 +96,10 @@ export interface Dictionary {
     skip: string
   }
   cta: {
+    /** The one primary action, in the nav, the hero and the closing band. */
     label: string
     /** Repeated band at the foot of most pages. */
+    kicker: string
     title: string
     text: string
     bookCall: string

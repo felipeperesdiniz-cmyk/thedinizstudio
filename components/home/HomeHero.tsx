@@ -36,14 +36,15 @@ export function HomeHero({ locale, h1, line, cta, story }: HomeHeroProps) {
         <p aria-hidden="true" className="max-w-[24ch] font-serif text-5xl leading-[1.2] tracking-[0.01em]">
           {story.title}
         </p>
-        <p className="mt-5 max-w-[52ch] text-sm font-light leading-relaxed text-white/85">{line}</p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <a href="#work" className="btn btn-light">
-            {story.viewWork}
-          </a>
-          <Link href={contactPath(locale)} className="btn btn-light">
+        <p className="mt-5 max-w-[52ch] text-base leading-relaxed text-white/90">{line}</p>
+        {/* One primary action; the work is a quieter second path. */}
+        <div className="mt-8 flex flex-col items-center gap-5 sm:flex-row sm:gap-8">
+          <Link href={contactPath(locale)} className="btn btn-light-solid">
             {cta}
           </Link>
+          <a href="#work" className="label border-b border-white/60 pb-1 text-white transition-colors hover:border-white">
+            {story.viewWork}
+          </a>
         </div>
       </div>
 

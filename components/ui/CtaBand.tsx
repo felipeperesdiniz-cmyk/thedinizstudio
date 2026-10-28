@@ -4,16 +4,16 @@ import { SITE } from '@/lib/site'
 import { contactPath, type Locale } from '@/lib/i18n'
 import type { Dictionary } from '@/content/copy/types'
 
-/** The last thing on every page: one question, one way to answer it. */
+/** The last thing on every page: what to send, when the reply comes, and one primary way to send it. */
 export function CtaBand({ locale, t }: { locale: Locale; t: Dictionary }) {
   return (
     <section aria-labelledby="cta-title" className="border-t border-line">
       <Reveal className="container-studio flex flex-col items-center py-[var(--section-padding)] text-center">
-        <p className="label">{t.cta.label}</p>
+        <p className="label">{t.cta.kicker}</p>
         <h2 id="cta-title" className="mt-5 text-6xl">
           {t.cta.title}
         </h2>
-        <p className="mt-5 max-w-[46ch] text-secondary">{t.cta.text}</p>
+        <p className="mt-5 max-w-[48ch] text-lg text-secondary">{t.cta.text}</p>
 
         <div className="mt-9 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
           <Link href={contactPath(locale)} className="btn btn-solid">
