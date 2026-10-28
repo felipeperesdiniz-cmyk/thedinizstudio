@@ -1,4 +1,4 @@
-import { Libre_Caslon_Text, Mulish } from 'next/font/google'
+import { Caveat, Libre_Caslon_Text, Mulish } from 'next/font/google'
 
 // A bookish serif for headlines, a plain sans for everything you read or press.
 export const serif = Libre_Caslon_Text({
@@ -16,4 +16,12 @@ export const sans = Mulish({
   variable: '--ff-sans',
 })
 
-export const fontVariables = `${serif.variable} ${sans.variable}`
+// Handwriting, only for the sticky notes under the home page photograph.
+export const hand = Caveat({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['500', '600'],
+  display: 'swap',
+  variable: '--ff-hand',
+})
+
+export const fontVariables = `${serif.variable} ${sans.variable} ${hand.variable}`

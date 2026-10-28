@@ -74,6 +74,7 @@
   --font-serif: var(--ff-serif), ui-serif, Georgia, 'Times New Roman', serif;
   --font-sans: var(--ff-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-mono: var(--ff-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-hand: var(--ff-hand), 'Bradley Hand', cursive;
 
   --text-xs: var(--fs-xs);
   --text-sm: var(--fs-sm);
@@ -308,6 +309,52 @@
 }
 
 /* Reduced motion */
+
+/* Sticky notes: square paper, a darker glue strip along the top, and a corner that lifts off the wall. */
+.sticky-note {
+  position: relative;
+  isolation: isolate;
+  transform: rotate(var(--tilt, 0deg));
+  transition: transform 0.6s var(--ease-out);
+}
+
+/* The shadow under the lifted bottom corner, kept behind the paper. */
+.sticky-note::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  right: 8%;
+  bottom: 10px;
+  width: 64%;
+  height: 32%;
+  box-shadow: 0 16px 14px rgb(40 30 10 / 0.24);
+  transform: rotate(3.5deg) skewX(8deg);
+}
+
+.sticky-note:hover {
+  transform: rotate(0deg) translateY(-4px);
+}
+
+.sticky-note-paper {
+  height: 100%;
+  min-height: 100%;
+  padding: clamp(1rem, 2.4vw, 1.6rem) clamp(0.9rem, 2.2vw, 1.5rem) clamp(1.2rem, 2.8vw, 1.9rem);
+  color: #26314a;
+  background:
+    linear-gradient(180deg, rgb(0 0 0 / 0.045), rgb(0 0 0 / 0) 16%),
+    linear-gradient(170deg, rgb(255 255 255 / 0) 60%, rgb(0 0 0 / 0.05)),
+    var(--paper);
+  border-bottom-right-radius: 3.5rem 0.5rem;
+  box-shadow:
+    0 1px 1px rgb(40 30 10 / 0.08),
+    0 3px 6px -2px rgb(40 30 10 / 0.12);
+}
+
+@media (min-width: 1024px) {
+  .sticky-note-paper {
+    aspect-ratio: 1;
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
   *,
