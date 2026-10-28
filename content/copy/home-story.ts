@@ -10,8 +10,8 @@ export interface HomeStory {
     viewWork: string
   }
   work: { kicker: string; view: string; visit: string }
-  /** What a client weighs before writing: price, time, languages, ownership. All stated in the FAQ. Kept short: each is written on a sticky note. */
-  terms: { kicker: string; notes: readonly { title: string; text: string }[] }
+  /** What a client weighs before writing: price, time, languages, ownership. All stated in the FAQ. */
+  terms: { kicker: string; title: string; items: readonly { term: string; text: string }[] }
   films: { kicker: string; title: string; rafa: string; mari: string }
   services: { kicker: string }
   studio: { capacity: string }
@@ -28,11 +28,12 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
     work: { kicker: 'Selected work', view: 'View case study', visit: 'Visit site' },
     terms: {
       kicker: 'Before you write',
-      notes: [
-        { title: 'Fixed price', text: 'Quoted in writing before we start. No hourly billing.' },
-        { title: '4 to 8 weeks', text: 'First chat to launch, for most projects.' },
-        { title: '3 languages', text: 'English, Portuguese and Spanish, each at its own address.' },
-        { title: 'Yours at handover', text: 'The site, its source code and the domain. Nothing to renew.' },
+      title: 'The terms, settled up front',
+      items: [
+        { term: 'Fixed price', text: 'Quoted in writing before anything starts. No hourly billing afterwards.' },
+        { term: '4 to 8 weeks', text: 'From the first conversation to launch, for most projects.' },
+        { term: 'Three languages', text: 'English, Portuguese and Spanish, each at its own address.' },
+        { term: 'Yours at handover', text: 'The finished site, its source code and the domain. No licence to renew.' },
       ],
     },
     films: { kicker: 'Film', title: 'Films on the sites', rafa: 'The showreel that opens the site', mari: 'Mariana at work, behind the home page' },
@@ -50,11 +51,12 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
     work: { kicker: 'Projetos selecionados', view: 'Ver o projeto', visit: 'Visitar o site' },
     terms: {
       kicker: 'Antes de escrever',
-      notes: [
-        { title: 'Preço fixo', text: 'Orçado por escrito antes de começar. Sem cobrança por hora.' },
-        { title: '4 a 8 semanas', text: 'Da primeira conversa até o ar, na maioria dos projetos.' },
-        { title: '3 idiomas', text: 'Inglês, português e espanhol, cada um no seu endereço.' },
-        { title: 'Seu na entrega', text: 'O site, o código-fonte e o domínio. Nada para renovar.' },
+      title: 'As condições, definidas de antemão',
+      items: [
+        { term: 'Preço fixo', text: 'Orçado por escrito antes de começar. Sem cobrança por hora depois.' },
+        { term: '4 a 8 semanas', text: 'Da primeira conversa até o ar, na maioria dos projetos.' },
+        { term: 'Três idiomas', text: 'Inglês, português e espanhol, cada um no seu endereço.' },
+        { term: 'Seu na entrega', text: 'O site pronto, o código-fonte e o domínio. Nenhuma licença para renovar.' },
       ],
     },
     films: { kicker: 'Filme', title: 'Filmes nos sites', rafa: 'O showreel que abre o site', mari: 'Mariana bordando, por trás da página inicial' },
@@ -72,11 +74,12 @@ export const HOME_STORY: Record<Locale, HomeStory> = {
     work: { kicker: 'Proyectos seleccionados', view: 'Ver el proyecto', visit: 'Visitar la web' },
     terms: {
       kicker: 'Antes de escribir',
-      notes: [
-        { title: 'Precio fijo', text: 'Presupuestado por escrito antes de empezar. Sin cobro por hora.' },
-        { title: 'De 4 a 8 semanas', text: 'De la primera charla a la publicación, en la mayoría de los proyectos.' },
-        { title: '3 idiomas', text: 'Inglés, portugués y español, cada uno en su dirección.' },
-        { title: 'Tuyo en la entrega', text: 'La web, su código fuente y el dominio. Nada que renovar.' },
+      title: 'Las condiciones, claras desde el principio',
+      items: [
+        { term: 'Precio fijo', text: 'Presupuestado por escrito antes de empezar. Sin cobro por hora después.' },
+        { term: 'De 4 a 8 semanas', text: 'Desde la primera conversación hasta la publicación, en la mayoría de los proyectos.' },
+        { term: 'Tres idiomas', text: 'Inglés, portugués y español, cada uno en su propia dirección.' },
+        { term: 'Tuyo en la entrega', text: 'La web terminada, su código fuente y el dominio. Ninguna licencia que renovar.' },
       ],
     },
     films: { kicker: 'Película', title: 'Películas en las webs', rafa: 'El showreel que abre la web', mari: 'Mariana bordando, detrás de la página de inicio' },
