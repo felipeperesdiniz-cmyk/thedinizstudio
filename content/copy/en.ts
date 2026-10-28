@@ -95,7 +95,7 @@ export const en: Dictionary = {
         {
           slug: 'what-do-you-build-with',
           q: 'What do you build with?',
-          a: 'Custom code rather than a page builder. That keeps the pages light and fast, and there is no page-builder subscription to keep paying. Hosting and the domain are still paid to their providers, as with any site.',
+          a: 'Modern web frameworks and tools rather than a drag-and-drop page builder. That keeps the pages light and fast, and usually means no page-builder subscription to keep paying. Hosting and the domain are still paid to their providers, as with any site.',
         },
       ],
     },
@@ -146,11 +146,11 @@ export const en: Dictionary = {
     cards: {
       'web-design': {
         title: 'Web design and development',
-        text: 'Custom sites written from scratch: fast, multilingual, and built to turn a visitor into an enquiry.',
+        text: 'Custom-designed sites on modern frameworks: fast, multilingual, and built to turn a visitor into an enquiry.',
         proof: [
           { value: 'Up to 3', label: 'Languages per site' },
           { value: '100%', label: 'Code handed over' },
-          { value: '0', label: 'Templates used' },
+          { value: '1', label: 'Design made for you' },
         ],
       },
       'brand-identity': {
@@ -181,14 +181,14 @@ export const en: Dictionary = {
       meta: {
         title: 'Web Design and Development | Custom, Multilingual Websites',
         description:
-          'Custom websites for service and creative businesses. Hand-coded, fast and multilingual, with clear handover and the technical groundwork search engines need.',
+          'Custom websites for service and creative businesses. Custom-designed, fast and multilingual, with clear handover and the technical groundwork search engines need.',
       },
       kicker: 'Service',
       title: 'Web design and development',
       lede: 'A website built for your business, not adapted from a template someone else is already using.',
       body: [
         'If you are searching for a new website, you are usually solving one of three problems: the current site looks nothing like the quality of your work, it is slow or broken on a phone, or people visit and never get in touch. All three are fixable, and all three come down to the same thing, which is deciding what the site is for before anyone opens a design tool.',
-        'Every page here is written and coded by hand. No page builder, no theme, no monthly licence for a plugin that eventually breaks. That keeps the site light on a phone and gives search engines and AI assistants clean, structured pages to read. It helps you get discovered; it does not guarantee a ranking or a mention.',
+        'Every site is designed for its business and built with modern web frameworks and tools. No drag-and-drop page builder and no off-the-shelf theme to fight. That keeps the site light on a phone and gives search engines and AI assistants clean, structured pages to read. It helps you get discovered; it does not guarantee a ranking or a mention.',
         'Where it makes sense, the site is published in English, Portuguese and Spanish. Each language gets its own address and its own text, written rather than translated by a machine, so search engines can match each version to people searching in that language.',
       ],
       included: {
@@ -274,7 +274,7 @@ export const en: Dictionary = {
           {
             slug: 'do-i-need-wordpress-wix-or-squarespace',
             q: 'Do I need Wordpress, Wix or Squarespace?',
-            a: 'You do not. Those make sense if you want to build and edit everything yourself. A hand-built site avoids the page-builder subscription and the plugin upkeep, and ties you to no platform that can change its pricing. You still pay for hosting and a domain, as with any website.',
+            a: 'You do not. Those make sense if you want to build and edit everything yourself. A site built on a modern framework usually avoids the page-builder subscription and the plugin upkeep, and ties you to no platform that can change its pricing. You still pay for hosting and a domain, as with any website.',
           },
           {
             slug: 'will-i-be-able-to-update-the-site-myself',
@@ -490,7 +490,7 @@ export const en: Dictionary = {
       { label: 'Working in', value: 'English, Portuguese, Spanish' },
       { label: 'Clients in', value: 'United States and Brazil' },
       { label: 'Projects at a time', value: 'One or two' },
-      { label: 'Built with', value: 'Custom code, no page builders' },
+      { label: 'Built with', value: 'Modern web frameworks' },
     ],
   },
 
@@ -712,7 +712,7 @@ export const en: Dictionary = {
       meta: {
         title: 'Rafa Diniz | Photographer and Filmmaker Portfolio Website',
         description:
-          'A hand-coded portfolio for a photographer and filmmaker: two short films, an archive filtered by subject, and a signature drawn by hand as the logo.',
+          'A custom portfolio for a photographer and filmmaker: two short films, an archive filtered by subject, and a signature drawn by hand as the logo.',
       },
       sector: 'Photography and film',
       highlight: 'A hand-drawn signature, two films, one accent',
@@ -751,9 +751,9 @@ export const en: Dictionary = {
           kind: 'client',
         },
         {
-          value: '0',
-          label: 'Templates',
-          note: 'Static and hand-coded throughout.',
+          value: '1',
+          label: 'Accent colour',
+          note: 'The only colour on the site that is not a photograph.',
           kind: 'delivered',
         },
       ],
@@ -774,8 +774,8 @@ export const en: Dictionary = {
         },
         {
           kicker: 'Build',
-          title: 'Static, and hand-coded',
-          text: 'No template and no page builder, which keeps the pages light even with photographs the size of a wall.',
+          title: 'Static, and light',
+          text: 'Static pages and no page builder, which keeps the pages light even with photographs the size of a wall.',
         },
       ],
       screens: ['Films', 'Archive', 'About', 'Services'],

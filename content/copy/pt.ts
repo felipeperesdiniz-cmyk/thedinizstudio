@@ -95,7 +95,7 @@ export const pt: Dictionary = {
         {
           slug: 'com-o-que-voce-constroi',
           q: 'Com o que você constrói?',
-          a: 'Código próprio, não construtor de páginas. Isso mantém as páginas leves e rápidas, e não há assinatura de construtor para continuar pagando. Hospedagem e domínio continuam sendo pagos aos fornecedores, como em qualquer site.',
+          a: 'Frameworks e ferramentas web modernas, não construtor de páginas. Isso mantém as páginas leves e rápidas, e normalmente não há assinatura de construtor para pagar. Hospedagem e domínio continuam sendo pagos aos fornecedores, como em qualquer site.',
         },
       ],
     },
@@ -146,11 +146,11 @@ export const pt: Dictionary = {
     cards: {
       'web-design': {
         title: 'Criação de sites',
-        text: 'Sites escritos do zero: rápidos, multilíngues e feitos para transformar visita em contato.',
+        text: 'Sites com design próprio em frameworks modernos: rápidos, multilíngues e feitos para transformar visita em contato.',
         proof: [
           { value: 'Até 3', label: 'Idiomas por site' },
           { value: '100%', label: 'Código entregue a você' },
-          { value: '0', label: 'Modelos prontos' },
+          { value: '1', label: 'Design feito para você' },
         ],
       },
       'brand-identity': {
@@ -181,14 +181,14 @@ export const pt: Dictionary = {
       meta: {
         title: 'Criação de Sites | Sites Sob Medida e Multilíngues',
         description:
-          'Sites sob medida para negócios de serviço e criativos. Feitos à mão, rápidos e multilíngues, com entrega clara e a base técnica de que os buscadores precisam.',
+          'Sites sob medida para negócios de serviço e criativos. Com design próprio, rápidos e multilíngues, com entrega clara e a base técnica de que os buscadores precisam.',
       },
       kicker: 'Serviço',
       title: 'Criação de sites',
       lede: 'Um site feito para o seu negócio, e não adaptado de um modelo que outra pessoa já está usando.',
       body: [
         'Quem procura um site novo normalmente está resolvendo um de três problemas: o site atual não tem a mesma qualidade do trabalho, ele é lento ou quebrado no celular, ou as pessoas entram e nunca entram em contato. Os três têm solução, e os três dependem da mesma coisa: decidir para que serve o site antes de alguém abrir qualquer programa de design.',
-        'Cada página aqui é escrita e programada à mão. Sem construtor de páginas, sem tema pronto, sem licença mensal de um plugin que um dia quebra. Isso mantém o site leve no celular e entrega a buscadores e assistentes de inteligência artificial páginas limpas e estruturadas para ler. Ajuda a ser descoberto; não garante posição nem menção.',
+        'Cada site é desenhado para o seu negócio e construído com frameworks e ferramentas web modernas. Sem construtor de arrastar e soltar e sem tema pronto para brigar. Isso mantém o site leve no celular e entrega a buscadores e assistentes de inteligência artificial páginas limpas e estruturadas para ler. Ajuda a ser descoberto; não garante posição nem menção.',
         'Quando faz sentido, o site é publicado em português, inglês e espanhol. Cada idioma ganha o seu endereço e o seu texto, escrito e não traduzido por máquina, para que os buscadores associem cada versão a quem busca naquele idioma.',
       ],
       included: {
@@ -274,7 +274,7 @@ export const pt: Dictionary = {
           {
             slug: 'preciso-de-wordpress-wix-ou-squarespace',
             q: 'Eu preciso de Wordpress, Wix ou Squarespace?',
-            a: 'Não precisa. Essas ferramentas fazem sentido se você quer montar e editar tudo sozinho. Um site feito à mão dispensa a assinatura do construtor e a manutenção de plugins, e não prende você a uma plataforma que muda de preço quando quer. Hospedagem e domínio continuam sendo pagos, como em qualquer site.',
+            a: 'Não precisa. Essas ferramentas fazem sentido se você quer montar e editar tudo sozinho. Um site construído num framework moderno normalmente dispensa a assinatura do construtor e a manutenção de plugins, e não prende você a uma plataforma que muda de preço quando quer. Hospedagem e domínio continuam sendo pagos, como em qualquer site.',
           },
           {
             slug: 'vou-conseguir-atualizar-o-site-sozinho',
@@ -490,7 +490,7 @@ export const pt: Dictionary = {
       { label: 'Idiomas', value: 'Português, inglês, espanhol' },
       { label: 'Clientes em', value: 'Brasil e Estados Unidos' },
       { label: 'Projetos por vez', value: 'Um ou dois' },
-      { label: 'Feito com', value: 'Código próprio, sem construtor de páginas' },
+      { label: 'Feito com', value: 'Frameworks web modernos' },
     ],
   },
 
@@ -712,7 +712,7 @@ export const pt: Dictionary = {
       meta: {
         title: 'Rafa Diniz | Site de Portfólio de Fotógrafo e Cineasta',
         description:
-          'Portfólio feito à mão para um fotógrafo e cineasta: dois curtas, um arquivo filtrado por assunto e uma assinatura desenhada à mão como logo.',
+          'Portfólio sob medida para um fotógrafo e cineasta: dois curtas, um arquivo filtrado por assunto e uma assinatura desenhada à mão como logo.',
       },
       sector: 'Fotografia e cinema',
       highlight: 'Uma assinatura à mão, dois filmes, um acento',
@@ -751,9 +751,9 @@ export const pt: Dictionary = {
           kind: 'client',
         },
         {
-          value: '0',
-          label: 'Modelos prontos',
-          note: 'Estático e feito à mão do início ao fim.',
+          value: '1',
+          label: 'Cor de acento',
+          note: 'A única cor do site que não é uma fotografia.',
           kind: 'delivered',
         },
       ],
@@ -774,8 +774,8 @@ export const pt: Dictionary = {
         },
         {
           kicker: 'Construção',
-          title: 'Estático, e feito à mão',
-          text: 'Sem modelo pronto e sem construtor de páginas, o que mantém as páginas leves mesmo com fotografias do tamanho de uma parede.',
+          title: 'Estático, e leve',
+          text: 'Páginas estáticas e sem construtor de páginas, o que mantém as páginas leves mesmo com fotografias do tamanho de uma parede.',
         },
       ],
       screens: ['Filmes', 'Arquivo', 'Sobre', 'Serviços'],
@@ -791,11 +791,11 @@ export const pt: Dictionary = {
       meta: {
         title: 'Renata Estrella Pâtisserie | Marca, Site e Perfil no Google',
         description:
-          'Identidade visual, site, e-book de receitas e Perfil da Empresa no Google para uma pâtisserie de luxo no Rio, tudo criado do zero pelo estúdio.',
+          'Identidade visual, site, e-book de receitas e Perfil da Empresa no Google para uma pâtisserie de luxo no Rio, tudo criado como novo pelo estúdio.',
       },
       sector: 'Pâtisserie',
-      highlight: 'Logo, site, e-book e perfil no Google, criados do zero',
-      lede: 'Tudo desenhado do zero: a logo, o site, um e-book de receitas e o Perfil da Empresa no Google que o estúdio criou e ainda administra.',
+      highlight: 'Logo, site, e-book e perfil no Google, tudo novo',
+      lede: 'Tudo feito a partir do nada: a logo, o site, um e-book de receitas e o Perfil da Empresa no Google que o estúdio criou e ainda administra.',
       description:
         'Formada pela Ferrandi Paris, pelo Ritz Escoffier e pelo Le Cordon Bleu, Renata cria confeitaria sob encomenda para eventos. O site precisava ler do jeito que o trabalho é: exato, sem pressa, francês na contenção. Um vídeo na abertura, um arquivo editorial de criações e um caminho de contato que funciona como uma consultoria, não como um carrinho de compras.',
       alt: 'renataestrellapatisserie.com, site de pâtisserie de luxo criado pelo The Diniz Studio',

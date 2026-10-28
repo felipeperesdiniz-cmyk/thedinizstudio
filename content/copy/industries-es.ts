@@ -117,7 +117,7 @@ export const industriesEs: Pick<Dictionary, 'industries' | 'industryPages'> = {
       audience: 'Fotógrafos, videógrafos y estudios creativos',
       body: [
         'Fotógrafos y videógrafos suelen tropezar con lo mismo: plantillas que recortan el trabajo en cuadrículas iguales, películas escondidas al final de la página y galerías tan pesadas que se traban en el celular.',
-        'El estudio diseña webs de portafolio alrededor del propio trabajo. Las películas pueden abrir la web, el archivo puede filtrarse por tema en lugar de por fecha, y la interfaz se mantiene discreta para que el color sea de las fotografías. Todo se programa a mano, lo que mantiene rápidas incluso las imágenes muy grandes.',
+        'El estudio diseña webs de portafolio alrededor del propio trabajo. Las películas pueden abrir la web, el archivo puede filtrarse por tema en lugar de por fecha, y la interfaz se mantiene discreta para que el color sea de las fotografías. Las páginas se mantienen ligeras y las imágenes optimizadas, lo que mantiene rápidas incluso las muy grandes.',
         'Lo mismo vale para estudios creativos, directores y productoras: una identidad clara, el trabajo al frente y un camino de contacto para los clientes que de verdad quieres.',
       ],
       needs: {
@@ -151,7 +151,7 @@ export const industriesEs: Pick<Dictionary, 'industries' | 'industryPages'> = {
       },
       proof: {
         title: 'Rafa Diniz, fotografía y cine',
-        text: 'Un fotógrafo y cineasta que trabaja entre Brasil y Estados Unidos. Sus dos cortos abren la web, seguidos de un archivo fotográfico filtrado por tema. El logo es su firma, dibujada a mano, el único color de la web además de las fotografías es un solo acento, y todas las páginas son estáticas y programadas a mano.',
+        text: 'Un fotógrafo y cineasta que trabaja entre Brasil y Estados Unidos. Sus dos cortos abren la web, seguidos de un archivo fotográfico filtrado por tema. El logo es su firma, dibujada a mano, el único color de la web además de las fotografías es un solo acento, y todas las páginas son estáticas y ligeras.',
       },
       faq: {
         title: 'Preguntas de fotógrafos y videógrafos',

@@ -95,7 +95,7 @@ export const es: Dictionary = {
         {
           slug: 'con-que-lo-construyes',
           q: '¿Con qué lo construyes?',
-          a: 'Código propio, no un constructor de páginas. Eso mantiene las páginas ligeras y rápidas, y no hay suscripción a un constructor que seguir pagando. El hosting y el dominio se siguen pagando a sus proveedores, como en cualquier web.',
+          a: 'Frameworks y herramientas web modernas, no un constructor de páginas. Eso mantiene las páginas ligeras y rápidas, y normalmente no hay suscripción a un constructor que pagar. El hosting y el dominio se siguen pagando a sus proveedores, como en cualquier web.',
         },
       ],
     },
@@ -146,11 +146,11 @@ export const es: Dictionary = {
     cards: {
       'web-design': {
         title: 'Diseño y desarrollo web',
-        text: 'Webs escritas desde cero: rápidas, multilingües y hechas para convertir una visita en un contacto.',
+        text: 'Webs de diseño propio con frameworks modernos: rápidas, multilingües y hechas para convertir una visita en un contacto.',
         proof: [
           { value: 'Hasta 3', label: 'Idiomas por web' },
           { value: '100%', label: 'Código entregado' },
-          { value: '0', label: 'Plantillas usadas' },
+          { value: '1', label: 'Diseño hecho para ti' },
         ],
       },
       'brand-identity': {
@@ -181,14 +181,14 @@ export const es: Dictionary = {
       meta: {
         title: 'Diseño Web | Páginas a Medida y Multilingües',
         description:
-          'Webs a medida para negocios de servicios y creativos. Hechas a mano, rápidas y multilingües, con una entrega clara y la base técnica que necesitan los buscadores.',
+          'Webs a medida para negocios de servicios y creativos. Con diseño propio, rápidas y multilingües, con una entrega clara y la base técnica que necesitan los buscadores.',
       },
       kicker: 'Servicio',
       title: 'Diseño y desarrollo web',
       lede: 'Una web hecha para tu negocio, no adaptada de una plantilla que otro ya está usando.',
       body: [
         'Quien busca una web nueva suele estar resolviendo uno de estos tres problemas: la web actual no está a la altura del trabajo, va lenta o se rompe en el celular, o la gente entra y nunca escribe. Los tres tienen solución, y los tres dependen de lo mismo: decidir para qué sirve la web antes de que alguien abra un programa de diseño.',
-        'Cada página aquí se escribe y se programa a mano. Sin constructor de páginas, sin plantilla, sin licencia mensual de un plugin que algún día se rompe. Eso mantiene la web ligera en el celular y ofrece a buscadores y asistentes de inteligencia artificial páginas limpias y estructuradas para leer. Ayuda a que te descubran; no garantiza una posición ni una mención.',
+        'Cada web se diseña para su negocio y se construye con frameworks y herramientas web modernas. Sin constructor de arrastrar y soltar y sin un tema genérico con el que pelear. Eso mantiene la web ligera en el celular y ofrece a buscadores y asistentes de inteligencia artificial páginas limpias y estructuradas para leer. Ayuda a que te descubran; no garantiza una posición ni una mención.',
         'Cuando tiene sentido, la web se publica en español, inglés y portugués. Cada idioma tiene su dirección y su texto, escrito y no traducido por una máquina, para que los buscadores relacionen cada versión con quien busca en ese idioma.',
       ],
       included: {
@@ -274,7 +274,7 @@ export const es: Dictionary = {
           {
             slug: 'necesito-wordpress-wix-o-squarespace',
             q: '¿Necesito Wordpress, Wix o Squarespace?',
-            a: 'No los necesitas. Tienen sentido si quieres montar y editar todo tú. Una web hecha a mano evita la suscripción al constructor y el mantenimiento de plugins, y no te ata a una plataforma que cambia sus precios cuando quiere. El hosting y el dominio se siguen pagando, como en cualquier web.',
+            a: 'No los necesitas. Tienen sentido si quieres montar y editar todo tú. Una web construida con un framework moderno normalmente evita la suscripción al constructor y el mantenimiento de plugins, y no te ata a una plataforma que cambia sus precios cuando quiere. El hosting y el dominio se siguen pagando, como en cualquier web.',
           },
           {
             slug: 'podre-actualizarla-yo-mismo',
@@ -490,7 +490,7 @@ export const es: Dictionary = {
       { label: 'Idiomas', value: 'Español, inglés, portugués' },
       { label: 'Clientes en', value: 'Estados Unidos y Brasil' },
       { label: 'Proyectos a la vez', value: 'Uno o dos' },
-      { label: 'Hecho con', value: 'Código propio, sin constructores' },
+      { label: 'Hecho con', value: 'Frameworks web modernos' },
     ],
   },
 
@@ -712,7 +712,7 @@ export const es: Dictionary = {
       meta: {
         title: 'Rafa Diniz | Web de Portafolio de Fotógrafo y Cineasta',
         description:
-          'Portafolio hecho a mano para un fotógrafo y cineasta: dos cortos, un archivo filtrado por tema y una firma dibujada a mano como logo.',
+          'Portafolio a medida para un fotógrafo y cineasta: dos cortos, un archivo filtrado por tema y una firma dibujada a mano como logo.',
       },
       sector: 'Fotografía y cine',
       highlight: 'Una firma a mano, dos películas, un acento',
@@ -751,9 +751,9 @@ export const es: Dictionary = {
           kind: 'client',
         },
         {
-          value: '0',
-          label: 'Plantillas',
-          note: 'Estático y hecho a mano de principio a fin.',
+          value: '1',
+          label: 'Color de acento',
+          note: 'El único color de la web que no es una fotografía.',
           kind: 'delivered',
         },
       ],
@@ -774,8 +774,8 @@ export const es: Dictionary = {
         },
         {
           kicker: 'Construcción',
-          title: 'Estático, y hecho a mano',
-          text: 'Sin plantilla y sin constructor de páginas, lo que mantiene las páginas ligeras incluso con fotografías del tamaño de una pared.',
+          title: 'Estático, y ligero',
+          text: 'Páginas estáticas y sin constructor de páginas, lo que mantiene las páginas ligeras incluso con fotografías del tamaño de una pared.',
         },
       ],
       screens: ['Películas', 'Archivo', 'Sobre él', 'Servicios'],
@@ -791,11 +791,11 @@ export const es: Dictionary = {
       meta: {
         title: 'Renata Estrella Pâtisserie | Marca, Web y Perfil de Google',
         description:
-          'Marca, web, e-book de recetas y Perfil de Empresa en Google para una pastelería de lujo en Río, todo creado desde cero por el estudio.',
+          'Marca, web, e-book de recetas y Perfil de Empresa en Google para una pastelería de lujo en Río, todo creado como nuevo por el estudio.',
       },
       sector: 'Pastelería',
-      highlight: 'Logo, web, e-book y perfil de Google, creados desde cero',
-      lede: 'Todo dibujado desde cero: el logo, la web, un e-book de recetas y el Perfil de Empresa en Google que el estudio creó y sigue gestionando.',
+      highlight: 'Logo, web, e-book y perfil de Google, todo nuevo',
+      lede: 'Todo hecho desde la nada: el logo, la web, un e-book de recetas y el Perfil de Empresa en Google que el estudio creó y sigue gestionando.',
       description:
         'Formada en Ferrandi París, Ritz Escoffier y Le Cordon Bleu, Renata crea pastelería por encargo para eventos. La web tenía que leerse como se lee su trabajo: exacta, sin prisa, francesa en la contención. Un vídeo de portada, un archivo editorial de creaciones y un camino de contacto que se comporta como una consulta y no como un carrito.',
       alt: 'renataestrellapatisserie.com, web de pastelería de lujo diseñada por The Diniz Studio',

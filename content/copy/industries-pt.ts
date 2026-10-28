@@ -117,7 +117,7 @@ export const industriesPt: Pick<Dictionary, 'industries' | 'industryPages'> = {
       audience: 'Fotógrafos, videomakers e estúdios criativos',
       body: [
         'Fotógrafos e videomakers costumam esbarrar nas mesmas coisas: modelos que recortam o trabalho em grades iguais, filmes escondidos no fim da página e galerias tão pesadas que travam no celular.',
-        'O estúdio desenha sites de portfólio em volta do próprio trabalho. Os filmes podem abrir o site, o acervo pode ser filtrado por tema em vez de data, e a interface fica discreta para que a cor pertença às fotografias. Tudo é programado à mão, o que mantém rápidas até as imagens muito grandes.',
+        'O estúdio desenha sites de portfólio em volta do próprio trabalho. Os filmes podem abrir o site, o acervo pode ser filtrado por tema em vez de data, e a interface fica discreta para que a cor pertença às fotografias. As páginas são enxutas e as imagens otimizadas, o que mantém rápidas até as muito grandes.',
         'O mesmo vale para estúdios criativos, diretores e produtoras: uma identidade clara, o trabalho na frente e um caminho de contato para os clientes que você realmente quer.',
       ],
       needs: {
@@ -151,7 +151,7 @@ export const industriesPt: Pick<Dictionary, 'industries' | 'industryPages'> = {
       },
       proof: {
         title: 'Rafa Diniz, fotografia e filme',
-        text: 'Um fotógrafo e cineasta que trabalha entre o Brasil e os Estados Unidos. Os dois curtas dele abrem o site, seguidos de um acervo fotográfico filtrado por tema. A logo é a assinatura dele, desenhada à mão, a única cor do site além das fotografias é um acento, e todas as páginas são estáticas e programadas à mão.',
+        text: 'Um fotógrafo e cineasta que trabalha entre o Brasil e os Estados Unidos. Os dois curtas dele abrem o site, seguidos de um acervo fotográfico filtrado por tema. A logo é a assinatura dele, desenhada à mão, a única cor do site além das fotografias é um acento, e todas as páginas são estáticas e leves.',
       },
       faq: {
         title: 'Perguntas de fotógrafos e videomakers',

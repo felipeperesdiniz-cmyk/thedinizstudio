@@ -117,7 +117,7 @@ export const industriesEn: Pick<Dictionary, 'industries' | 'industryPages'> = {
       audience: 'Photographers, filmmakers and creative studios',
       body: [
         'Photographers and filmmakers are usually let down by the same things: templates that crop the work into identical grids, films buried at the bottom of the page, and galleries so heavy they stall on a phone.',
-        'The studio designs portfolio sites around the work itself. Films can lead, the archive can be filtered by subject rather than by date, and the interface stays quiet so the colour belongs to the photographs. Everything is hand-coded, which keeps even very large images fast.',
+        'The studio designs portfolio sites around the work itself. Films can lead, the archive can be filtered by subject rather than by date, and the interface stays quiet so the colour belongs to the photographs. Pages are kept lean and images optimised, which keeps even very large ones fast.',
         'The same applies to creative studios, directors and production companies: one clear identity, the work up front, and an enquiry path for the clients you actually want.',
       ],
       needs: {
@@ -151,7 +151,7 @@ export const industriesEn: Pick<Dictionary, 'industries' | 'industryPages'> = {
       },
       proof: {
         title: 'Rafa Diniz, photography and film',
-        text: 'A photographer and filmmaker working between Brazil and the United States. His two short films lead the site, followed by a photographic archive filtered by subject. The logo is his hand-drawn signature, the only colour on the site besides the photographs is a single accent, and every page is static and hand-coded.',
+        text: 'A photographer and filmmaker working between Brazil and the United States. His two short films lead the site, followed by a photographic archive filtered by subject. The logo is his hand-drawn signature, the only colour on the site besides the photographs is a single accent, and every page is static and light.',
       },
       faq: {
         title: 'Questions from photographers and filmmakers',
