@@ -1,5 +1,6 @@
 import type { Dictionary } from './types'
 import { industriesPt } from './industries-pt'
+import { guidesPt } from './guides-pt'
 
 export const pt: Dictionary = {
   meta: {
@@ -550,6 +551,7 @@ export const pt: Dictionary = {
   },
 
   ...industriesPt,
+  ...guidesPt,
 
   footer: {
     sections: { work: 'Projetos', services: 'Serviços', industries: 'Segmentos', studio: 'Estúdio' },

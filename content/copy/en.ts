@@ -1,5 +1,6 @@
 import type { Dictionary } from './types'
 import { industriesEn } from './industries-en'
+import { guidesEn } from './guides-en'
 
 export const en: Dictionary = {
   meta: {
@@ -550,6 +551,7 @@ export const en: Dictionary = {
   },
 
   ...industriesEn,
+  ...guidesEn,
 
   footer: {
     sections: { work: 'Work', services: 'Services', industries: 'Industries', studio: 'Studio' },

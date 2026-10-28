@@ -19,7 +19,7 @@ export function HomeView({ locale, t }: { locale: Locale; t: Dictionary }) {
   return (
     <>
       <HomeHero locale={locale} h1={t.home.h1} line={t.home.heroLine} cta={t.cta.label} story={story.hero} />
-      <Terms terms={story.terms} />
+      <Terms locale={locale} terms={story.terms} />
       <WorkGrid locale={locale} t={t} story={story.work} />
       <ServicesRow locale={locale} t={t} kicker={story.services.kicker} />
       <Founder locale={locale} t={t} capacity={story.studio.capacity} />

@@ -8,6 +8,7 @@ import { ServicesIndexView, ServiceView, AboutView } from '@/components/pages/Se
 import { ContactView } from '@/components/pages/ContactView'
 import { IndustriesIndexView, IndustryView } from '@/components/pages/IndustryViews'
 import { FaqIndexView, FaqItemView } from '@/components/pages/FaqViews'
+import { GuidesIndexView, GuideView } from '@/components/pages/GuideViews'
 import { LangSync } from '@/components/ui/LangSync'
 import { dictionary, faqGroupLabel, faqItemsFor } from '@/content/copy'
 import { PROJECT_SLUGS, projectBySlug } from '@/content/projects'
@@ -58,6 +59,10 @@ function metaFor(route: Route) {
       return t.industries.meta
     case 'industry':
       return t.industryPages[route.industry].meta
+    case 'guides':
+      return t.guides.meta
+    case 'guide':
+      return t.guidePages[route.guide].meta
     case 'about':
       return t.about.meta
     case 'contact':
@@ -143,6 +148,10 @@ export default async function Page({ params }: { params: Promise<Params> }) {
         return <IndustriesIndexView locale={locale} t={t} />
       case 'industry':
         return <IndustryView locale={locale} industry={route.industry} t={t} />
+      case 'guides':
+        return <GuidesIndexView locale={locale} t={t} />
+      case 'guide':
+        return <GuideView locale={locale} guide={route.guide} t={t} />
       case 'about':
         return <AboutView locale={locale} t={t} />
       case 'contact':

@@ -1,8 +1,19 @@
-import type { IndustryKey, ServiceKey } from '@/lib/i18n'
+import type { GuideKey, IndustryKey, ServiceKey } from '@/lib/i18n'
 
 export interface Meta {
   title: string
   description: string
+}
+
+/** One buying question (price, running costs, editing, timeline, ownership, languages) answered in full. */
+export interface GuidePageCopy {
+  meta: Meta
+  kicker: string
+  /** The page's h1, written the way people search for the question. */
+  title: string
+  lede: string
+  sections: readonly { heading: string; body: readonly string[] }[]
+  faq: { title: string; items: readonly { q: string; a: string }[] }
 }
 
 export interface Figure {
@@ -188,6 +199,19 @@ export interface Dictionary {
     others: string
   }
   industryPages: Record<IndustryKey, IndustryPageCopy>
+  /** The hub over the guide pages: what it costs, what comes after, how long it takes. */
+  guides: {
+    meta: Meta
+    kicker: string
+    title: string
+    lede: string
+    /** Short label and summary for each guide, used on the hub, the footer and in related links. */
+    cards: Record<GuideKey, { title: string; text: string }>
+    readMore: string
+    /** Heading over the links to the other guides. */
+    others: string
+  }
+  guidePages: Record<GuideKey, GuidePageCopy>
   about: {
     meta: Meta
     kicker: string

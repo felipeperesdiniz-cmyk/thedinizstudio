@@ -2,11 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { SITE } from '@/lib/site'
 import {
+  GUIDE_KEYS,
   INDUSTRY_KEYS,
   SERVICE_KEYS,
   aboutPath,
   contactPath,
   faqPath,
+  guidePath,
+  guidesPath,
   homePath,
   industriesPath,
   industryPath,
@@ -38,7 +41,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
 
   return (
     <footer className="bg-surface">
-      <div className="container-studio grid grid-cols-2 gap-x-8 gap-y-12 py-16 md:grid-cols-3 md:py-20 lg:grid-cols-5">
+      <div className="container-studio grid grid-cols-2 gap-x-8 gap-y-12 py-16 md:grid-cols-3 md:py-20 lg:grid-cols-6">
         <div className="col-span-2 flex flex-col gap-5 md:col-span-3 lg:col-span-1">
           <Link href={homePath(locale)} aria-label={SITE.name} className="flex items-center gap-2.5 text-primary">
             <Character className="h-6 w-[23px] shrink-0" />
@@ -67,6 +70,14 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
           {INDUSTRY_KEYS.map((key) => (
             <Link key={key} href={industryPath(locale, key)} className={link}>
               {t.industries.cards[key].title}
+            </Link>
+          ))}
+        </Column>
+
+        <Column title={t.guides.kicker} href={guidesPath(locale)}>
+          {GUIDE_KEYS.map((key) => (
+            <Link key={key} href={guidePath(locale, key)} className={link}>
+              {t.guides.cards[key].title}
             </Link>
           ))}
         </Column>

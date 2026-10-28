@@ -1,5 +1,5 @@
 import { SITE } from '@/lib/site'
-import { FAQ_GROUPS, HTML_LANG, alternatesFor, type Route } from '@/lib/i18n'
+import { FAQ_GROUPS, GUIDE_KEYS, HTML_LANG, alternatesFor, guidePath, guidesPath, homePath, type Route } from '@/lib/i18n'
 import { faqGroupLabel, faqItemsFor } from '@/content/copy'
 import type { Dictionary } from '@/content/copy/types'
 import { INDUSTRIES } from '@/content/industries'
@@ -73,6 +73,16 @@ export function structuredData(route: Route, t: Dictionary) {
     })),
   })
 
+  const breadcrumbs = (trail: readonly { name: string; path: string }[]) => ({
+    '@type': 'BreadcrumbList',
+    itemListElement: trail.map((crumb, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: crumb.name,
+      item: `${SITE.url}${crumb.path}`,
+    })),
+  })
+
   switch (route.kind) {
     case 'home':
       graph.push(webPage(t.home.meta.title, t.home.meta.description))
@@ -136,6 +146,39 @@ export function structuredData(route: Route, t: Dictionary) {
         availableLanguage: ['English', 'Portuguese', 'Spanish'],
       })
       graph.push(faq(page.faq.items))
+      break
+    }
+
+    case 'guides':
+      graph.push(webPage(t.guides.meta.title, t.guides.meta.description))
+      graph.push({
+        '@type': 'ItemList',
+        itemListElement: GUIDE_KEYS.map((key, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: t.guidePages[key].title,
+          url: `${SITE.url}${guidePath(route.locale, key)}`,
+        })),
+      })
+      graph.push(
+        breadcrumbs([
+          { name: SITE.name, path: homePath(route.locale) },
+          { name: t.guides.kicker, path: guidesPath(route.locale) },
+        ]),
+      )
+      break
+
+    case 'guide': {
+      const page = t.guidePages[route.guide]
+      graph.push(webPage(page.meta.title, page.meta.description))
+      graph.push(faq(page.faq.items))
+      graph.push(
+        breadcrumbs([
+          { name: SITE.name, path: homePath(route.locale) },
+          { name: t.guides.kicker, path: guidesPath(route.locale) },
+          { name: page.kicker, path: guidePath(route.locale, route.guide) },
+        ]),
+      )
       break
     }
 

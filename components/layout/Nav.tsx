@@ -13,6 +13,7 @@ import {
   aboutPath,
   contactPath,
   faqPath,
+  guidesPath,
   homePath,
   industriesPath,
   servicesPath,
@@ -42,6 +43,7 @@ export function Nav({ locale, alternates, t }: NavProps) {
   const links = [
     { href: workPath(locale), label: t.nav.work },
     { href: servicesPath(locale), label: t.nav.services },
+    { href: guidesPath(locale), label: t.guides.kicker },
     { href: industriesPath(locale), label: t.footer.sections.industries },
     { href: aboutPath(locale), label: t.nav.about },
     { href: faqPath(locale), label: t.faq.kicker },
