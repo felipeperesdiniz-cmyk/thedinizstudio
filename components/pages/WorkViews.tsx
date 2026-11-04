@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Reveal } from '@/components/ui/Reveal'
 import { ReelPlayer } from '@/components/ui/ReelPlayer'
+import { LoopVideo } from '@/components/ui/LoopVideo'
 import { FilmStill } from '@/components/ui/FilmStill'
 import { IdentitySpecimen } from '@/components/ui/IdentitySpecimen'
 import { CtaBand } from '@/components/ui/CtaBand'
@@ -342,7 +343,7 @@ export function CaseStudyView({
 
       {copy.chapters.map((chapter, i) => {
         const media = project.chapters[i] ?? {}
-        const hasMedia = Boolean(media.images || media.video)
+        const hasMedia = Boolean(media.images || media.video || media.compare)
 
         return (
           <section
@@ -375,6 +376,28 @@ export function CaseStudyView({
                 ) : (
                   <Gallery images={media.images} captions={chapter.captions} />
                 )}
+              </div>
+            )}
+
+            {media.compare && (
+              <div className="mt-16 grid grid-cols-1 gap-x-[var(--gutter)] gap-y-12 md:mt-24 md:grid-cols-2">
+                {(['before', 'after'] as const).map((side) => {
+                  const clip = media.compare![side]
+                  return (
+                    <figure key={side}>
+                      <Reveal as="image" className="overflow-hidden bg-surface">
+                        <div className="relative" style={{ aspectRatio: `${clip.width} / ${clip.height}` }}>
+                          <LoopVideo
+                            src={clip.src}
+                            poster={clip.poster}
+                            className="absolute inset-0 h-full w-full object-cover"
+                          />
+                        </div>
+                      </Reveal>
+                      <figcaption className="label mt-4">{t.caseStudy[side]}</figcaption>
+                    </figure>
+                  )
+                })}
               </div>
             )}
 
@@ -426,20 +449,22 @@ export function CaseStudyView({
       </section>
 
       <section
-        aria-label={copy.quote.name}
+        aria-label={copy.quote?.name ?? project.title}
         className="container-studio pb-[var(--section-padding)]"
       >
-        <Reveal>
-          <blockquote className="max-w-[34ch] font-display text-2xl leading-[1.3] text-primary md:text-3xl md:leading-[1.25]">
-            “{copy.quote.text}”
-          </blockquote>
-          <p className="label mt-10">
-            {copy.quote.name} · {copy.quote.role}
-          </p>
-          {copy.quote.disclosure && (
-            <p className="mt-4 max-w-[46ch] text-sm text-secondary">{copy.quote.disclosure}</p>
-          )}
-        </Reveal>
+        {copy.quote && (
+          <Reveal>
+            <blockquote className="max-w-[34ch] font-display text-2xl leading-[1.3] text-primary md:text-3xl md:leading-[1.25]">
+              “{copy.quote.text}”
+            </blockquote>
+            <p className="label mt-10">
+              {copy.quote.name} · {copy.quote.role}
+            </p>
+            {copy.quote.disclosure && (
+              <p className="mt-4 max-w-[46ch] text-sm text-secondary">{copy.quote.disclosure}</p>
+            )}
+          </Reveal>
+        )}
 
         {industry && (
           <Reveal delay={0.1} className="mt-16">

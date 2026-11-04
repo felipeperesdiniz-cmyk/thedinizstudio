@@ -65,7 +65,7 @@ export const es: Dictionary = {
     },
     work: {
       kicker: 'Proyectos seleccionados',
-      title: 'Cuatro negocios, cuatro problemas',
+      title: 'Cinco negocios, cinco problemas',
       text: 'Una bordadora, un salón, un fotógrafo y una pastelera. Cada caso separa lo que se hizo de lo que se ha medido.',
       link: 'Ver todos los proyectos',
     },
@@ -126,6 +126,8 @@ export const es: Dictionary = {
     identity: 'Identidad',
     type: 'Tipografía',
     theSite: 'La web',
+    before: 'Antes',
+    after: 'Después',
     figureKind: { delivered: 'Entregado', measured: 'Medido', client: 'Sobre el cliente' },
   },
 
@@ -559,6 +561,68 @@ export const es: Dictionary = {
   },
 
   projects: {
+    'b2b-ranch': {
+      meta: {
+        title: 'B2B Ranch | Web para un Criadero de Cuarto de Milla',
+        description:
+          'Una nueva web para un criadero de Cuarto de Milla en Três Rios, Río de Janeiro: 170 páginas en portugués e inglés, con una página para cada semental, yegua madre y atleta.',
+      },
+      sector: 'Criadero de Cuarto de Milla',
+      highlight: 'Una página para cada caballo, en dos idiomas',
+      lede: 'Una nueva web para un criadero de Cuarto de Milla en la sierra de Río de Janeiro, donde los caballos van primero y cada uno tiene su propia página.',
+      description:
+        'Más de 26 años en el mundo ecuestre, con Odilon y Bebel Diniz al frente, en Três Rios. La nueva web abre con los caballos y da a cada semental, yegua madre y atleta una página con su linaje e historia, en portugués e inglés.',
+      alt: 'b2branch.com.br, web de criadero de Cuarto de Milla creada por The Diniz Studio',
+      location: 'Três Rios, RJ',
+      services: ['Diseño web', 'Desarrollo', 'Motion', 'Portugués e inglés', 'Búsqueda y datos estructurados'],
+      identity: {
+        title: 'El escudo se quedó, lo demás cambió',
+        text: 'El escudo es del criadero y se mantuvo como estaba. A su alrededor, el estudio usó las mayúsculas anchas de Archivo, un fondo color hueso y un azul marino profundo, para que un semental negro en un potrero verde sea lo más fuerte de la página.',
+        type: [
+          { name: 'Archivo', role: 'Títulos' },
+          { name: 'Instrument Sans', role: 'Interfaz' },
+        ],
+      },
+      figures: [
+        {
+          value: '170',
+          label: 'Páginas',
+          note: '85 en portugués y 85 en inglés.',
+          kind: 'delivered',
+        },
+        {
+          value: '43',
+          label: 'Páginas de caballos',
+          note: 'Sementales, yeguas madres y atletas, cada uno con su propia dirección.',
+          kind: 'delivered',
+        },
+        {
+          value: '26+',
+          label: 'Años con caballos',
+          note: 'La historia del propio criadero en el mundo ecuestre.',
+          kind: 'client',
+        },
+      ],
+      chapters: [
+        {
+          kicker: 'Antes y después',
+          title: 'El mismo criadero, mostrado de otra manera',
+          text: 'Los caballos, el escudo y el criadero son los mismos en las dos grabaciones. En la web anterior, toda la cría estaba bajo un solo elemento del menú, Plantel. En la nueva, sementales, yeguas madres y atletas tienen cada uno su sección, y las fotografías ganan espacio.',
+        },
+        {
+          kicker: 'Linajes',
+          title: 'Cada caballo tiene una dirección',
+          text: 'En este negocio el linaje es el producto, así que un caballo debe poder compartirse, enviarse a un comprador y encontrarse por su nombre. Cada página trae padre y madre, pelaje y origen, la historia del caballo y un contacto directo con el criadero por WhatsApp.',
+        },
+        {
+          kicker: 'Búsqueda',
+          title: 'Respuestas a lo que la gente busca',
+          text: 'Las guías explican los Três Tambores, las Seis Balizas, el Potro do Futuro, la transferencia de embriones y la línea Tux N Rolls, junto a un glosario y preguntas frecuentes. Los datos del negocio están marcados para los buscadores, y cada página enlaza con su versión en el otro idioma.',
+        },
+      ],
+      screens: ['El criadero', 'Sementales', 'Yeguas madres', 'Atletas'],
+    },
+
     'bordados-com-amor-by-mari': {
       meta: {
         title: 'Bordados com Amor | Web, Logo y Redes Sociales',

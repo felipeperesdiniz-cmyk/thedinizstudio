@@ -56,7 +56,8 @@ export interface ProjectCopy {
   figures: readonly Figure[]
   chapters: readonly ChapterCopy[]
   screens: readonly string[]
-  quote: {
+  /** Only ever words the client actually gave. */
+  quote?: {
     text: string
     name: string
     role: string
@@ -154,6 +155,8 @@ export interface Dictionary {
     identity: string
     type: string
     theSite: string
+    before: string
+    after: string
     /** Tag over each figure, so a deliverable never reads as a result. */
     figureKind: Record<Figure['kind'], string>
   }

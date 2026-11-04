@@ -9,6 +9,7 @@ import { projectPath, workPath, type Locale } from '@/lib/i18n'
 
 /** A recording of each finished site, scrolling, played in place of its still. */
 const MOTION: Record<string, { src: string; poster: string }> = {
+  'b2b-ranch': { src: '/films/b2b-site.mp4', poster: '/films/b2b-site-poster.webp' },
   'bordados-com-amor-by-mari': { src: '/films/bordados-site.mp4', poster: '/films/bordados-site-poster.webp' },
   'blend-hair-boutique': { src: '/films/blend-site.mp4', poster: '/films/blend-site-poster.webp' },
   'rafa-diniz': { src: '/films/rafa-site.mp4', poster: '/films/rafa-site-poster.webp' },
@@ -30,7 +31,8 @@ export function WorkGrid({ locale, t, story }: { locale: Locale; t: Dictionary; 
         {PROJECTS.map((project, i) => {
           const copy = t.projects[project.slug]!
           return (
-            <li key={project.slug}>
+            // An odd count would strand the last card, so the first takes the whole row.
+            <li key={project.slug} className={i === 0 && PROJECTS.length % 2 === 1 ? 'md:col-span-2' : undefined}>
               <Reveal delay={(i % 2) * 0.08}>
                 <Link href={projectPath(locale, project.slug)} className="group block">
                   <div className="relative aspect-video overflow-hidden bg-surface">

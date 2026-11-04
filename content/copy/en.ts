@@ -65,7 +65,7 @@ export const en: Dictionary = {
     },
     work: {
       kicker: 'Selected work',
-      title: 'Four businesses, four problems',
+      title: 'Five businesses, five problems',
       text: 'A hand embroidery artist, a salon, a photographer and a pastry chef. Each case study keeps what was made apart from what has been measured.',
       link: 'See all work',
     },
@@ -126,6 +126,8 @@ export const en: Dictionary = {
     identity: 'Identity',
     type: 'Type',
     theSite: 'The site',
+    before: 'Before',
+    after: 'After',
     figureKind: { delivered: 'Delivered', measured: 'Measured', client: 'About the client' },
   },
 
@@ -559,6 +561,68 @@ export const en: Dictionary = {
   },
 
   projects: {
+    'b2b-ranch': {
+      meta: {
+        title: 'B2B Ranch | Website for a Quarter Horse Ranch in Brazil',
+        description:
+          'A new website for a Quarter Horse ranch in Três Rios, Rio de Janeiro: 170 pages in Portuguese and English, with a page for every stallion, broodmare and athlete.',
+      },
+      sector: 'Quarter Horse ranch',
+      highlight: 'A page for every horse, in two languages',
+      lede: 'A new site for a Quarter Horse ranch in the hills of Rio de Janeiro state, where the horses come first and every one of them has a page of its own.',
+      description:
+        'More than 26 years in the equestrian world, run by Odilon and Bebel Diniz in Três Rios. The new site opens on the horses, then gives each stallion, broodmare and athlete a page with its bloodline and story, in Portuguese and English.',
+      alt: 'b2branch.com.br homepage, Quarter Horse ranch website designed by The Diniz Studio',
+      location: 'Três Rios, RJ',
+      services: ['Web design', 'Development', 'Motion', 'Portuguese and English', 'Search and structured data'],
+      identity: {
+        title: 'The crest stayed, the rest changed',
+        text: 'The crest belongs to the ranch and was kept as it was. Around it, the studio set wide Archivo capitals, a bone ground and a deep navy, so a black stallion in a green paddock is the loudest thing on the page.',
+        type: [
+          { name: 'Archivo', role: 'Display' },
+          { name: 'Instrument Sans', role: 'Interface' },
+        ],
+      },
+      figures: [
+        {
+          value: '170',
+          label: 'Pages',
+          note: '85 in Portuguese and 85 in English.',
+          kind: 'delivered',
+        },
+        {
+          value: '43',
+          label: 'Horse pages',
+          note: 'Stallions, broodmares and athletes, each with its own address.',
+          kind: 'delivered',
+        },
+        {
+          value: '26+',
+          label: 'Years with horses',
+          note: 'The ranch’s own history in the equestrian world.',
+          kind: 'client',
+        },
+      ],
+      chapters: [
+        {
+          kicker: 'Before and after',
+          title: 'The same ranch, shown differently',
+          text: 'The horses, the crest and the ranch are the same in both recordings. On the old site the whole herd sat under one menu item, Plantel. On the new one, stallions, broodmares and athletes each have their own section, and the photographs get the room.',
+        },
+        {
+          kicker: 'Bloodlines',
+          title: 'Every horse has an address',
+          text: 'In this business the bloodline is the product, so a horse can be linked to, sent to a buyer and found by name. Each page carries the sire and dam, coat and origin, the horse’s story, and a direct line to the ranch on WhatsApp.',
+        },
+        {
+          kicker: 'Search',
+          title: 'Answers to what people look up',
+          text: 'Guides explain barrel racing, pole bending, the Potro do Futuro, embryo transfer and the Tux N Rolls line, with a glossary and an FAQ beside them. Business details are marked up for search engines, and every page is linked to its counterpart in the other language.',
+        },
+      ],
+      screens: ['The ranch', 'Stallions', 'Broodmares', 'Athletes'],
+    },
+
     'bordados-com-amor-by-mari': {
       meta: {
         title: 'Bordados com Amor | Website, Logo and Social Media',

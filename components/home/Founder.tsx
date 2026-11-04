@@ -10,7 +10,7 @@ const PORTRAIT_BLUR =
 /** Who does the work, then what a client said about it. */
 export function Founder({ locale, t, capacity }: { locale: Locale; t: Dictionary; capacity: string }) {
   const { founder } = t.home
-  const quote = t.projects[t.home.quote.project]!.quote
+  const quote = t.projects[t.home.quote.project]!.quote!
 
   return (
     <section aria-labelledby="founder-title" className="border-t border-line">

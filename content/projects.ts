@@ -23,11 +23,21 @@ export interface Specimen {
   palette: readonly { hex: string }[]
 }
 
+/** A silent screen recording, played on a loop. */
+export interface Loop {
+  src: string
+  poster: string
+  width: number
+  height: number
+}
+
 export interface ChapterMedia {
   /** Lay the images out as an editorial sequence rather than an even grid. */
   story?: boolean
   images?: readonly Picture[]
   video?: Clip
+  /** The client's previous site beside the one the studio made. */
+  compare?: { before: Loop; after: Loop }
 }
 
 export interface Project {
@@ -49,6 +59,42 @@ const screens = (dir: string, height = 900): Picture[] =>
   [1, 2, 3, 4].map((i) => ({ src: `/images/work/${dir}/screen-${i}.webp`, width: 1440, height }))
 
 export const PROJECTS: readonly Project[] = [
+  {
+    slug: 'b2b-ranch',
+    title: 'B2B Ranch',
+    url: 'https://www.b2branch.com.br/',
+    cover: '/images/work/b2b.webp',
+    blurDataURL:
+      'data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoMAAkAA4BaJZwAApwjCz4AAP708XYK8njCf4yr3SAdtaAbYCmZI9Rzq7gBnbfhbfp1DT3XGF5BrHIpqO1K+s3vFwAAAA==',
+    hero: { src: '/images/work/b2b/hero.webp', width: 1600, height: 864 },
+    // The crest was the ranch's before the studio arrived, so it is never shown as the studio's work.
+    specimen: {
+      faces: ['Archivo', 'Instrument Sans'],
+      line: 'Apaixonados por grandes cavalos.',
+      palette: [{ hex: '#F1EDE6' }, { hex: '#DDD8CF' }, { hex: '#0E1A2E' }, { hex: '#0B0A09' }],
+    },
+    screens: screens('b2b', 778),
+    chapters: [
+      {
+        compare: {
+          before: {
+            src: '/films/b2b-before.mp4',
+            poster: '/films/b2b-before-poster.webp',
+            width: 1120,
+            height: 606,
+          },
+          after: {
+            src: '/films/b2b-after.mp4',
+            poster: '/films/b2b-after-poster.webp',
+            width: 1120,
+            height: 606,
+          },
+        },
+      },
+      {},
+      {},
+    ],
+  },
   {
     slug: 'bordados-com-amor-by-mari',
     title: 'Bordados com Amor',

@@ -65,7 +65,7 @@ export const pt: Dictionary = {
     },
     work: {
       kicker: 'Projetos selecionados',
-      title: 'Quatro negócios, quatro problemas',
+      title: 'Cinco negócios, cinco problemas',
       text: 'Uma bordadeira, um salão, um fotógrafo e uma confeiteira. Cada caso separa o que foi feito do que foi medido.',
       link: 'Ver todos os projetos',
     },
@@ -126,6 +126,8 @@ export const pt: Dictionary = {
     identity: 'Identidade',
     type: 'Tipografia',
     theSite: 'O site',
+    before: 'Antes',
+    after: 'Depois',
     figureKind: { delivered: 'Entregue', measured: 'Medido', client: 'Sobre o cliente' },
   },
 
@@ -559,6 +561,68 @@ export const pt: Dictionary = {
   },
 
   projects: {
+    'b2b-ranch': {
+      meta: {
+        title: 'B2B Ranch | Site para Haras de Quarto de Milha',
+        description:
+          'Um novo site para um haras de Quarto de Milha em Três Rios, no Rio de Janeiro: 170 páginas em português e inglês, com uma página para cada garanhão, matriz e atleta.',
+      },
+      sector: 'Haras de Quarto de Milha',
+      highlight: 'Uma página para cada cavalo, em dois idiomas',
+      lede: 'Um novo site para um haras de Quarto de Milha na região serrana do Rio de Janeiro, onde os cavalos vêm primeiro e cada um deles tem a própria página.',
+      description:
+        'Mais de 26 anos no meio equestre, com Odilon e Bebel Diniz à frente, em Três Rios. O novo site abre nos cavalos e dá a cada garanhão, matriz e atleta uma página com linhagem e história, em português e inglês.',
+      alt: 'b2branch.com.br, site de haras de Quarto de Milha criado pelo The Diniz Studio',
+      location: 'Três Rios, RJ',
+      services: ['Web design', 'Desenvolvimento', 'Motion', 'Português e inglês', 'Busca e dados estruturados'],
+      identity: {
+        title: 'O brasão ficou, o resto mudou',
+        text: 'O brasão é do haras e foi mantido como estava. Em volta dele, o estúdio usou as maiúsculas largas da Archivo, um fundo cor de osso e um azul-marinho profundo, para que um garanhão preto num piquete verde seja a coisa mais forte da página.',
+        type: [
+          { name: 'Archivo', role: 'Títulos' },
+          { name: 'Instrument Sans', role: 'Interface' },
+        ],
+      },
+      figures: [
+        {
+          value: '170',
+          label: 'Páginas',
+          note: '85 em português e 85 em inglês.',
+          kind: 'delivered',
+        },
+        {
+          value: '43',
+          label: 'Páginas de cavalos',
+          note: 'Garanhões, matrizes e atletas, cada um com o próprio endereço.',
+          kind: 'delivered',
+        },
+        {
+          value: '26+',
+          label: 'Anos com cavalos',
+          note: 'A história do próprio haras no meio equestre.',
+          kind: 'client',
+        },
+      ],
+      chapters: [
+        {
+          kicker: 'Antes e depois',
+          title: 'O mesmo haras, mostrado de outro jeito',
+          text: 'Os cavalos, o brasão e o haras são os mesmos nas duas gravações. No site antigo, toda a criação ficava sob um único item de menu, Plantel. No novo, garanhões, matrizes e atletas têm cada um a sua seção, e as fotografias ganham espaço.',
+        },
+        {
+          kicker: 'Linhagens',
+          title: 'Cada cavalo tem um endereço',
+          text: 'Neste mercado, a linhagem é o produto, então um cavalo precisa poder ser compartilhado, enviado a um comprador e encontrado pelo nome. Cada página traz pai e mãe, pelagem e origem, a história do cavalo e um contato direto com o haras pelo WhatsApp.',
+        },
+        {
+          kicker: 'Busca',
+          title: 'Respostas para o que as pessoas procuram',
+          text: 'Guias explicam os Três Tambores, as Seis Balizas, o Potro do Futuro, a transferência de embrião e a linhagem Tux N Rolls, ao lado de um glossário e de perguntas frequentes. Os dados do negócio são marcados para os buscadores, e cada página aponta para a sua versão no outro idioma.',
+        },
+      ],
+      screens: ['O haras', 'Garanhões', 'Matrizes', 'Atletas'],
+    },
+
     'bordados-com-amor-by-mari': {
       meta: {
         title: 'Bordados com Amor | Site, Logo e Redes Sociais',
