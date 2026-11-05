@@ -864,7 +864,7 @@ export const en: Dictionary = {
       highlight: 'Logo, site, e-book and Google profile, made from nothing',
       lede: 'Everything drawn from nothing: the logo, the site, a recipe e-book, and the Google Business Profile the studio set up and still manages.',
       description:
-        'Trained at Ferrandi Paris, Ritz Escoffier and Le Cordon Bleu, Renata builds commissioned pastry for events. The site had to read the way the work does: exact, unhurried, French in its restraint. A video hero, an editorial archive of creations, and an enquiry path that behaves like a consultation rather than a checkout.',
+        'Trained at Ferrandi Paris, Ritz Escoffier and Le Cordon Bleu, Renata builds commissioned pastry for events. The site had to read the way the work does: exact, unhurried, French in its restraint. A film of Renata making a pavlova from start to finish, an archive of events told one table at a time, and an enquiry that starts with the date and continues on WhatsApp.',
       alt: 'renataestrellapatisserie.com homepage, luxury pâtisserie website designed by The Diniz Studio',
       location: 'Rio de Janeiro, BR',
       services: [
@@ -877,11 +877,11 @@ export const en: Dictionary = {
       ],
       identity: {
         title: 'Drawn from nothing',
-        text: 'There was no logo, no typeface and no rules, so all of it was made: a monogram, a dark ground that lets gold read as metal rather than yellow, and a type pairing that carries from the website into the e-book and the Google listing without being redrawn each time.',
+        text: 'There was no logo, no typeface and no rules, so all of it was made: a monogram, an ivory ground with near-black ink so the colour comes from the pastry rather than the page, and a type pairing, a fine display face over a plain grotesque, that steps aside for the photographs.',
         wordmark: { name: 'Renata Estrella', sub: 'Pâtisserie' },
         type: [
-          { name: 'Cormorant Garamond', role: 'Display' },
-          { name: 'Manrope', role: 'Interface' },
+          { name: 'Italiana', role: 'Display' },
+          { name: 'Host Grotesk', role: 'Interface' },
         ],
       },
       figures: [

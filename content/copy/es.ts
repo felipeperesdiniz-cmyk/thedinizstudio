@@ -864,7 +864,7 @@ export const es: Dictionary = {
       highlight: 'Logo, web, e-book y perfil de Google, todo nuevo',
       lede: 'Todo hecho desde la nada: el logo, la web, un e-book de recetas y el Perfil de Empresa en Google que el estudio creó y sigue gestionando.',
       description:
-        'Formada en Ferrandi París, Ritz Escoffier y Le Cordon Bleu, Renata crea pastelería por encargo para eventos. La web tenía que leerse como se lee su trabajo: exacta, sin prisa, francesa en la contención. Un vídeo de portada, un archivo editorial de creaciones y un camino de contacto que se comporta como una consulta y no como un carrito.',
+        'Formada en Ferrandi París, Ritz Escoffier y Le Cordon Bleu, Renata crea pastelería por encargo para eventos. La web tenía que leerse como se lee su trabajo: exacta, sin prisa, francesa en la contención. Un vídeo de Renata haciendo una pavlova de principio a fin, un archivo de eventos contados mesa por mesa y una solicitud de presupuesto que empieza por la fecha y sigue en WhatsApp.',
       alt: 'renataestrellapatisserie.com, web de pastelería de lujo diseñada por The Diniz Studio',
       location: 'Río de Janeiro, BR',
       services: [
@@ -877,11 +877,11 @@ export const es: Dictionary = {
       ],
       identity: {
         title: 'Dibujado desde cero',
-        text: 'No había logo, ni tipografía, ni reglas, así que se hizo todo: un monograma, un fondo oscuro que hace que el dorado se lea como metal y no como amarillo, y una pareja de tipografías que pasa de la web al e-book y a la ficha de Google sin tener que volver a dibujarse.',
+        text: 'No había logo, ni tipografía, ni reglas, así que se hizo todo: un monograma, un fondo marfil con tinta casi negra, para que el color venga de los dulces y no de la página, y una pareja de tipografías, una display fina sobre una grotesca discreta, que deja paso a las fotografías.',
         wordmark: { name: 'Renata Estrella', sub: 'Pâtisserie' },
         type: [
-          { name: 'Cormorant Garamond', role: 'Títulos' },
-          { name: 'Manrope', role: 'Interfaz' },
+          { name: 'Italiana', role: 'Títulos' },
+          { name: 'Host Grotesk', role: 'Interfaz' },
         ],
       },
       figures: [

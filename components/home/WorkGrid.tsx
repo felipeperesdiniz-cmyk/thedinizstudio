@@ -9,8 +9,8 @@ import { projectPath, workPath, type Locale } from '@/lib/i18n'
 
 /** A recording of each finished site, scrolling, played in place of its still. */
 const MOTION: Record<string, { src: string; poster: string }> = {
-  'b2b-ranch': { src: '/films/b2b-site.mp4', poster: '/films/b2b-site-poster.webp' },
   'bordados-com-amor-by-mari': { src: '/films/bordados-site.mp4', poster: '/films/bordados-site-poster.webp' },
+  'b2b-ranch': { src: '/films/b2b-site.mp4', poster: '/films/b2b-site-poster.webp' },
   'blend-hair-boutique': { src: '/films/blend-site.mp4', poster: '/films/blend-site-poster.webp' },
   'rafa-diniz': { src: '/films/rafa-site.mp4', poster: '/films/rafa-site-poster.webp' },
   'renata-estrella-patisserie': { src: '/films/renata-site.mp4', poster: '/films/renata-site-poster.webp' },

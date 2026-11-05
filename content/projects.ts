@@ -60,6 +60,35 @@ const screens = (dir: string, height = 900): Picture[] =>
 
 export const PROJECTS: readonly Project[] = [
   {
+    slug: 'bordados-com-amor-by-mari',
+    title: 'Bordados com Amor',
+    url: 'https://bordadoscomamorbymari.com/',
+    cover: '/images/work/bordados.webp',
+    blurDataURL:
+      'data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoMAAkAA4BaJZwAAesvQMwAAP7qVmMt5kugx4/HuxlJtc9sl+pFSyujpO07w+f6TXi/Ch6tagIAAA==',
+    hero: { src: '/images/work/bordados/hero.webp', width: 1600, height: 905 },
+    mark: { src: '/images/work/bordados/mark.webp', width: 760, height: 387 },
+    screens: screens('bordados'),
+    chapters: [
+      {},
+      {
+        story: true,
+        images: [2, 1, 4, 3, 5].map((i) => ({
+          src: `/images/work/bordados/photo-${i}.webp`,
+          width: 1600,
+          height: 1067,
+        })),
+        video: {
+          mp4: '/images/work/bordados/reel.mp4',
+          webm: '/images/work/bordados/reel.webm',
+          poster: '/images/work/bordados/reel-poster.webp',
+          width: 1080,
+          height: 1920,
+        },
+      },
+    ],
+  },
+  {
     slug: 'b2b-ranch',
     title: 'B2B Ranch',
     url: 'https://www.b2branch.com.br/',
@@ -93,35 +122,6 @@ export const PROJECTS: readonly Project[] = [
       },
       {},
       {},
-    ],
-  },
-  {
-    slug: 'bordados-com-amor-by-mari',
-    title: 'Bordados com Amor',
-    url: 'https://bordadoscomamorbymari.com/',
-    cover: '/images/work/bordados.webp',
-    blurDataURL:
-      'data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoMAAkAA4BaJZwAAesvQMwAAP7qVmMt5kugx4/HuxlJtc9sl+pFSyujpO07w+f6TXi/Ch6tagIAAA==',
-    hero: { src: '/images/work/bordados/hero.webp', width: 1600, height: 905 },
-    mark: { src: '/images/work/bordados/mark.webp', width: 760, height: 387 },
-    screens: screens('bordados'),
-    chapters: [
-      {},
-      {
-        story: true,
-        images: [2, 1, 4, 3, 5].map((i) => ({
-          src: `/images/work/bordados/photo-${i}.webp`,
-          width: 1600,
-          height: 1067,
-        })),
-        video: {
-          mp4: '/images/work/bordados/reel.mp4',
-          webm: '/images/work/bordados/reel.webm',
-          poster: '/images/work/bordados/reel-poster.webp',
-          width: 1080,
-          height: 1920,
-        },
-      },
     ],
   },
   {
@@ -184,9 +184,9 @@ export const PROJECTS: readonly Project[] = [
     url: 'https://renataestrellapatisserie.com/',
     cover: '/images/work/renata.webp',
     blurDataURL:
-      'data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoMAAkAA4BaJQBOgBusPabcAAAA/tqTDzpUJ0BTBV2ArbV0CP1ieYdWKepZK5yONvVnX3SdLrVaJCIZL0WcIAAA',
-    hero: { src: '/images/work/renata/hero.webp', width: 1600, height: 902 },
-    screens: screens('renata'),
+      'data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoMAAkABUB8JYgCdAEWPXaZ84bAAP7qkN1khnmlCEQtk2kPR8ZJzGNlebc+25UscX8c47g0/2jwIyPQAAA=',
+    hero: { src: '/images/work/renata/hero.webp', width: 1600, height: 864 },
+    screens: screens('renata', 778),
     chapters: [
       {
         story: true,
