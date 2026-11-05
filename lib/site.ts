@@ -4,9 +4,11 @@ export const SITE = {
   // The host Vercel serves; the bare domain redirects here, so canonicals must match it.
   url: 'https://www.thedinizstudio.com',
   /** Last content change, for sitemap lastmod. Bump it when the copy or projects change. */
-  updated: '2026-10-27',
+  updated: '2026-11-05',
   email: 'thedinizstudio@gmail.com',
   instagram: 'https://instagram.com/thedinizstudio',
+  /** The Google Business Profile, by its stable place ID rather than the share link that can expire. */
+  googleBusiness: 'https://maps.google.com/?cid=10425911285138489379',
   phone: '+1 754 302 7293',
   whatsapp: 'https://wa.me/17543027293',
   meeting: 'https://calendly.com/dinizstudio/new-meeting',

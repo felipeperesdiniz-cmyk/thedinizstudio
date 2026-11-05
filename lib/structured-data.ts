@@ -15,8 +15,10 @@ const organisation = (t: Dictionary) => ({
   image: `${SITE.url}/og-image.jpg`,
   description: t.meta.tagline,
   areaServed: [
-    { '@type': 'City', name: 'Miami', containedInPlace: { '@type': 'State', name: 'Florida' } },
-    { '@type': 'City', name: 'Boston', containedInPlace: { '@type': 'State', name: 'Massachusetts' } },
+    // Matches the service area on the Google Business Profile: South Florida's three counties.
+    { '@type': 'AdministrativeArea', name: 'Miami-Dade County', containedInPlace: { '@type': 'State', name: 'Florida' } },
+    { '@type': 'AdministrativeArea', name: 'Broward County', containedInPlace: { '@type': 'State', name: 'Florida' } },
+    { '@type': 'AdministrativeArea', name: 'Palm Beach County', containedInPlace: { '@type': 'State', name: 'Florida' } },
     'United States',
     'Brazil',
   ],
@@ -30,7 +32,8 @@ const organisation = (t: Dictionary) => ({
     'Social Media Marketing',
   ],
   founder: { '@type': 'Person', name: 'Felipe Diniz' },
-  sameAs: [SITE.instagram],
+  hasMap: SITE.googleBusiness,
+  sameAs: [SITE.instagram, SITE.googleBusiness],
 })
 
 // Google takes the site name shown in results from this node, so the brand reads right.

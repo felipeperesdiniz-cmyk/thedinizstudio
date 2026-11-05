@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/next'
 import '@/styles/globals.css'
 import { fontVariables } from '@/lib/fonts'
 import { LenisProvider } from '@/components/providers/LenisProvider'
+import { LandingRecorder } from '@/components/providers/LandingRecorder'
 import { PageTransition } from '@/components/layout/PageTransition'
 import { SITE } from '@/lib/site'
 import { HTML_LANG } from '@/lib/i18n'
@@ -56,6 +57,7 @@ export default async function RootLayout({
         <LenisProvider>
           <PageTransition>{children}</PageTransition>
         </LenisProvider>
+        <LandingRecorder />
         <Analytics />
       </body>
     </html>

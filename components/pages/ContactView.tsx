@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Reveal } from '@/components/ui/Reveal'
 import { SITE } from '@/lib/site'
+import { readLanding } from '@/lib/attribution'
 import type { Dictionary } from '@/content/copy/types'
 
 // A full, filled box so the field reads as a place to type against the page.
@@ -51,6 +52,7 @@ export function ContactView({ t }: { t: Dictionary }) {
     }
 
     setStatus('sending')
+    const landing = readLanding()
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -66,6 +68,10 @@ export function ContactView({ t }: { t: Dictionary }) {
           email,
           project,
           message,
+          // Not shown to the visitor: where the inquiry came from, for the lead log.
+          landing_page: landing.page,
+          referrer: landing.referrer,
+          locale: document.documentElement.lang,
           botcheck: data.get('botcheck') ?? '',
         }),
       })

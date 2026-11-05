@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Reveal } from '@/components/ui/Reveal'
 import { SERVICE_MEDIA } from '@/content/service-media'
 import type { Dictionary } from '@/content/copy/types'
-import { SERVICE_KEYS, servicePath, servicesPath, type Locale } from '@/lib/i18n'
+import { INDUSTRY_KEYS, SERVICE_KEYS, industryPath, servicePath, servicesPath, type Locale } from '@/lib/i18n'
 
 /** Three services side by side, each with one picture of work it produced. */
 export function ServicesRow({ locale, t, kicker }: { locale: Locale; t: Dictionary; kicker: string }) {
@@ -53,6 +53,25 @@ export function ServicesRow({ locale, t, kicker }: { locale: Locale; t: Dictiona
             )
           })}
         </ul>
+
+        {/* The industry pages, linked from the homepage body so search engines weigh them, not only from the nav and footer. */}
+        <nav aria-labelledby="industries-title" className="mt-16 flex flex-col items-center text-center md:mt-20">
+          <p id="industries-title" className="label">
+            {t.industries.title}
+          </p>
+          <ul className="mt-5 flex flex-wrap justify-center gap-x-8 gap-y-3">
+            {INDUSTRY_KEYS.map((key) => (
+              <li key={key}>
+                <Link
+                  href={industryPath(locale, key)}
+                  className="border-b border-current pb-1 text-sm transition-opacity hover:opacity-60"
+                >
+                  {t.industries.cards[key].title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         <div className="mt-16 flex justify-center md:mt-20">
           <Link href={servicesPath(locale)} className="btn btn-ghost">
